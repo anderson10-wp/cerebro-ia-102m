@@ -184,7 +184,9 @@ def publish():
     try: release=api('GET',f'/repos/{OWNER}/{NAME}/releases/tags/{TAG}')
     except urllib.error.HTTPError as e:
         if e.code!=404:raise
-        release=api('POST',f'/repos/{OWNER}/{NAME}/releases',{'tag_name':TAG,'target_commitish':'main','name':'Arquivo completo local — 8 de outubro de 2026','body':'Projeto pausado. Código e instruções no repositório; checkpoints e dados locais nos assets abaixo. Use archive-manifest.json e restore_artifacts.py para restaurar cada caminho e verificar SHA256. Credenciais, ambiente virtual e caches foram excluídos. Pesos remotos nunca baixados continuam nos links Kaggle registrados no README.','draft':True})
+        drafts=[x for x in api('GET',f'/repos/{OWNER}/{NAME}/releases?per_page=100') if x['tag_name']==TAG and x['draft']]
+        if drafts: release=max(drafts,key=lambda x:x['id'])
+        else: release=api('POST',f'/repos/{OWNER}/{NAME}/releases',{'tag_name':TAG,'target_commitish':'main','name':'Arquivo completo local — 8 de outubro de 2026','body':'Projeto pausado. Código e instruções no repositório; checkpoints e dados locais nos assets abaixo. Use archive-manifest.json e restore_artifacts.py para restaurar cada caminho e verificar SHA256. Credenciais, ambiente virtual e caches foram excluídos. Pesos remotos nunca baixados continuam nos links Kaggle registrados no README.','draft':True})
     existing={x['name']:x for x in api('GET',f"/repos/{OWNER}/{NAME}/releases/{release['id']}/assets?per_page=100")}
     manifest=json.loads((REPO/'archive-manifest.json').read_text(encoding='utf-8'))
     for obj in manifest['objects']:
