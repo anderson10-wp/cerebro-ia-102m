@@ -4168,8 +4168,8 @@
     },
     {
       "path": "work/sdk-inspect/lightning_sdk-2026.10.1-py3-none-any.whl",
-      "sha256": "d7a5329beb9fc2e1563d9b8feb0096abe3fac45fd8f440ff5ccc357edea4e9d0",
-      "size": 4971353,
+      "sha256": "733122c35b5db6b80b225a39282764a5f13fb84deddcd52c4c5de3c41100a950",
+      "size": 3241974,
       "storage": "git"
     },
     {
