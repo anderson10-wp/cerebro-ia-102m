@@ -1,0 +1,795 @@
+{
+  "status": "completed_candidate_only",
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "manifest": {
+    "source": "nicholasKluge/instruct-aira-dataset-v2",
+    "revision": "c65b2bf91938480c0683ec396f4f11ca1a79782a",
+    "raw_sha256": "862be53debb5dac15330f9ec9fe51d6abd09d0f60cb88700c7ca71e6ec7707c0",
+    "counts": {
+      "train": 13244,
+      "dev": 384,
+      "audit": 384,
+      "tests": 60
+    },
+    "train_tokens": 2972361,
+    "response_tokens": 2504528,
+    "files": {
+      "audit.jsonl": "fa7d1c9799b1290c764b3ef073da65039fc3a76621252dc7d9087e4ba48d8b14",
+      "base.pt": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+      "dev.jsonl": "6ccddba9c6a9d8f9b75e3077895a539bc7160bb2c2b0c9a393d4a124026358c2",
+      "model.py": "c34ea605e4599d5f4e5430eb8f77eb050a0dce4103994d99f697a22655a06eb7",
+      "tests.jsonl": "e58843ed1c1306a6da043b5d5ada9866d9d72fd9e5477b6596eb3e7d7d6b966d",
+      "tokenizer.json": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+      "train.jsonl": "3ca088dcc4df052084a80dc4bf671d46a460d21282985717693923ae20fa619e"
+    },
+    "quality": "Automatic format, length and duplicate filters; factual quality is NOT fully reviewed. Candidate only. Audit not used for checkpoint selection.",
+    "limits": {
+      "epochs": 2,
+      "seconds": 4500,
+      "learning_rate": 1e-05,
+      "batch_size": 8,
+      "checkpoint_steps": 250
+    }
+  },
+  "steps": 3312,
+  "response_tokens_seen": 5009056,
+  "automatic_promotion": false,
+  "validation": [
+    {
+      "epoch": 1,
+      "loss": 2.1057517614278187,
+      "steps": 1656
+    },
+    {
+      "epoch": 2,
+      "loss": 2.084311694078011,
+      "steps": 3312
+    }
+  ],
+  "initial_validation_loss": 2.5958618767372044,
+  "best_validation_loss": 2.084311694078011,
+  "before": {
+    "correct": 28,
+    "total": 60,
+    "correct_pairs": 0,
+    "total_pairs": 16,
+    "results": [
+      {
+        "id": "validation-064",
+        "output": "cobre",
+        "expected": "cobre",
+        "correct": true
+      },
+      {
+        "id": "validation-065",
+        "output": "rio",
+        "expected": "rio",
+        "correct": true
+      },
+      {
+        "id": "validation-066",
+        "output": "na gaveta",
+        "expected": "na gaveta",
+        "correct": true
+      },
+      {
+        "id": "validation-067",
+        "output": "não informado",
+        "expected": "não informado",
+        "correct": true
+      },
+      {
+        "id": "validation-068",
+        "output": "125",
+        "expected": "43",
+        "correct": false
+      },
+      {
+        "id": "validation-069",
+        "output": "12",
+        "expected": "72",
+        "correct": false
+      },
+      {
+        "id": "validation-070",
+        "output": "{\"modo\":\"teste\"}",
+        "expected": "{\"modo\":\"teste\"}",
+        "correct": true
+      },
+      {
+        "id": "validation-071",
+        "output": "{\"ativo\":false}",
+        "expected": "{\"ativo\":false}",
+        "correct": true
+      },
+      {
+        "id": "validation-072",
+        "output": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "expected": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "correct": true
+      },
+      {
+        "id": "validation-073",
+        "output": "91",
+        "expected": "91",
+        "correct": true
+      },
+      {
+        "id": "validation-074",
+        "output": "5",
+        "expected": "0",
+        "correct": false
+      },
+      {
+        "id": "validation-075",
+        "output": "tarde",
+        "expected": "calma",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-promotion-100-0",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-100-1",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-101-1",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-102-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-100-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-promotion-100-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-103-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-100-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-103-0",
+        "output": "reduzir ao atingir o limite",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-101-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-budget-102-1",
+        "output": "regra: encerrar ao atingir o limite",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-budget-100-0",
+        "output": "reduzir ao atingir o limite",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-103-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-102-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-103-0",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-promotion-102-0",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-100-1",
+        "output": "reduzir ao atingir o limite",
+        "expected": "encerrar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-100-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-101-1",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-103-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-103-1",
+        "output": "reduzir ao atingir o limite",
+        "expected": "encerrar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-102-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-budget-102-0",
+        "output": "reduzir ao atingir o limite",
+        "expected": "encerrar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-103-1",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-103-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-102-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-101-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-budget-101-0",
+        "output": "reduzir ao atingir o limite",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-101-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-102-1",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-promotion-101-0",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-101-1",
+        "output": "reduzir ao atingir o limite",
+        "expected": "encerrar",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-1",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-2",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-3",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-72-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-2",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-3",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-73-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-73-1",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-73-2",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-73-3",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-74-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-2",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-3",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      }
+    ]
+  },
+  "epoch": 2,
+  "loss": 1.913297176361084,
+  "elapsed_seconds": 705,
+  "after": {
+    "correct": 41,
+    "total": 60,
+    "correct_pairs": 8,
+    "total_pairs": 16,
+    "results": [
+      {
+        "id": "validation-064",
+        "output": "cobre apenas: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre: cobre",
+        "expected": "cobre",
+        "correct": false
+      },
+      {
+        "id": "validation-065",
+        "output": "rio",
+        "expected": "rio",
+        "correct": true
+      },
+      {
+        "id": "validation-066",
+        "output": "na gaveta",
+        "expected": "na gaveta",
+        "correct": true
+      },
+      {
+        "id": "validation-067",
+        "output": "não informado",
+        "expected": "não informado",
+        "correct": true
+      },
+      {
+        "id": "validation-068",
+        "output": "11",
+        "expected": "43",
+        "correct": false
+      },
+      {
+        "id": "validation-069",
+        "output": "11",
+        "expected": "72",
+        "correct": false
+      },
+      {
+        "id": "validation-070",
+        "output": "{\"modo\":\"teste\"}",
+        "expected": "{\"modo\":\"teste\"}",
+        "correct": true
+      },
+      {
+        "id": "validation-071",
+        "output": "{\"ativo\":false}",
+        "expected": "{\"ativo\":false}",
+        "correct": true
+      },
+      {
+        "id": "validation-072",
+        "output": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "expected": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "correct": true
+      },
+      {
+        "id": "validation-073",
+        "output": "91",
+        "expected": "91",
+        "correct": true
+      },
+      {
+        "id": "validation-074",
+        "output": "1",
+        "expected": "0",
+        "correct": false
+      },
+      {
+        "id": "validation-075",
+        "output": "nada",
+        "expected": "calma",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-promotion-100-0",
+        "output": "promover",
+        "expected": "promover",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-100-1",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-101-1",
+        "output": "promover",
+        "expected": "promover",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-102-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-100-0",
+        "output": "sim",
+        "expected": "sim",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-100-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-103-0",
+        "output": "sim",
+        "expected": "sim",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-100-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-103-0",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-101-0",
+        "output": "sim",
+        "expected": "sim",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-102-1",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-budget-100-0",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-103-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-102-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-103-0",
+        "output": "promover",
+        "expected": "promover",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-102-0",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-100-1",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-100-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-status-101-1",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-103-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-103-1",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-102-1",
+        "output": "sim",
+        "expected": "sim",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-102-0",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-103-1",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-103-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-status-102-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-loss-101-1",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-budget-101-0",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "paired-validation-loss-101-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-102-1",
+        "output": "promover",
+        "expected": "promover",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-promotion-101-0",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "paired-validation-budget-101-1",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-71-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-1",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-2",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-71-3",
+        "output": "sim",
+        "expected": "sim",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-2",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-72-3",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-73-0",
+        "output": "não",
+        "expected": "sim",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-73-1",
+        "output": "manter",
+        "expected": "promover",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-73-2",
+        "output": "encerrar",
+        "expected": "continuar",
+        "correct": false
+      },
+      {
+        "id": "training-ops-validation-73-3",
+        "output": "sim",
+        "expected": "sim",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-0",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-1",
+        "output": "manter",
+        "expected": "manter",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-2",
+        "output": "encerrar",
+        "expected": "encerrar",
+        "correct": true
+      },
+      {
+        "id": "training-ops-validation-74-3",
+        "output": "não",
+        "expected": "não",
+        "correct": true
+      }
+    ]
+  },
+  "audit_loss": 2.107001275327442,
+  "selected_checkpoint_sha256": "5d9e385edce6e163c1a3163f70dddb7b14c7b7d0a3457fe84bbe0cc36f83c5cc"
+}

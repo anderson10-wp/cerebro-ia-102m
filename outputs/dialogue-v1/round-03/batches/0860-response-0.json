@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0860",
+      "answer": "Para jogar bem, verifique o processador (CPU) para velocidade, a placa de vídeo (GPU) para renderizar gráficos, a memória RAM para multitarefa, o armazenamento (SSD rápido) para carregamento e a fonte de energia suficiente para alimentar tudo.",
+      "followup": "Qual é o orçamento que você tem disponível para montar ou atualizar seu PC?",
+      "followup_answer": "Com um orçamento de até 2.000 reais, priorize uma GPU de entrada, 8 GB de RAM e um SSD de 240 GB; a CPU pode ser um modelo intermediário, e a fonte de 450 W será suficiente."
+    },
+    {
+      "id": "dialog-0861",
+      "answer": "Aborde história da IA, aprendizado de máquina, redes neurais, ética e impactos sociais, aplicações em saúde e indústria, e desafios futuros como explicabilidade e viés algorítmico.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0862",
+      "answer": "Nas ondas do azul profundo, eu flutuo livre, sem amarras, sentindo o vento como canção, a água abraça meus sonhos, e a liberdade dança em cada bolha que sobe ao céu.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0863",
+      "answer": "Use gestos simples, imagens ou aplicativos de tradução em tempo real; fale devagar, repita palavras-chave e confirme o entendimento, além de aproveitar tradutores offline quando a conexão falha.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0864",
+      "answer": "Organizações internacionais firmam acordos, financiam projetos, compartilham expertise e monitoram metas; trabalham com governos para criar políticas, melhorar infraestrutura e capacitar comunidades, sempre alinhando recursos às prioridades nacionais.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0865",
+      "answer": "Domínio de lógica de programação, versionamento com Git, testes automatizados, comunicação clara e trabalho em equipe; além de aprender padrões de design e manter curiosidade por novas tecnologias.",
+      "followup": "Qual linguagem de programação você já conhece e gostaria de aprofundar?",
+      "followup_answer": "Se já conhece Python, explore frameworks como Django para backend e bibliotecas de teste como pytest; isso reforça boas práticas e amplia oportunidades no mercado."
+    },
+    {
+      "id": "dialog-0866",
+      "answer": "Crie um kit personalizado: inclua um objeto que lembre um hobby dele, uma carta escrita à mão, e um voucher para uma experiência conjunta, como um workshop ou passeio.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0867",
+      "answer": "Caro amigo, ao receber meu primeiro salário, sinto orgulho e responsabilidade; agradeço por seu apoio e compartilho a alegria de alcançar um marco que abre portas para novos sonhos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0868",
+      "answer": "A introspecção permite observar pensamentos e emoções, ajudando a formular hipóteses sobre processos mentais; ao refletir, pesquisadores identificam padrões que orientam experimentos e teorias sobre a consciência.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0869",
+      "answer": "Divida tarefas em blocos curtos, estabeleça prazos realistas, elimine distrações e recompense-se ao concluir cada etapa; usar a técnica Pomodoro pode aumentar foco e reduzir a procrastinação.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0870",
+      "answer": "Primeiro, identifique o sintoma: tela preta, ruídos ou falha ao iniciar. Teste a fonte, verifique cabos, reinicie BIOS, e, se necessário, substitua a memória ou o disco rígido.",
+      "followup": "Qual é o problema específico que seu computador apresenta?",
+      "followup_answer": "Se a tela fica preta ao ligar, verifique se o monitor recebe sinal, teste outra porta de vídeo e, se ainda não funcionar, troque a placa de vídeo ou a memória RAM."
+    },
+    {
+      "id": "dialog-0871",
+      "answer": "Desculpe, não posso ajudar com esse pedido.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0872",
+      "answer": "Associe verbos a imagens ou histórias curtas, pratique com cartões de memória, repita em voz alta e use aplicativos que testam respostas em tempo real para reforçar a retenção.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0873",
+      "answer": "Planeje revisões espaçadas, faça resumos ativos, resolva questões antigas e explique o conteúdo a alguém; alternar matérias evita fadiga e melhora a memória de longo prazo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0874",
+      "answer": "Limpe o rosto duas vezes ao dia com gel de limpeza sem álcool, aplique tônico adstringente, use hidratante oil‑free e finalize com protetor solar leve para controlar o brilho.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0875",
+      "answer": "Posicione o roteador em local central, escolha a banda 5 GHz, atualize o firmware, altere o canal Wi‑Fi para menos congestionado e desative dispositivos desnecessários.",
+      "followup": "Qual modelo de roteador você possui?",
+      "followup_answer": "Se for um modelo dual‑band, ative a frequência 5 GHz, ajuste o canal para 36 ou 149 e habilite QoS para priorizar streaming ou jogos, melhorando a velocidade percebida."
+    },
+    {
+      "id": "dialog-0876",
+      "answer": "Escolha um layout limpo, inclua slide de introdução, destaque competências relevantes, use gráficos simples para resultados e finalize com um slide de agradecimento e contato.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0877",
+      "answer": "Ao explorar a biblioteca, Ana encontrou uma porta secreta atrás de estantes. Dentro, descobriu um manuscrito que revelava que o diretor era um agente duplo. Ela confrontou o diretor, que confessou, e a biblioteca foi salva como centro cultural.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0878",
+      "answer": "Mecanismos de atenção permitem que redes focem em partes relevantes dos dados, atribuindo pesos diferentes; isso melhora a captura de relações longas e aumenta a precisão em tradução, resumo e reconhecimento de imagens.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0879",
+      "answer": "Use um aplicativo de finanças para registrar despesas, categorize contas recorrentes, programe pagamentos automáticos e revise mensalmente um resumo para ajustar orçamentos e evitar atrasos.",
+      "followup": "false"
+    }
+  ]
+}

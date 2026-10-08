@@ -1,0 +1,435 @@
+{
+  "authenticated": true,
+  "username": "anderson10-wp",
+  "organizations": [],
+  "teamspaces": [
+    {
+      "name": "default-project",
+      "id": "01m2x0bkry0q9eaxh8t4jmmp6a",
+      "balance": {
+        "account_id": "744c0891-46b0-4573-9c16-69072caa01dc",
+        "balance": 29.78,
+        "balance_limit": 0.0,
+        "project_id": "01m2x0bkry0q9eaxh8t4jmmp6a",
+        "transactions": []
+      },
+      "studios": [
+        {
+          "name": "cerebro-102m-instruction-pilot",
+          "status": "Stopped"
+        },
+        {
+          "name": "mystifying-haibt-609",
+          "status": "Stopped"
+        },
+        {
+          "name": "scratch-studio-devbox",
+          "status": "Stopped"
+        }
+      ],
+      "machines": [
+        {
+          "name": "p4d.24xlarge",
+          "cost": 30.9,
+          "provider": "AWS"
+        },
+        {
+          "name": "p5en.48xlarge",
+          "cost": 70.53,
+          "provider": "AWS"
+        },
+        {
+          "name": "m7i.2xlarge",
+          "cost": 0.68,
+          "provider": "AWS"
+        },
+        {
+          "name": "i4i.8xlarge",
+          "cost": 3.21,
+          "provider": "AWS"
+        },
+        {
+          "name": "g4dn.12xlarge",
+          "cost": 4.69,
+          "provider": "AWS"
+        },
+        {
+          "name": "g6.12xlarge",
+          "cost": 5.31,
+          "provider": "AWS"
+        },
+        {
+          "name": "i4i.16xlarge",
+          "cost": 6.23,
+          "provider": "AWS"
+        },
+        {
+          "name": "g7e.48xlarge",
+          "cost": 37.03,
+          "provider": "AWS"
+        },
+        {
+          "name": "g6e.4xlarge",
+          "cost": 3.54,
+          "provider": "AWS"
+        },
+        {
+          "name": "g7e.24xlarge",
+          "cost": 18.61,
+          "provider": "AWS"
+        },
+        {
+          "name": "g6e.48xlarge",
+          "cost": 33.68,
+          "provider": "AWS"
+        },
+        {
+          "name": "m7i-flex.xlarge",
+          "cost": 0.44,
+          "provider": "AWS"
+        },
+        {
+          "name": "m7i-flex.large",
+          "cost": 0.29,
+          "provider": "AWS"
+        },
+        {
+          "name": "m7i.4xlarge",
+          "cost": 1.25,
+          "provider": "AWS"
+        },
+        {
+          "name": "i4i.24xlarge",
+          "cost": 9.25,
+          "provider": "AWS"
+        },
+        {
+          "name": "g4dn.xlarge",
+          "cost": 0.55,
+          "provider": "AWS"
+        },
+        {
+          "name": "g4dn.2xlarge",
+          "cost": 1.04,
+          "provider": "AWS"
+        },
+        {
+          "name": "g6.4xlarge",
+          "cost": 1.68,
+          "provider": "AWS"
+        },
+        {
+          "name": "g6.48xlarge",
+          "cost": 15.9,
+          "provider": "AWS"
+        },
+        {
+          "name": "g6e.12xlarge",
+          "cost": 11.86,
+          "provider": "AWS"
+        },
+        {
+          "name": "g7e.4xlarge",
+          "cost": 4.64,
+          "provider": "AWS"
+        },
+        {
+          "name": "g7e.12xlarge",
+          "cost": 9.41,
+          "provider": "AWS"
+        },
+        {
+          "name": "p5.48xlarge",
+          "cost": 64.96,
+          "provider": "AWS"
+        },
+        {
+          "name": "p6-b200.48xlarge",
+          "cost": 142.416,
+          "provider": "AWS"
+        },
+        {
+          "name": "nb-b200-8gpu-160vcpu-1792gb",
+          "cost": 78.87,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-b200-1gpu-20vcpu-224gb",
+          "cost": 9.86,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-h200-8gpu-128vcpu-1600gb",
+          "cost": 52.23,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-h200-1gpu-16vcpu-200gb",
+          "cost": 6.53,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-h100-8gpu-128vcpu-1600gb",
+          "cost": 45.47,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-h100-1gpu-16vcpu-200gb",
+          "cost": 5.68,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-l40s-1gpu-16vcpu-64gb",
+          "cost": 2.14,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-cpu-32-32vcpu-128gb",
+          "cost": 1.48,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-cpu-64-64vcpu-256gb",
+          "cost": 2.69,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-cpu-16-16vcpu-64gb",
+          "cost": 1.1,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-cpu-8-8vcpu-32gb",
+          "cost": 0.55,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "nb-cpu-4-4vcpu-16gb",
+          "cost": 0.4,
+          "provider": "NEBIUS"
+        },
+        {
+          "name": "gpu_2x_h100_sxm5",
+          "cost": 9.36,
+          "provider": "LAMBDA_LABS"
+        },
+        {
+          "name": "gpu_1x_h100_sxm5",
+          "cost": 4.68,
+          "provider": "LAMBDA_LABS"
+        },
+        {
+          "name": "cpu-2",
+          "cost": 0.29,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "cpu-4",
+          "cost": 0.33,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "cpu-8",
+          "cost": 0.51,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "cpu-16",
+          "cost": 0.99,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "data-prep-mid",
+          "cost": 1.98,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "data-prep-max-large",
+          "cost": 3.96,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "data-prep-ultra-extra-large",
+          "cost": 5.94,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "lit-h200-141gb-1",
+          "cost": 4.5,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "lit-h200-141gb-2",
+          "cost": 9.0,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "lit-h200-141gb-4",
+          "cost": 18.0,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "lit-h200-141gb-8",
+          "cost": 36.0,
+          "provider": "MACHINE"
+        },
+        {
+          "name": "n2d-standard-2",
+          "cost": 0.18,
+          "provider": "GCP"
+        },
+        {
+          "name": "n2d-standard-4",
+          "cost": 0.33,
+          "provider": "GCP"
+        },
+        {
+          "name": "n2d-standard-8",
+          "cost": 0.51,
+          "provider": "GCP"
+        },
+        {
+          "name": "n2d-standard-16",
+          "cost": 0.99,
+          "provider": "GCP"
+        },
+        {
+          "name": "n2d-standard-32",
+          "cost": 2.22,
+          "provider": "GCP"
+        },
+        {
+          "name": "n2d-standard-64",
+          "cost": 3.6,
+          "provider": "GCP"
+        },
+        {
+          "name": "n2d-standard-96",
+          "cost": 4.79,
+          "provider": "GCP"
+        },
+        {
+          "name": "n1-standard-8",
+          "cost": 0.69,
+          "provider": "GCP"
+        },
+        {
+          "name": "n1-standard-32",
+          "cost": 3.5,
+          "provider": "GCP"
+        },
+        {
+          "name": "g2-standard-8",
+          "cost": 0.79,
+          "provider": "GCP"
+        },
+        {
+          "name": "g2-standard-24",
+          "cost": 2.37,
+          "provider": "GCP"
+        },
+        {
+          "name": "g2-standard-48",
+          "cost": 4.78,
+          "provider": "GCP"
+        },
+        {
+          "name": "g2-standard-96",
+          "cost": 9.94,
+          "provider": "GCP"
+        },
+        {
+          "name": "g4-standard-48",
+          "cost": 5.39,
+          "provider": "GCP"
+        },
+        {
+          "name": "g4-standard-96",
+          "cost": 10.64,
+          "provider": "GCP"
+        },
+        {
+          "name": "g4-standard-192",
+          "cost": 21.16,
+          "provider": "GCP"
+        },
+        {
+          "name": "g4-standard-384",
+          "cost": 42.18,
+          "provider": "GCP"
+        },
+        {
+          "name": "a2-ultragpu-1g",
+          "cost": 5.68,
+          "provider": "GCP"
+        },
+        {
+          "name": "a2-ultragpu-2g",
+          "cost": 11.31,
+          "provider": "GCP"
+        },
+        {
+          "name": "a2-ultragpu-4g",
+          "cost": 22.58,
+          "provider": "GCP"
+        },
+        {
+          "name": "a2-ultragpu-8g",
+          "cost": 45.11,
+          "provider": "GCP"
+        },
+        {
+          "name": "a3-highgpu-1g",
+          "cost": 12.34,
+          "provider": "GCP"
+        },
+        {
+          "name": "a3-highgpu-2g",
+          "cost": 24.62,
+          "provider": "GCP"
+        },
+        {
+          "name": "a3-highgpu-4g",
+          "cost": 49.21,
+          "provider": "GCP"
+        },
+        {
+          "name": "a3-highgpu-8g",
+          "cost": 98.37,
+          "provider": "GCP"
+        },
+        {
+          "name": "a3-ultragpu-8g",
+          "cost": 47.16,
+          "provider": "GCP"
+        },
+        {
+          "name": "a4-highgpu-8g",
+          "cost": 100.29,
+          "provider": "GCP"
+        },
+        {
+          "name": "v6e-1",
+          "cost": 3.05,
+          "provider": "GCP"
+        },
+        {
+          "name": "v6e-4",
+          "cost": 12.1,
+          "provider": "GCP"
+        },
+        {
+          "name": "v6e-8",
+          "cost": 24.2,
+          "provider": "GCP"
+        },
+        {
+          "name": "v5p-8",
+          "cost": 37.73,
+          "provider": "GCP"
+        }
+      ]
+    }
+  ],
+  "read_only": true
+}

@@ -1,0 +1,74 @@
+{
+  "checkpoint_sha256": "a9ec50900c31a4862efce009b17186992cc31a816f53ac8549eaa4ad40e4e703",
+  "tokens": 1999962112,
+  "parameters": 102257280,
+  "seed": 42,
+  "new_tokens": 48,
+  "temperature": 0.7,
+  "top_k": 40,
+  "results": [
+    {
+      "case": "geography",
+      "prompt": "O Brasil é um país localizado na",
+      "continuation": " África Ocidental. A região é conhecida por ser o primeiro país do mundo a ser colonizado e por ter uma população que ocupa cerca de 30% da área total.\nA África possui uma população de aproximadamente 300 milhões de pessoas. O Brasil",
+      "seconds": 5.83
+    },
+    {
+      "case": "explanation",
+      "prompt": "A inteligência artificial pode ajudar as pessoas a",
+      "continuation": " se comunicar de forma eficaz, permitindo que as pessoas interagirem com o comportamento dos outros.\nA inteligência artificial será capaz de encontrar a linguagem dos outros, descobrir e lidar com essas situações, analisar oportunidades para criar novos hábitos e obter informações",
+      "seconds": 5.58
+    },
+    {
+      "case": "greeting",
+      "prompt": "Pergunta: Olá! Como você está?\nResposta:",
+      "continuation": " Bem, você está em um ambiente de escritório e quer ter um espaço para você?\nResposta: Sim, o ambiente de escritório é um espaço para ser usado para trabalhar e pensar.\nResposta: Você está em um ambiente de",
+      "seconds": 6.74
+    },
+    {
+      "case": "arithmetic",
+      "prompt": "Pergunta: Quanto é 2 + 2?\nResposta:",
+      "continuation": " Sim. Se vc não tem um limite de velocidade, é possível usar\nLTD ou LI.\nLTD = ROM.\nPor\nRomano\nO que você acha dessa tecnologia?\nCom certeza,",
+      "seconds": 5.69
+    },
+    {
+      "case": "python",
+      "prompt": "def soma(a, b):\n    ",
+      "continuation": " return a.sum(2)\n    \n     return a\n    \n#\n#  Licensed to the Apache Software Foundation (ASF) under one\n#  or more contributor license agreements.  See the NOTICE",
+      "seconds": 5.81,
+      "syntax_valid": true
+    },
+    {
+      "case": "instruction",
+      "prompt": "Pergunta: Responda apenas com a palavra azul.\nResposta:",
+      "continuation": " Não me responda com a mesma palavra.\nA voz de Hino Nacional\nA voz de Hino Nacional\nA voz de Hino Nacional\nA voz de Hino Nacional\nA voz de Hino Nacional\nA voz de",
+      "seconds": 6.28,
+      "exact_instruction_correct": false
+    },
+    {
+      "case": "self_knowledge",
+      "prompt": "Pergunta: Você consegue treinar outra IA sozinho?\nResposta:",
+      "continuation": " Eu não consigo jogar no computador.\nSe você tem um Mac ou um Mac na sua frente, você pode usar seu teclado, mouse ou touchpad para jogar o jogo.\nResposta: Eu não consigo jogar de qualquer maneira.\n",
+      "seconds": 5.85
+    },
+    {
+      "case": "tool_plan",
+      "prompt": "Pergunta: Antes de iniciar um treinamento pago, quais verificações você deve fazer?\nResposta:",
+      "continuation": "\nNão, isso é uma boa ideia, mas se você não consegue se concentrar muito em coisas importantes, como um projeto, um curso ou um programa, seu objetivo é que o problema não seja resolvido rapidamente.\nNão é uma boa ideia",
+      "seconds": 6.22
+    },
+    {
+      "case": "json",
+      "prompt": "Pergunta: Escreva um JSON válido com a chave \"acao\" e o valor \"consultar_status\".\nResposta:",
+      "continuation": " O status de acesso da conta de usuário será exibido ao mesmo tempo.\nResposta: A conta de usuário não está disponível para enviar mensagens, mas os usuários podem enviar mensagens de texto para o servidor. O status de acesso da conta de",
+      "seconds": 8.14,
+      "exact_json_correct": false
+    },
+    {
+      "case": "english",
+      "prompt": "Question: What is the capital of France?\nAnswer:",
+      "continuation": " The French are the most powerful and powerful. They are the most powerful and powerful. They are the most powerful and powerful. They are the most powerful and powerful. They are the most powerful. They are the least powerful. They are the",
+      "seconds": 6.89
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-1020",
+      "answer": "Para ajudar, preciso saber o que acontece. O computador liga? Aparece alguma mensagem de erro? Descreva os sintomas para eu entender o problema.",
+      "followup": "O computador liga, mas a tela fica preta e não aparece nada. O que devo verificar primeiro?",
+      "followup_answer": "Verifique se o monitor está ligado e conectado. Tente ligar sem periféricos extras. Se não resolver, o problema pode ser na memória ou placa-mãe, exigindo ajuda técnica."
+    },
+    {
+      "id": "dialog-1021",
+      "answer": "Funcionário: Gostaria de conversar sobre minha carga de trabalho. Sinto que as prazos estão muito curtos. Supervisor: Entendo. Podemos revisar as prioridades juntos?",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1022",
+      "answer": "Use assunto claro, saudação formal e fecho educado. Seja objetivo, revise ortografia e evite gírias. Exemplo: 'Prezado Professor, gostaria de tirar uma dúvida sobre a prova.'",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1023",
+      "answer": "Redes neurais profundas melhoraram a detecção de pedestres e faixas. Isso permite frear automaticamente e manter a faixa, tornando a direção mais segura.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1024",
+      "answer": "Faça um cronograma com prazos, divida o conteúdo em blocos pequenos e revise diariamente. Descanse bem e priorize os tópicos mais difíceis primeiro.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1025",
+      "answer": "Backup copia dados para recuperação de desastres, como um arquivo antigo. Réplica mantém dados sincronizados em tempo real para alta disponibilidade. Use backup para segurança e réplica para serviços que não podem parar.",
+      "followup": "Qual a diferença prática entre backup e réplica em um banco de dados pequeno?",
+      "followup_answer": "Em um banco pequeno, backup é uma cópia semanal para restaurar se algo der errado. Réplica cria uma cópia idêntica online para usar se o principal cair, mas consome mais recursos."
+    },
+    {
+      "id": "dialog-1026",
+      "answer": "Como assistente, não tenho música. Mas artistas costumam ouvir com atenção, separar o útil do pessoal e usar o feedback para melhorar.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1027",
+      "answer": "O amor quebra muros antigos, a compaixão acalma a dor. Juntos transformam o medo em paz, e o mundo renasce em cada gesto de bondade.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1028",
+      "answer": "Estude um pouco todo dia, pratique conversação e use músicas ou filmes. Defina metas claras e não tenha medo de errar. Qual idioma você quer aprender?",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1029",
+      "answer": "Divida tarefas em passos pequenos, use a técnica Pomodoro e elimine distrações. Comece pela mais difícil e celebre pequenas vitórias para manter o ritmo.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1030",
+      "answer": "O compilador traduz código escrito por humanos em linguagem que o computador entende. Ele verifica erros e gera um programa executável.",
+      "followup": "O que acontece se o compilador encontrar um erro de sintaxe?",
+      "followup_answer": "O compilador para a tradução e mostra uma mensagem de erro indicando onde está o problema. O programa só é gerado após corrigir todos os erros."
+    },
+    {
+      "id": "dialog-1031",
+      "answer": "Escolha um momento calmo, use 'eu sinto' em vez de acusações, ouça ativamente e busque soluções em conjunto. Mantenha a calma e respeite os limites.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1032",
+      "answer": "Prezado recrutador, escrevo para me candidatar à vaga de gerente de mídia social. Tenho três anos gerenciando redes e aumentando engajamento. Gostaria de contribuir com sua equipe.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1033",
+      "answer": "Escolha cursos com projetos práticos, avaliações de alunos e instrutores experientes. Plataformas como Coursera e edX oferecem opções gratuitas e pagas. Qual linguagem você quer aprender?",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1034",
+      "answer": "Liste todas as tarefas, priorize as mais importantes, defina prazos e divida as grandes em passos pequenos. Revise a lista diariamente.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1035",
+      "answer": "Descreva o que acontece ao ligar. Tente entrar no modo de segurança ou usar mídia de recuperação. Se não conseguir, pode ser problema de hardware.",
+      "followup": "Tentei o modo de segurança mas a tela azul aparece de novo. O que fazer?",
+      "followup_answer": "A tela azul indica erro de sistema. Tente restaurar o computador para um ponto anterior. Se persistir, pode ser defeito na memória ou disco, precisando de assistência técnica."
+    },
+    {
+      "id": "dialog-1036",
+      "answer": "Pode causar comparação excessiva, redução de contato real e exposição a desinformação. Também afeta a saúde mental e a privacidade dos usuários.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1037",
+      "answer": "Escolha um tema, defenda uma tese com argumentos sólidos, antecipe contra-argumentos e conclua reforçando sua posição. Use exemplos e linguagem clara.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1038",
+      "answer": "Justiça em aprendizado de máquina significa tratar todos os grupos de forma justa. É importante para evitar discriminação e garantir decisões éticas.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-1039",
+      "answer": "Não existe um único melhor benchmark. Escolha conforme seu objetivo: receita, satisfação do cliente ou eficiência. Combine vários indicadores para uma visão completa.",
+      "followup": null,
+      "followup_answer": null
+    }
+  ]
+}

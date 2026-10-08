@@ -1,0 +1,105 @@
+{
+  "reviews": [
+    {
+      "id": "dialog-0020",
+      "passed": true,
+      "reason": "Responde ao pedido, fatos corretos, sem invenções e segue o contexto."
+    },
+    {
+      "id": "dialog-0021",
+      "passed": true,
+      "reason": "Responde ao pedido, informações corretas e coerentes."
+    },
+    {
+      "id": "dialog-0022",
+      "passed": true,
+      "reason": "Responde ao pedido, fatos básicos corretos e sem repetições."
+    },
+    {
+      "id": "dialog-0023",
+      "passed": true,
+      "reason": "Fornece instruções de pintura adequadas ao pedido."
+    },
+    {
+      "id": "dialog-0024",
+      "passed": true,
+      "reason": "Apresenta estrutura clara para redação, sem informações falsas."
+    },
+    {
+      "id": "dialog-0025",
+      "passed": true,
+      "reason": "Dá dicas úteis de aprendizado de idioma e segue o contexto."
+    },
+    {
+      "id": "dialog-0026",
+      "passed": true,
+      "reason": "Lista considerações relevantes para implementação de ERP."
+    },
+    {
+      "id": "dialog-0027",
+      "passed": true,
+      "reason": "Orientação passo a passo correta para montar um computador."
+    },
+    {
+      "id": "dialog-0028",
+      "passed": true,
+      "reason": "Sugere boas práticas para apresentações, sem erros factuais."
+    },
+    {
+      "id": "dialog-0029",
+      "passed": true,
+      "reason": "Apresenta exemplos verídicos de dialetos regionais do inglês."
+    },
+    {
+      "id": "dialog-0030",
+      "passed": true,
+      "reason": "Compara uso do exagero nas artes de forma coerente e factual."
+    },
+    {
+      "id": "dialog-0031",
+      "passed": true,
+      "reason": "Poema atende ao pedido e contém informações plausíveis."
+    },
+    {
+      "id": "dialog-0032",
+      "passed": true,
+      "reason": "Explica energia solar corretamente e sem invenções."
+    },
+    {
+      "id": "dialog-0033",
+      "passed": true,
+      "reason": "Lista métodos contraceptivos comuns e corretos."
+    },
+    {
+      "id": "dialog-0034",
+      "passed": true,
+      "reason": "Descreve redes neurais artificiais de forma precisa."
+    },
+    {
+      "id": "dialog-0035",
+      "passed": true,
+      "reason": "Fornece estratégias válidas para falar em público."
+    },
+    {
+      "id": "dialog-0036",
+      "passed": true,
+      "reason": "Explica corretamente a expressão latina 'cui bono'."
+    },
+    {
+      "id": "dialog-0037",
+      "passed": true,
+      "reason": "Guia prático de jardinagem com dicas corretas."
+    },
+    {
+      "id": "dialog-0038",
+      "passed": true,
+      "reason": "Detalha elementos essenciais para redação de inscrição universitária."
+    },
+    {
+      "id": "dialog-0039",
+      "passed": true,
+      "reason": "Descreve impactos ambientais do treinamento de IA de forma factual."
+    }
+  ],
+  "reviewer": "openai/gpt-oss-120b"
+}

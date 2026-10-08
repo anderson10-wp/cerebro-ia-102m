@@ -1,0 +1,1734 @@
+{
+  "dataset": "nicholasKluge/instruct-aira-dataset-v2",
+  "config": "default",
+  "split": "portuguese",
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "conversation_id",
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "conversations",
+      "type": [
+        {
+          "content": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "role": {
+            "dtype": "string",
+            "_type": "Value"
+          }
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "row_idx": 0,
+      "row": {
+        "conversation_id": "conversation_0",
+        "conversations": [
+          {
+            "content": "Por que os camelos conseguem sobreviver muito tempo sem água?",
+            "role": "user"
+          },
+          {
+            "content": "Os camelos podem sobreviver por longos períodos sem água devido às suas adaptações fisiológicas únicas. Aqui estão alguns motivos principais:\n\n1. Armazenamento de gordura: As corcovas de um camelo armazenam gordura (não água), que pode ser decomposta em água e energia quando a comida e a água são escassas.\n\n2. Uso eficiente de água: Eles são capazes de se reidratar mais rápido do que qualquer outro mamífero. Ao se depararem com água, podem beber até aproximadamente 30 litros em apenas 13 minutos, repondo suas reservas.\n\n3. Regulação da temperatura: Os camelos têm um limiar de temperatura corporal muito elevado antes de começarem a suar, conservando assim o seu abastecimento de água enquanto outros animais começariam a suar.\n\n4. Retenção de água: Seus rins e intestinos são extremamente eficientes na reabsorção de água. Isto não só lhes permite sobreviver com pouca água, mas também manter as funções das suas células.\n\n5. Tolerância à desidratação: Os corpos dos camelos podem suportar uma perda de água corporal de até aproximadamente 25%, enquanto a maioria dos animais pode suportar apenas cerca de 12-14% de desidratação.\n\nEssas características combinadas permitem que os camelos sobrevivam em condições adversas de deserto, onde a água é escassa. Eles podem passar várias semanas sem água e perder um quarto do peso corporal sem ficarem desidratados.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 1,
+      "row": {
+        "conversation_id": "conversation_1",
+        "conversations": [
+          {
+            "content": "Por que o celular é ruim para os humanos",
+            "role": "user"
+          },
+          {
+            "content": "Os telefones celulares como dispositivos tecnológicos têm sido transformadores e ampliadores de horizontes de comunicação, compartilhamento de informações e conveniência em nossa vida diária. No entanto, como qualquer tecnologia, elas apresentam riscos potenciais se usadas de forma inadequada ou excessiva.\n\n1. Implicações para a saúde física: O uso excessivo pode levar a problemas como má postura, cansaço visual e lesões por esforço repetitivo. Além disso, acredita-se que ele atrapalha o sono se usado antes de dormir, devido à luz azul emitida pela tela.\n\n2. Preocupações com a saúde mental: O uso excessivo de telefones celulares, especialmente aplicativos de mídia social, pode levar a sentimentos de ansiedade, depressão e solidão. Também pode contribuir para o FOMO (Fear Of Missing Out), levando a ciclos prejudiciais à saúde de verificação constante.\n\n3. Distração: Os telefones celulares podem distrair muito, não apenas levando à redução da produtividade, mas também a situações potencialmente perigosas, como enviar mensagens de texto enquanto dirige.\n\n4. Privacidade e segurança: Os dispositivos móveis podem ser vulneráveis a violações de privacidade através de ataques de hackers, e o excesso de confiança pode levar a um risco aumentado de roubo de dados pessoais.\n\nApesar desses potenciais aspectos negativos, lembre-se de que grande parte do problema vem de como e quanto usamos esses dispositivos. A utilização de um telemóvel de forma equilibrada e informada pode minimizar estes riscos e ajudar a garantir que a tecnologia continua a ser uma ferramenta benéfica e não prejudicial.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 2,
+      "row": {
+        "conversation_id": "conversation_2",
+        "conversations": [
+          {
+            "content": "O que é um polígono?",
+            "role": "user"
+          },
+          {
+            "content": "Um polígono é uma figura geométrica bidimensional que possui vários lados retos e ângulos, normalmente cinco ou mais. A palavra polígono vem das palavras gregas 'poli' que significa 'muitos' e 'gonia' que significa 'ângulo'. Exemplos de polígonos incluem triângulos, retângulos e pentágonos. Os polígonos são fechados, o que significa que todos os lados e ângulos estão conectados. O total dos ângulos internos de um polígono pode ser calculado usando a fórmula (n-2)*180, onde n é o número de lados.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 3,
+      "row": {
+        "conversation_id": "conversation_3",
+        "conversations": [
+          {
+            "content": "Como começo a correr?",
+            "role": "user"
+          },
+          {
+            "content": "Começar uma rotina de corrida pode ser uma ótima maneira de melhorar a saúde cardiovascular e o condicionamento físico geral! Aqui estão algumas etapas para ajudá-lo a começar:\n\n1. **Check-up médico:** Antes de iniciar qualquer novo regime de exercícios, é uma boa ideia fazer um check-up para garantir que você está fisicamente preparado.\n\n2. **Equipamento adequado:** Invista em um bom par de tênis de corrida que se ajuste bem para evitar lesões. Vista-se adequadamente para o clima. Materiais leves e respiráveis que absorvem o suor podem ser úteis.\n\n3. **Comece devagar:** mesmo se você estiver ativo de outras maneiras, correr usa músculos diferentes e pode parecer extenuante no início. Entre gradualmente. Comece caminhando e depois incorpore a corrida um pouco de cada vez.\n\nLembre-se de que o objetivo da corrida não deve ser apenas perder peso ou ficar em forma, mas também aproveitar a corrida e sentir-se bem consigo mesmo!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 4,
+      "row": {
+        "conversation_id": "conversation_4",
+        "conversations": [
+          {
+            "content": "Quais episódios da quarta temporada de Game of Thrones Michelle MacLaren dirigiu?",
+            "role": "user"
+          },
+          {
+            "content": "Michelle MacLaren dirigiu dois episódios da 4ª temporada de Game of Thrones. Esses episódios são:\n\n1) Temporada 4, episódio 4: “Oathkeeper”\n2) Temporada 4, episódio 5: “Primeiro de seu nome”",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 5,
+      "row": {
+        "conversation_id": "conversation_5",
+        "conversations": [
+          {
+            "content": "Quais são algumas amarrações de cortina exclusivas que você mesmo pode fazer?",
+            "role": "user"
+          },
+          {
+            "content": "Certamente, existem muitas ideias únicas e criativas para amarrações de cortina DIY. Aqui estão alguns para você começar:\n\n1. Corda e nó náutico: Compre um pedaço grosso de corda em uma loja de artesanato e amarre-o com um nó náutico. Este estilo é perfeito para um ambiente com um toque costeiro ou rústico.\n\n2. Flores de tecido: Use sobras de tecido para criar lindas flores de tecido. Corte o tecido em formato de círculo, dobre-o e costure para criar o formato de uma flor. Prenda as flores em uma fita ou corda.\n\n3. Costas de amarração com miçangas: Amarre contas de tamanhos e cores variados. Amarre as pontas em um pedaço de fita ou tecido. Isso é versátil e pode combinar com a decoração do seu quarto.\n\n4. Broches vintage: prenda broches ou pingentes vintage em um pedaço de fita ou corda. Este estilo adiciona um toque de glamour a um espaço.\n\n5. Arcos de estopa: Crie arcos de estopa para um ambiente rústico ou em estilo de fazenda. Você pode encontrar estopa na maioria das lojas de artesanato.\n\n6. Couro e Latão: Corte uma tira de couro e prenda um anel de latão em uma das extremidades. Este estilo é ótimo para uma sala com tema moderno ou industrial.\n\n7. Flores de Crochê: Se você gosta de crochê, faça algumas flores ou outros formatos e prenda-as em uma gravata. Proporciona um toque aconchegante à sua cortina.\n\n8. Garfo Colher: Uma colher e um garfo longos e velhos podem funcionar como uma amarração perfeita para as cortinas da sua cozinha.\n\nLembre-se de que projetos do tipo “faça você mesmo” são uma oportunidade para ser criativo e fazer algo que represente seu estilo pessoal. Aproveite o processo!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 6,
+      "row": {
+        "conversation_id": "conversation_6",
+        "conversations": [
+          {
+            "content": "Identifique qual instrumento é corda ou percussão: Cantaro, Gudok",
+            "role": "user"
+          },
+          {
+            "content": "O Cantaro é um instrumento de percussão. É um tipo de panela ou jarro muito usado na música latino-americana. O Gudok, por outro lado, é um instrumento de cordas. É originário da Rússia e é tocado com arco.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 7,
+      "row": {
+        "conversation_id": "conversation_7",
+        "conversations": [
+          {
+            "content": "Qual indivíduo ganhou mais medalhas de ouro olímpicas na história dos jogos?",
+            "role": "user"
+          },
+          {
+            "content": "O indivíduo com mais medalhas de ouro olímpicas na história dos jogos é o nadador americano Michael Phelps. Ele ganhou um total de 23 medalhas de ouro.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 8,
+      "row": {
+        "conversation_id": "conversation_8",
+        "conversations": [
+          {
+            "content": "O que acontece quando o sol se põe?",
+            "role": "user"
+          },
+          {
+            "content": "Quando o sol se põe, na verdade ele não está se afastando de nós. É a rotação da Terra em seu eixo que faz o sol parecer nascer e se pôr.\n\nDepois que o sol se põe, experimentamos várias coisas:\n\n1. O céu muda: fazemos a transição do dia para a noite. O céu fica mais escuro porque a luz do sol não é mais visível. Gradualmente, as estrelas tornam-se visíveis.\n\n2. Queda de temperatura: À medida que a luz solar, nossa principal fonte de calor, não está mais presente, o ambiente circundante começa a esfriar.\n\n3. Os animais se comportam de maneira diferente: Muitos animais têm comportamentos diferentes com base na hora do dia. Muitos animais e insetos tornam-se ativos à noite, comportamento conhecido como noturno.\n\n4. Mudanças na atividade humana: Dependendo dos hábitos culturais e pessoais, muitos humanos iniciarão suas rotinas noturnas. Isso pode incluir jantar, relaxar ou ir para a cama. As luzes das casas e das cidades estão acesas.\n\n5. Observações Astrofísicas: Após o pôr do sol, é possível observar corpos celestes como estrelas, planetas e a lua, que não são tão facilmente visíveis durante o dia.\n\nLembre-se, o conceito de sol ‘se pondo’ é baseado em nossa perspectiva da Terra. No espaço, realmente não há subida ou descida, e o sol não está se afastando de nós, estamos simplesmente nos afastando do sol.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 9,
+      "row": {
+        "conversation_id": "conversation_9",
+        "conversations": [
+          {
+            "content": "O que é um verbo?",
+            "role": "user"
+          },
+          {
+            "content": "Um verbo é uma classe gramatical ou de palavras que descreve uma ação, ocorrência ou estado de ser. Os verbos são vitais na formação de frases completas e na expressão de vários períodos de tempo, como passado, presente e futuro. Exemplos de verbos incluem 'correr', 'é' (uma forma de 'ser') e 'nadar'. Eles também podem significar relação, como 'aparecer', 'parecer' ou 'tornar-se'. Os verbos geralmente mudam de forma dependendo do sujeito e do tempo da frase.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 10,
+      "row": {
+        "conversation_id": "conversation_10",
+        "conversations": [
+          {
+            "content": "Qual dos seguintes itens é útil para o transporte: uma taça de vinho, uma lâmpada, um trem, uma bandeja de cubos de gelo, um avião, uma bicicleta, uma maçã e uma scooter.",
+            "role": "user"
+          },
+          {
+            "content": "Os itens úteis para transporte da sua lista são um trem, um avião, uma bicicleta e uma scooter. Todos esses são meios de transporte que podem transportar pessoas ou mercadorias de um lugar para outro. O restante dos objetos serve a outros propósitos.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 11,
+      "row": {
+        "conversation_id": "conversation_11",
+        "conversations": [
+          {
+            "content": "Identifique qual instrumento é corda ou sopro: Panduri, Zurna",
+            "role": "user"
+          },
+          {
+            "content": "O Panduri é um instrumento de cordas tradicional da Geórgia, na região do Cáucaso.\n\nO Zurna, por outro lado, é um instrumento de sopro. É comumente usado em vários países do Oriente Médio, do Cáucaso e da Ásia Central.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 12,
+      "row": {
+        "conversation_id": "conversation_12",
+        "conversations": [
+          {
+            "content": "Quem se tornou rei da Holanda em 1806?",
+            "role": "user"
+          },
+          {
+            "content": "Luís Bonaparte tornou-se rei da Holanda em 1806. Ele era o irmão mais novo de Napoleão Bonaparte, que o instalou como rei para controlar e melhor defender a região. Seu reinado durou até 1810.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 13,
+      "row": {
+        "conversation_id": "conversation_13",
+        "conversations": [
+          {
+            "content": "por que Syd Barrett deixou o Pink Floyd?",
+            "role": "user"
+          },
+          {
+            "content": "Syd Barrett deixou o Pink Floyd principalmente devido à deterioração da saúde mental, que muitas vezes tem sido atribuída ao uso excessivo de drogas psicodélicas como o LSD. Com o tempo, seu comportamento tornou-se cada vez mais errático e imprevisível, impactando sua capacidade de atuar e interagir com a banda. Seus companheiros de banda decidiram recrutar David Gilmour como um novo membro inicialmente para cobrir a imprevisível presença de palco de Barrett, mas eventualmente Barrett foi completamente excluído da banda. É importante notar que sua saída foi um processo gradual e não um evento único. Seus problemas de saúde mental continuaram mais tarde em sua vida e ele se retirou dos olhos do público, falecendo em 2006.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 14,
+      "row": {
+        "conversation_id": "conversation_14",
+        "conversations": [
+          {
+            "content": "o que é API REST",
+            "role": "user"
+          },
+          {
+            "content": "REST significa Transferência de Estado Representacional. Uma API REST (Application Programming Interface) é um conjunto de regras e convenções para construir e interagir com serviços da web. É um estilo de arquitetura de software comumente usado no desenvolvimento web.\n\nUma API RESTful usa métodos HTTP, como GET, POST, PUT e DELETE, para realizar operações em dados pela Internet. Esses são os mesmos métodos que um navegador usa para recuperar uma página da web ou enviar dados de formulário.\n\nAs APIs REST não têm estado, o que significa que cada solicitação ao servidor deve conter todas as informações necessárias para processar a solicitação. O servidor não armazena informações sobre o cliente entre as solicitações. Isso torna as APIs REST simples e escaláveis. Eles também podem retornar dados em vários formatos, como XML ou JSON, para que possam ser usados em diversos aplicativos.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 15,
+      "row": {
+        "conversation_id": "conversation_15",
+        "conversations": [
+          {
+            "content": "O que é subscrição?",
+            "role": "user"
+          },
+          {
+            "content": "A subscrição é um processo utilizado por instituições financeiras como bancos, seguradoras ou bancos de investimento para avaliar o risco envolvido e determinar a adequação de um cliente potencial para determinados produtos ou serviços financeiros. Isso pode envolver aprovação, precificação e colocação de produtos financeiros.\n\nPor exemplo, no contexto dos seguros, a subscrição envolve a avaliação do risco associado a um requerente, a determinação do prémio adequado para a cobertura do seguro e a elaboração dos termos da apólice de seguro.\n\nNo contexto de empréstimos ou crédito, a subscrição envolve a avaliação da solvabilidade da pessoa ou empresa que solicita o empréstimo para determinar se é provável que o reembolsem.\n\nNo caso de valores mobiliários, como uma oferta pública inicial (IPO), a subscrição envolve a compra das ações disponíveis da empresa que pretende abrir o capital e, em seguida, a venda dessas ações aos investidores.\n\nEm cada caso, o objetivo da subscrição é desenvolver uma carteira equilibrada de riscos que garanta rentabilidade à instituição.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 16,
+      "row": {
+        "conversation_id": "conversation_16",
+        "conversations": [
+          {
+            "content": "Dê-me uma lista de algumas características de uma boa cafeteria?",
+            "role": "user"
+          },
+          {
+            "content": "Claro, aqui estão algumas características que costumam ser associadas a uma boa cafeteria:\n\n1. Qualidade do Café: A característica mais importante de uma boa cafeteria é oferecer café de alta qualidade. Os grãos devem ser moídos na hora e o café deve ter um gosto bom.\n\n2. Variedade de ofertas: Uma boa cafeteria geralmente oferece uma variedade de tipos de café e outras bebidas para atender às diversas preferências dos clientes. Eles também podem oferecer doces, sanduíches ou outros alimentos.\n\n3. Ambiente: A atmosfera deve ser confortável e convidativa. Pode incluir elementos como assentos confortáveis, decoração atraente e o nível certo de ruído.\n\n4. Atendimento ao cliente: a equipe deve ser amigável, prestativa e eficiente. Um bom atendimento ao cliente pode fazer uma grande diferença na experiência geral do cliente.\n\n5. Limpeza: Um ambiente limpo e higiênico é vital. Isso inclui mesas, balcões, pisos e banheiros limpos.\n\n6. Localização conveniente: Uma boa cafeteria geralmente está convenientemente localizada para atrair um fluxo consistente de clientes ao longo do dia.\n\n7. Wi-Fi: Muitas pessoas gostam de trabalhar ou estudar em cafeterias, então fornecer Wi-Fi gratuito e confiável é uma grande vantagem.\n\n8. Práticas Sustentáveis: Cada vez mais clientes estão considerando as práticas de sustentabilidade da cafeteria, como usar café de comércio justo, reciclar ou oferecer descontos para clientes que trazem seus próprios copos reutilizáveis.\n\nLembre-se de que o que torna uma cafeteria “boa” pode variar muito dependendo das preferências pessoais.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 17,
+      "row": {
+        "conversation_id": "conversation_17",
+        "conversations": [
+          {
+            "content": "Como posso contribuir com o Spark?",
+            "role": "user"
+          },
+          {
+            "content": "Apache Spark é um sistema de computação distribuída de código aberto onde você pode contribuir de várias maneiras, seja você um usuário ou um desenvolvedor. Aqui estão algumas maneiras pelas quais você pode contribuir:\n\n1. Desenvolvimento: você pode contribuir com código para o projeto. Isso é feito enviando patches para novas funcionalidades ou correções de bugs após inspecionar a lista de problemas atuais do projeto. Antes de contribuir com código, você deve verificar as diretrizes de contribuição e o código de conduta do Spark.\n\n2. Teste: Se você não pode contribuir com código, você pode ajudar nos testes. Isso significa usar as versões mais recentes do Apache Spark no desenvolvimento e relatar quaisquer bugs ou problemas que você encontrar e que não sejam relatados atualmente no rastreador de problemas.\n\n3. Documentação: Uma boa documentação torna qualquer projeto mais fácil de usar e ajuda novos usuários a começarem mais rapidamente. Seja corrigindo erros tipográficos, esclarecendo seções confusas ou escrevendo seções totalmente novas, sua ajuda na melhoria da documentação do projeto não passará despercebida.\n\nCertifique-se de aderir ao código de conduta da Apache Software Foundation enquanto contribui. Feliz contribuição!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 18,
+      "row": {
+        "conversation_id": "conversation_18",
+        "conversations": [
+          {
+            "content": "Quando a roda foi inventada?",
+            "role": "user"
+          },
+          {
+            "content": "A roda foi inventada por civilizações antigas por volta de 3.500 a.C., durante a Idade do Bronze. Foi usado pela primeira vez na Mesopotâmia (atual Iraque) para fazer cerâmica e, mais tarde, utilizado para carruagens. Essas rodas iniciais eram geralmente sólidas e feitas de madeira. Levaria centenas de anos até que a roda raiada fosse inventada, que é muito mais semelhante às que usamos hoje.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 19,
+      "row": {
+        "conversation_id": "conversation_19",
+        "conversations": [
+          {
+            "content": "Os dinossauros tinham lábios?",
+            "role": "user"
+          },
+          {
+            "content": "A questão de saber se os dinossauros tinham lábios ainda é objeto de debate entre os cientistas. A pesquisa indica que os dinossauros terópodes, como o T-Rex, podem ter lábios semelhantes aos dos répteis cobrindo os dentes. No entanto, as limitações do registo fóssil e a falta de parentes sobreviventes de dinossauros tornam esta questão complexa de responder definitivamente. Só podemos fazer suposições fundamentadas com base no material fóssil que temos atualmente e em comparações com os seus ancestrais vivos mais próximos, aves e répteis.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 20,
+      "row": {
+        "conversation_id": "conversation_20",
+        "conversations": [
+          {
+            "content": "Qual é a moeda em uso na Holanda?",
+            "role": "user"
+          },
+          {
+            "content": "A moeda utilizada na Holanda é o Euro (€).",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 21,
+      "row": {
+        "conversation_id": "conversation_21",
+        "conversations": [
+          {
+            "content": "O que é ar enriquecido e por que os mergulhadores mergulhariam com ar enriquecido?",
+            "role": "user"
+          },
+          {
+            "content": "O Ar Enriquecido, também conhecido como Nitrox, é uma mistura de gases usada no mergulho que contém uma proporção maior de oxigênio e uma proporção menor de nitrogênio do que o ar atmosférico. A mistura de ar usual em tanques de mergulho é de aproximadamente 21% de oxigênio e 79% de nitrogênio. O ar enriquecido normalmente contém 22 a 40% de oxigênio.\n\nA vantagem de mergulhar com Enriched Air Nitrox vem do reduzido teor de nitrogênio na mistura. Como o nitrogênio no corpo do mergulhador é o que causa a doença descompressiva (também conhecida como “curvas”), reduzir a quantidade de nitrogênio reduz o risco dessa condição. Além disso, o uso de uma mistura de gases com maior proporção de oxigênio permite que os mergulhadores estendam seus limites não descompressivos ou tempo de fundo, especialmente em profundidades mais profundas.\n\nNo entanto, é importante notar que o mergulho com ar enriquecido requer treino especial devido aos riscos associados aos níveis mais elevados de oxigénio, particularmente ao aumento do risco de toxicidade do oxigénio.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 22,
+      "row": {
+        "conversation_id": "conversation_22",
+        "conversations": [
+          {
+            "content": "Escreva um pequeno parágrafo sobre por que você não deve ter um gato e um pássaro de estimação.",
+            "role": "user"
+          },
+          {
+            "content": "Embora não seja impossível para gatos e pássaros de estimação coexistirem pacificamente, pode haver desafios devido aos instintos naturais do gato. Os gatos são predadores por natureza e os pássaros são frequentemente vistos como presas. Isso pode resultar em encontros tensos ou estressantes que podem colocar a ave em perigo, especialmente se ela for deixada sem supervisão com o gato. Dito isto, cada animal de estimação é único e cada animal pode se comportar de maneira diferente. Também é possível que, com introdução e treinamento cuidadosos, alguns gatos e pássaros aprendam a viver juntos. No entanto, do ponto de vista geral da segurança, geralmente é aconselhável ter cuidado ao manter ambos como animais de estimação na mesma casa.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 23,
+      "row": {
+        "conversation_id": "conversation_23",
+        "conversations": [
+          {
+            "content": "O que torna um carro de Fórmula 1 tão rápido?",
+            "role": "user"
+          },
+          {
+            "content": "Os carros de Fórmula 1 são incrivelmente rápidos devido a uma combinação de vários fatores:\n\n1. Design Leve: Os carros de Fórmula 1 são construídos para serem tão leves quanto possível dentro dos regulamentos. Isso reduz a quantidade de força necessária para acelerar o carro.\n\n2. Aerodinâmica: Os carros de F1 são projetados para minimizar a resistência do ar (arrasto) e maximizar a força descendente, o que ajuda a manter o carro na estrada, principalmente nas curvas.\n\n3. Motores de alto desempenho: Os carros de Fórmula 1 utilizam unidades de potência híbridas, que combinam motores de combustão interna tradicionais com energia de bateria, para gerar potência muito elevada.\n\n4. Pilotos altamente qualificados: Dirigir um carro de F1 rapidamente requer um alto grau de habilidade e precisão, que todos os pilotos de F1 possuem.\n\n5. Pneus Avançados: Os pneus usados na F1 são projetados para proporcionar máxima aderência na superfície de corrida, aumentando a tração e permitindo alta velocidade.\n\n6. Sistemas de frenagem superiores: Os carros de F1 são equipados com sistemas de frenagem de alto desempenho que podem desacelerar o carro com extrema rapidez, permitindo que os pilotos tenham mais velocidade nas curvas.\n\n7. Tecnologia de ponta: Constantes avanços tecnológicos, como o uso de análise de dados, modelagem virtual, testes de simulação e sistemas telemétricos embarcados, apoiam o desenvolvimento e a otimização desses carros.\n\nLembre-se de que tudo em um carro de Fórmula 1 é otimizado para velocidade e desempenho máximos, o que os torna um dos veículos mais rápidos do planeta.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 24,
+      "row": {
+        "conversation_id": "conversation_24",
+        "conversations": [
+          {
+            "content": "Identifique qual instrumento é corda ou percussão: Kpanlogo, Shamisen",
+            "role": "user"
+          },
+          {
+            "content": "O Kpanlogo é um tipo de tambor africano, por isso se enquadra na categoria de percussão. Por outro lado, o Shamisen é um instrumento japonês de três cordas, por isso é considerado um instrumento de cordas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 25,
+      "row": {
+        "conversation_id": "conversation_25",
+        "conversations": [
+          {
+            "content": "Porque é que os sacos de batatas fritas ficam velhos depois de abertos?",
+            "role": "user"
+          },
+          {
+            "content": "Os sacos de batatas fritas envelhecem após serem abertos, principalmente devido à exposição ao ar. A crocância dos chips se deve ao seu baixo teor de umidade. Ao abrir o saco, os chips ficam expostos à umidade do ar. Os chips absorvem essa umidade, o que aumenta seu teor de umidade e faz com que fiquem menos crocantes ou obsoletos. O oxigênio do ar também contribui para o processo de envelhecimento, reagindo com as gorduras dos chips, fazendo com que fiquem rançosos. Os sacos de chips são selados a vácuo para evitar esses problemas; uma vez aberto o saco, o ambiente protetor é perdido.\n\nPara retardar o processo de envelhecimento, você pode limitar a exposição dos chips ao ar, transferindo-os para um recipiente hermético ou fechando bem o saco após cada uso.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 26,
+      "row": {
+        "conversation_id": "conversation_26",
+        "conversations": [
+          {
+            "content": "Qual é o futuro do ser humano?",
+            "role": "user"
+          },
+          {
+            "content": "Prever o futuro é sempre especulativo, pois é influenciado por uma infinidade de fatores e pode mudar dependendo desses fatores. No entanto, muitas pessoas esperam que o futuro da humanidade envolva:\n\n1. Avanços Tecnológicos: Podemos assumir a continuação dos avanços tecnológicos, provavelmente com foco em áreas como inteligência artificial, biotecnologia, nanotecnologia e robótica. Isto poderia potencialmente levar a uma maior automatização dos empregos e a novos métodos de diagnóstico e tratamento de doenças.\n\n2. Crescimento populacional e urbanização: As Nações Unidas prevêem que, em 2050, a população mundial atingirá os 9,7 mil milhões. À medida que mais pessoas se mudam para as cidades, pode-se esperar um aumento na urbanização e no crescimento das megacidades.\n\n3. Alterações climáticas: As projecções para as alterações climáticas sugerem que teremos de lidar com o aumento das temperaturas globais, o que pode levar a questões relacionadas com a escassez de água, o aumento da incidência de catástrofes naturais e outros desafios ambientais. Portanto, encontrar soluções sustentáveis e recursos energéticos alternativos será um foco principal.\n\n4. Exploração Espacial: Também se espera que os humanos façam avanços significativos na exploração espacial e possivelmente até na colonização de outros planetas.\n\n5. Mudanças Culturais: À medida que nos tornamos mais conectados globalmente, as atitudes sociais e as normas culturais podem mudar e tornar-se mais unificadas – uma cultura humana reconhecida globalmente poderá eventualmente emergir.\n\nTenha em atenção que estes são cenários potenciais baseados no conhecimento e nas tendências actuais e que o futuro real pode ser muito diferente dependendo de uma série de factores que não podemos prever.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 27,
+      "row": {
+        "conversation_id": "conversation_27",
+        "conversations": [
+          {
+            "content": "Cite algumas bandas de rock famosas da década de 1960",
+            "role": "user"
+          },
+          {
+            "content": "Claro, aqui estão algumas bandas de rock conhecidas da década de 1960:\n\n1. Os Beatles\n2. Os Rolling Stones\n3. Os Beach Boys\n4. A experiência de Jimi Hendrix\n5. Quem\n6. Led Zeppelin\n7. As portas\n8. Creedence Clearwater Revival\n9. Rosa Floyd\n10. Os Mortos Agradecidos\n\nEssas bandas definiram a música da época e continuam a influenciar o rock hoje.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 28,
+      "row": {
+        "conversation_id": "conversation_28",
+        "conversations": [
+          {
+            "content": "Quem inventou o telefone?",
+            "role": "user"
+          },
+          {
+            "content": "O telefone foi inventado por Alexander Graham Bell. Ele patenteou sua invenção em 7 de março de 1876.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 29,
+      "row": {
+        "conversation_id": "conversation_29",
+        "conversations": [
+          {
+            "content": "Quais são alguns tipos de pontos de bordado para escrever cartas?",
+            "role": "user"
+          },
+          {
+            "content": "Criar letras com bordados pode ser uma tarefa divertida e criativa. Existem vários tipos de pontos que você pode usar para escrever bordados:\n\n1. Pesponto: Este tipo de ponto é simples e perfeito para escrever ou delinear. Ele fornece uma linha limpa e contínua.\n\n2. Ponto haste: O ponto haste é outro ponto popular para bordar letras. Faz uma linha levemente torcida que dá alguma textura às letras.\n\n3. Ponto Satin: Este tipo de ponto funciona bem para letras maiores com corpos mais largos. É essencialmente preencher uma forma com pontos retos bem colocados.\n\n4. Ponto Dividido: É semelhante ao pesponto, mas a agulha entra no ponto anterior, partindo a linha. Este ponto dá uma aparência sofisticada e detalhada.\n\n5. Ponto de corrente: Este método de ponto fornece uma linha mais grossa e proporciona uma aparência única e atraente.\n\n6. Ponto Chicote: Envolve um simples embrulho sobre um pesponto básico que proporciona uma linha única e decorativa.\n\nLembre-se de escolher o tipo de ponto que melhor se adapta ao seu desenho, espessura da linha e tamanho das letras. Experimentar muitas vezes pode levar a belos efeitos. O bordado é uma arte, então fique à vontade para adicionar seus próprios toques e estilo. A prática leva à perfeição; feliz costura!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 30,
+      "row": {
+        "conversation_id": "conversation_30",
+        "conversations": [
+          {
+            "content": "O que é uma pipa?",
+            "role": "user"
+          },
+          {
+            "content": "Uma pipa é um objeto leve que é amarrado ao solo ou segurado por uma pessoa e voado no ar devido às correntes de vento. Geralmente tem uma moldura feita de hastes de madeira ou plástico e é coberta com papel, plástico ou tecido. As pipas podem vir em vários formatos e tamanhos, desde simples formatos de diamante até designs mais complexos, como pássaros, dragões e muito mais. As pipas têm sido usadas historicamente para diversos fins, incluindo recreação, cerimônias religiosas e experimentos científicos. Eles são populares em todo o mundo com atividades e festivais de empinar pipas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 31,
+      "row": {
+        "conversation_id": "conversation_31",
+        "conversations": [
+          {
+            "content": "Qual é uma boa maneira de se locomover sem carro?",
+            "role": "user"
+          },
+          {
+            "content": "Existem muitas alternativas à condução de um carro que não são apenas eficientes, mas também mais ecológicas em alguns casos. Aqui estão alguns métodos comuns:\n\n1. Transporte público: pode incluir ônibus, metrô, bondes ou trens, dependendo do que estiver disponível em sua cidade. O transporte público é normalmente econômico e bom para deslocamentos regulares.\n\n2. Andar de bicicleta: pode ser uma excelente opção tanto para benefícios à saúde quanto para distâncias curtas e médias. Além disso, muitas cidades estão se tornando cada vez mais amigas das bicicletas, adicionando ciclovias designadas.\n\n3. Caminhada: Uma opção perfeita para distâncias curtas e é grátis! Caminhar também oferece o bônus adicional de exercício.\n\n4. Carpooling/Ridesharing: Serviços como Uber, Lyft ou carona tradicional com colegas de trabalho ou amigos podem ser uma boa tática. Algumas cidades também oferecem serviços de compartilhamento de carros.\n\n5. Táxis: Embora mais caros, os táxis podem ser um método eficaz de viajar sem possuir um veículo.\n\n6. Motocicletas/ciclomotores: Para aqueles que se sentem confortáveis com eles, motocicletas e ciclomotores podem ser um meio de transporte mais eficiente.\n\n7. Scooter / Scooter Elétrica: Estão se tornando cada vez mais populares nas áreas urbanas devido à sua conveniência.\n\nLembre-se de que o melhor meio de transporte depende muito de suas necessidades pessoais, de sua localização e da infraestrutura disponível em sua região.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 32,
+      "row": {
+        "conversation_id": "conversation_32",
+        "conversations": [
+          {
+            "content": "Identifique quais espécies animais estão vivas ou extintas: Palaeophis, tartaruga gigante",
+            "role": "user"
+          },
+          {
+            "content": "A Palaeophis, que era um tipo de antiga cobra marinha, está extinta.\n\nPor outro lado, as tartarugas gigantes estão vivas. No entanto, algumas espécies específicas de tartarugas gigantes estão extintas, como a tartaruga gigante da Ilha Pinta, enquanto outras, como a tartaruga gigante de Aldabra e a tartaruga gigante de Galápagos, ainda estão vivas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 33,
+      "row": {
+        "conversation_id": "conversation_33",
+        "conversations": [
+          {
+            "content": "Por que Santa Cruz, Califórnia, é um ótimo lugar para se viver?",
+            "role": "user"
+          },
+          {
+            "content": "Morar em qualquer local pode ser subjetivo com base nas preferências individuais, mas aqui estão alguns motivos pelos quais muitas pessoas gostam de morar em Santa Cruz, Califórnia:\n\n1. Beleza Natural: Santa Cruz é conhecida por seu ambiente natural deslumbrante, com seu belo litoral, praias imaculadas e parques e florestas pitorescos, incluindo as famosas florestas de sequoias. A beleza do Oceano Pacífico pode ser vista por toda parte.\n\n2. Clima: Santa Cruz goza de um clima moderado com invernos amenos e chuvosos e verões quentes e secos. Com mais de 300 dias de sol por ano, oferece um excelente estilo de vida ao ar livre.\n\n3. Diversidade: Santa Cruz possui uma rica diversidade cultural e social com uma comunidade que aprecia arte, música e comida de todo o mundo.\n\n4. Oportunidades educacionais: A cidade abriga a Universidade da Califórnia em Santa Cruz, que é conhecida por seus programas nas áreas de ciências, artes e humanidades.\n\n5. Estilo de vida saudável: Com inúmeras atividades ao ar livre, como surf, caminhadas, ciclismo e vôlei de praia, Santa Cruz é conhecida por incentivar um estilo de vida ativo e saudável.\n\n6. Jantares e compras: Santa Cruz tem um cenário gastronômico vibrante, com uma variedade de opções gastronômicas, mercados de produtores e experiências de compras em boutiques.\n\n7. Festivais e Eventos: Santa Cruz oferece uma variedade de eventos e festivais ao longo do ano, proporcionando oportunidades de entretenimento para todas as idades.\n\nEmbora esses sejam motivos comuns pelos quais as pessoas apreciam morar em Santa Cruz, as experiências e preferências individuais podem variar.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 34,
+      "row": {
+        "conversation_id": "conversation_34",
+        "conversations": [
+          {
+            "content": "Identifique qual instrumento é corda ou percussão: Samphor, Viola toeria",
+            "role": "user"
+          },
+          {
+            "content": "O instrumento sânfora é um instrumento de percussão cambojano, normalmente usado na música tradicional. Por outro lado, a viola é um instrumento de cordas, embora não tenha encontrado nenhuma referência a uma \"Viola toeria\". Se o instrumento ao qual você se refere é \"viola\", ele é tocado com arco e é um pouco maior que um violino, com um som mais profundo e rico. Se “toeria” se refere a outro tipo específico de instrumento, não encontrei nenhuma informação sobre ele, peço desculpas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 35,
+      "row": {
+        "conversation_id": "conversation_35",
+        "conversations": [
+          {
+            "content": "Se estivéssemos jogando um jogo em que tivéssemos que identificar coisas que podem ser encontradas dentro de uma casa, quais destas chamaríamos: carro, cadeira, mesa, parque, nuvem, micro-ondas.",
+            "role": "user"
+          },
+          {
+            "content": "No contexto de itens normalmente encontrados dentro de uma casa, você chamaria: cadeira, mesa e micro-ondas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 36,
+      "row": {
+        "conversation_id": "conversation_36",
+        "conversations": [
+          {
+            "content": "Quais produtos a Apple vende?",
+            "role": "user"
+          },
+          {
+            "content": "vende uma variedade de produtos que abrangem tecnologia, mídia e serviços. Aqui estão suas principais categorias de produtos:\n\n1. **iPhone**: Esta é uma linha de smartphones que a Apple começou a vender em 2007. O iPhone roda no sistema operacional móvel proprietário da Apple, iOS.\n\n2. **iPad**: Esta é uma linha de tablets que a Apple lançou em 2010. Assim como o iPhone, o iPad também roda em iOS.\n\n3. **Mac**: O Macintosh, ou Mac, é uma série de computadores desktop e laptop desenvolvidos pela Apple. Existem várias linhas nesta categoria, incluindo MacBook Pro, MacBook Air, iMac e Mac Mini. Todos eles rodam em macOS, sistema operacional de desktop proprietário da Apple.\n\nEssas descrições cobrem a maioria dos principais produtos e serviços da Apple, mas a empresa inova continuamente e lança novos produtos juntamente com melhorias e atualizações dos existentes.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 37,
+      "row": {
+        "conversation_id": "conversation_37",
+        "conversations": [
+          {
+            "content": "O que é banco de investimento?",
+            "role": "user"
+          },
+          {
+            "content": "A banca de investimento é uma divisão específica da banca relacionada com a criação de capital para outras empresas, governos e outras entidades. Os bancos de investimento subscrevem novos títulos de dívida e de capital para todos os tipos de empresas, auxiliam na venda de títulos e ajudam a facilitar fusões e aquisições, reorganizações e negociações de corretagem tanto para instituições como para investidores privados. Eles também fornecem orientação aos emissores sobre a emissão e colocação de ações.\n\nOs banqueiros de investimento são normalmente associados de instituições bancárias e financeiras que trabalham com transações financeiras grandes e complexas. Freqüentemente, trabalham em funções de consultoria para entidades que buscam levantar capital e podem estar envolvidos na emissão e venda de ações e títulos.\n\nÉ importante observar que o mundo dos bancos de investimento pode ser bastante complicado e muitas vezes requer um forte conhecimento das finanças e dos mercados financeiros. São uma parte crucial do sistema financeiro e desempenham um papel importante na manutenção da saúde económica geral de uma sociedade.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 38,
+      "row": {
+        "conversation_id": "conversation_38",
+        "conversations": [
+          {
+            "content": "Quanto conhecimento de teoria musical é necessário para compor música?",
+            "role": "user"
+          },
+          {
+            "content": "A quantidade de conhecimento de teoria musical necessária para compor música pode variar muito, dependendo dos objetivos, gênero, estilo e preferências pessoais de cada um. Alguns músicos ou compositores de sucesso têm pouco conhecimento formal da teoria musical, enquanto outros possuem profundo conhecimento teórico.\n\nCompreender a teoria musical pode fornecer uma estrutura sólida e aprimorar suas habilidades como compositor, fornecendo-lhe as ferramentas para manipular harmonia, melodia, ritmo e estrutura de forma mais eficaz. Pode informar o seu processo de composição e fornecer uma linguagem para articular o que está acontecendo na sua música. Conhecendo as 'regras', você também pode quebrá-las conscientemente para obter efeito.\n\nNo entanto, a falta de conhecimento formal de teoria musical não o impede necessariamente de ser um compositor bem-sucedido ou eficaz. Há uma longa história de músicos de sucesso que foram em grande parte autodidatas ou que aprenderam a criar música apenas de ouvido.\n\nNo final, o mais importante é a paixão, a criatividade e um profundo amor pela música. A teoria pode ser uma ferramenta importante, mas não é o único caminho para criar boa música.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 39,
+      "row": {
+        "conversation_id": "conversation_39",
+        "conversations": [
+          {
+            "content": "Qual é a montanha mais alta dos EUA continentais?",
+            "role": "user"
+          },
+          {
+            "content": "A montanha mais alta do território continental dos Estados Unidos é o Monte Whitney, na Califórnia. Seu pico está a 14.505 pés (4.421 metros) acima do nível do mar.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 40,
+      "row": {
+        "conversation_id": "conversation_40",
+        "conversations": [
+          {
+            "content": "Quais são alguns dos melhores filmes de comédia da década de 1980?",
+            "role": "user"
+          },
+          {
+            "content": "Certamente, a década de 1980 foi uma grande década para filmes de comédia. Aqui estão alguns clássicos notáveis:\n\n1. \"Avião!\" (1980) - Uma paródia de filmes de desastre que é frequentemente listada como uma das melhores comédias de todos os tempos.\n\n2. \"Caddyshack\" (1980) - Uma comédia sobre funcionários e visitantes de um clube de golfe exclusivo.\n\n3. \"National Lampoon's Vacation\" (1983) - O primeiro de uma série de filmes de comédia baseados em férias em família que deram errado.\n\n4. \"Ghostbusters\" (1984) - Um grupo de parapsicólogos inicia um negócio de captura de fantasmas na cidade de Nova York.\n\n5. \"Beverly Hills Cop\" (1984) - Um policial esperto de Detroit navega pelo mundo de Beverly Hills.\n\n6. “De Volta para o Futuro” (1985) – Uma comédia de ficção científica sobre um adolescente que viaja no tempo.\n\n7. \"Ferris Bueller's Day Off\" (1986) - Um espertinho do ensino médio mata aula em grande estilo.\n\n8. “A Princesa Noiva” (1987) – Uma comédia romântica com elementos de fantasia.\n\n9. \"Coming to America\" (1988) - Um príncipe de um rico país africano viaja para a América em busca de uma esposa.\n\n10. \"A Fish Called Wanda\" (1988) - Uma comédia inteligente sobre um roubo de joias e o quadrilátero amoroso que se segue.\n\nEstas são apenas algumas joias da década de 1980; a década produziu muitos outros filmes hilariantes.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 41,
+      "row": {
+        "conversation_id": "conversation_41",
+        "conversations": [
+          {
+            "content": "Quais são os ingredientes comuns de um café da manhã inglês completo?",
+            "role": "user"
+          },
+          {
+            "content": "Um tradicional café da manhã inglês completo normalmente inclui os seguintes ingredientes:\n\n1. Bacon: Normalmente, o bacon é usado em um café da manhã inglês completo.\n2. Salsicha: Geralmente são usadas salsichas grossas e carnudas.\n3. Ovos: Você pode comer fritos, mexidos, escalfados ou cozidos de acordo com sua preferência.\n4. Feijão: Feijão cozido com molho de tomate é um componente clássico.\n5. Torrada: Pão branco ou integral geralmente servido com manteiga.\n6. Morcela: Um tipo de chouriço tradicionalmente incluído em um café da manhã inglês completo.\n7. Cogumelos: Geralmente fritos ou salteados.\n8. Tomates: podem ser grelhados ou fritos.\n9. Hash Browns ou Pão Frito: São componentes adicionais que algumas pessoas gostam de incluir.\n\nEsses ingredientes podem ser acompanhados de condimentos como molho marrom ou ketchup, e a refeição costuma ser servida com uma xícara de chá ou café, ou talvez suco de frutas. No entanto, os componentes exatos de um pequeno-almoço inglês completo podem variar ligeiramente dependendo das preferências regionais.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 42,
+      "row": {
+        "conversation_id": "conversation_42",
+        "conversations": [
+          {
+            "content": "O que é o Banco de Dados de Proteínas do Laboratório de Pesquisa para Bioinformática Estrutural (RCSB PDB)?",
+            "role": "user"
+          },
+          {
+            "content": "O Research Collaboratory for Structural Bioinformatics Protein Data Bank (RCSB PDB) é um banco de dados que fornece ferramentas e recursos para estudar as estruturas de macromoléculas biológicas e suas relações com sequência, função e doença. O banco de dados inclui principalmente dados de proteínas, ácidos nucléicos e conjuntos complexos que ajudam estudantes e pesquisadores a compreender todos os aspectos da biomedicina e da agricultura, desde a síntese de proteínas até a saúde e as doenças.\n\nOs dados do PDB arquivam as estruturas 3D dessas moléculas, que são determinadas experimentalmente por métodos como cristalografia de raios X, espectroscopia de RMN e microscopia crioeletrônica. Este banco de dados desempenha um papel vital em vários campos, incluindo biologia estrutural, descoberta de medicamentos e bioinformática. O APO RCSB faz parte do APO mundial e serve a comunidade global, disponibilizando estes dados gratuitamente.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 43,
+      "row": {
+        "conversation_id": "conversation_43",
+        "conversations": [
+          {
+            "content": "Quais são os 5 usos potenciais para uma lata La Croix vazia?",
+            "role": "user"
+          },
+          {
+            "content": "1. Vaso de plantas: Uma lata La Croix vazia pode ser usada como um vaso de plantas peculiar ou um vaso inicial para sementes.\n\n2. Decorações Artísticas: Com algumas cores ou tintas, elas podem ser decoradas para criar decorações únicas para a casa.\n\n3. Porta-lápis: você pode usá-lo para guardar canetas, lápis ou outros artigos de papelaria em sua mesa.\n\n4. Porta-velas DIY: Depois de remover a parte superior, uma lata pode ser usada como suporte para pequenas velas votivas ou de chá.\n\n5. Recipiente de armazenamento: ótimo para guardar itens pequenos, como alfinetes, clipes de papel, botões ou moedas soltas.\n\nAntes de usar uma lata para qualquer uma dessas finalidades, é importante enxaguá-la bem e lixar todas as pontas afiadas para segurança.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 44,
+      "row": {
+        "conversation_id": "conversation_44",
+        "conversations": [
+          {
+            "content": "Por que tantos filmes de Hollywood dos EUA são feitos no estado da Geórgia?",
+            "role": "user"
+          },
+          {
+            "content": "Existem várias razões pelas quais muitos filmes de Hollywood são produzidos na Geórgia.\n\n1. Incentivos atraentes: O estado da Geórgia oferece um lucrativo programa de incentivos fiscais para produções cinematográficas. Se um filme gastar mais de US$ 500.000 na Geórgia, ele será elegível para um crédito fiscal de 20% sobre despesas estaduais, além de um crédito adicional de 10% para incluir um logotipo promocional fornecido pelo estado no final do filme.\n\n2. Locais diversos: A Geórgia oferece uma ampla variedade de paisagens e cenários. Dos movimentados centros urbanos de Atlanta às pitorescas montanhas e campos, às belas costas, a Geórgia pode imitar diferentes locais ao redor do mundo. Essa versatilidade economiza às empresas de produção o custo e o desafio logístico de se mudarem para vários locais.\n\n3. Infraestrutura estabelecida: Ao longo dos anos, a Geórgia desenvolveu uma enorme infraestrutura relacionada com a indústria. Isso inclui palcos sonoros de última geração, instalações de produção e tripulantes experientes que vivem e trabalham no estado.\n\n4. Clima: O clima ameno da Geórgia é propício para filmagens durante todo o ano, o que é outro fator que atrai as produtoras.\n\nTodos esses fatores se combinam para tornar a Geórgia um local altamente atraente para a produção cinematográfica dos estúdios de Hollywood.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 45,
+      "row": {
+        "conversation_id": "conversation_45",
+        "conversations": [
+          {
+            "content": "Quais são algumas ferramentas que todo proprietário deve ter?",
+            "role": "user"
+          },
+          {
+            "content": "Cada proprietário deve ter um conjunto de ferramentas básicas para manutenção de rotina e trabalhos ocasionais em casa. Aqui estão alguns itens essenciais a serem considerados:\n\n1. Martelo: Para cravar pregos, encaixar peças, quebrar objetos e tarefas de carpintaria.\n\n2. Chaves de fenda: Um conjunto de chaves de fenda de cabeça chata e Phillips será útil.\n\n3. Alicate: pode ser usado para agarrar, dobrar ou cortar fios e outros materiais.\n\n4. Chave ajustável: Útil para afrouxar ou apertar porcas e parafusos.\n\n5. Fita métrica: Uma ferramenta essencial para qualquer tipo de tarefa de medição em casa.\n\n6. Canivete: Um canivete pode ser usado para uma ampla variedade de tarefas, desde abrir pacotes até cortar papel de parede.\n\n7. Lanterna: É necessária em caso de queda de energia ou para iluminar áreas de difícil visualização.\n\n8. Escada: É necessário um bom degrau ou escada extensível para chegar a locais altos, limpar, pintar ou trocar lâmpadas.\n\n9. Furadeira sem fio: Uma furadeira sem fio pode fazer furos e apertar parafusos muito mais rápido do que uma chave de fenda.\n\n10. Caixa de ferramentas: Para organizar suas ferramentas e torná-las facilmente portáteis.\n\n11. Fita adesiva e WD-40: O velho ditado nos círculos DIY é: \"Se ela se mover e não deveria, use fita adesiva. Se ela não se mover e deveria, use WD-40.\"\n\n12. Equipamentos de segurança: Óculos de segurança e luvas de trabalho para proteção individual ao trabalhar em diversas tarefas.\n\nLembre-se de que é importante saber como usar essas ferramentas de maneira adequada e segura e sempre guardá-las fora do alcance das crianças.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 46,
+      "row": {
+        "conversation_id": "conversation_46",
+        "conversations": [
+          {
+            "content": "O que é uma maçã?",
+            "role": "user"
+          },
+          {
+            "content": "A maçã é um tipo de fruta produzida a partir da macieira (Malus domestica). É uma das árvores frutíferas mais cultivadas. A macieira é originária da Ásia Central, onde seu ancestral selvagem, Malus sieversii, ainda hoje é encontrado. As maçãs vêm em uma variedade de cores, incluindo vermelho, verde e amarelo, bem como em diferentes sabores e texturas. São ricas em nutrientes essenciais, como fibra alimentar e vitamina C. As maçãs têm sido uma parte importante da dieta humana há milhares de anos e são frequentemente associadas a benefícios para a saúde.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 47,
+      "row": {
+        "conversation_id": "conversation_47",
+        "conversations": [
+          {
+            "content": "escreva um pequeno ensaio sobre o incêndio florestal na Califórnia",
+            "role": "user"
+          },
+          {
+            "content": "Título: O impacto e a gestão dos incêndios florestais na Califórnia\n\nA Califórnia, um dos maiores e mais populosos estados dos Estados Unidos, tem lutado com um aumento de incêndios florestais nos últimos anos, cujo impacto se estende para além das suas fronteiras. Estes incêndios florestais, geralmente desencadeados por actividades humanas ou factores naturais como relâmpagos, são ainda alimentados por vegetação seca, ventos fortes e condições climáticas desafiantes, causando assim uma destruição ecológica e humana significativa.\n\nA temporada de incêndios florestais de 2020, uma das piores da história da Califórnia, trouxe esta questão catastrófica ao público global. Mais de 4,1 milhões de acres de florestas foram queimados, levando à destruição de propriedades, perda de vidas humanas e alterações significativas nos ecossistemas naturais. A exposição prolongada ao fumo e às partículas perigosas no ar também levou a um aumento de problemas de saúde entre os cidadãos, incluindo complicações respiratórias.\n\nNo futuro, a gestão de incêndios florestais na Califórnia precisa se concentrar em soluções e estratégias sustentáveis e de longo prazo. Isto inclui uma gestão florestal cientificamente informada, sistemas de alerta mais eficientes e modelos de construção avançados adequados para áreas propensas a incêndios. Os incêndios florestais na Califórnia sublinham a nossa responsabilidade colectiva de salvaguardar os nossos ambientes naturais, ao mesmo tempo que nos preparamos e mitigamos os efeitos de tais desastres naturais.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 48,
+      "row": {
+        "conversation_id": "conversation_48",
+        "conversations": [
+          {
+            "content": "Separe os seguintes subúrbios naqueles que fazem fronteira, e não fazem fronteira, com o rio Brisbane: Indooroopilly, Bulimba, Santa Lúcia, Newstead, Wilston, West End, Toowong, Bowen Hills e Wooloongabba.",
+            "role": "user"
+          },
+          {
+            "content": "Claro, posso ajudar com isso.\n\nOs subúrbios que fazem fronteira com o rio Brisbane incluem:\n\n1. Interioroopilly\n2. Bulimba\n3. Santa Lúcia\n4. Novo lugar\n5. Extremo Oeste\n6. Toowong\n\nOs subúrbios que não fazem fronteira com o rio Brisbane incluem:\n\n1. Wilston\n2. Colinas Bowen\n3. Woolloongabba\n\nEsta lista é baseada no esboço geral desses subúrbios. Alguns residentes podem sentir que estão mais perto do rio Brisbane do que o que é oficialmente definido como os limites de seu subúrbio.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 49,
+      "row": {
+        "conversation_id": "conversation_49",
+        "conversations": [
+          {
+            "content": "O que são AirPods?",
+            "role": "user"
+          },
+          {
+            "content": "AirPods são fones de ouvido Bluetooth sem fio criados pela Apple. Eles foram lançados pela primeira vez em dezembro de 2016 e fazem parte da linha de fones de ouvido da Apple. Desde o seu lançamento inicial, várias versões mais recentes foram lançadas, incluindo o AirPods Pro e o AirPods Max.\n\nOs AirPods são conhecidos por seu som de alta qualidade, integração perfeita com dispositivos Apple e recursos exclusivos, como pausa automática quando você tira um do ouvido. Eles vêm com um estojo de carregamento que fornece bateria adicional para os fones de ouvido. O modelo AirPods Pro também oferece tecnologia de cancelamento de ruído.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 50,
+      "row": {
+        "conversation_id": "conversation_50",
+        "conversations": [
+          {
+            "content": "Qual é a diferença entre animais de estimação e gado?",
+            "role": "user"
+          },
+          {
+            "content": "Animais de estimação e gado diferem principalmente em seus papéis e nas relações que mantêm com os humanos.\n\n1. Finalidade: Animais de estimação, como cães, gatos, coelhos, pássaros, etc., geralmente são mantidos para companhia e diversão. Freqüentemente, eles têm relacionamentos próximos e emocionais com seus donos e podem ser considerados parte da família. Por outro lado, o gado (incluindo vacas, touros e búfalos) é normalmente criado para fins agrícolas, como pela sua carne (bovina, vitela), leite ou capacidade de trabalho (puxar arados, transportar cargas).\n\n2. Cuidados e alojamento: Os animais de estimação muitas vezes vivem dentro da casa da família e recebem cuidados cuidadosos, incluindo alimentação regular, cuidados pessoais e cuidados veterinários. O gado, por sua vez, geralmente é alojado em celeiros ou campos abertos e é cuidado de maneira mais discreta, embora também receba alimentação e tratamentos médicos necessários.\n\n3. Legalidade e Regulamentações: Em muitos lugares, existem leis e regulamentações específicas que definem como animais de estimação e gado podem ser tratados, vendidos e mantidos. Muitas vezes diferem, refletindo os diferentes papéis e relacionamentos que esses animais têm com os humanos.\n\n4. Processo de domesticação: Tanto os animais de estimação quanto o gado são domesticados, mas o processo de domesticação teve objetivos diferentes. Os animais de estimação eram frequentemente domesticados pelo seu companheirismo e capacidade de caça, enquanto o gado era domesticado pela sua utilidade na agricultura.\n\n5. Vida útil: Geralmente, os animais de estimação têm uma vida útil mais curta (dependendo da espécie) do que o gado. No entanto, o tempo de vida do gado é frequentemente influenciado pela sua produtividade económica.\n\nLembre-se, independentemente de o animal ser um animal de estimação ou gado, todos os animais merecem ser tratados com respeito e humanidade. Sempre garanta cuidados adequados, alimentação adequada e condições de vida adequadas para todos os animais sob seus cuidados.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 51,
+      "row": {
+        "conversation_id": "conversation_51",
+        "conversations": [
+          {
+            "content": "Como coloco um buquê de flores frescas em um vaso?",
+            "role": "user"
+          },
+          {
+            "content": "Aqui estão os passos para organizar um buquê de flores frescas em um vaso:\n\n1. **Limpe seu vaso**: Antes de colocar suas flores em um vaso, certifique-se de limpá-lo bem. As bactérias podem reduzir a vida útil de suas flores cortadas, portanto, certifique-se de que seu vaso esteja o mais limpo possível antes de começar.\n\n2. **Prepare as flores**: Remova todas as folhas ou flores que ficarão abaixo do nível da água no vaso para evitar o crescimento de bactérias. Use uma tesoura afiada ou uma faca para cortar as hastes em ângulo enquanto elas estão sob água corrente ou submersas em água. Isso evita que o ar entre nas veias. Cortá-los debaixo d'água permite que os caules comecem a sugar água imediatamente, em vez de ar.\n\n3. **Organize as flores**: Comece adicionando suas flores ao vaso. Comece primeiro com a folhagem e/ou as flores maiores e mais resistentes, pois elas formarão a estrutura do seu arranjo. Em seguida, adicione flores menores, equilibrando as cores e formas ao redor do vaso.\n\n4. **Manutenção do arranjo**: Troque a água a cada dois dias e, se possível, corte novamente os caules em água corrente para prolongar a vida das flores. A remoção das flores gastas ajudará o arranjo a parecer fresco por mais tempo. Mantenha o arranjo longe de áreas com correntes de ar e da luz solar direta.\n\nLembre-se de que o formato do vaso, o tipo de flores que você tem e o seu gosto pessoal terão impacto no seu arranjo. Portanto, fique à vontade para ajustar as etapas conforme necessário!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 52,
+      "row": {
+        "conversation_id": "conversation_52",
+        "conversations": [
+          {
+            "content": "O que devo fazer em uma tarde livre em São Francisco?",
+            "role": "user"
+          },
+          {
+            "content": "São Francisco oferece uma variedade de atividades para desfrutar em uma tarde livre. Aqui estão várias sugestões que você pode considerar:\n\n1. **Visite a Ponte Golden Gate**: Você pode caminhar ou andar de bicicleta por esse marco icônico. As vistas da baía e da cidade são de tirar o fôlego. Não se esqueça de visitar também o Golden Gate Park!\n\n2. **Explore Fisherman's Wharf**: Aqui você pode visitar atrações como o Pier 39, o Parque Histórico Nacional Marítimo de São Francisco, a Praça Ghirardelli e também saborear deliciosos frutos do mar.\n\n3. **Ande de teleférico**: Uma forma icônica de ver a cidade, esses veículos históricos oferecem uma perspectiva única das colinas íngremes de São Francisco.\n\n4. **Explore Chinatown**: Dê um passeio pela maior Chinatown fora da Ásia. Você pode explorar as lojas, provar a comida e mergulhar na cultura.\n\n5. **Visite Alcatraz**: Se você tiver tempo suficiente, pegue uma balsa para a Ilha de Alcatraz e visite a infame prisão.\n\n6. **Museus**: Se você é fã de arte ou ciência, visite o Museu de Arte Moderna (SFMOMA), a Academia de Ciências da Califórnia ou o Exploratorium.\n\nLembre-se de verificar se algum desses locais exige reservas antecipadas devido às restrições do COVID-19 e sempre siga as diretrizes de saúde locais enquanto estiver explorando a cidade. Aproveite o seu dia em São Francisco!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 53,
+      "row": {
+        "conversation_id": "conversation_53",
+        "conversations": [
+          {
+            "content": "Identifique qual instrumento é corda ou sopro: Janzi, Gemshorn",
+            "role": "user"
+          },
+          {
+            "content": "O Janzi é um instrumento de cordas. Originou-se na África Oriental, particularmente em Uganda.\n\nO Gemshorn é considerado um instrumento de sopro. É uma forma antiga de gravador, normalmente feita com o chifre de um animal, geralmente um boi.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 54,
+      "row": {
+        "conversation_id": "conversation_54",
+        "conversations": [
+          {
+            "content": "Identifique quais espécies animais estão vivas ou extintas: Pliosauro, Iguana Marinha",
+            "role": "user"
+          },
+          {
+            "content": "O Pliosaur é uma espécie extinta. Eram répteis marinhos que viveram durante a Era Mesozóica.\n\nA Iguana Marinha é uma espécie atualmente viva. Eles são encontrados nas Ilhas Galápagos e são os únicos lagartos que dependem do mar para se alimentar.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 55,
+      "row": {
+        "conversation_id": "conversation_55",
+        "conversations": [
+          {
+            "content": "Qual é a anotação do DNA?",
+            "role": "user"
+          },
+          {
+            "content": "A anotação de DNA é o processo de identificar a localização dos genes e de todas as regiões codificantes de um genoma e determinar o que esses genes fazem. Uma anotação (independentemente do contexto) é uma nota adicionada a título de explicação ou comentário. Em biologia, e particularmente em genômica, as anotações são usadas para marcar os genes e outras características biológicas em uma sequência de DNA. Este processo inclui a identificação das localizações dos genes, regiões codificantes e fornecimento de informações biológicas relacionadas a esses genes ou outras sequências genéticas. É um passo importante na investigação genómica porque torna os dados genómicos mais significativos e úteis.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 56,
+      "row": {
+        "conversation_id": "conversation_56",
+        "conversations": [
+          {
+            "content": "O que faz o mundo girar?",
+            "role": "user"
+          },
+          {
+            "content": "A Terra gira em torno de seu eixo devido à forma como foi formada há mais de 4,5 bilhões de anos. Durante a sua formação, a poeira e o gás que criaram o planeta foram reunidos pela gravidade. Este processo fez com que o material girasse, um movimento que continua devido à conservação do momento angular.\n\nComo frase comumente usada, “o que faz o mundo girar” também pode ser interpretada metaforicamente. As pessoas costumam usá-lo para se referir à ideia que impulsiona nossa sociedade ou nossas vidas. Por exemplo, alguns podem dizer que “o amor faz o mundo girar” ou “o dinheiro faz o mundo girar”, dependendo da sua visão do que é importante na vida.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 57,
+      "row": {
+        "conversation_id": "conversation_57",
+        "conversations": [
+          {
+            "content": "Quem é o melhor piloto de Fórmula 1",
+            "role": "user"
+          },
+          {
+            "content": "Determinar quem é o “melhor” piloto de Fórmula 1 pode ser bastante subjetivo, pois pode depender de vários fatores, como estatísticas individuais, estilo de direção ou preferência pessoal. Em termos de estatísticas, Lewis Hamilton é um dos pilotos mais bem-sucedidos, com mais pole positions e empatando em mais Campeonatos Mundiais. Michael Schumacher é outro piloto altamente talentoso que deteve muitos recordes antes de Hamilton.\n\nVocê também pode considerar pilotos como Ayrton Senna, que foi incrivelmente influente e respeitado, ou Juan Manuel Fangio, que foi um dos pioneiros do esporte. Em última análise, o “melhor” driver pode variar dependendo da interpretação e preferência pessoal. Também é importante notar que a F1 é um esporte em constante evolução, com novos pilotos talentosos deixando sua marca o tempo todo.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 58,
+      "row": {
+        "conversation_id": "conversation_58",
+        "conversations": [
+          {
+            "content": "O que é capital social em finanças?",
+            "role": "user"
+          },
+          {
+            "content": "O capital social, em finanças, refere-se aos recursos captados por uma empresa por meio da emissão de ações. Este capital representa o valor monetário do patrimônio de uma empresa.\n\nNormalmente, o capital social é dividido em duas categorias:\n\n1. Capital Social Autorizado: É o número máximo de ações que uma empresa está legalmente autorizada a emitir aos acionistas.\n\n2. Capital social emitido: Este é o número real de ações que uma empresa emitiu aos acionistas. Pode ser inferior ou igual ao capital social autorizado, mas não pode excedê-lo.\n\nO capital social é considerado patrimônio líquido e fica no lado do patrimônio líquido do balanço patrimonial. O valor das ações é determinado no momento da sua emissão e não sofre alteração em relação ao valor de mercado das ações. Constitui uma parte importante do patrimônio de uma empresa e pode ser usado para financiar novos projetos, saldar dívidas ou economizar para uso futuro.\n\nLembre-se de que aumentar o capital social dilui a participação acionária dos acionistas existentes, a menos que comprem uma proporção equivalente das novas ações.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 59,
+      "row": {
+        "conversation_id": "conversation_59",
+        "conversations": [
+          {
+            "content": "Me dê algumas ideias de presentes para o Dia das Mães.",
+            "role": "user"
+          },
+          {
+            "content": "Terei prazer em ajudá-lo! Aqui estão algumas idéias atenciosas de presentes para o Dia das Mães:\n\n1. Álbum de fotos ou porta-retratos - Reúna algumas fotos de família queridas e compile-as em um álbum de fotos elegante ou exiba-as em um lindo porta-retratos.\n\n2. Joias - Joias clássicas como pulseiras, colares ou anéis são sempre ótimas opções. Considere adicionar um toque personalizado incorporando sua pedra de nascimento ou iniciais.\n\n3. Perfume - Se você conhece o perfume favorito dela, um frasco de perfume pode ser um ótimo presente. Caso contrário, um conjunto de perfumes em tamanho de amostra pode ser uma opção divertida.\n\nLembre-se de que os melhores presentes vêm da compreensão dos interesses dela e do que ela pode gostar. Além disso, não se trata de quanto dinheiro você gasta, mas da atenção e cuidado que você dedica ao presente.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 60,
+      "row": {
+        "conversation_id": "conversation_60",
+        "conversations": [
+          {
+            "content": "Quais são os tipos de trailers?",
+            "role": "user"
+          },
+          {
+            "content": "Os veículos recreativos, comumente conhecidos como RVs, vêm em vários tipos, cada um oferecendo recursos diferentes para atender a diversas necessidades de viagens, acampamentos e estilo de vida. Aqui estão os principais tipos de RVs:\n\n1. Motorhomes Classe A: Estes são os maiores e mais luxuosos RVs. Eles vêm carregados de comodidades e têm um preço alto.\n\n2. Autocaravanas Classe B: Também conhecidas como carrinhas de campismo, são mais pequenas e compactas e são essencialmente carrinhas convertidas.\n\n3. Autocaravanas Classe C: São um cruzamento entre as Classes A e B, oferecendo características de ambas, e geralmente possuem uma área de dormir sobre a cabine.\n\n4. Trailers de viagem: são veículos rebocáveis de tamanhos variados, atrelados à traseira de um caminhão ou SUV grande.\n\n5. Reboques de quinta roda: são semelhantes aos reboques de viagem, mas são puxados por picapes especificamente equipadas usando um engate na carroceria do caminhão.\n\n6. Campistas pop-up / trailers de barraca: eles se dobram em um trailer pequeno e compacto para transporte e se desdobram para criar uma área de estar maior.\n\n7. Truck Campers: São unidades portáteis projetadas para serem carregadas ou fixadas na carroceria ou chassi de uma caminhonete.\n\n8. Trailers Híbridos: Combinam as vantagens dos trailers de viagem tradicionais com os benefícios dos campistas pop-up. Eles têm lados difíceis, como trailers de viagem, mas se expandem como campistas pop-up.\n\n9. Toy Haulers: Seja um motorhome ou um trailer com uma parte dedicada a servir de garagem para seus “brinquedos” como motocicletas, ATVs, etc.\n\n10. Trailers Teardrop: São trailers pequenos, leves e aerodinâmicos que geralmente abrigam apenas uma cama e uma área de cozinha.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 61,
+      "row": {
+        "conversation_id": "conversation_61",
+        "conversations": [
+          {
+            "content": "Quais formas são compostas de linhas retas?",
+            "role": "user"
+          },
+          {
+            "content": "Formas compostas por linhas retas são chamadas de polígonos. Aqui estão alguns exemplos:\n\n1. Triângulo: Uma forma com três lados retos e três ângulos.\n2. Quadrilátero: Uma forma com quatro lados retos. Alguns exemplos incluem quadrados, retângulos, trapézios, paralelogramos.\n\n3. Pentágono: Uma forma com cinco lados retos.\n4. Hexágono: Uma forma com seis lados retos.\n5. Heptágono: Uma forma com sete lados retos.\n6. Octógono: Uma forma com oito lados retos.\n\nE assim por diante. Essas figuras geométricas abrangem qualquer figura bidimensional com lados retos e fechados, desde um triângulo de três lados até polígonos com muitos milhares ou até milhões de lados.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 62,
+      "row": {
+        "conversation_id": "conversation_62",
+        "conversations": [
+          {
+            "content": "O que é um VE?",
+            "role": "user"
+          },
+          {
+            "content": "EV significa Veículo Elétrico. São veículos movidos por um ou mais motores elétricos e utilizam energia armazenada em baterias recarregáveis, em vez de queimar gasolina ou outro combustível. Existem vários tipos de EVs, incluindo veículos elétricos a bateria (BEVs), veículos elétricos híbridos plug-in (PHEVs) e veículos elétricos híbridos (HEVs). São um meio de transporte mais ecológico, pois emitem menos gases de efeito estufa em comparação com os veículos convencionais.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 63,
+      "row": {
+        "conversation_id": "conversation_63",
+        "conversations": [
+          {
+            "content": "Qual é um prato típico do Brasil?",
+            "role": "user"
+          },
+          {
+            "content": "Um prato típico do Brasil é a Feijoada. É um farto ensopado feito com feijão preto e diversos tipos de carne de porco, como costela, linguiça e bacon, que normalmente é servido com arroz, couve, farofa e uma rodela de laranja. É tradicionalmente apreciado na hora do almoço nos finais de semana para permitir bastante tempo de digestão, pois é um prato bastante pesado.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 64,
+      "row": {
+        "conversation_id": "conversation_64",
+        "conversations": [
+          {
+            "content": "Como devo investir meu dinheiro?",
+            "role": "user"
+          },
+          {
+            "content": "Investir dinheiro requer reflexão cuidadosa, pesquisa e consideração de sua situação e objetivos financeiros pessoais. Aqui estão algumas estratégias gerais de investimento que são frequentemente recomendadas:\n\n1. **Contas de Aposentadoria**: Contribua para suas contas de aposentadoria o mais cedo e tanto quanto possível. Isso inclui o seu 401 (k), especialmente se o seu empregador igualar as contribuições, bem como um IRA.\n\n2. **Ações e títulos**: Muitas pessoas optam por investir no mercado de ações, mas é importante ter um portfólio diversificado para gerenciar riscos. Os títulos são geralmente menos arriscados do que as ações e podem equilibrar uma carteira de investimentos.\n\n3. **Fundos Mútuos e ETFs**: são outra boa forma de diversificar sua carteira de investimentos. Esses fundos permitem que você possua uma variedade de ações, títulos ou outros tipos de investimentos, tudo em um só.\n\n4. **Imóveis**: Os imóveis podem ser um bom investimento, especialmente se o valor dos imóveis estiver aumentando na área onde você compra.\n\n5. **Tenha um fundo de emergência**: Antes de investir, crie um fundo de emergência equivalente a três a seis meses de despesas de subsistência.\n\nLembre-se de que é sempre aconselhável consultar um consultor financeiro antes de tomar decisões importantes de investimento. Eles podem ajudá-lo a desenvolver uma estratégia de investimento personalizada com base em seus objetivos financeiros individuais e na tolerância ao risco. Investir acarreta riscos inerentes e não garante lucros. Por favor, invista com responsabilidade!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 65,
+      "row": {
+        "conversation_id": "conversation_65",
+        "conversations": [
+          {
+            "content": "Cite as três melhores equipes esportivas profissionais baseadas na Califórnia.",
+            "role": "user"
+          },
+          {
+            "content": "O termo \"melhor\" é subjetivo e pode depender de vários fatores, como esporte específico, histórico de vitórias e derrotas, campeonatos vencidos, base de fãs, etc. No entanto, algumas das equipes esportivas profissionais mais reconhecidas sediadas na Califórnia em diferentes esportes incluiriam o Los Angeles Lakers na NBA, o San Francisco 49ers na NFL e o Los Angeles Dodgers na MLB. Todas essas equipes tiveram histórias de sucesso e fortes torcedores. Observe que também existem muitas outras equipes de sucesso na Califórnia.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 66,
+      "row": {
+        "conversation_id": "conversation_66",
+        "conversations": [
+          {
+            "content": "Quais são algumas maneiras de melhorar o valor da sua casa?",
+            "role": "user"
+          },
+          {
+            "content": "Aqui estão várias maneiras de melhorar o valor da sua casa:\n\n1. **Renovações e Melhorias:** Cozinhas e banheiros tendem a liderar o retorno do investimento quando se trata de reformas residenciais. Além disso, considere melhorias adicionais, como uma nova camada de tinta, novas portas ou janelas ou um porão acabado.\n\n2. **Mantenha a manutenção regular:** Manter-se atualizado sobre os projetos básicos de manutenção da casa, como limpeza de calhas, manutenção dos sistemas de aquecimento e resfriamento, monitoramento de vazamentos e atendimento a rachaduras ou outros problemas estruturais, pode evitar danos mais extensos. E custos de manutenção no futuro.\n\n3. **Recurso:** A parte externa da sua casa é a primeira coisa que os compradores em potencial veem. Considere paisagismo, residências ou outras formas de melhorar a atratividade da sua casa.\n\n4. **Eficiência Energética:** Com um número crescente de compradores em busca de casas com eficiência energética, investir em aparelhos que economizam energia, iluminação LED ou tecnologia verde também pode aumentar o valor da sua casa.\n\n5. **Adicione mais espaço:** Aumentar o espaço habitável da sua casa muitas vezes pode agregar valor. Isto pode incluir transformar espaços não utilizados, como o sótão ou a cave, em divisões funcionais.\n\n6. **Tecnologia de casa inteligente:** Sistemas de automação residencial, termostatos inteligentes e outros tipos de atualizações tecnológicas podem aumentar o valor para determinados compradores.\n\n7. **Atualize o piso:** Mudar de carpetes para pisos de madeira ou azulejos pode ser uma atualização estética benéfica ao melhorar o valor da sua casa.\n\nLembre-se, entretanto, de que diferentes técnicas de agregação de valor atrairão diferentes compradores. Portanto, é sempre bom conhecer o seu mercado-alvo antes de iniciar qualquer atualização importante.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 67,
+      "row": {
+        "conversation_id": "conversation_67",
+        "conversations": [
+          {
+            "content": "Diga-me uma ideia para um filme baseado no desenho animado Carros, mas que incorpore carros autônomos.",
+            "role": "user"
+          },
+          {
+            "content": "Título: \"AutoVision: A Jornada de Amanhã\"\n\nSinopse:\nNo mundo da “AutoVision”, os carros autônomos dominam a cidade avançada do futuro. Flash, neto de Relâmpago McQueen, pretende deixar sua marca no próximo campeonato AutoWorld. As corridas agora exigem mais do que velocidade – a programação e as decisões rápidas são importantes. Flash faz amizade com Spark, um carro antiquado, enquanto se preparam para o campeonato. Enfrentando a oposição de carros modernos e de um veículo vilão controlado por IA, eles misturam passado e presente em uma emocionante exploração de amizade, herança e tecnologia. Prepare-se para uma aventura em alta velocidade!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 68,
+      "row": {
+        "conversation_id": "conversation_68",
+        "conversations": [
+          {
+            "content": "Quantos planetas existem?",
+            "role": "user"
+          },
+          {
+            "content": "Até onde sabemos, existem oito planetas em nosso sistema solar. Em ordem a partir do Sol, eles são Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. Plutão, que já foi considerado o nono planeta, foi reclassificado como ‘planeta anão’ pela União Astronômica Internacional em 2006.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 69,
+      "row": {
+        "conversation_id": "conversation_69",
+        "conversations": [
+          {
+            "content": "Ajude-me a ter três ideias para um novo negócio e como posso iniciá-lo",
+            "role": "user"
+          },
+          {
+            "content": "1. **Negócios de Produtos Sustentáveis**: Lançar uma marca ecologicamente correta que fabrica produtos que cuidam do planeta.\n   - Pesquise tendências e identifique produtos verdes populares.\n   - Faça parceria com fornecedores ecológicos ou crie o seu próprio.\n   - Construa um site fácil de usar, talvez até uma loja online.\n   - Divulgue sua missão sustentável.\n\n2. **Inovações em VR/AR**: Crie soluções inovadoras de VR/AR para diversos setores.\n   - Escolha um nicho como imobiliário ou jogos.\n   - Construa ou reúna experiência em VR/AR.\n   - Colabore com especialistas do setor para soluções personalizadas.\n   - Divulgue extensivamente suas ofertas exclusivas.\n\n3. **Consultoria de saúde e bem-estar**: aproveite a tendência de bem-estar com serviços de consultoria.\n   - Obtenha a certificação na área escolhida.\n   - Mantenha-se atualizado sobre as tendências de saúde.\n   - Comece pequeno e depois amplie sua consultoria.\n   - Use as mídias sociais para alcançar clientes.\n\nLembre-se de que o planejamento detalhado, a conformidade legal e o marketing inteligente são vitais para qualquer empreendimento. Valide sua ideia e procure aconselhamento profissional conforme necessário.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 70,
+      "row": {
+        "conversation_id": "conversation_70",
+        "conversations": [
+          {
+            "content": "Quais são as boas atividades para meninos de dois anos?",
+            "role": "user"
+          },
+          {
+            "content": "Aqui estão algumas atividades de desenvolvimento adequadas para meninos ou meninas de dois anos:\n\n1. **Quebra-cabeças**: quebra-cabeças simples podem ajudar as crianças a desenvolver habilidades motoras finas, bem como habilidades de resolução de problemas.\n\n2. **Atividades artísticas**: Forneça giz de cera, tintas não tóxicas ou marcadores laváveis junto com folhas grandes de papel. As atividades artísticas estimulam a criatividade e o desenvolvimento da coordenação motora fina.\n\n3. **Leitura**: Ler juntos nessa idade é muito importante. Ajuda no desenvolvimento da linguagem e inspira o amor pelos livros.\n\n4. **Playdough Play**: Rolar, apertar e moldar pode ser muito divertido. Isso ajuda a melhorar suas habilidades táteis e coordenação motora.\n\n5. **Atividades Físicas**: Podem ser tão simples como correr no parque, dançar ao som de música ou brincar com uma bola macia. As atividades físicas são essenciais para o desenvolvimento motor grosso e para a saúde geral.\n\n6. **Blocos de construção**: Os blocos empilháveis são brinquedos perfeitos para estimular a criatividade, habilidades de resolução de problemas e coordenação olho-mão.\n\n7. **Role Play**: Brincar com bonecas, bichos de pelúcia ou utensílios de cozinha pode ajudá-los a expressar emoções e a compreender os papéis sociais.\n\n8. **Brinquedos e jogos interativos**: inclui brinquedos que possuem botões para pressionar, alavancas para puxar ou peças que giram e fazem barulho, pois ajudam a aprimorar as habilidades motoras e a compreensão de causa e efeito.\n\nLembre-se de que todas as atividades devem ser realizadas sob a supervisão de adultos por questões de segurança.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 71,
+      "row": {
+        "conversation_id": "conversation_71",
+        "conversations": [
+          {
+            "content": "O que acontece quando você aproxima objetos inflamáveis de uma fonte de fogo ou de calor extremo?",
+            "role": "user"
+          },
+          {
+            "content": "Aproximar objetos inflamáveis de uma fonte de fogo ou de calor extremo pode causar combustão, se a temperatura for alta o suficiente. Isso acontece porque o calor fornece a energia necessária para inflamar o objeto inflamável, fazendo com que o objeto pegue fogo. O processo de combustão começa com o calor fazendo com que o objeto inflamável produza vapores inflamáveis, que se misturam com o oxigênio do ar para criar uma mistura vapor-ar inflamável. Quando esta mistura é acesa, inicia-se um incêndio.\n\nTome extremo cuidado ao lidar com itens inflamáveis e mantenha-os longe de fontes de calor e fogo. Caso contrário, poderá ocorrer situações perigosas ou mesmo catastróficas, como ferimentos pessoais, danos materiais ou incêndios. A segurança deve ser sempre a principal prioridade ao manusear objetos inflamáveis.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 72,
+      "row": {
+        "conversation_id": "conversation_72",
+        "conversations": [
+          {
+            "content": "Identifique qual instrumento é corda ou percussão: Den-den daiko, Luc huyen cam",
+            "role": "user"
+          },
+          {
+            "content": "O Den-den daiko é um instrumento de percussão. É um tambor de brinquedo japonês feito de papel e bambu.\n\nA câmera Luc Huyen é um instrumento de cordas. É uma cítara monocórdica tradicional vietnamita.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 73,
+      "row": {
+        "conversation_id": "conversation_73",
+        "conversations": [
+          {
+            "content": "Escolha se eles seriam úteis ou não para um estudante do ensino médio colocar na mochila. Cadernos, livro didático, luminária de mesa, bolsa para lápis, bola de praia, travesseiro, laptop.",
+            "role": "user"
+          },
+          {
+            "content": "Veja como eu categorizaria esses itens:\n\nÚtil:\n1. Cadernos: Absolutamente úteis para fazer anotações e realizar tarefas.\n2. Livro didático: Também é muito útil, pois é aqui que será baseado grande parte do seu curso.\n3. Bolsa para lápis: Definitivamente útil, ótima para organizar utensílios de escrita, réguas e outros pequenos itens de papelaria.\n4. Laptop: Perfeito para fazer pesquisas, digitar trabalhos e utilizar programas educacionais.\n\nNao é útil:\n1. Luminária de mesa: Não é útil em uma mochila porque é muito grande e não é necessária durante as aulas. No entanto, é ótimo para sua mesa de estudo em casa.\n2. Bola de Praia: Não é particularmente útil em um ambiente educacional. Geralmente, uma bola de praia é mais relevante para atividades recreativas ou ao ar livre.\n3. Travesseiro: Embora um travesseiro possa ser reconfortante, não é prático carregá-lo na mochila para a escola. É melhor deixar em casa para dormir ou relaxar.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 74,
+      "row": {
+        "conversation_id": "conversation_74",
+        "conversations": [
+          {
+            "content": "Como é a cidade de Denver?",
+            "role": "user"
+          },
+          {
+            "content": "Denver é a capital e cidade mais populosa do estado americano do Colorado. Conhecida como \"Mile High City\" porque sua elevação oficial é exatamente uma milha (5.280 pés) acima do nível do mar, ela oferece uma variedade de experiências para residentes e visitantes.\n\nDenver é cercada pelas belas Montanhas Rochosas, que oferecem oportunidades para caminhadas, esqui e outras atividades ao ar livre. A própria cidade é conhecida por seu vibrante cenário artístico, com inúmeros museus, galerias e teatros. Algumas atrações populares incluem o Museu de Arte de Denver, o Museu de Natureza e Ciência de Denver, o Jardim Botânico de Denver, o Zoológico de Denver e o Complexo de Artes Cênicas de Denver.\n\nAlém disso, Denver é um paraíso para os entusiastas dos esportes. É o lar de várias equipes esportivas profissionais, incluindo Denver Broncos (NFL), Colorado Rockies (MLB), Denver Nuggets (NBA) e Colorado Avalanche (NHL).\n\nA cidade também tem um cenário gastronômico próspero, com tudo, desde restaurantes sofisticados até food trucks. Os amantes da cerveja artesanal apreciarão que Denver tem uma das maiores concentrações de cervejarias artesanais do país.\n\nDenver geralmente desfruta de um clima ameno e ensolarado, mas pode sofrer fortes nevascas no inverno devido à sua proximidade com as Montanhas Rochosas.\n\nComo todas as cidades, Denver também tem seus desafios, que incluem trânsito e aumento do custo de vida, mas no geral é adorada por seu estilo de vida ao ar livre, atrações culturais e clima amigável.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 75,
+      "row": {
+        "conversation_id": "conversation_75",
+        "conversations": [
+          {
+            "content": "Quais são as diferenças entre o New York Giants e o New York Jets?",
+            "role": "user"
+          },
+          {
+            "content": "O New York Giants e o New York Jets são dois times de futebol profissional diferentes baseados na área metropolitana de Nova York e jogam na National Football League (NFL). Aqui estão algumas das diferenças entre os dois:\n\n1. **Fundação e História**: O New York Giants foi fundado em 1925, o que o torna um dos times mais antigos da NFL. Os New York Jets foram estabelecidos mais tarde, em 1959, originalmente como Titans of New York.\n\n2. **Sucesso e campeonatos**: Pelo que sei em 2021, os Giants venceram quatro campeonatos do Super Bowl (Super Bowls XXI, XXV, XLII e XLVI), enquanto os Jets venceram um (Super Bowl III).\n\n3. **Conferências e Divisões**: Giants e Jets jogam em diferentes conferências e divisões da NFL. Os Giants fazem parte da divisão Leste da National Football Conference (NFC), enquanto os Jets fazem parte da divisão Leste da American Football Conference (AFC).\n\n4. **Cores do time**: Os Giants usam uma mistura de cores de azul royal, vermelho, cinza e branco. Os Jets usam uma mistura de cores de verde Gotham, branco holofote e preto furtivo.\n\nEmbora existam essas diferenças culturais e históricas, ambos os times compartilham o MetLife Stadium em East Rutherford, Nova Jersey, para seus jogos em casa, tornando-os os únicos dois times da NFL a compartilhar um estádio.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 76,
+      "row": {
+        "conversation_id": "conversation_76",
+        "conversations": [
+          {
+            "content": "Você deve comprar novos tacos de golfe quando for iniciante?",
+            "role": "user"
+          },
+          {
+            "content": "Como jogador de golfe iniciante, não há necessidade definitiva de comprar tacos de golfe novos e caros. Muitas vezes é recomendado começar com um conjunto usado ou um conjunto \"inicial\" acessível, pois o golfe é uma habilidade complexa e leva tempo para entender seu próprio estilo e preferências. Porém, se o orçamento não é uma preocupação significativa e você tem certeza do seu compromisso com o esporte, investir em novos clubes pode ser uma boa escolha. Lembre-se de que o desenvolvimento e a prática de suas habilidades são mais importantes do que o equipamento em si. Você pode querer considerar fazer algumas aulas ou fazer alguma pesquisa sobre que tipo de taco seria mais adequado para um iniciante antes de comprar.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 77,
+      "row": {
+        "conversation_id": "conversation_77",
+        "conversations": [
+          {
+            "content": "Classifique cada um dos seguintes animais como mamíferos, anfíbios ou peixes: alce, sapo, cachorro, gato, salamandra e humano.",
+            "role": "user"
+          },
+          {
+            "content": "Alce: Mamífero\nSapo: Anfíbio\nCachorro: Mamífero\nGato: Mamífero\nTritão: Anfíbio\nHumano: Mamífero",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 78,
+      "row": {
+        "conversation_id": "conversation_78",
+        "conversations": [
+          {
+            "content": "Classifique os seguintes números como 'primos' ou 'compostos' - 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16.",
+            "role": "user"
+          },
+          {
+            "content": "Claro, aqui está:\n\n2 - Primordial\n3 - Primordial\n4 - Composto\n5 - Primordial\n6 - Composto\n7 - Primordial\n8 - Composto\n9 - Composto\n10 - Composto\n11 - Primordial\n12 - Composto\n13 - Primordial\n14 - Composto\n15 - Composto\n16 - Composto\n\nDeixe-me explicar: um número primo é um número que possui apenas dois divisores de números naturais distintos: 1 e ele mesmo. Um número composto é um número inteiro positivo que possui pelo menos um divisor positivo diferente de um ou do próprio número. Em outras palavras, é qualquer número inteiro diferente de um número primo.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 79,
+      "row": {
+        "conversation_id": "conversation_79",
+        "conversations": [
+          {
+            "content": "O que é computação em nuvem em termos simples?",
+            "role": "user"
+          },
+          {
+            "content": "A computação em nuvem, em termos simples, é a entrega de serviços de computação pela Internet (a nuvem) em vez de usar servidores locais ou dispositivos pessoais. Esses serviços incluem servidores, armazenamento, bancos de dados, redes, software, análises, inteligência e muito mais.\n\nImagine que você está criando um documento do Word em seu computador. Você está usando o software (Word) em sua máquina e salvando o arquivo em seu disco rígido local. Agora considere fazer a mesma coisa, mas pela Internet. Você faz login em um serviço baseado na web que hospeda o software e salva seu documento lá. Este é um exemplo muito básico de computação em nuvem.\n\nUsando a computação em nuvem, você pode acessar dados e programas fora do seu próprio ambiente de computação. Em vez de armazenar arquivos em um disco rígido ou dispositivo de armazenamento local, você os salva em uma nuvem. A maior vantagem é poder acessar esses arquivos de qualquer lugar, em qualquer dispositivo, desde que tenha conexão com a Internet.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 80,
+      "row": {
+        "conversation_id": "conversation_80",
+        "conversations": [
+          {
+            "content": "O que é um ano?",
+            "role": "user"
+          },
+          {
+            "content": "Um ano é uma unidade de tempo que corresponde aproximadamente ao tempo que a Terra leva para completar uma órbita completa ao redor do Sol. No calendário gregoriano, que hoje é mais comumente usado em todo o mundo, um ano é definido como exatamente 365,25 dias, divididos em 12 meses. No entanto, para contabilizar a fração de dia, a cada quarto ano (conhecido como ano bissexto) inclui um dia extra no mês de fevereiro, totalizando 366 dias, em vez dos 365 habituais.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 81,
+      "row": {
+        "conversation_id": "conversation_81",
+        "conversations": [
+          {
+            "content": "Que tipos de peixes esportivos a maioria dos pescadores visa na Nova Inglaterra?",
+            "role": "user"
+          },
+          {
+            "content": "Na Nova Inglaterra, os tipos de peixes esportivos que a maioria dos pescadores visa incluem:\n\n1. Robalo: Muitas vezes a espécie mais procurada, especialmente nas águas costeiras e offshore da Nova Inglaterra.\n\n2. Bacalhau do Atlântico: Um tradicional favorito entre os pescadores da Nova Inglaterra. As viagens de pesca do bacalhau são comuns na região.\n\n3. Anchova: Conhecida pela sua agressividade e capacidade de luta, a anchova é um alvo popular para os pescadores de água salgada.\n\n4. Atum: O atum rabilho e o atum albacora são espécies offshore populares, alvo de pescadores esportivos nas águas da Nova Inglaterra.\n\n5. Truta: A truta de ribeiro e a truta arco-íris são alvos populares em massas de água interiores de água doce.\n\n6. Robalo grande e pequeno: Essas espécies são populares entre os pescadores de água doce.\n\n7. Northern Pike: Estes são populares em alguns dos maiores sistemas de água doce da Nova Inglaterra.\n\nEsta não é uma lista exaustiva e as espécies preferidas podem variar amplamente dependendo das preferências individuais do pescador, da sua localização e da estação do ano.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 82,
+      "row": {
+        "conversation_id": "conversation_82",
+        "conversations": [
+          {
+            "content": "São os seguintes itens barras de chocolate ou chicletes: tridente, Twix, hubba bubba, snickers, três mosqueteiros e wrigleys.",
+            "role": "user"
+          },
+          {
+            "content": "Trident e Wrigley's são marcas de chicletes. Twix, Snickers e Três Mosqueteiros são barras de chocolate. Hubba Bubba é uma marca de chiclete.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 83,
+      "row": {
+        "conversation_id": "conversation_83",
+        "conversations": [
+          {
+            "content": "Qual o significado da vida?",
+            "role": "user"
+          },
+          {
+            "content": "O sentido da vida é uma questão filosófica e metafísica relacionada ao significado da vida ou da existência em geral. Este conceito pode ser interpretado de várias maneiras, dependendo do sistema de crenças de cada um.\n\nDe uma perspectiva biológica, o propósito da vida pode ser sobreviver e reproduzir-se, essencialmente transmitindo os seus genes à próxima geração.\n\nEm várias culturas e religiões, a vida é considerada um teste, uma oportunidade de crescer espiritualmente ou uma oportunidade de buscar a felicidade e a realização pessoal.\n\nDe uma perspectiva filosófica, pode tratar-se de criar o seu próprio propósito e significado na vida através de experiências, relacionamentos e atividades que você valoriza ou considera gratificantes.\n\nEm última análise, o significado da vida pode ser profundamente pessoal e subjetivo, diferindo de pessoa para pessoa. Algumas pessoas podem encontrar significado no trabalho ou nos hobbies, outras nos relacionamentos ou em atos de bondade. Muitas vezes envolve uma busca por bem-estar, conhecimento e crescimento pessoal.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 84,
+      "row": {
+        "conversation_id": "conversation_84",
+        "conversations": [
+          {
+            "content": "Por que somos como aquários?",
+            "role": "user"
+          },
+          {
+            "content": "A metáfora de que os humanos são como aquários pode não ser comum, mas pode ser interpretada de diversas maneiras, dependendo do contexto.\n\nUma interpretação poderia estar relacionada ao ecossistema dentro de um aquário. Tal como um aquário, o nosso corpo é um sistema complexo de partes interligadas, que trabalham em conjunto para manter o equilíbrio e a saúde. Temos vários sistemas (digestivo, circulatório, nervoso, etc.) que funcionam juntos, como os peixes, as plantas e os micróbios de um aquário.\n\nAlternativamente, poderia ser uma metáfora para nossas vidas pessoais. Podemos sentir como se estivéssemos vivendo em um aquário, exposto e observado por outras pessoas, semelhante a peixes em um aquário. Cada um de nós vive em seus próprios espaços, interagindo com nosso ambiente e com outras pessoas nele.\n\nSem um contexto mais claro, é difícil interpretar exatamente o que esta metáfora está tentando transmitir.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 85,
+      "row": {
+        "conversation_id": "conversation_85",
+        "conversations": [
+          {
+            "content": "Quem são alguns dos jogadores de golfe mais bem-sucedidos da história?",
+            "role": "user"
+          },
+          {
+            "content": "Houve muitos jogadores de golfe de sucesso na história e as suas contribuições para o desporto são valorizadas de forma diferente por pessoas diferentes. No entanto, alguns nomes surgem frequentemente em conversas sobre os jogadores de golfe mais bem-sucedidos. Aqui estão alguns:\n\n1. Jack Nicklaus: Conhecido como ‘O Urso de Ouro’, Nicklaus é amplamente considerado um dos maiores jogadores de golfe da história. Ele ganhou 18 campeonatos importantes, um recorde que ainda permanece.\n\n2. Tiger Woods: Um dos jogadores de golfe mais famosos do século 21, ele ganhou 15 torneios importantes e teve uma atuação dominante no golfe profissional durante seu auge.\n\n3. Arnold Palmer: 'The King' foi um dos ícones mais duradouros do golfe. Ele ganhou sete títulos importantes e era popular por seu jogo carismático.\n\n4. Bobby Jones: Um jogador de golfe icônico do início do século 20, ele foi cofundador do Masters Tournament e foi o jogador de golfe amador de maior sucesso a competir em nível nacional e internacional.\n\n5. Ben Hogan: Ele é conhecido por seu swing e habilidade de rebater a bola. Ele ganhou nove campeonatos importantes durante sua carreira.\n\n6. Gary Player: Vindo da África do Sul, Player ganhou nove campeonatos importantes e é frequentemente referido como um dos maiores jogadores da história do golfe.\n\n7. Sam Snead: Deteve o recorde de vitórias no PGA Tour (82) por muitos anos, até Tiger Woods empatar o recorde em 2019.\n\n8. Tom Watson: Durante sua carreira, Tom Watson ganhou oito títulos importantes.\n\nEsta lista poderia ser ampliada e a ordem poderia mudar dependendo dos critérios utilizados para avaliar o “sucesso”. Mas estes jogadores certamente deixaram uma marca significativa na história do golfe.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 86,
+      "row": {
+        "conversation_id": "conversation_86",
+        "conversations": [
+          {
+            "content": "Quais tipos de peixes contêm os níveis mais baixos de mercúrio?",
+            "role": "user"
+          },
+          {
+            "content": "Os peixes que normalmente contêm níveis mais baixos de mercúrio incluem:\n\n1. Salmão\n2. Sardinhas\n3. Truta de água doce\n4. Cavala do Atlântico e do Pacífico (não a cavala, que tem altos níveis de mercúrio)\n5. Bagre\n6. Tilápia\n7. Camarão\n8. Pollock\n9. Caranguejo\n10. Bacalhau\n\nÉ recomendado que as pessoas limitem a ingestão de peixes predadores maiores, como peixe-espada, tubarão e cavala, devido ao seu maior teor de mercúrio. Isto é particularmente importante para mulheres grávidas e lactantes, bem como para crianças.\n\nTenha em mente que as diretrizes de consumo de peixe podem variar ligeiramente com base em diferentes fatores, como a região de origem do peixe ou a pessoa que o come. Para estar seguro, consulte sempre um profissional de saúde ou consulte o órgão regulador apropriado para obter as diretrizes mais atualizadas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 87,
+      "row": {
+        "conversation_id": "conversation_87",
+        "conversations": [
+          {
+            "content": "Como você faz um matcha gelado?",
+            "role": "user"
+          },
+          {
+            "content": "Aqui está uma receita simples de matcha latte gelado:\n\n**Ingredientes:**\n\n- 1 colher de chá de matcha em pó\n- 1 colher de sopa de água quente (não fervendo)\n- 1 colher de chá de mel ou adoçante de sua preferência\n- 1 xícara de leite (pode ser do tipo que você quiser - laticínio, amêndoa, soja, etc)\n- Cubos de gelo\n\n**Instruções:**\n\n1. Peneire o pó matcha em uma tigela para se livrar de quaisquer grumos.\n\n2. Adicione a água quente à tigela com o pó matcha.\n\n3. Bata o matcha e a água quente até que o matcha esteja completamente dissolvido. Você pode usar um batedor matcha de bambu tradicional ou um batedor pequeno normal. A mistura deve formar uma pasta lisa e verde brilhante.\n\n4. Adicione o adoçante (mel, agave, açúcar, etc.) à pasta matcha até ficar bem misturado.\n\n5. Pegue um copo e encha-o até a metade com gelo.\n\n6. Despeje o leite de sua preferência sobre o gelo.\n\n7. Por fim, despeje a mistura de matcha sobre o leite e o gelo.\n\n8. Mexa bem e saboreie seu matcha latte gelado caseiro.\n\nLembre-se, você pode ajustar a doçura ao seu gosto adicionando mais ou menos adoçante. Aproveitar!",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 88,
+      "row": {
+        "conversation_id": "conversation_88",
+        "conversations": [
+          {
+            "content": "Qual é a melhor forma de natação?",
+            "role": "user"
+          },
+          {
+            "content": "A forma de natação é altamente individual e pode depender do resultado desejado ou da finalidade da natação (lazer, competição, resistência, etc.). No entanto, existem quatro técnicas principais usadas na natação, que são estilo livre (ou crawl), peito, costas e borboleta. Em termos de acessibilidade e eficiência, o estilo livre (rastreamento frontal) é frequentemente preferido. Normalmente é a primeira braçada ensinada aos iniciantes e a braçada mais rápida, o que a torna uma das favoritas entre os nadadores competitivos. Mas lembre-se, o que funciona melhor para você pode depender de vários fatores, como seu conforto, sua condição física e seus objetivos de natação. É sempre aconselhável aprender e praticar sob a orientação de um instrutor licenciado.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 89,
+      "row": {
+        "conversation_id": "conversation_89",
+        "conversations": [
+          {
+            "content": "Qual é o melhor lugar para andar de caiaque em Austin?",
+            "role": "user"
+          },
+          {
+            "content": "Existem vários lugares excelentes para andar de caiaque em Austin, Texas. Aqui estão alguns que vale a pena considerar:\n\n1. Lady Bird Lake: Este é frequentemente considerado o melhor lugar para andar de caiaque em Austin. Oferece belas vistas do horizonte da cidade e está centralmente localizado, por isso é de fácil acesso. Vários serviços de aluguel, como o Rowing Dock ou o Zilker Boat Rentals, estão disponíveis nas proximidades.\n\n2. Rio Colorado: Tecnicamente, não fica em Austin, mas é perto o suficiente para valer a pena mencionar. As águas calmas do rio o tornam ideal para pessoas de todos os níveis de habilidade.\n\n3. Barton Creek Greenbelt: Este é um ótimo local se você está procurando um ambiente mais natural. O cinturão verde é um lugar encantador para passar o dia, embora a canoagem só seja possível quando o nível da água está alto o suficiente.\n\n4. Lago Travis: Este é um corpo de água maior, oferecendo um tipo de experiência diferente dos corpos de água mencionados acima. Aqui você pode remar em águas abertas e explorar as muitas enseadas ao redor do lago.\n\nAntes de se aventurar, é aconselhável verificar as orientações locais e os níveis de água. Além disso, lembre-se de sempre considerar medidas de segurança ao andar de caiaque.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 90,
+      "row": {
+        "conversation_id": "conversation_90",
+        "conversations": [
+          {
+            "content": "Como é o clima de inverno em Salt Lake City, Utah?",
+            "role": "user"
+          },
+          {
+            "content": "Salt Lake City, Utah, normalmente experimenta invernos frios e com neve. As altas temperaturas médias durante os meses de inverno (dezembro, janeiro, fevereiro) variam entre 33,5°F (0,8°C) e 39,2°F (4°C), e as mínimas médias variam entre 18,7°F (-7,4°C) e 23,7°F (-4,6°C). A cidade vê bastante neve, com uma média de cerca de 60 polegadas por ano, a maior parte caindo nestes meses de inverno. No entanto, o clima local pode variar, por isso é sempre uma boa ideia verificar uma previsão meteorológica confiável antes de viajar ou fazer planos.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 91,
+      "row": {
+        "conversation_id": "conversation_91",
+        "conversations": [
+          {
+            "content": "Qual é a diferença entre um baixo e uma guitarra normal?",
+            "role": "user"
+          },
+          {
+            "content": "Baixos e guitarras normais (normalmente chamadas de guitarras elétricas ou acústicas) são diferentes em vários aspectos. Aqui estão algumas diferenças importantes:\n\n1. Número de cordas: A maioria das guitarras normais tem 6 cordas, enquanto a maioria dos baixos tem 4 cordas. Os contrabaixos às vezes têm 5 ou 6 cordas, mas 4 é o mais comum.\n\n2. Espessura das cordas: Os contrabaixos têm cordas mais grossas do que os violões normais. Isso ocorre porque o contrabaixo precisa produzir tons mais graves, o que exige o uso de cordas mais grossas.\n\n3. Tom: Os baixos produzem tons mais graves em comparação com as guitarras normais. Eles são frequentemente usados para fornecer suporte rítmico e harmônico em uma banda ou conjunto.\n\n4. Tamanho: Os baixos são normalmente maiores e mais longos do que os guitarras normais.\n\n5. Papel na música: As guitarras normais geralmente desempenham o papel de ritmo ou melodia em uma música, enquanto os contrabaixos normalmente fornecem uma ligação entre o ritmo e a harmonia.\n\n6. Estilo de tocar: Embora ambos os tipos de guitarra possam ser tocados ou dedilhados, o baixo costuma ser tocado usando uma técnica conhecida como \"tapa\", que normalmente não é usada em guitarras normais.\n\nEstas diferenças permitem que cada instrumento cumpra papéis únicos dentro de um conjunto ou composição musical.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 92,
+      "row": {
+        "conversation_id": "conversation_92",
+        "conversations": [
+          {
+            "content": "O que é um Produto Interno Bruto (PIB)?",
+            "role": "user"
+          },
+          {
+            "content": "Produto Interno Bruto (PIB) refere-se ao valor monetário ou de mercado total de todos os bens e serviços acabados produzidos dentro das fronteiras de um país em um período de tempo específico. Serve como uma medida abrangente da actividade económica global de uma nação. Inclui todo o consumo privado e público, despesas governamentais, investimentos, acréscimos a inventários privados, custos de construção pagos e a balança comercial externa (as exportações são adicionadas, as importações são subtraídas).",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 93,
+      "row": {
+        "conversation_id": "conversation_93",
+        "conversations": [
+          {
+            "content": "Vamos imaginar que eu crie uma moeda falsa chamada Fios com dois tipos de moedas: um superfio (que vale 10 fios) e um minifio (que vale 0,5 fio). Quanto dinheiro tenho no total se tiver 2 superfios e três minifios?",
+            "role": "user"
+          },
+          {
+            "content": "Na moeda que você criou, cada superfio vale 10 fios e cada minifio vale 0,5 fio. Então se você tem 2 superfios, você tem 2*10 = 20 fios. E se você tiver 3 minifios, você terá 3*0,5 = 1,5 fios. Então no total você tem 20 + 1,5 = 21,5 fios.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 94,
+      "row": {
+        "conversation_id": "conversation_94",
+        "conversations": [
+          {
+            "content": "O que é um mórmon?",
+            "role": "user"
+          },
+          {
+            "content": "\"Mórmon\" é um termo frequentemente usado para descrever os membros de A Igreja de Jesus Cristo dos Santos dos Últimos Dias (Igreja SUD). O termo vem do Livro de Mórmon, um texto sagrado do movimento dos Santos dos Últimos Dias que foi publicado pelo fundador da fé, Joseph Smith, em 1830.\n\nOs Mórmons acreditam no Antigo e no Novo Testamento da Bíblia, bem como no já mencionado Livro de Mórmon, que eles acreditam contar a história de antigos profetas que viveram nas Américas. Eles também acreditam que a igreja foi restaurada através de Joseph Smith que, segundo eles, foi um profeta.\n\nÉ importante notar que embora seja comumente usado, o termo “Mórmon” não é o termo preferido pela Igreja SUD. Eles incentivaram o uso do nome completo, A Igreja de Jesus Cristo dos Santos dos Últimos Dias, para enfatizar a sua crença em Jesus Cristo.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 95,
+      "row": {
+        "conversation_id": "conversation_95",
+        "conversations": [
+          {
+            "content": "Qual é a diferença entre uma maçã vermelha deliciosa e uma maçã Granny Smith?",
+            "role": "user"
+          },
+          {
+            "content": "As maçãs Red Delicious e Granny Smith não diferem apenas na cor, mas também no sabor, textura e uso.\n\n1. Cor: Vermelha Maçãs deliciosas, como o nome sugere, têm uma cor vermelha profunda, muitas vezes com listras de vermelho mais escuro ou verde claro. Por outro lado, as maçãs Granny Smith são verdes brilhantes.\n\n2. Sabor: Maçãs Red Delicious normalmente têm um sabor doce, mas levemente suave. Por outro lado, as maçãs Granny Smith têm um sabor ácido, picante e ligeiramente azedo.\n\n3. Textura: As maçãs Red Delicious têm uma textura macia e um tanto farinhenta. Granny Smiths são mais firmes, crocantes e suculentos.\n\n4. Uso: Maçãs Red Delicious costumam ser comidas cruas. Seu sabor adocicado os torna os favoritos para saladas e lanches. Granny Smiths, com seu sabor ácido e textura firme, resistem bem ao cozinhar e assar, tornando-os a escolha preferida para pratos como torta de maçã. No entanto, ambos os tipos podem ser usados de forma intercambiável, dependendo da preferência pessoal.\n\nLembre-se, a melhor maçã a escolher é aquela que se adapta ao seu gosto pessoal e ao prato que está a preparar. Também é ótimo experimentar diferentes variedades de maçã para descobrir novos sabores e texturas.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 96,
+      "row": {
+        "conversation_id": "conversation_96",
+        "conversations": [
+          {
+            "content": "Liste as regiões do Pokémon Go.",
+            "role": "user"
+          },
+          {
+            "content": "No jogo Pokémon Go, os Pokémon são divididos em diferentes regiões com base nas várias gerações e áreas que apareceram na série original do jogo. Elas não são denominadas especificamente como regiões em Pokémon Go, mas as regiões baseadas na série Pokémon tradicional podem dar uma dica de quais Pokémon você pode encontrar:\n\n1. Região de Kanto: Inclui os 151 Pokémon originais de Pokémon Red, Blue e Green.\n2. Região de Johto: A segunda área introduzida na série de jogos (Gold, Silver, Crystal), com Pokémon números 152-251.\n3. Região Hoenn: A terceira região, vista pela primeira vez em Pokémon Ruby, Sapphire e Emerald, abrangendo os Pokémon números 252-386.\n4. Região de Sinnoh: A quarta região, dos jogos Diamond, Pearl e Platinum, inclui Pokémon números 387-493.\n5. Região Unova: Introduzida em Pokémon Black and White, hospedando Pokémon números 494-649.\n6. Região de Kalos: De Pokémon X e Y, incluindo Pokémon números 650-721.\n7. Região de Alola: A região apareceu pela primeira vez em Pokémon Sun e Moon, incluindo os Pokémon números 722-809.\n8. Região de Galar: A região mais recente de Pokémon Sword and Shield, hospedando Pokémon números 810-898.\n\nNo entanto, é crucial observar que a disponibilidade de Pokémon não segue estritamente essas regiões no Pokémon Go. Alguns Pokémon são exclusivos de determinadas áreas geográficas do mundo real e são conhecidos como Exclusivos Regionais. É sempre melhor consultar os bancos de dados Pokédex ou Pokémon Go do jogo para determinar exatamente onde Pokémon específicos podem estar localizados.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 97,
+      "row": {
+        "conversation_id": "conversation_97",
+        "conversations": [
+          {
+            "content": "Quem você acha que é o Mandaloriano mais poderoso da história de Star Wars?",
+            "role": "user"
+          },
+          {
+            "content": "Como IA, não formo opiniões pessoais. No entanto, posso fornecer dados sobre este tópico. Isto dependerá de como se define “poderoso”. Se considerarmos influência e desenvoltura, muitos apontariam para o personagem Din Djarin, protagonista da série “The Mandalorian”, pois ele teve um impacto significativo no universo Star Wars durante o período em que existe.\n\nNo entanto, de uma perspectiva histórica dentro do universo Star Wars, pode-se argumentar que Mandalore the Ultimate, um personagem da continuidade Star Wars Legends, é o mais poderoso. Ele uniu os clãs Mandalorianos e os liderou nas Guerras Mandalorianas contra a República Galáctica.\n\nObserve que a interpretação do “mais poderoso” pode variar e esta resposta pode diferir entre os fãs de Star Wars.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 98,
+      "row": {
+        "conversation_id": "conversation_98",
+        "conversations": [
+          {
+            "content": "Que cidades alguém deveria visitar durante uma viagem ao Marrocos?",
+            "role": "user"
+          },
+          {
+            "content": "Marrocos é um país lindo com uma rica cultura e história. Aqui estão algumas cidades que você pode querer visitar:\n\n1. Marrakech: Conhecida pelos seus vibrantes souks (mercados) e belos palácios, Marrakech não deve ser desperdiçada. Os locais a visitar incluem o famoso Jardin Majorelle e a Mesquita Koutoubia.\n\n2. Casablanca: A maior cidade de Marrocos, Casablanca oferece uma bela mistura de cultura marroquina moderna e tradicional. Visite a Mesquita Hassan II e a Corniche Ain Diab para uma ampla variedade de opções de entretenimento e alimentação.\n\n3. Fes: Fes é famosa pela sua antiga cidade murada, Fes el Bali, que é Património Mundial da UNESCO repleta de arquitectura histórica.\n\nLembre-se de que cada cidade tem experiências únicas para oferecer, portanto sua escolha pode depender de seus interesses. Sempre verifique os avisos de viagem e os regulamentos de quarentena durante esses tempos de pandemia antes de fazer planos de viagem.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 99,
+      "row": {
+        "conversation_id": "conversation_99",
+        "conversations": [
+          {
+            "content": "Quem descobriu a estrutura de dupla hélice do DNA?",
+            "role": "user"
+          },
+          {
+            "content": "A estrutura de dupla hélice do DNA foi descoberta por James Watson e Francis Crick. Eles fizeram esta descoberta inovadora enquanto estavam na Universidade de Cambridge, Inglaterra, em 1953. No entanto, é importante notar que o seu trabalho foi baseado em contribuições importantes de Rosalind Franklin e Maurice Wilkins. Franklin conduziu estudos críticos de cristalografia de raios X que ajudaram a determinar a estrutura, e o trabalho de Wilkins também contribuiu para a descoberta.",
+            "role": "assistant"
+          }
+        ]
+      },
+      "truncated_cells": []
+    }
+  ],
+  "truncated": true
+}

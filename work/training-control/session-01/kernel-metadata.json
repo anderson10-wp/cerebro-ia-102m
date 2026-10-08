@@ -1,0 +1,17 @@
+{
+  "id": "andersonluan10ad/cerebro-v1-102m-train-01",
+  "title": "Cerebro V1 102M Train 01",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "andersonluan10ad/cerebro-v1-102m-corpus"
+  ],
+  "model_sources": []
+}

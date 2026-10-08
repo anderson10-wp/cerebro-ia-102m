@@ -1,0 +1,18 @@
+{
+  "train": {
+    "sha256": "5083bb0449ef2fe41e93ad7e80f29150c281db42501780b954ed9f69ec6a86d5"
+  },
+  "validation": {
+    "sha256": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e"
+  },
+  "audit": {
+    "sha256": "7bd4ffaecee5c30803235b6b6d915ff92610005dacb835a34cfab661c42fa2c2"
+  },
+  "tokenizer_sha256": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+  "training_examples": 183,
+  "new_examples": 96,
+  "replay_examples": 87,
+  "exact_prompt_overlap": 0,
+  "holdout_evaluated": false,
+  "warning": "Development tasks inform this curriculum; exact prompt separation does not imply independent generalization."
+}

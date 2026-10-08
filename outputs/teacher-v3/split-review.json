@@ -1,0 +1,129 @@
+{
+  "exact_prompt_overlaps": [],
+  "heldout_files_unchanged": true,
+  "nearest_prompt_pairs": [
+    {
+      "heldout_id": "validation-064",
+      "closest_train_id": "train-024",
+      "character_similarity": 0.6292
+    },
+    {
+      "heldout_id": "validation-065",
+      "closest_train_id": "v3-train-015",
+      "character_similarity": 0.6265
+    },
+    {
+      "heldout_id": "validation-066",
+      "closest_train_id": "v3-train-024",
+      "character_similarity": 0.6
+    },
+    {
+      "heldout_id": "validation-067",
+      "closest_train_id": "v3-train-026",
+      "character_similarity": 0.5673
+    },
+    {
+      "heldout_id": "validation-068",
+      "closest_train_id": "v3-train-156",
+      "character_similarity": 0.7521
+    },
+    {
+      "heldout_id": "validation-069",
+      "closest_train_id": "v3-train-057",
+      "character_similarity": 0.6903
+    },
+    {
+      "heldout_id": "validation-070",
+      "closest_train_id": "v3-train-087",
+      "character_similarity": 0.6452
+    },
+    {
+      "heldout_id": "validation-071",
+      "closest_train_id": "v3-train-108",
+      "character_similarity": 0.5231
+    },
+    {
+      "heldout_id": "validation-072",
+      "closest_train_id": "train-058",
+      "character_similarity": 0.5565
+    },
+    {
+      "heldout_id": "validation-073",
+      "closest_train_id": "v3-train-098",
+      "character_similarity": 0.733
+    },
+    {
+      "heldout_id": "validation-074",
+      "closest_train_id": "v3-train-077",
+      "character_similarity": 0.7607
+    },
+    {
+      "heldout_id": "validation-075",
+      "closest_train_id": "train-009",
+      "character_similarity": 0.7344
+    },
+    {
+      "heldout_id": "audit-076",
+      "closest_train_id": "train-009",
+      "character_similarity": 0.7119
+    },
+    {
+      "heldout_id": "audit-077",
+      "closest_train_id": "v3-train-124",
+      "character_similarity": 0.732
+    },
+    {
+      "heldout_id": "audit-078",
+      "closest_train_id": "train-011",
+      "character_similarity": 0.5333
+    },
+    {
+      "heldout_id": "audit-079",
+      "closest_train_id": "v3-train-029",
+      "character_similarity": 0.6026
+    },
+    {
+      "heldout_id": "audit-080",
+      "closest_train_id": "train-005",
+      "character_similarity": 0.5778
+    },
+    {
+      "heldout_id": "audit-081",
+      "closest_train_id": "train-000",
+      "character_similarity": 0.6891
+    },
+    {
+      "heldout_id": "audit-082",
+      "closest_train_id": "v3-train-086",
+      "character_similarity": 0.5967
+    },
+    {
+      "heldout_id": "audit-083",
+      "closest_train_id": "train-053",
+      "character_similarity": 0.6562
+    },
+    {
+      "heldout_id": "audit-084",
+      "closest_train_id": "v3-train-098",
+      "character_similarity": 0.6117
+    },
+    {
+      "heldout_id": "audit-085",
+      "closest_train_id": "v3-train-101",
+      "character_similarity": 0.6621
+    },
+    {
+      "heldout_id": "audit-086",
+      "closest_train_id": "v3-train-070",
+      "character_similarity": 0.5604
+    },
+    {
+      "heldout_id": "audit-087",
+      "closest_train_id": "v3-train-144",
+      "character_similarity": 0.6475
+    }
+  ],
+  "near_match_review_threshold": 0.85,
+  "flagged_pairs": [],
+  "limitation": "Character similarity is a screening heuristic, not proof of zero contamination."
+}

@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0360",
+      "answer": "Revise o texto com um manual de gramática confiável, use corretor ortográfico e peça a alguém para ler. Compare frases com exemplos corretos e pratique reescrevendo trechos, assim você reconhece padrões e corrige erros.",
+      "followup": "Qual recurso simples pode ajudar a identificar erros de concordância?",
+      "followup_answer": "Um checklist de concordância verbal e nominal, que lista regras básicas e exemplos, permite marcar cada ponto ao revisar o ensaio, facilitando a correção."
+    },
+    {
+      "id": "dialog-0361",
+      "answer": "Tecnologia pode levar aulas online, criar bibliotecas digitais e usar aplicativos de aprendizagem offline. Em áreas rurais, redes comunitárias de internet e dispositivos de baixo custo permitem acesso a cursos, tutoriais e certificações, ampliando oportunidades ao longo da vida.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0362",
+      "answer": "Use uma agenda ou app para listar tarefas diárias, priorize com a regra 80/20, reserve blocos de tempo e mantenha um espaço de trabalho organizado. Revise semanalmente o que foi concluído e ajuste o plano conforme necessário.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0363",
+      "answer": "Não posso recomendar marcas específicas, mas ao escolher um software de áudio, procure formatos sem perdas como FLAC, suporte a múltiplos codecs e opções de compressão configuráveis, garantindo qualidade próxima ao original.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0364",
+      "answer": "1. \"Eu mereço respeito e compaixão.\" 2. \"Meus pensamentos não definem meu valor.\" 3. \"Posso aprender e melhorar a cada dia.\" 4. \"Sou capaz de enfrentar desafios com coragem.\" 5. \"Minha voz importa.\"",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0365",
+      "answer": "Na fotossíntese, cloroplastos absorvem luz, excitam elétrons e geram ATP e NADPH. Esses compostos alimentam o ciclo de Calvin, onde CO₂ se transforma em glicose. O oxigênio é liberado como subproduto.",
+      "followup": "Qual exemplo simples ilustra a conversão de energia luminosa em energia química?",
+      "followup_answer": "Uma planta de interior, ao receber luz solar, produz açúcar nas folhas; esse açúcar alimenta a planta, demonstrando como a luz se converte em energia química armazenada."
+    },
+    {
+      "id": "dialog-0366",
+      "answer": "Liste interesses, experimente atividades curtas (como pintura, jardinagem ou programação) e observe o que desperta prazer. Avalie recursos disponíveis, tempo e custos, então escolha algo que combine curiosidade e praticidade para começar.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0367",
+      "answer": "Gatos podem caçar pássaros, provocando estresse ao ave. Além disso, a presença de predadores pode levar o pássaro a desenvolver comportamentos de medo, reduzindo sua qualidade de vida e saúde.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0368",
+      "answer": "Aprendizagem ativa em semi-supervisionada combina poucos rótulos com grande volume de dados não rotulados, usando estratégias como pseudo‑rótulos ou consistência de predição para melhorar o modelo enquanto o aluno interage com o material.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0369",
+      "answer": "Crie um arquivo .bat, escreva comandos sequenciais (por exemplo, copiar arquivos, iniciar programas) e salve. Use \"@echo off\" no início para ocultar comandos e \"pause\" ao final para ver resultados.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0370",
+      "answer": "A IA pode substituir tarefas repetitivas, gerando desemprego em setores automatizados, mas também cria novas funções técnicas. Algoritmos podem refletir vieses dos dados de treinamento, afetando decisões de crédito, contratação ou justiça, exigindo transparência e auditoria.",
+      "followup": "Como a transparência nos algoritmos pode reduzir preconceitos?",
+      "followup_answer": "Divulgando fontes de dados, critérios de decisão e permitindo auditorias independentes, as organizações podem identificar e corrigir vieses, garantindo que as decisões automatizadas sejam mais justas e explicáveis."
+    },
+    {
+      "id": "dialog-0371",
+      "answer": "1. Defina objetivo e público. 2. Esboce estrutura de slides. 3. Insira títulos claros e conteúdo conciso. 4. Use imagens e gráficos relevantes. 5. Revise ortografia e consistência visual antes de salvar ou apresentar.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0372",
+      "answer": "Na mitose, a célula duplica seu DNA, alinha cromossomos na placa metafásica, separa as cromátides irmãs e forma duas núcleos idênticos. O citoplasma então se divide (citocinese), resultando em duas células filhas com o mesmo número de cromossomos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0373",
+      "answer": "Use pincel de cerdas macias para camadas finas, técnica de glacê para transições suaves, impasto para textura grossa e velatura para profundidade. Trabalhe em camadas secas, respeitando tempo de secagem entre elas.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0374",
+      "answer": "Liste experiências relevantes, destaque habilidades transferíveis e use verbos de ação. Para a carta, apresente motivação, relacione competências ao cargo e conclua com agradecimento e disponibilidade para entrevista.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0375",
+      "answer": "O problema de alinhamento refere-se a garantir que metas do modelo coincidam com valores humanos. Em aprendizado de máquina, isso implica projetar recompensas, supervisão e feedback que orientem o comportamento da IA para resultados desejados.",
+      "followup": "Qual estratégia ajuda a alinhar objetivos de um modelo com valores humanos?",
+      "followup_answer": "Incorporar feedback humano iterativo, onde especialistas avaliam saídas e ajustam recompensas, permite que o modelo aprenda preferências humanas e reduza desvios indesejados."
+    },
+    {
+      "id": "dialog-0376",
+      "answer": "Defina limites claros, reserve horários fixos para trabalho e lazer, pratique pausas curtas, delegue tarefas quando possível e mantenha hábitos de sono e exercício. Avalie regularmente seu nível de estresse e ajuste a carga.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0377",
+      "answer": "Redes rasas têm uma ou duas camadas ocultas, aprendendo padrões simples. Redes profundas possuem muitas camadas, capturando hierarquias complexas de características, o que melhora desempenho em tarefas como visão e linguagem, porém requer mais dados e poder computacional.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0378",
+      "answer": "Sim. Gestos, expressões faciais e postura variam entre culturas; o mesmo sinal pode ter significados diferentes. Conhecer essas diferenças evita mal‑entendidos e melhora a comunicação intercultural.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0379",
+      "answer": "A área de um retângulo é calculada multiplicando a base pela altura: Área = base × altura. Por exemplo, se a base mede 5 cm e a altura 3 cm, a área será 15 cm².",
+      "followup": "false"
+    }
+  ]
+}

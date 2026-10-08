@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-1000",
+      "answer": "Python costuma ser recomendado para iniciantes porque tem sintaxe clara, grande comunidade e muitas bibliotecas úteis, facilitando a aprendizagem de conceitos básicos de programação sem se preocupar com detalhes complexos de memória.",
+      "followup": "Qual seria um primeiro projeto simples para praticar essa linguagem?",
+      "followup_answer": "Um projeto simples pode ser um programa que pede ao usuário seu nome e idade, calcula quantos anos faltam para ele(a) completar 100 e exibe a mensagem. Usa entrada, cálculo e impressão de texto."
+    },
+    {
+      "id": "dialog-1001",
+      "answer": "Escuta ativa, uso de “eu sinto” ao expressar emoções, reformulação do que o outro disse, buscar pontos de acordo, manter tom calmo e evitar interrupções são métodos eficazes para resolver conflitos."
+    },
+    {
+      "id": "dialog-1002",
+      "answer": "Todas as manhãs, Alex despertava no corpo de alguém diferente: um estudante, um chef, um idoso. Cada dia trazia novos hábitos, desafios e lições, ensinando-lhe empatia ao viver brevemente as vidas alheias antes do próximo despertar."
+    },
+    {
+      "id": "dialog-1003",
+      "answer": "Não posso listar faculdades específicas, mas ao escolher nos EUA, considere a reputação da instituição na sua área, oportunidades de pesquisa, apoio a estudantes internacionais e custos. Consulte rankings acadêmicos e converse com orientadores para decidir."
+    },
+    {
+      "id": "dialog-1004",
+      "answer": "Use um planner semanal, divida tarefas grandes em blocos menores, reserve tempo fixo para revisão, mantenha materiais organizados em pastas e revise prioridades diariamente para evitar acúmulo de trabalho."
+    },
+    {
+      "id": "dialog-1005",
+      "answer": "Planilhas como Google Sheets, aplicativos de finanças como Mint ou YNAB, e softwares de contabilidade simples ajudam a rastrear receitas, despesas e metas, permitindo visualização clara de múltiplas fontes de renda.",
+      "followup": "Qual recurso desses seria mais fácil para quem nunca usou planilhas?",
+      "followup_answer": "Para iniciantes, o Google Sheets é acessível: basta criar uma conta Google, usar modelos prontos de orçamento e atualizar valores mensalmente, sem necessidade de instalar programas."
+    },
+    {
+      "id": "dialog-1006",
+      "answer": "Comece definindo o objetivo da apresentação, escolha um layout limpo, use fontes legíveis, limite texto a pontos-chave, inclua imagens relevantes e pratique a fala para garantir fluidez."
+    },
+    {
+      "id": "dialog-1007",
+      "answer": "O parque ao entardecer tem o cheiro de terra úmida, o canto suave dos pássaros e a brisa fresca que acaricia o rosto, criando um refúgio tranquilo onde pensamentos fluem livremente."
+    },
+    {
+      "id": "dialog-1008",
+      "answer": "Não existe um idioma universalmente \"melhor\"; escolha aquele que alinha com seus interesses, necessidades profissionais ou culturais, pois a motivação pessoal facilita a aprendizagem."
+    },
+    {
+      "id": "dialog-1009",
+      "answer": "Divulgar histórias de impacto, oferecer treinamento flexível, reconhecer voluntários publicamente, criar programas de mentoria e facilitar inscrições online são estratégias que aumentam o engajamento em ONGs."
+    },
+    {
+      "id": "dialog-1010",
+      "answer": "Mantenha os pulsos retos, dedos curvados levemente sobre as teclas, cotovelos próximos ao corpo e postura ereta com os pés firmes no chão, evitando tensão nos ombros e pescoço.",
+      "followup": "Qual pausa curta recomendo durante longas sessões de digitação?",
+      "followup_answer": "A cada 45 minutos, levante-se, alongue os braços, faça rotações de pulso e caminhe alguns passos; isso reduz fadiga e protege as articulações."
+    },
+    {
+      "id": "dialog-1011",
+      "answer": "Defina o objetivo da página, escolha um layout limpo, escreva um título atraente, inclua prova social, crie um formulário simples e teste diferentes chamadas à ação para otimizar conversões."
+    },
+    {
+      "id": "dialog-1012",
+      "answer": "\"The Road Not Taken\" de Robert Frost, \"If\" de Rudyard Kipling, \"Invictus\" de William Ernest Henley, \"Daffodils\" de William Wordsworth, \"Ode to a Nightingale\" de John Keats."
+    },
+    {
+      "id": "dialog-1013",
+      "answer": "Comece definindo metas claras, escolha um recurso como aplicativo ou curso online, pratique diariamente 15 minutos, use cartões de memória, converse com falantes nativos e acompanhe seu progresso regularmente."
+    },
+    {
+      "id": "dialog-1014",
+      "answer": "Consulte centros comunitários, bibliotecas públicas ou organizações como Cruz Vermelha, bancos de alimentos e grupos de limpeza de parques; eles costumam aceitar voluntários sem experiência prévia."
+    },
+    {
+      "id": "dialog-1015",
+      "answer": "A RAM física só pode ser aumentada instalando módulos compatíveis; verifique o tipo (DDR4, DDR5), capacidade máxima suportada pela placa-mãe e siga instruções de segurança ao inserir os módulos.",
+      "followup": "Como descubro a capacidade máxima suportada pela minha placa-mãe?",
+      "followup_answer": "Acesse o manual da placa-mãe ou o site do fabricante, procure a seção de especificações de memória, onde constam tipos suportados, número de slots e capacidade total permitida."
+    },
+    {
+      "id": "dialog-1016",
+      "answer": "Pratique discursos curtos diante de um espelho, grave e reveja, peça feedback a amigos, controle a respiração e concentre-se em contar uma história para envolver a audiência."
+    },
+    {
+      "id": "dialog-1017",
+      "answer": "Lara, antes temerosa de mostrar fraqueza, aceitou pedir ajuda ao perder o emprego. Ao compartilhar suas dúvidas, encontrou apoio, percebeu que vulnerabilidade cria conexões e fortalece a coragem interior."
+    },
+    {
+      "id": "dialog-1018",
+      "answer": "Ao aprender mandarim, esteja atento ao uso de tons, à hierarquia de tratamento e ao conceito de “guanxi”. Pratique com falantes nativos, observe costumes de cortesia e adapte-se ao ritmo mais coletivo da comunicação."
+    },
+    {
+      "id": "dialog-1019",
+      "answer": "Sim, a ASME colabora com universidades, empresas e outras associações para promover programas STEM, oferecendo recursos educacionais, bolsas e eventos que incentivam o ensino de engenharia em diferentes níveis."
+    }
+  ]
+}

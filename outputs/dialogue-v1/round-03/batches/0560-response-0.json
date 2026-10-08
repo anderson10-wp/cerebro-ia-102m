@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0560",
+      "answer": "Ana propõe usar bicicletas elétricas para trilhas curtas, enquanto Bruno sugere caronas compartilhadas em veículos híbridos para longas distâncias. Eles comparam custos, emissões e praticidade, concluindo que a escolha depende da distância e da disponibilidade de infraestrutura.",
+      "followup": "Qual seria um exemplo de roteiro de conversa entre duas pessoas que discutem usar patins elétricos para um passeio no parque?",
+      "followup_answer": "Carlos menciona que patins elétricos evitam trânsito e são silenciosos; Laura responde que precisam de superfícies lisas e bateria suficiente. Eles avaliam segurança, tempo de recarga e disponibilidade de estações, decidindo testar o patins em um parque plano antes de adotar."
+    },
+    {
+      "id": "dialog-0561",
+      "answer": "Para o verão, plante tomate, pimentão, abobrinha e berinjela, que suportam calor intenso. Também pode semear alface e rúcula em áreas sombreadas, garantindo colheita rápida e saborosa durante a estação quente."
+    },
+    {
+      "id": "dialog-0562",
+      "answer": "Prezado(a) Sr(a). [Nome],\n\nVenho solicitar o reembolso integral do pedido nº [número], pois o produto nunca foi entregue. Anexo comprovantes de compra e comunicação. Aguardo solução em até 10 dias úteis.\n\nAtenciosamente,\n[Seu Nome]"
+    },
+    {
+      "id": "dialog-0563",
+      "answer": "Inteligência artificial (IA) engloba qualquer técnica que permite a máquina executar tarefas inteligentes. Aprendizado de máquina (ML) é um subcampo da IA que usa dados para treinar modelos que reconhecem padrões e fazem previsões sem programação explícita."
+    },
+    {
+      "id": "dialog-0564",
+      "answer": "Divida o trabalho em blocos de 25 minutos (técnica Pomodoro), faça pausas curtas, elimine distrações desligando notificações e crie um ambiente organizado. Defina metas diárias claras e recompense-se ao concluí‑las."
+    },
+    {
+      "id": "dialog-0565",
+      "answer": "1. Identifique arquivos críticos; 2. Escolha mídia externa ou nuvem; 3. Use ferramenta de backup (ex.: rsync ou software integrado); 4. Crie cópia completa do sistema; 5. Agende backups automáticos; 6. Verifique integridade periodicamente.",
+      "followup": "Qual seria um passo a passo simples para restaurar o sistema a partir desse backup?",
+      "followup_answer": "1. Conecte a mídia de backup; 2. Inicie o computador em modo de recuperação; 3. Selecione a opção de restauração; 4. Escolha o ponto de backup desejado; 5. Confirme e aguarde a cópia dos arquivos; 6. Reinicie e teste o sistema."
+    },
+    {
+      "id": "dialog-0566",
+      "answer": "Jornalistas declaram o conflito ao editor, evitam cobrir a história ou buscam uma terceira opinião. Transparência e separação de interesses garantem credibilidade e evitam viés na reportagem."
+    },
+    {
+      "id": "dialog-0567",
+      "answer": "1. Defina o tema da pintura; 2. Reúna materiais (tintas, pincéis, tela); 3. Esboce a composição; 4. Aplique camadas de fundo; 5. Detalhe elementos principais; 6. Ajuste cores e sombras; 7. Deixe secar; 8. Assine a obra."
+    },
+    {
+      "id": "dialog-0568",
+      "answer": "Sugira um presente personalizado, como um álbum de fotos ou uma peça artesanal. No cartão, escreva: \"Mãe querida, sua dedicação ilumina meus dias. Que este presente traga a mesma alegria que você me dá sempre. Com amor, [Seu Nome]\"."
+    },
+    {
+      "id": "dialog-0569",
+      "answer": "Comece memorizando as terminações regulares: -ar (hablar → hablo, hablas), -er (comer → como, comes) e -ir (vivir → vivo, vives). Pratique conjugando verbos comuns no presente e use fichas para reforçar."
+    },
+    {
+      "id": "dialog-0570",
+      "answer": "Inclua alongamento ao acordar, meditação de cinco minutos e um café da manhã nutritivo. Depois, alterne entre tarefas criativas e administrativas em blocos de tempo, finalizando com uma caminhada curta para recarregar a energia.",
+      "followup": "Pode sugerir uma variação que inclua leitura matinal?",
+      "followup_answer": "Acorde, faça 5 minutos de respiração, leia um capítulo de um livro inspirador, tome um café com frutas, escreva a lista de prioridades e inicie o trabalho. Essa sequência estimula foco e criatividade."
+    },
+    {
+      "id": "dialog-0571",
+      "answer": "Redes neurais convolucionais resolvem reconhecimento de imagens, classificação de objetos, detecção de faces e segmentação de cenas. Também são usadas para analisar vídeos, identificar padrões em dados médicos e melhorar sistemas de reconhecimento de escrita."
+    },
+    {
+      "id": "dialog-0572",
+      "answer": "Laura percebe que sente mais que amizade por seu melhor amigo, Marcos. Ela luta contra o medo de perder a cumplicidade, enquanto Marcos demonstra sinais de afeto. O dilema cresce até que ambos reconhecem o sentimento, transformando a amizade em romance."
+    },
+    {
+      "id": "dialog-0573",
+      "answer": "Descreva uma mesa com uma jarra de vidro, frutas frescas, um livro antigo e uma vela acesa. Use pinceladas detalhadas e tons realistas de marrom, verde e dourado, destacando texturas e reflexos para revelar a beleza cotidiana."
+    },
+    {
+      "id": "dialog-0574",
+      "answer": "A ilustração apresenta uma orquídea em detalhe botânico, com linhas finas que revelam veias e pétalas. O estilo combina aquarela suave para cores e sombreamento, enquanto anotações científicas descrevem habitat, tamanho e período de floração."
+    },
+    {
+      "id": "dialog-0575",
+      "answer": "Modelos profundos consomem muita energia elétrica, aumentando a pegada de carbono dos data centers. A produção de hardware gera resíduos eletrônicos e demanda recursos raros. Estratégias verdes, como energia renovável e otimização de algoritmos, ajudam a mitigar esses impactos.",
+      "followup": "Quais práticas podem ser adotadas por pesquisadores para reduzir o consumo energético ao treinar redes profundas?",
+      "followup_answer": "Use GPUs eficientes, reduza o tamanho dos lotes, aplique treinamento distribuído em servidores com energia renovável, limite epochs, reutilize modelos pré‑treinados e desligue recursos quando não estiverem em uso."
+    },
+    {
+      "id": "dialog-0576",
+      "answer": "Organizadores selecionam fornecedores com produtos exclusivos, negociam demonstrações exclusivas e criam pacotes temáticos. Avaliam inovação, qualidade e alinhamento ao público‑alvo, garantindo que a convenção ofereça experiências que não se encontram em outros eventos."
+    },
+    {
+      "id": "dialog-0577",
+      "answer": "Para começar, estude algoritmos como AES e RSA, que são amplamente documentados. Consulte livros de criptografia ou recursos acadêmicos confiáveis para entender chaves, modos de operação e boas práticas de segurança."
+    },
+    {
+      "id": "dialog-0578",
+      "answer": "Mantenha a calma, escute atentamente as reclamações e repita o que entendeu para confirmar. Use linguagem neutra, ofereça soluções concretas e, se necessário, envolva um supervisor para mediar o conflito."
+    },
+    {
+      "id": "dialog-0579",
+      "answer": "Comece escolhendo um local ensolarado, prepare o solo com composto orgânico e plante sementes de alface, tomate e ervas. Regue regularmente, controle pragas naturalmente e colha conforme o crescimento."
+    }
+  ]
+}

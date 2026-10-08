@@ -1,0 +1,27 @@
+{
+  "status": "completed_candidate_only",
+  "initial_validation_loss": 1.1004557249681004,
+  "base_checkpoint_sha256": "64760b7bdb5805719d3dacddbb9994950c248688046ab37fe5c0fe124ce4bd78",
+  "validation": [
+    {
+      "epoch": 1,
+      "loss": 0.7098254561424255,
+      "steps": 255
+    },
+    {
+      "epoch": 2,
+      "loss": 0.6877068865973994,
+      "steps": 297
+    }
+  ],
+  "automatic_promotion": false,
+  "audit_examples_evaluated": 0,
+  "cloud_jobs_started": 0,
+  "device": "cpu",
+  "hardware": "cpu",
+  "steps": 297,
+  "response_tokens_seen": 5725,
+  "best_validation_loss": 0.6877068865973994,
+  "candidate_saved": true,
+  "elapsed_seconds": 603.8858302000008
+}

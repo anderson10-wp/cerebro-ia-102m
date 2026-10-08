@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0400",
+      "answer": "Sim, óleos essenciais como lavanda ou tea tree podem hidratar, acalmar irritações e conferir aroma relaxante ao banho de espuma, mas é importante usar concentrações baixas e testar alergias antes de aplicar.",
+      "followup": "Qual óleo essencial seria mais indicado para pele sensível?",
+      "followup_answer": "Para pele sensível, o óleo de camomila é suave, tem propriedades anti‑inflamatórias e costuma causar menos reações alérgicas que outros óleos."
+    },
+    {
+      "id": "dialog-0401",
+      "answer": "Drones permitem capturar imagens aéreas em alta resolução a baixo custo, oferecendo ângulos antes impossíveis; facilitam filmagens em movimento, reduzem necessidade de helicópteros e ampliam a criatividade de fotógrafos e videomakers.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0402",
+      "answer": "Frases de transição ligam ideias, sinalizam mudança de argumento ou reforçam a tese, ajudando o leitor a seguir o raciocínio e a perceber como cada parágrafo sustenta o ponto central do texto.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0403",
+      "answer": "Não posso sugerir um idioma específico sem saber seus objetivos; escolha um que seja útil para sua carreira, viagens ou interesses culturais, e que ofereça recursos de aprendizado adequados ao seu estilo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0404",
+      "answer": "Planeje seu dia na noite anterior, agrupe tarefas semelhantes, use técnicas como Pomodoro, elimine distrações digitais e delegue o que for possível; revise o progresso ao final do dia.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0405",
+      "answer": "Algoritmos genéticos surgiram nos anos 60 inspirados na evolução biológica; evoluíram com operadores de cruzamento, mutação e seleção mais sofisticados, integrando técnicas de otimização e aprendizado de máquina para resolver problemas complexos.",
+      "followup": "Qual foi a primeira aplicação prática de um algoritmo genético?",
+      "followup_answer": "A primeira aplicação prática foi otimizar projetos de engenharia aeroespacial, usando a evolução simulada para melhorar formas de asas e reduzir peso."
+    },
+    {
+      "id": "dialog-0406",
+      "answer": "Ana: \"Adoro o podcast 'História em Pílulas' porque resume eventos em cinco minutos, tem narração leve e cobre política e ciência. Também gosto de 'Música para Codificar', que mistura playlists eletrônicas com dicas de programação. Por fim, 'Viagens Curiosas' traz relatos curtos de destinos exóticos, com entrevistas íntimas.\" João: \"Meu favorito é 'Tecnologia Hoje', que explica novidades em linguagem simples, tem entrevistas com especialistas e episódios curtos. Também sigo 'Cinema em Debate', que analisa filmes com humor e críticas detalhadas. Por último, 'Culinária Fácil', onde chefs dão receitas rápidas, com instruções passo a passo e sons de cozinha.\"",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0407",
+      "answer": "Em inglês, substantivo nomeia pessoas, lugares, coisas ou ideias (ex.: \"book\"), enquanto adjetivo descreve características ou qualidades do substantivo (ex.: \"interesting\" em \"interesting book\").",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0408",
+      "answer": "Para pintura interna use tinta acrílica à base de água, que seca rápido, tem baixo odor e limpa com água; escolha acabamento fosco ou acetinado para melhor cobertura e durabilidade nas paredes.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0409",
+      "answer": "A forma escrita russa usa alfabeto cirílico e regras ortográficas, enquanto a fala varia em pronúncia regional; diferenças surgem em entonação, abreviações e expressões idiomáticas que nem sempre têm correspondência escrita direta.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0410",
+      "answer": "Aprendizagem semissupervisionada combina poucos dados rotulados com muitos não rotulados, usando técnicas como auto‑treinamento, co‑treinamento ou grafos para propagar rótulos e melhorar a precisão sem exigir grande esforço de anotação.",
+      "followup": "Quais são os principais desafios ao aplicar essa abordagem?",
+      "followup_answer": "Desafios incluem garantir que os rótulos propagados sejam corretos, evitar viés dos poucos exemplos rotulados e escolher modelos que aproveitem bem a estrutura dos dados não rotulados."
+    },
+    {
+      "id": "dialog-0411",
+      "answer": "Primeiro, o empreendedor apresenta o projeto à prefeitura; depois, a secretaria de planejamento analisa viabilidade, impactos e conformidade com o plano diretor. Em seguida, ocorre audiência pública, aprovação da licença e, por fim, emissão da autorização para iniciar a obra.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0412",
+      "answer": "Identifique o sintoma, procure mensagens de erro, reinicie o equipamento, verifique conexões, atualize drivers ou software, teste com outro dispositivo e, se necessário, consulte suporte técnico ou manuais de solução.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0413",
+      "answer": "Escuta ativa demonstra interesse genuíno, valida sentimentos e cria espaço seguro; ao refletir e responder, o parceiro sente-se compreendido, o que fortalece confiança e aprofunda a intimidade emocional.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0414",
+      "answer": "Um polígono é uma figura plana formada por segmentos de reta conectados; já um poliedro é um sólido tridimensional cujas faces são polígonos, como um cubo ou pirâmide.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0415",
+      "answer": "Mona Lisa: pintada por Leonardo da Vinci, famosa pelo sorriso enigmático e técnica sfumato; A Noite Estrelada: de Van Gogh, retrata um céu turbulento usando pinceladas vibrantes; O Grito: de Munch, expressa ansiedade com cores intensas; Guernica: de Picasso, denuncia o bombardeio de Guernica com formas cubistas dramáticas.",
+      "followup": "Qual dessas obras tem uma história de roubo famoso?",
+      "followup_answer": "A Mona Lisa foi roubada do Louvre em 1911 por um ex‑funcionário italiano, permanecendo desaparecida por dois anos antes de ser recuperada."
+    },
+    {
+      "id": "dialog-0416",
+      "answer": "Nas pedras do caminho, a vontade se ergue, \ncomo chama que não se apaga, \ndesafia a sombra, \ne transforma o medo em luz que avança.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0417",
+      "answer": "Treinar grandes redes consome muita energia, gerando emissões de CO₂; a produção de hardware também impacta recursos naturais, e o descarte de equipamentos obsoletos aumenta resíduos eletrônicos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0418",
+      "answer": "Use listas de tarefas diárias, bloqueie períodos no calendário, elimine notificações desnecessárias, pratique a técnica Pomodoro e reserve momentos curtos para revisão e ajuste de prioridades.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0419",
+      "answer": "Comece com cursos introdutórios de lógica de programação e Python; depois, faça certificações como Google IT Support ou Microsoft Azure Fundamentals, e pratique projetos reais para consolidar habilidades.",
+      "followup": "false"
+    }
+  ]
+}

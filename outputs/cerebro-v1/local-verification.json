@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "parameters": 102257280,
+  "causality": "PASS",
+  "checkpoint_round_trip": "PASS",
+  "unique_block_permutation": "PASS",
+  "document_split": "PASS",
+  "tiny_training_initial_loss": 5.588230133056641,
+  "tiny_training_final_loss": 0.04799444600939751
+}

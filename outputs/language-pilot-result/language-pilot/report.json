@@ -1,0 +1,2130 @@
+{
+  "status": "completed_candidate_only",
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "base_sha256": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+  "manifest": {
+    "counts": {
+      "train": 2413,
+      "dev": 64,
+      "test": 72,
+      "replay": 1134,
+      "retention": 12
+    },
+    "new_train_response_tokens": 18752,
+    "checks": "Exact prompt disjointness; deterministic source text and transformations; reviewed authored answers; no blind source labels",
+    "limitations": "Synthetic related tasks and authored facts; this is a pilot, not comprehensive factual coverage or independent human review. Four-pair groups can include accidental identical answers; pair score only includes distinct labels.",
+    "api_teacher_calls": 0,
+    "training_started": false,
+    "sha256": {
+      "train": "650a1b1fd8d807480aa69d083a6f6b3e6df57f84a87e6d97a38be25890690903",
+      "dev": "a6c80cb7841426f32d36f9e1ed4d0da9b392738325b8facb7a5b237acfad944d",
+      "test": "caf1bc94b93b15424f63e3829c53dd343c8dc59917d1ae403cb925ac0d588446",
+      "replay": "4e96d3721680fdd7826121c79c8b366b564de0e88d6e1d0e70a2d5a45375b72c",
+      "retention": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e"
+    }
+  },
+  "api_teacher_calls": 0,
+  "automatic_promotion": false,
+  "steps": 666,
+  "response_tokens_seen": 72612,
+  "validation": [
+    {
+      "epoch": 1,
+      "loss": 1.6282772274427517,
+      "steps": 222
+    },
+    {
+      "epoch": 2,
+      "loss": 1.7032300900387507,
+      "steps": 444
+    },
+    {
+      "epoch": 3,
+      "loss": 1.8677536125251468,
+      "steps": 666
+    }
+  ],
+  "recipe": {
+    "epochs": 4,
+    "seconds": 600,
+    "batch": 16,
+    "learning_rate": 2e-05,
+    "seed": 61820
+  },
+  "limits": "Curated pilot, not evidence of broad autonomous capability. Open responses require manual review. Reused retention tests are development diagnostics.",
+  "initial_dev_loss": 2.2770381845453733,
+  "best_dev_loss": 1.6282772274427517,
+  "before": {
+    "correct": 8,
+    "total": 64,
+    "correct_pairs": 0,
+    "total_pairs": 32,
+    "by_category": {
+      "arithmetic": {
+        "correct": 0,
+        "total": 8
+      },
+      "case": {
+        "correct": 0,
+        "total": 8
+      },
+      "context": {
+        "correct": 2,
+        "total": 8
+      },
+      "copy": {
+        "correct": 2,
+        "total": 8
+      },
+      "fact": {
+        "correct": 0,
+        "total": 8
+      },
+      "json": {
+        "correct": 1,
+        "total": 8
+      },
+      "missing": {
+        "correct": 1,
+        "total": 8
+      },
+      "negation": {
+        "correct": 2,
+        "total": 8
+      }
+    },
+    "results": [
+      {
+        "id": "copy-0",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [árvore lia]\nResposta:",
+        "response": "árvore lia",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-0",
+        "output": "árvore lia",
+        "correct": true
+      },
+      {
+        "id": "copy-1",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [papel marcos]\nResposta:",
+        "response": "papel marcos",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-0",
+        "output": "[papel marcos]",
+        "correct": false
+      },
+      {
+        "id": "copy-2",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [areia nina]\nResposta:",
+        "response": "areia nina",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-1",
+        "output": "areia",
+        "correct": false
+      },
+      {
+        "id": "copy-3",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [chave otávio]\nResposta:",
+        "response": "chave otávio",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-1",
+        "output": "chave",
+        "correct": false
+      },
+      {
+        "id": "copy-4",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [luz paula]\nResposta:",
+        "response": "luz paula",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-2",
+        "output": "luz paula",
+        "correct": true
+      },
+      {
+        "id": "copy-5",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [praia rui]\nResposta:",
+        "response": "praia rui",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-2",
+        "output": "nave",
+        "correct": false
+      },
+      {
+        "id": "copy-6",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [jardim sara]\nResposta:",
+        "response": "jardim sara",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-3",
+        "output": "jardim",
+        "correct": false
+      },
+      {
+        "id": "copy-7",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [caneta tiago]\nResposta:",
+        "response": "caneta tiago",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-3",
+        "output": "[caneta tiago]",
+        "correct": false
+      },
+      {
+        "id": "context-8",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o livro está na estante. A mochila está dentro da mochila. Qual é o local do livro? Responda apenas o local.\nResposta:",
+        "response": "na estante",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-0",
+        "output": "na estante",
+        "correct": true
+      },
+      {
+        "id": "context-9",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o caderno está na gaveta. A mochila está no armário. Qual é o local do caderno? Responda apenas o local.\nResposta:",
+        "response": "na gaveta",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-0",
+        "output": "no armário",
+        "correct": false
+      },
+      {
+        "id": "context-10",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o mapa está sobre a mesa. A mochila está perto da janela. Qual é o local do mapa? Responda apenas o local.\nResposta:",
+        "response": "sobre a mesa",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-1",
+        "output": "na janela",
+        "correct": false
+      },
+      {
+        "id": "context-11",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o relógio está dentro da mochila. A mochila está na caixa. Qual é o local do relógio? Responda apenas o local.\nResposta:",
+        "response": "dentro da mochila",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-1",
+        "output": "na caixa",
+        "correct": false
+      },
+      {
+        "id": "context-12",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o lápis está no armário. A mochila está ao lado da porta. Qual é o local do lápis? Responda apenas o local.\nResposta:",
+        "response": "no armário",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-2",
+        "output": "no armário",
+        "correct": true
+      },
+      {
+        "id": "context-13",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o cartão está perto da janela. A mochila está na estante. Qual é o local do cartão? Responda apenas o local.\nResposta:",
+        "response": "perto da janela",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-2",
+        "output": "na estante",
+        "correct": false
+      },
+      {
+        "id": "context-14",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o bilhete está na caixa. A mochila está na gaveta. Qual é o local do bilhete? Responda apenas o local.\nResposta:",
+        "response": "na caixa",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-3",
+        "output": "no local",
+        "correct": false
+      },
+      {
+        "id": "context-15",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o controle está ao lado da porta. A mochila está sobre a mesa. Qual é o local do controle? Responda apenas o local.\nResposta:",
+        "response": "ao lado da porta",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-3",
+        "output": "sobre a mesa",
+        "correct": false
+      },
+      {
+        "id": "negation-16",
+        "category": "negation",
+        "prompt": "Pergunta: Lia não levou o livro; Fábio levou. A pergunta é sobre livro: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Fábio",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-0",
+        "output": "lia",
+        "correct": false
+      },
+      {
+        "id": "negation-17",
+        "category": "negation",
+        "prompt": "Pergunta: Marcos não levou o caderno; Gabriela levou. A pergunta é sobre caderno: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Gabriela",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-0",
+        "output": "caderno",
+        "correct": false
+      },
+      {
+        "id": "negation-18",
+        "category": "negation",
+        "prompt": "Pergunta: Nina não levou o mapa; Hugo levou. A pergunta é sobre mapa: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Hugo",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-1",
+        "output": "Nina",
+        "correct": false
+      },
+      {
+        "id": "negation-19",
+        "category": "negation",
+        "prompt": "Pergunta: Otávio não levou o relógio; Iara levou. A pergunta é sobre relógio: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Iara",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-1",
+        "output": "Iara",
+        "correct": true
+      },
+      {
+        "id": "negation-20",
+        "category": "negation",
+        "prompt": "Pergunta: Paula não levou o lápis; João levou. A pergunta é sobre lápis: quem levou? Responda somente o nome.\nResposta:",
+        "response": "João",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-2",
+        "output": "madeira",
+        "correct": false
+      },
+      {
+        "id": "negation-21",
+        "category": "negation",
+        "prompt": "Pergunta: Rui não levou o cartão; Lia levou. A pergunta é sobre cartão: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Lia",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-2",
+        "output": "lia",
+        "correct": false
+      },
+      {
+        "id": "negation-22",
+        "category": "negation",
+        "prompt": "Pergunta: Sara não levou o bilhete; Marcos levou. A pergunta é sobre bilhete: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Marcos",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-3",
+        "output": "sapato",
+        "correct": false
+      },
+      {
+        "id": "negation-23",
+        "category": "negation",
+        "prompt": "Pergunta: Tiago não levou o controle; Nina levou. A pergunta é sobre controle: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Nina",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-3",
+        "output": "Nina",
+        "correct": true
+      },
+      {
+        "id": "missing-24",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Lia gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-0",
+        "output": "Não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-25",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Marcos gosta de livros. Nasceu em 2001. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2001",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-0",
+        "output": "2002",
+        "correct": false
+      },
+      {
+        "id": "missing-26",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Nina gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-1",
+        "output": "Não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-27",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Otávio gosta de livros. Nasceu em 2003. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2003",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-1",
+        "output": "não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-28",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Paula gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-2",
+        "output": "Não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-29",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Rui gosta de livros. Nasceu em 2005. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2005",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-2",
+        "output": "não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-30",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Sara gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-3",
+        "output": "Não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-31",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Tiago gosta de livros. Nasceu em 2007. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2007",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-3",
+        "output": "2007",
+        "correct": true
+      },
+      {
+        "id": "case-32",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Lia LEU o livro.\nResposta:",
+        "response": "lia leu o livro.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-0",
+        "output": "Lia LEU",
+        "correct": false
+      },
+      {
+        "id": "case-33",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Marcos LEU o caderno.\nResposta:",
+        "response": "marcos leu o caderno.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-0",
+        "output": "LEU",
+        "correct": false
+      },
+      {
+        "id": "case-34",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Nina LEU o mapa.\nResposta:",
+        "response": "nina leu o mapa.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-1",
+        "output": "Nina LEU",
+        "correct": false
+      },
+      {
+        "id": "case-35",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Otávio LEU o relógio.\nResposta:",
+        "response": "otávio leu o relógio.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-1",
+        "output": " Otávio LEU",
+        "correct": false
+      },
+      {
+        "id": "case-36",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Paula LEU o lápis.\nResposta:",
+        "response": "paula leu o lápis.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-2",
+        "output": " Paula LEU",
+        "correct": false
+      },
+      {
+        "id": "case-37",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Rui LEU o cartão.\nResposta:",
+        "response": "rui leu o cartão.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-2",
+        "output": "LEU",
+        "correct": false
+      },
+      {
+        "id": "case-38",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Sara LEU o bilhete.\nResposta:",
+        "response": "sara leu o bilhete.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-3",
+        "output": "leu",
+        "correct": false
+      },
+      {
+        "id": "case-39",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Tiago LEU o controle.\nResposta:",
+        "response": "tiago leu o controle.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-3",
+        "output": "Leu",
+        "correct": false
+      },
+      {
+        "id": "json-40",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"árvore\".\nResposta:",
+        "response": "{\"item\": \"árvore\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-0",
+        "output": "{\"árvore\":\"árvore\"}",
+        "correct": false
+      },
+      {
+        "id": "json-41",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"papel\".\nResposta:",
+        "response": "{\"item\": \"papel\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-0",
+        "output": "{\"item\":\"papel\"}",
+        "correct": true
+      },
+      {
+        "id": "json-42",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"areia\".\nResposta:",
+        "response": "{\"item\": \"areia\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-1",
+        "output": "{\"areia\":\"areia\"}",
+        "correct": false
+      },
+      {
+        "id": "json-43",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"chave\".\nResposta:",
+        "response": "{\"item\": \"chave\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-1",
+        "output": "{\"chave\":\"chave\"}",
+        "correct": false
+      },
+      {
+        "id": "json-44",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"luz\".\nResposta:",
+        "response": "{\"item\": \"luz\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-2",
+        "output": "{\"ferramenta\":\"luz\"}",
+        "correct": false
+      },
+      {
+        "id": "json-45",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"praia\".\nResposta:",
+        "response": "{\"item\": \"praia\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-2",
+        "output": "{\"ferramenta\":\"nome-de-casa\"}",
+        "correct": false
+      },
+      {
+        "id": "json-46",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"jardim\".\nResposta:",
+        "response": "{\"item\": \"jardim\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-3",
+        "output": "{\"ferramenta\":\"jardim\"}",
+        "correct": false
+      },
+      {
+        "id": "json-47",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"caneta\".\nResposta:",
+        "response": "{\"item\": \"caneta\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-3",
+        "output": "{\"caneta\":\"caneta\"}",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-48",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 31 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "33",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-0",
+        "output": "91",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-49",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 32 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "35",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-0",
+        "output": "32",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-50",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 33 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "35",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-1",
+        "output": "83",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-51",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 34 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "37",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-1",
+        "output": "58",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-52",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 35 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "37",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-2",
+        "output": "25",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-53",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 36 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "39",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-2",
+        "output": "36",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-54",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 37 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "39",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-3",
+        "output": "91",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-55",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 38 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "41",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-3",
+        "output": "44",
+        "correct": false
+      },
+      {
+        "id": "fact-56",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Brasil? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Brasília",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-0",
+        "output": "Norte",
+        "correct": false
+      },
+      {
+        "id": "fact-57",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Portugal? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Lisboa",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-0",
+        "output": "Porto",
+        "correct": false
+      },
+      {
+        "id": "fact-58",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de França? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Paris",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-1",
+        "output": "Londres",
+        "correct": false
+      },
+      {
+        "id": "fact-59",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Argentina? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Buenos Aires",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-1",
+        "output": "Norte",
+        "correct": false
+      },
+      {
+        "id": "fact-60",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Japão? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Tóquio",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-2",
+        "output": "Kuwait",
+        "correct": false
+      },
+      {
+        "id": "fact-61",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Itália? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Roma",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-2",
+        "output": "Cidade",
+        "correct": false
+      },
+      {
+        "id": "fact-62",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Alemanha? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Berlim",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-3",
+        "output": "Londres",
+        "correct": false
+      },
+      {
+        "id": "fact-63",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Espanha? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Madri",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-3",
+        "output": "Lisboa",
+        "correct": false
+      },
+      {
+        "id": "open_language-64",
+        "category": "open_language",
+        "prompt": "Pergunta: Oi! Quero conversar com você. Como pode me ajudar?\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não. Oi! Quero conversar com você.",
+        "correct": null
+      },
+      {
+        "id": "open_language-65",
+        "category": "open_language",
+        "prompt": "Pergunta: Você afirmou que São Paulo é a capital do Brasil. Essa informação está correta?\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não. São Paulo é a capital do Brasil.",
+        "correct": null
+      },
+      {
+        "id": "open_language-66",
+        "category": "open_language",
+        "prompt": "Pergunta: Por que as plantas precisam de água? Explique de maneira simples.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "As plantas precisam de água.",
+        "correct": null
+      },
+      {
+        "id": "open_language-67",
+        "category": "open_language",
+        "prompt": "Pergunta: Estou estudando um assunto novo e não sei por onde começar. Sugira um primeiro passo.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "O que você quer estudar?",
+        "correct": null
+      },
+      {
+        "id": "open_language-68",
+        "category": "open_language",
+        "prompt": "Pergunta: Explique a diferença entre treinar um modelo e avaliar um modelo.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Um modelo é uma avaliação que um modelo é feito para avaliar um modelo.",
+        "correct": null
+      },
+      {
+        "id": "open_language-69",
+        "category": "open_language",
+        "prompt": "Pergunta: Texto: Joana perdeu o ônibus e foi a pé até a escola. Resuma em uma frase sem inventar informações.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "madeira",
+        "correct": null
+      },
+      {
+        "id": "open_language-70",
+        "category": "open_language",
+        "prompt": "Pergunta: Se eu perguntar a idade de alguém e o texto só disser seu nome, você consegue saber a idade?\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não. A idade de alguém e o texto só disser seu nome, mas a idade de um",
+        "correct": null
+      },
+      {
+        "id": "open_language-71",
+        "category": "open_language",
+        "prompt": "Pergunta: Você acabou de executar algum comando no meu computador? Explique sem inventar ações.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não. No entanto, posso ajudar a corrigir o erro.",
+        "correct": null
+      }
+    ]
+  },
+  "retention_before": {
+    "correct": 8,
+    "total": 12,
+    "correct_pairs": 0,
+    "total_pairs": 0,
+    "by_category": {
+      "arithmetic": {
+        "correct": 0,
+        "total": 2
+      },
+      "code": {
+        "correct": 0,
+        "total": 1
+      },
+      "context": {
+        "correct": 2,
+        "total": 2
+      },
+      "instruction": {
+        "correct": 2,
+        "total": 3
+      },
+      "json": {
+        "correct": 2,
+        "total": 2
+      },
+      "tool_result": {
+        "correct": 1,
+        "total": 1
+      },
+      "tool_simulation": {
+        "correct": 1,
+        "total": 1
+      }
+    },
+    "results": [
+      {
+        "id": "validation-064",
+        "split": "validation",
+        "category": "instruction",
+        "prompt": "Pergunta: Sua saída deve conter só: cobre\nResposta:",
+        "response": "cobre",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 15,
+        "response_tokens": 3,
+        "output": " cobre",
+        "correct": true
+      },
+      {
+        "id": "validation-065",
+        "split": "validation",
+        "category": "instruction",
+        "prompt": "Pergunta: Qual é a primeira palavra de \"rio largo corre\"? Escreva apenas essa palavra.\nResposta:",
+        "response": "rio",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 26,
+        "response_tokens": 2,
+        "output": "rio",
+        "correct": true
+      },
+      {
+        "id": "validation-066",
+        "split": "validation",
+        "category": "context",
+        "prompt": "Pergunta: Bilhete: Rui deixou a chave na gaveta. Onde está a chave? Responda apenas o local.\nResposta:",
+        "response": "na gaveta",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 31,
+        "response_tokens": 4,
+        "output": "na gaveta",
+        "correct": true
+      },
+      {
+        "id": "validation-067",
+        "split": "validation",
+        "category": "context",
+        "prompt": "Pergunta: Ficha: nome Lia; idade não registrada. Qual é a idade? Use \"não informado\" quando faltar o dado.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 34,
+        "response_tokens": 3,
+        "output": "não informado",
+        "correct": true
+      },
+      {
+        "id": "validation-068",
+        "split": "validation",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Dê somente o valor de 16 + 27.\nResposta:",
+        "response": "43",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 17,
+        "response_tokens": 2,
+        "output": "125",
+        "correct": false
+      },
+      {
+        "id": "validation-069",
+        "split": "validation",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Sem explicação, quanto vale 9 * 8?\nResposta:",
+        "response": "72",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 17,
+        "response_tokens": 2,
+        "output": "12",
+        "correct": false
+      },
+      {
+        "id": "validation-070",
+        "split": "validation",
+        "category": "json",
+        "prompt": "Pergunta: Devolva o objeto JSON {\"modo\":\"teste\"} sem texto ao redor.\nResposta:",
+        "response": "{\"modo\":\"teste\"}",
+        "scorer": "json",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 25,
+        "response_tokens": 7,
+        "output": "{\"modo\":\"teste\"}",
+        "correct": true
+      },
+      {
+        "id": "validation-071",
+        "split": "validation",
+        "category": "json",
+        "prompt": "Pergunta: Use JSON para representar uma única chave ativo com valor booleano falso. Nenhum outro campo.\nResposta:",
+        "response": "{\"ativo\":false}",
+        "scorer": "json",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 27,
+        "response_tokens": 6,
+        "output": "{\"ativo\":false}",
+        "correct": true
+      },
+      {
+        "id": "validation-072",
+        "split": "validation",
+        "category": "tool_simulation",
+        "prompt": "Pergunta: Exercício simulado: só existe consultar_status. Gere o objeto JSON {\"ferramenta\":\"consultar_status\",\"argumentos\":{}} para consultar o treino. Não execute a consulta.\nResposta:",
+        "response": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "scorer": "json",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 51,
+        "response_tokens": 17,
+        "output": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "correct": true
+      },
+      {
+        "id": "validation-073",
+        "split": "validation",
+        "category": "tool_result",
+        "prompt": "Pergunta: Retorno simulado: {\"resultado\":91}. Diga apenas o resultado numérico.\nResposta:",
+        "response": "91",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 27,
+        "response_tokens": 2,
+        "output": "91",
+        "correct": true
+      },
+      {
+        "id": "validation-074",
+        "split": "validation",
+        "category": "code",
+        "prompt": "Pergunta: Em Python, qual o valor de len([])? Retorne somente o número.\nResposta:",
+        "response": "0",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 26,
+        "response_tokens": 2,
+        "output": "5",
+        "correct": false
+      },
+      {
+        "id": "validation-075",
+        "split": "validation",
+        "category": "instruction",
+        "prompt": "Pergunta: Escreva apenas a segunda palavra: manhã calma.\nResposta:",
+        "response": "calma",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 18,
+        "response_tokens": 3,
+        "output": " tarde",
+        "correct": false
+      }
+    ]
+  },
+  "after": {
+    "correct": 18,
+    "total": 64,
+    "correct_pairs": 6,
+    "total_pairs": 32,
+    "by_category": {
+      "arithmetic": {
+        "correct": 0,
+        "total": 8
+      },
+      "case": {
+        "correct": 0,
+        "total": 8
+      },
+      "context": {
+        "correct": 1,
+        "total": 8
+      },
+      "copy": {
+        "correct": 1,
+        "total": 8
+      },
+      "fact": {
+        "correct": 5,
+        "total": 8
+      },
+      "json": {
+        "correct": 3,
+        "total": 8
+      },
+      "missing": {
+        "correct": 0,
+        "total": 8
+      },
+      "negation": {
+        "correct": 8,
+        "total": 8
+      }
+    },
+    "results": [
+      {
+        "id": "copy-0",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [árvore lia]\nResposta:",
+        "response": "árvore lia",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-0",
+        "output": "árvore",
+        "correct": false
+      },
+      {
+        "id": "copy-1",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [papel marcos]\nResposta:",
+        "response": "papel marcos",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-0",
+        "output": "papel marcos",
+        "correct": true
+      },
+      {
+        "id": "copy-2",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [areia nina]\nResposta:",
+        "response": "areia nina",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-1",
+        "output": "areia",
+        "correct": false
+      },
+      {
+        "id": "copy-3",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [chave otávio]\nResposta:",
+        "response": "chave otávio",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-1",
+        "output": "[chave otávio]",
+        "correct": false
+      },
+      {
+        "id": "copy-4",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [luz paula]\nResposta:",
+        "response": "luz paula",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-2",
+        "output": "[luz paula]",
+        "correct": false
+      },
+      {
+        "id": "copy-5",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [praia rui]\nResposta:",
+        "response": "praia rui",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-2",
+        "output": "[praia rui]",
+        "correct": false
+      },
+      {
+        "id": "copy-6",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [jardim sara]\nResposta:",
+        "response": "jardim sara",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-3",
+        "output": "jardim",
+        "correct": false
+      },
+      {
+        "id": "copy-7",
+        "category": "copy",
+        "prompt": "Pergunta: Devolva somente o texto entre colchetes: [caneta tiago]\nResposta:",
+        "response": "caneta tiago",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-copy-3",
+        "output": "[caneta tiago]",
+        "correct": false
+      },
+      {
+        "id": "context-8",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o livro está na estante. A mochila está dentro da mochila. Qual é o local do livro? Responda apenas o local.\nResposta:",
+        "response": "na estante",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-0",
+        "output": "na estante",
+        "correct": true
+      },
+      {
+        "id": "context-9",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o caderno está na gaveta. A mochila está no armário. Qual é o local do caderno? Responda apenas o local.\nResposta:",
+        "response": "na gaveta",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-0",
+        "output": "no armário",
+        "correct": false
+      },
+      {
+        "id": "context-10",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o mapa está sobre a mesa. A mochila está perto da janela. Qual é o local do mapa? Responda apenas o local.\nResposta:",
+        "response": "sobre a mesa",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-1",
+        "output": "perto da janela",
+        "correct": false
+      },
+      {
+        "id": "context-11",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o relógio está dentro da mochila. A mochila está na caixa. Qual é o local do relógio? Responda apenas o local.\nResposta:",
+        "response": "dentro da mochila",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-1",
+        "output": "na caixa",
+        "correct": false
+      },
+      {
+        "id": "context-12",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o lápis está no armário. A mochila está ao lado da porta. Qual é o local do lápis? Responda apenas o local.\nResposta:",
+        "response": "no armário",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-2",
+        "output": "sobre o armário",
+        "correct": false
+      },
+      {
+        "id": "context-13",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o cartão está perto da janela. A mochila está na estante. Qual é o local do cartão? Responda apenas o local.\nResposta:",
+        "response": "perto da janela",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-2",
+        "output": "na estante",
+        "correct": false
+      },
+      {
+        "id": "context-14",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o bilhete está na caixa. A mochila está na gaveta. Qual é o local do bilhete? Responda apenas o local.\nResposta:",
+        "response": "na caixa",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-3",
+        "output": "na gaveta",
+        "correct": false
+      },
+      {
+        "id": "context-15",
+        "category": "context",
+        "prompt": "Pergunta: Registro: o controle está ao lado da porta. A mochila está sobre a mesa. Qual é o local do controle? Responda apenas o local.\nResposta:",
+        "response": "ao lado da porta",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-context-3",
+        "output": "sobre a mesa",
+        "correct": false
+      },
+      {
+        "id": "negation-16",
+        "category": "negation",
+        "prompt": "Pergunta: Lia não levou o livro; Fábio levou. A pergunta é sobre livro: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Fábio",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-0",
+        "output": "Fábio",
+        "correct": true
+      },
+      {
+        "id": "negation-17",
+        "category": "negation",
+        "prompt": "Pergunta: Marcos não levou o caderno; Gabriela levou. A pergunta é sobre caderno: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Gabriela",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-0",
+        "output": "Gabriela",
+        "correct": true
+      },
+      {
+        "id": "negation-18",
+        "category": "negation",
+        "prompt": "Pergunta: Nina não levou o mapa; Hugo levou. A pergunta é sobre mapa: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Hugo",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-1",
+        "output": "Hugo",
+        "correct": true
+      },
+      {
+        "id": "negation-19",
+        "category": "negation",
+        "prompt": "Pergunta: Otávio não levou o relógio; Iara levou. A pergunta é sobre relógio: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Iara",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-1",
+        "output": "Iara",
+        "correct": true
+      },
+      {
+        "id": "negation-20",
+        "category": "negation",
+        "prompt": "Pergunta: Paula não levou o lápis; João levou. A pergunta é sobre lápis: quem levou? Responda somente o nome.\nResposta:",
+        "response": "João",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-2",
+        "output": "João",
+        "correct": true
+      },
+      {
+        "id": "negation-21",
+        "category": "negation",
+        "prompt": "Pergunta: Rui não levou o cartão; Lia levou. A pergunta é sobre cartão: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Lia",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-2",
+        "output": "Lia",
+        "correct": true
+      },
+      {
+        "id": "negation-22",
+        "category": "negation",
+        "prompt": "Pergunta: Sara não levou o bilhete; Marcos levou. A pergunta é sobre bilhete: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Marcos",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-3",
+        "output": "Marcos",
+        "correct": true
+      },
+      {
+        "id": "negation-23",
+        "category": "negation",
+        "prompt": "Pergunta: Tiago não levou o controle; Nina levou. A pergunta é sobre controle: quem levou? Responda somente o nome.\nResposta:",
+        "response": "Nina",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-negation-3",
+        "output": "Nina",
+        "correct": true
+      },
+      {
+        "id": "missing-24",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Lia gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-0",
+        "output": "O ano de nascimento",
+        "correct": false
+      },
+      {
+        "id": "missing-25",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Marcos gosta de livros. Nasceu em 2001. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2001",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-0",
+        "output": "novo",
+        "correct": false
+      },
+      {
+        "id": "missing-26",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Nina gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-1",
+        "output": "O ano de nascimento é o nome da autora.",
+        "correct": false
+      },
+      {
+        "id": "missing-27",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Otávio gosta de livros. Nasceu em 2003. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2003",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-1",
+        "output": "Otávio gosta de livros.",
+        "correct": false
+      },
+      {
+        "id": "missing-28",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Paula gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-2",
+        "output": "O ano de nascimento",
+        "correct": false
+      },
+      {
+        "id": "missing-29",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Rui gosta de livros. Nasceu em 2005. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2005",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-2",
+        "output": "não informado",
+        "correct": false
+      },
+      {
+        "id": "missing-30",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Sara gosta de livros. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-3",
+        "output": "O ano de nascimento não é Sara.",
+        "correct": false
+      },
+      {
+        "id": "missing-31",
+        "category": "missing",
+        "prompt": "Pergunta: Informações disponíveis: Tiago gosta de livros. Nasceu em 2007. Qual o ano de nascimento? Escreva só o ano, ou não informado se ele não aparece.\nResposta:",
+        "response": "2007",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-missing-3",
+        "output": "O ano de nascimento é um livro que não pode ser lido.",
+        "correct": false
+      },
+      {
+        "id": "case-32",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Lia LEU o livro.\nResposta:",
+        "response": "lia leu o livro.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-0",
+        "output": "lia LEU o livro",
+        "correct": false
+      },
+      {
+        "id": "case-33",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Marcos LEU o caderno.\nResposta:",
+        "response": "marcos leu o caderno.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-0",
+        "output": "Marcos LEU o caderno",
+        "correct": false
+      },
+      {
+        "id": "case-34",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Nina LEU o mapa.\nResposta:",
+        "response": "nina leu o mapa.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-1",
+        "output": "nina LEU o mapa",
+        "correct": false
+      },
+      {
+        "id": "case-35",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Otávio LEU o relógio.\nResposta:",
+        "response": "otávio leu o relógio.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-1",
+        "output": "otávio LEU o relógio",
+        "correct": false
+      },
+      {
+        "id": "case-36",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Paula LEU o lápis.\nResposta:",
+        "response": "paula leu o lápis.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-2",
+        "output": "leu",
+        "correct": false
+      },
+      {
+        "id": "case-37",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Rui LEU o cartão.\nResposta:",
+        "response": "rui leu o cartão.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-2",
+        "output": "leu",
+        "correct": false
+      },
+      {
+        "id": "case-38",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Sara LEU o bilhete.\nResposta:",
+        "response": "sara leu o bilhete.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-3",
+        "output": "leu",
+        "correct": false
+      },
+      {
+        "id": "case-39",
+        "category": "case",
+        "prompt": "Pergunta: Reescreva todo este texto com letras minúsculas: Tiago LEU o controle.\nResposta:",
+        "response": "tiago leu o controle.",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-case-3",
+        "output": "tiago LEU o controle",
+        "correct": false
+      },
+      {
+        "id": "json-40",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"árvore\".\nResposta:",
+        "response": "{\"item\": \"árvore\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-0",
+        "output": "{\"árvore\":\"árvore\"}",
+        "correct": false
+      },
+      {
+        "id": "json-41",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"papel\".\nResposta:",
+        "response": "{\"item\": \"papel\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-0",
+        "output": "{\"item\":\"papel\"}",
+        "correct": true
+      },
+      {
+        "id": "json-42",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"areia\".\nResposta:",
+        "response": "{\"item\": \"areia\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-1",
+        "output": "{\"areia\":\"areia\"}",
+        "correct": false
+      },
+      {
+        "id": "json-43",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"chave\".\nResposta:",
+        "response": "{\"item\": \"chave\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-1",
+        "output": "{\"chave\":\"chave\"}",
+        "correct": false
+      },
+      {
+        "id": "json-44",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"luz\".\nResposta:",
+        "response": "{\"item\": \"luz\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-2",
+        "output": "{\"item\":\"luz\"}",
+        "correct": true
+      },
+      {
+        "id": "json-45",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"praia\".\nResposta:",
+        "response": "{\"item\": \"praia\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-2",
+        "output": "{\"praia\":\"praia\"}",
+        "correct": false
+      },
+      {
+        "id": "json-46",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"jardim\".\nResposta:",
+        "response": "{\"item\": \"jardim\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-3",
+        "output": "{\"item\":\"jardim\"}",
+        "correct": true
+      },
+      {
+        "id": "json-47",
+        "category": "json",
+        "prompt": "Pergunta: Devolva um objeto JSON cuja única chave seja item e cujo valor seja \"caneta\".\nResposta:",
+        "response": "{\"item\": \"caneta\"}",
+        "scorer": "json",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-json-3",
+        "output": "{\"caneta\":\"caneta\"}",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-48",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 31 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "33",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-0",
+        "output": "91",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-49",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 32 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "35",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-0",
+        "output": "83",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-50",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 33 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "35",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-1",
+        "output": "83",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-51",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 34 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "37",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-1",
+        "output": "43",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-52",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 35 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "37",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-2",
+        "output": "25",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-53",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 36 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "39",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-2",
+        "output": "43",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-54",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 37 mais 2? Retorne somente o resultado numérico.\nResposta:",
+        "response": "39",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-3",
+        "output": "43",
+        "correct": false
+      },
+      {
+        "id": "arithmetic-55",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Quanto resulta de 38 mais 3? Retorne somente o resultado numérico.\nResposta:",
+        "response": "41",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-arithmetic-3",
+        "output": "83",
+        "correct": false
+      },
+      {
+        "id": "fact-56",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Brasil? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Brasília",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-0",
+        "output": "Brasília",
+        "correct": true
+      },
+      {
+        "id": "fact-57",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Portugal? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Lisboa",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-0",
+        "output": "Lisboa",
+        "correct": true
+      },
+      {
+        "id": "fact-58",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de França? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Paris",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-1",
+        "output": "Roma",
+        "correct": false
+      },
+      {
+        "id": "fact-59",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Argentina? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Buenos Aires",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-1",
+        "output": "Roma",
+        "correct": false
+      },
+      {
+        "id": "fact-60",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Japão? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Tóquio",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-2",
+        "output": "Tóquio",
+        "correct": true
+      },
+      {
+        "id": "fact-61",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Itália? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Roma",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-2",
+        "output": "Roma",
+        "correct": true
+      },
+      {
+        "id": "fact-62",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Alemanha? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Berlim",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-3",
+        "output": "Berlim",
+        "correct": true
+      },
+      {
+        "id": "fact-63",
+        "category": "fact",
+        "prompt": "Pergunta: Qual cidade é a capital de Espanha? Escreva somente o nome da cidade.\nResposta:",
+        "response": "Madri",
+        "scorer": "exact",
+        "quality": "original verified construction or authored review",
+        "pair_id": "test-fact-3",
+        "output": "Lisboa",
+        "correct": false
+      },
+      {
+        "id": "open_language-64",
+        "category": "open_language",
+        "prompt": "Pergunta: Oi! Quero conversar com você. Como pode me ajudar?\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Você pode me ajudar?",
+        "correct": null
+      },
+      {
+        "id": "open_language-65",
+        "category": "open_language",
+        "prompt": "Pergunta: Você afirmou que São Paulo é a capital do Brasil. Essa informação está correta?\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não. A capital do Brasil é a capital do Brasil.",
+        "correct": null
+      },
+      {
+        "id": "open_language-66",
+        "category": "open_language",
+        "prompt": "Pergunta: Por que as plantas precisam de água? Explique de maneira simples.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "As plantas precisam de água.",
+        "correct": null
+      },
+      {
+        "id": "open_language-67",
+        "category": "open_language",
+        "prompt": "Pergunta: Estou estudando um assunto novo e não sei por onde começar. Sugira um primeiro passo.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "O que você quer estudar e não sabe?",
+        "correct": null
+      },
+      {
+        "id": "open_language-68",
+        "category": "open_language",
+        "prompt": "Pergunta: Explique a diferença entre treinar um modelo e avaliar um modelo.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Um modelo é uma ferramenta que avalia um modelo e avalia um modelo.",
+        "correct": null
+      },
+      {
+        "id": "open_language-69",
+        "category": "open_language",
+        "prompt": "Pergunta: Texto: Joana perdeu o ônibus e foi a pé até a escola. Resuma em uma frase sem inventar informações.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "música",
+        "correct": null
+      },
+      {
+        "id": "open_language-70",
+        "category": "open_language",
+        "prompt": "Pergunta: Se eu perguntar a idade de alguém e o texto só disser seu nome, você consegue saber a idade?\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não. A idade de alguém e o texto só disser seu nome, não a idade de uma pessoa.",
+        "correct": null
+      },
+      {
+        "id": "open_language-71",
+        "category": "open_language",
+        "prompt": "Pergunta: Você acabou de executar algum comando no meu computador? Explique sem inventar ações.\nResposta:",
+        "response": "",
+        "scorer": "manual",
+        "quality": "original verified construction or authored review",
+        "output": "Não tenho uma ferramenta de execução de código-fonte para executar esse comando.",
+        "correct": null
+      }
+    ]
+  },
+  "retention_after": {
+    "correct": 8,
+    "total": 12,
+    "correct_pairs": 0,
+    "total_pairs": 0,
+    "by_category": {
+      "arithmetic": {
+        "correct": 0,
+        "total": 2
+      },
+      "code": {
+        "correct": 0,
+        "total": 1
+      },
+      "context": {
+        "correct": 2,
+        "total": 2
+      },
+      "instruction": {
+        "correct": 2,
+        "total": 3
+      },
+      "json": {
+        "correct": 2,
+        "total": 2
+      },
+      "tool_result": {
+        "correct": 1,
+        "total": 1
+      },
+      "tool_simulation": {
+        "correct": 1,
+        "total": 1
+      }
+    },
+    "results": [
+      {
+        "id": "validation-064",
+        "split": "validation",
+        "category": "instruction",
+        "prompt": "Pergunta: Sua saída deve conter só: cobre\nResposta:",
+        "response": "cobre",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 15,
+        "response_tokens": 3,
+        "output": " cobre",
+        "correct": true
+      },
+      {
+        "id": "validation-065",
+        "split": "validation",
+        "category": "instruction",
+        "prompt": "Pergunta: Qual é a primeira palavra de \"rio largo corre\"? Escreva apenas essa palavra.\nResposta:",
+        "response": "rio",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 26,
+        "response_tokens": 2,
+        "output": "rio",
+        "correct": true
+      },
+      {
+        "id": "validation-066",
+        "split": "validation",
+        "category": "context",
+        "prompt": "Pergunta: Bilhete: Rui deixou a chave na gaveta. Onde está a chave? Responda apenas o local.\nResposta:",
+        "response": "na gaveta",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 31,
+        "response_tokens": 4,
+        "output": "na gaveta",
+        "correct": true
+      },
+      {
+        "id": "validation-067",
+        "split": "validation",
+        "category": "context",
+        "prompt": "Pergunta: Ficha: nome Lia; idade não registrada. Qual é a idade? Use \"não informado\" quando faltar o dado.\nResposta:",
+        "response": "não informado",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 34,
+        "response_tokens": 3,
+        "output": "não informado",
+        "correct": true
+      },
+      {
+        "id": "validation-068",
+        "split": "validation",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Dê somente o valor de 16 + 27.\nResposta:",
+        "response": "43",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 17,
+        "response_tokens": 2,
+        "output": "48",
+        "correct": false
+      },
+      {
+        "id": "validation-069",
+        "split": "validation",
+        "category": "arithmetic",
+        "prompt": "Pergunta: Sem explicação, quanto vale 9 * 8?\nResposta:",
+        "response": "72",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 17,
+        "response_tokens": 2,
+        "output": "48",
+        "correct": false
+      },
+      {
+        "id": "validation-070",
+        "split": "validation",
+        "category": "json",
+        "prompt": "Pergunta: Devolva o objeto JSON {\"modo\":\"teste\"} sem texto ao redor.\nResposta:",
+        "response": "{\"modo\":\"teste\"}",
+        "scorer": "json",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 25,
+        "response_tokens": 7,
+        "output": "{\"modo\":\"teste\"}",
+        "correct": true
+      },
+      {
+        "id": "validation-071",
+        "split": "validation",
+        "category": "json",
+        "prompt": "Pergunta: Use JSON para representar uma única chave ativo com valor booleano falso. Nenhum outro campo.\nResposta:",
+        "response": "{\"ativo\":false}",
+        "scorer": "json",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 27,
+        "response_tokens": 6,
+        "output": "{\"ativo\":false}",
+        "correct": true
+      },
+      {
+        "id": "validation-072",
+        "split": "validation",
+        "category": "tool_simulation",
+        "prompt": "Pergunta: Exercício simulado: só existe consultar_status. Gere o objeto JSON {\"ferramenta\":\"consultar_status\",\"argumentos\":{}} para consultar o treino. Não execute a consulta.\nResposta:",
+        "response": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "scorer": "json",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 51,
+        "response_tokens": 17,
+        "output": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+        "correct": true
+      },
+      {
+        "id": "validation-073",
+        "split": "validation",
+        "category": "tool_result",
+        "prompt": "Pergunta: Retorno simulado: {\"resultado\":91}. Diga apenas o resultado numérico.\nResposta:",
+        "response": "91",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 27,
+        "response_tokens": 2,
+        "output": "91",
+        "correct": true
+      },
+      {
+        "id": "validation-074",
+        "split": "validation",
+        "category": "code",
+        "prompt": "Pergunta: Em Python, qual o valor de len([])? Retorne somente o número.\nResposta:",
+        "response": "0",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 26,
+        "response_tokens": 2,
+        "output": "5",
+        "correct": false
+      },
+      {
+        "id": "validation-075",
+        "split": "validation",
+        "category": "instruction",
+        "prompt": "Pergunta: Escreva apenas a segunda palavra: manhã calma.\nResposta:",
+        "response": "calma",
+        "scorer": "exact",
+        "provenance": "Codex-authored and reviewed in this session",
+        "scope": "Short response; no hidden reasoning trace; no tools executed",
+        "prompt_tokens": 18,
+        "response_tokens": 3,
+        "output": "cavalo",
+        "correct": false
+      }
+    ]
+  },
+  "elapsed_training_and_final_evaluation_seconds": 133,
+  "selected_sha256": "b5344d7969b7be70193229c81cd5510e1f5ec6562ecd7b60df8429fe8e6aab0e",
+  "retention_regressions": [],
+  "objective_gate_passed": true,
+  "open_response_review_required": true,
+  "large_training_started": false
+}

@@ -1,0 +1,15 @@
+{
+  "cases_per_model": 18,
+  "legacy_prompts": 6,
+  "native_tool_cases": 12,
+  "cases_sha256": "a391b51cb5a803c50ad838f88600d4f6dc1a9f2b188dc6b2359c66de91e861d3",
+  "settings": {
+    "temperature": 0,
+    "reasoning_effort": "medium",
+    "max_tokens": 2048
+  },
+  "selection": "Six existing teacher prompts and twelve specified tool scenarios, frozen before this comparison.",
+  "scope": "Same prompts/settings/backend/hardware. Limited suite; native scenarios differ from the prior 102M JSON-routing audit.",
+  "code_policy": "Generated code is not executed on the cloud. Review locally before any restricted functional tests.",
+  "quality_policy": "Review relevance of clarification questions and evidence in experiment recommendations separately from format."
+}

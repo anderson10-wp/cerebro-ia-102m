@@ -1,0 +1,105 @@
+{
+  "reviews": [
+    {
+      "id": "dialog-0080",
+      "passed": true,
+      "reason": "Responde ao pedido, fatos corretos, sem repetições ou invenções, continuação coerente."
+    },
+    {
+      "id": "dialog-0081",
+      "passed": true,
+      "reason": "Responde ao pedido, informações corretas e concisas, sem problemas."
+    },
+    {
+      "id": "dialog-0082",
+      "passed": true,
+      "reason": "Responde ao pedido, fornece dicas factuais e coerentes."
+    },
+    {
+      "id": "dialog-0083",
+      "passed": true,
+      "reason": "Responde ao pedido, instruções corretas e claras."
+    },
+    {
+      "id": "dialog-0084",
+      "passed": true,
+      "reason": "Lista etapas úteis, sem erros factuais ou repetições."
+    },
+    {
+      "id": "dialog-0085",
+      "passed": true,
+      "reason": "Explica fotossíntese corretamente e segue a continuação."
+    },
+    {
+      "id": "dialog-0086",
+      "passed": true,
+      "reason": "Fornece orientação geral sem citar fontes específicas, adequado."
+    },
+    {
+      "id": "dialog-0087",
+      "passed": true,
+      "reason": "Dicas de foco corretas e coerentes com a pergunta."
+    },
+    {
+      "id": "dialog-0088",
+      "passed": true,
+      "reason": "Explicação clara e factual sobre aprendizagem autossupervisionada."
+    },
+    {
+      "id": "dialog-0089",
+      "passed": true,
+      "reason": "Sugestões genéricas corretas, sem citar nomes específicos."
+    },
+    {
+      "id": "dialog-0090",
+      "passed": true,
+      "reason": "Apresenta padrões de design e benefício do Observer corretamente."
+    },
+    {
+      "id": "dialog-0091",
+      "passed": true,
+      "reason": "Sugestões de atividades ao ar livre adequadas e corretas."
+    },
+    {
+      "id": "dialog-0092",
+      "passed": true,
+      "reason": "Definição de gravidade e efeitos no universo corretos."
+    },
+    {
+      "id": "dialog-0093",
+      "passed": true,
+      "reason": "Dicas de fotografia factuais e úteis."
+    },
+    {
+      "id": "dialog-0094",
+      "passed": true,
+      "reason": "Narrativa simples e coerente sobre fazer café."
+    },
+    {
+      "id": "dialog-0095",
+      "passed": true,
+      "reason": "Explica soluções para gradiente evanescente corretamente."
+    },
+    {
+      "id": "dialog-0096",
+      "passed": true,
+      "reason": "Compara organização militar asteca de forma factual."
+    },
+    {
+      "id": "dialog-0097",
+      "passed": true,
+      "reason": "Diferença entre OOP e programação processual explicada corretamente."
+    },
+    {
+      "id": "dialog-0098",
+      "passed": true,
+      "reason": "Orientações de co‑parentalidade claras e factuais."
+    },
+    {
+      "id": "dialog-0099",
+      "passed": true,
+      "reason": "Métodos de prática de verbos espanhóis corretos e úteis."
+    }
+  ],
+  "reviewer": "openai/gpt-oss-120b"
+}

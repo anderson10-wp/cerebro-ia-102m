@@ -1,0 +1,21 @@
+{
+  "status": "proposal_validated",
+  "training_started": false,
+  "commands_executed": 0,
+  "automatic_promotion": false,
+  "usage": {
+    "queue_time": 0.238575124,
+    "prompt_tokens": 1168,
+    "prompt_time": 0.05120578,
+    "completion_tokens": 606,
+    "completion_time": 1.2543133229999999,
+    "total_tokens": 1774,
+    "total_time": 1.305519103,
+    "completion_tokens_details": {
+      "reasoning_tokens": 441
+    }
+  },
+  "model": "openai/gpt-oss-120b",
+  "meaning": "Schema and budget validated only; hypothesis is not proven",
+  "awaiting": "Data preparation and independent evaluation implementation"
+}

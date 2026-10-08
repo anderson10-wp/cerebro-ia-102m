@@ -1,0 +1,33 @@
+{
+  "run": ".\\outputs\\local-run-20261007-205908-252375",
+  "summary": {
+    "status": "completed",
+    "before_correct": 6,
+    "total": 12,
+    "promoted": false,
+    "api_calls": 0,
+    "smoke_test": true,
+    "training": {
+      "status": "completed_candidate_only",
+      "initial_validation_loss": 0.6877291247529803,
+      "base_checkpoint_sha256": "1b79d4e8091cfe5db26c73379260bffb5102bbf18774820658af6718b23541ac",
+      "validation": [
+        {
+          "epoch": 1,
+          "loss": 0.690097135192943,
+          "steps": 1
+        }
+      ],
+      "automatic_promotion": false,
+      "audit_examples_evaluated": 0,
+      "cloud_jobs_started": 0,
+      "device": "cpu",
+      "hardware": "cpu",
+      "steps": 1,
+      "response_tokens_seen": 13,
+      "best_validation_loss": 0.6877291247529803,
+      "candidate_saved": false,
+      "elapsed_seconds": 3.9540504000000283
+    }
+  }
+}

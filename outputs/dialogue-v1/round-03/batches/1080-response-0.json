@@ -1,0 +1,109 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-1080",
+      "answer": "Para configurar o roteador, acesse o painel dele pelo navegador usando o endereço IP indicado no manual. As opções variam por marca. Qual é a marca e modelo do seu aparelho?",
+      "followup": "Qual é a marca e o modelo do seu roteador?",
+      "followup_answer": "Com a marca e o modelo, posso indicar os passos específicos para acessar o painel e configurar a rede sem fio e a senha."
+    },
+    {
+      "id": "dialog-1081",
+      "answer": "Respire fundo e diga o que sente com frases curtas, como 'estou chateado porque'. Ouça a opinião dele sem interromper. O objetivo é entender, não vencer a discussão.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1082",
+      "answer": "Para essa idade, jogos de tabuleiro com regras simples e partidas curtas funcionam bem. Procure opções que envolvam sorte, estratégia leve e trabalho em equipe, adequadas ao tempo de atenção.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1083",
+      "answer": "Escolha um único objetivo por sessão, use um cronômetro com pausas curtas e elimine distrações do celular. Anote o que precisa ser feito antes de começar para não perder tempo decidindo.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1084",
+      "answer": "Comece retirando o que não usa, depois organize por cômodo em vez de por tipo. Coloque itens de uso diário em locais acessíveis e mantenha superfícies livres para evitar bagunça rápida.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1085",
+      "answer": "Para ajudar, preciso saber o que acontece na tela e quando o erro começou. Descreva o sintoma exato, como mensagens de erro ou comportamentos estranhos.",
+      "followup": "O que aparece na tela e quando o problema começou?",
+      "followup_answer": "Com essa descrição, posso sugerir as verificações iniciais mais adequadas ao sintoma relatado."
+    },
+    {
+      "id": "dialog-1086",
+      "answer": "Pergunte sobre hobbies, viagens recentes ou filmes e séries que a pessoa gosta. Evite temas polêmicos no início e use as respostas para fazer perguntas de acompanhamento.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1087",
+      "answer": "Inclua data, destinatário, cargo, frase clara de demissão, data de efetivação e agradecimento. Mantenha o tom profissional e evite justificativas longas. Envie por e-mail ou entregue em papel.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1088",
+      "answer": "Comece com JavaScript ou Python, pois são versáteis e têm muita documentação. Depois, aprenda uma linguagem de sistema ou de banco de dados conforme o tipo de projeto que deseja construir.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1089",
+      "answer": "Divida a tarefa em passos pequenos e comece pelo mais fácil para criar impulso. Use um temporizador de vinte minutos e prometa a si mesmo parar depois, se quiser.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1090",
+      "answer": "Verifique se o mouse está conectado e se a bateria está carregada. Teste em outra porta USB e limpe o sensor. Qual é o sintoma: o ponteiro não move ou algum botão não clica?",
+      "followup": "O ponteiro não se move ou algum botão não funciona?",
+      "followup_answer": "Se o ponteiro não move, teste em outra porta e limpe o sensor; se um botão falha, o problema pode ser no hardware."
+    },
+    {
+      "id": "dialog-1091",
+      "answer": "Busque GIFs por tema, como 'parabéns engraçado' ou 'dança feliz', em sites de imagens. Escolha os que combinam com a personalidade do amigo e evite piadas internas que ele não entenda.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1092",
+      "answer": "Comece com uma saudação formal e o cargo desejado. Destaque duas conquistas relevantes com números e explique por que quer aquela empresa. Encerre agradecendo e indicando disponibilidade para entrevista.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1093",
+      "answer": "Defina o objetivo: viagem, trabalho ou hobby. Escolha um idioma com recursos abundantes e pratique vinte minutos por dia, focando em ouvir e falar antes de decorar regras.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1094",
+      "answer": "Use a técnica Pomodoro com pausas programadas e elimine notificações durante o foco. Planeje o dia na noite anterior e comece com a tarefa mais importante enquanto a energia está alta.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1095",
+      "answer": "Redes famosas incluem LeNet, AlexNet, VGG, ResNet e Inception. Cada uma introduziu melhorias, como camadas residuais que facilitam treinar redes muito profundas.",
+      "followup": "Qual dessas arquiteturas você gostaria de ver com um exemplo prático?",
+      "followup_answer": "Posso mostrar como a ResNet usa conexões residuais para permitir treinar dezenas de camadas sem perder informação."
+    },
+    {
+      "id": "dialog-1096",
+      "answer": "Comece com uma história curta que gere curiosidade. Use poucas imagens grandes, fale pausadamente e termine com uma mensagem clara. Pratique em voz alta antes da apresentação.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1097",
+      "answer": "O céu mudou de roxo para laranja suave enquanto o sol surgia devagar. A luz dourada beijou as nuvens baixas, pintando o horizonte com tons de mel e rosa. O ar frio trouxe o canto distante dos pássaros anunciando o novo dia.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1098",
+      "answer": "Procure canais que ensinem acordes básicos, dedilhado e ritmo com exercícios curtos. Pratique cinco minutos por dia e use um afinador no celular. Qual estilo musical você gostaria de tocar primeiro?",
+      "followup": "Qual estilo musical você gostaria de tocar primeiro?",
+      "followup_answer": "Com essa informação, posso indicar exercícios específicos para os acordes e ritmos mais usados nesse estilo."
+    },
+    {
+      "id": "dialog-1099",
+      "answer": "Defina a missão e o público-alvo, escolha um nome e registre o CNPJ. Elabore um estatuto social, monte um conselho e abra conta bancária específica. Consulte um contador para as obrigações fiscais.",
+      "followup": ""
+    }
+  ]
+}

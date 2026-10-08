@@ -1,0 +1,34 @@
+{
+  "checkpoint": "session-03 best-model.pt",
+  "seed": 42,
+  "new_tokens": 48,
+  "temperature": 0.7,
+  "top_k": 40,
+  "results": [
+    {
+      "prompt": "O Brasil é um país localizado na",
+      "continuation": " África Ocidental. A região é conhecida por ser o primeiro país do mundo a ser colonizado e por ter uma população que ocupa cerca de 30% da área total.\nA África possui uma população de aproximadamente 300 milhões de pessoas. O Brasil",
+      "seconds": 6.44
+    },
+    {
+      "prompt": "A inteligência artificial pode ajudar as pessoas a",
+      "continuation": " se comunicar de forma eficaz, permitindo que as pessoas interagirem com o comportamento dos outros.\nA inteligência artificial será capaz de encontrar a linguagem dos outros, descobrir e lidar com essas situações, analisar oportunidades para criar novos hábitos e obter informações",
+      "seconds": 7.53
+    },
+    {
+      "prompt": "Pergunta: Olá! Como você está?\nResposta:",
+      "continuation": " Bem, você está em um ambiente de escritório e quer ter um espaço para você?\nResposta: Sim, o ambiente de escritório é um espaço para ser usado para trabalhar e pensar.\nResposta: Você está em um ambiente de",
+      "seconds": 8.45
+    },
+    {
+      "prompt": "Pergunta: Quanto é 2 + 2?\nResposta:",
+      "continuation": " Sim. Se vc não tem um limite de velocidade, é possível usar\nLTD ou LI.\nLTD = ROM.\nPor\nRomano\nO que você acha dessa tecnologia?\nCom certeza,",
+      "seconds": 6.12
+    },
+    {
+      "prompt": "def soma(a, b):\n    ",
+      "continuation": " return a.sum(2)\n    \n     return a\n    \n#\n#  Licensed to the Apache Software Foundation (ASF) under one\n#  or more contributor license agreements.  See the NOTICE",
+      "seconds": 5.4
+    }
+  ]
+}

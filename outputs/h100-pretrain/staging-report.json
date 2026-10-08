@@ -1,0 +1,43 @@
+{
+  "status": "prepared",
+  "gpu_used": false,
+  "completed_files": [
+    {
+      "name": "code-train.bin",
+      "bytes": 600000000,
+      "sha256": "0453fc67601b6a04611fce8dce2a57f7e2f5ede14706a463ddd154d6129de8ab"
+    },
+    {
+      "name": "code-validation.bin",
+      "bytes": 2000000,
+      "sha256": "31e4859a541674d03064f3646560cf68c36ab6cdfa076feaa9758fe76f84d1fd"
+    },
+    {
+      "name": "en-train.bin",
+      "bytes": 1000000000,
+      "sha256": "0038516beb8dd97881d0e78167cda0b09aebc68496975eb1b50db7c95d890672"
+    },
+    {
+      "name": "en-validation.bin",
+      "bytes": 2000000,
+      "sha256": "5fd8dbdf63c99aa7882c72b99f15de2539fc83126f2bbd1fb6e1825c23ba9180"
+    },
+    {
+      "name": "pt-train.bin",
+      "bytes": 2400000000,
+      "sha256": "b140132ba78817baa0eb4b6097a7ff8b8826808782aa6eb6e809d64ab940af51"
+    },
+    {
+      "name": "pt-validation.bin",
+      "bytes": 2000000,
+      "sha256": "71517e3c0663be3334c121f4a69cbc6d935cedd09a09b92ed0e12dcf85a0c2ce"
+    },
+    {
+      "name": "source.pt",
+      "bytes": 1227227759,
+      "sha256": "6fef373e2ea7e3b18a8fa2846ea4b0a6b95c0b0b21a62fc042f8a267b2c5b798"
+    }
+  ],
+  "target_id": "01m49xq2evsk2wqgkr73m98bpp",
+  "credentials_persisted": false
+}

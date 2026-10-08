@@ -1,0 +1,12 @@
+{
+  "model": "gemini-2.5-flash",
+  "requested": 24,
+  "max_calls": 1,
+  "max_output_tokens": 4096,
+  "training_started": false,
+  "billing_tier": "unknown",
+  "created_utc": "2026-10-07T19:21:36.633035+00:00",
+  "status": "api_error",
+  "http_status": 404,
+  "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started)."
+}

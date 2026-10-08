@@ -1,0 +1,2 @@
+{"event": "studio_stopped", "status": "Stopped", "balance": 28.5}
+{"error_type": "RuntimeError", "error": "Single H100 did not become ready"}

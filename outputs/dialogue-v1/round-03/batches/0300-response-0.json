@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0300",
+      "answer": "Redes neurais artificiais exigem grande quantidade de dados, podem sobreajustar ao treinamento, são difíceis de interpretar e consomem muita energia. Também não garantem generalização fora do domínio aprendido e podem reproduzir vieses presentes nos dados.",
+      "followup": "Quais técnicas ajudam a reduzir o sobreajuste em redes neurais?",
+      "followup_answer": "Para reduzir sobreajuste, use regularização L2, dropout, early stopping, aumente o conjunto de dados com augmentação e escolha arquiteturas mais simples. Também pode dividir bem os dados em treino, validação e teste para monitorar o desempenho."
+    },
+    {
+      "id": "dialog-0301",
+      "answer": "Evite jargões excessivos, não presuma conhecimento prévio, use exemplos concretos, mantenha frases curtas e verifique se o público entende metáforas culturais. Também é importante não sobrecarregar com muitos detalhes de uma vez.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0302",
+      "answer": "A área de um triângulo pode ser calculada com a fórmula base vezes altura dividida por dois (A = b × h / 2). Basta medir a base e a altura perpendicular a ela.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0303",
+      "answer": "Considere fotografia, jardinagem, culinária, escrita criativa, programação de jogos ou aprender um instrumento musical. Escolha algo que desperte curiosidade e que possa ser praticado em pequenos intervalos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0304",
+      "answer": "Comece definindo um tema pessoal, elabore uma tese clara, use uma estrutura de introdução, desenvolvimento e conclusão, e inclua exemplos concretos. Revise para coerência e correção gramatical antes de submeter.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0305",
+      "answer": "Inicie identificando um problema que você conhece bem, valide a ideia com potenciais clientes, elabore um plano simples de custos e receitas, e teste um protótipo antes de investir muito. Busque mentoria e recursos gratuitos.",
+      "followup": "Quais são os primeiros passos para validar uma ideia de negócio sem gastar muito?",
+      "followup_answer": "Crie uma pesquisa curta para o público-alvo, ofereça um protótipo mínimo funcional, colete feedback direto e observe se as pessoas demonstram interesse em pagar ou usar o produto. Ajuste a proposta conforme os resultados."
+    },
+    {
+      "id": "dialog-0306",
+      "answer": "Use uma agenda digital ou papel, liste tarefas diárias, priorize por importância e prazo, bloqueie horários para tarefas grandes e reserve tempo para revisões. Revisite a lista ao final do dia para ajustar o próximo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0307",
+      "answer": "Sim, redes neurais artificiais são modelos computacionais inspirados no cérebro, compostos por camadas de neurônios artificiais que aprendem padrões a partir de dados de treinamento.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0308",
+      "answer": "Pratique escuta ativa: mantenha contato visual, evite interromper, repita o que ouviu com suas próprias palavras e faça perguntas abertas. Isso demonstra interesse e ajuda a compreender melhor o interlocutor.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0309",
+      "answer": "Hola – Olá; ¿Cómo estás? – Como vai?; Gracias – Obrigado; Por favor – Por favor; Buen día – Bom dia; ¿Dónde está el baño? – Onde fica o banheiro?",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0310",
+      "answer": "1. Guia de fotografia de rua em sua cidade; 2. Comparação de lentes para retratos; 3. Como editar fotos em software gratuito; 4. Projeto “30 dias, 30 fotos” temático; 5. Entrevistas com fotógrafos locais.",
+      "followup": "Qual desses temas seria mais fácil de produzir em uma semana?",
+      "followup_answer": "O projeto “30 dias, 30 fotos” temático pode ser dividido em pequenas tarefas diárias, exigindo apenas uma foto por dia, o que facilita a produção rápida e mantém o leitor engajado."
+    },
+    {
+      "id": "dialog-0311",
+      "answer": "Descreva uma caminhada por uma floresta ao amanhecer, focando nos sons, cheiros e luzes que mudam. Use detalhes sensoriais para mostrar como a natureza desperta emoções no narrador.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0312",
+      "answer": "Divida o período de estudo em blocos de 45 minutos com 10 minutos de pausa. Priorize matérias difíceis logo de manhã, reserve revisões rápidas à noite e ajuste o cronograma semanalmente conforme o progresso.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0313",
+      "answer": "Mantenha uma lista mestra de tarefas, use um método como GTD (capturar, processar, organizar), estabeleça horários fixos para revisar prioridades e elimine distrações digitais durante o trabalho.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0314",
+      "answer": "Programação em linguagens como Python ou Java, lógica de algoritmos, estruturas de dados, controle de versão (Git), testes automatizados e habilidades de colaboração em equipe são essenciais para engenharia de software.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0315",
+      "answer": "Desculpe, não posso ajudar a encontrar memes.",
+      "followup": "Qual seria um tema divertido para criar um meme de aniversário?",
+      "followup_answer": "Um tema leve pode brincar com a idade do amigo, como “Ainda não sou velho, só estou em modo de atualização” acompanhado de uma imagem engraçada de um computador."
+    },
+    {
+      "id": "dialog-0316",
+      "answer": "A expressão “gordo e magro” costuma contrastar duas condições físicas opostas, usada para indicar variedade ou extremos, como em “Ele aceita tanto o gordo quanto o magro da situação”.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0317",
+      "answer": "Plante ervas aromáticas em vasos, crie um mini-horta de alface em bandejas, ou monte um terrário com suculentas. São projetos de baixa manutenção e dão resultados rápidos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0318",
+      "answer": "A linguagem descritiva cria imagens vívidas, estabelece o clima e influencia emoções. Por exemplo, descrições de chuva suave podem gerar tranquilidade, enquanto tempestade violenta gera tensão no leitor.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0319",
+      "answer": "Sim, usar dados tendenciosos levanta questões éticas, pois pode perpetuar discriminação e gerar resultados injustos. É importante identificar, mitigar e documentar vieses antes de treinar modelos profundos.",
+      "followup": "false"
+    }
+  ]
+}

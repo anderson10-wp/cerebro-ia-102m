@@ -1,0 +1,15 @@
+{
+  "max_training_seconds": 4500,
+  "status_verified": "training",
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "url": "https://www.kaggle.com/code/andersonluan10ad/cerebro-102m-sft-treino-oct08",
+  "observed_steps": 25,
+  "version": 1,
+  "training_examples": 13244,
+  "automatic_promotion": false,
+  "observed_response_tokens": 30697,
+  "max_session_seconds": 5400
+}

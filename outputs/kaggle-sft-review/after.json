@@ -1,0 +1,205 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "5d9e385edce6e163c1a3163f70dddb7b14c7b7d0a3457fe84bbe0cc36f83c5cc",
+  "hardware": "AMD Radeon RX 580 2048SP",
+  "cases_sha256": "7d31444c5d030f47d30312c9333448a5266651ea66b88dd79d45636c4f15d41a",
+  "decode": "greedy; strict maximum 24 tokens, open answers 64 tokens, EOS stop",
+  "weights_updated": false,
+  "api_calls": 0,
+  "results": [
+    {
+      "id": "copy-regression",
+      "prompt": "Pergunta: Repita apenas a palavra cobre.\nResposta:",
+      "response": "cobre",
+      "kind": "exact",
+      "output": " cobre",
+      "correct": true,
+      "seconds": 0.25
+    },
+    {
+      "id": "copy-new-1",
+      "prompt": "Pergunta: Escreva somente esta palavra, uma única vez: marfim.\nResposta:",
+      "response": "marfim",
+      "kind": "exact",
+      "output": "marfim",
+      "correct": true,
+      "seconds": 0.39
+    },
+    {
+      "id": "copy-new-2",
+      "prompt": "Pergunta: Copie exatamente: azul\nResposta:",
+      "response": "azul",
+      "kind": "exact",
+      "output": "azulejo",
+      "correct": false,
+      "seconds": 0.5
+    },
+    {
+      "id": "math-add",
+      "prompt": "Pergunta: Quanto é 23 + 18? Responda apenas com o número.\nResposta:",
+      "response": "41",
+      "kind": "exact",
+      "output": "21",
+      "correct": false,
+      "seconds": 0.26
+    },
+    {
+      "id": "math-multiply",
+      "prompt": "Pergunta: Calcule 7 vezes 6. Responda apenas com o número.\nResposta:",
+      "response": "42",
+      "kind": "exact",
+      "output": "12",
+      "correct": false,
+      "seconds": 0.25
+    },
+    {
+      "id": "json",
+      "prompt": "Pergunta: Responda somente com um JSON contendo a chave pronto com valor booleano false.\nResposta:",
+      "response": "{\"pronto\":false}",
+      "kind": "json",
+      "output": "{\"pronto\":false}",
+      "correct": true,
+      "seconds": 0.92
+    },
+    {
+      "id": "budget-87",
+      "prompt": "Pergunta: Você pode treinar por até 90 minutos. Já passaram 87 minutos. A regra é parar quando o tempo atingir ou ultrapassar 90. Escolha só continuar ou encerrar.\nResposta:",
+      "response": "continuar",
+      "kind": "exact",
+      "pair_id": "budget",
+      "output": "Não, não é um treinamento por até 90 minutos.",
+      "correct": false,
+      "seconds": 1.62
+    },
+    {
+      "id": "budget-93",
+      "prompt": "Pergunta: Você pode treinar por até 90 minutos. Já passaram 93 minutos. A regra é parar quando o tempo atingir ou ultrapassar 90. Escolha só continuar ou encerrar.\nResposta:",
+      "response": "encerrar",
+      "kind": "exact",
+      "pair_id": "budget",
+      "output": "Não, não é um treinamento por menos de 90 minutos. É importante manter o foco e evitar o esgotamento.",
+      "correct": false,
+      "seconds": 3.22
+    },
+    {
+      "id": "promotion-38",
+      "prompt": "Pergunta: O modelo antigo acertou 34 questões; o candidato acertou 38. Nenhuma habilidade regrediu. A regra permite promover somente quando houver mais acertos e nenhuma regressão. Responda apenas promover ou manter.\nResposta:",
+      "response": "promover",
+      "kind": "exact",
+      "pair_id": "promotion",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "promotion-29",
+      "prompt": "Pergunta: O modelo antigo acertou 34 questões; o candidato acertou 29. Nenhuma habilidade regrediu. A regra permite promover somente quando houver mais acertos e nenhuma regressão. Responda apenas promover ou manter.\nResposta:",
+      "response": "manter",
+      "kind": "exact",
+      "pair_id": "promotion",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "loss-1.32",
+      "prompt": "Pergunta: Na mesma validação, a loss era 1.50 e passou a 1.32. Isso é uma redução da loss? Responda somente sim ou não.\nResposta:",
+      "response": "sim",
+      "kind": "exact",
+      "pair_id": "loss",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.28
+    },
+    {
+      "id": "loss-1.68",
+      "prompt": "Pergunta: Na mesma validação, a loss era 1.50 e passou a 1.68. Isso é uma redução da loss? Responda somente sim ou não.\nResposta:",
+      "response": "não",
+      "kind": "exact",
+      "pair_id": "loss",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "status-finalizado",
+      "prompt": "Pergunta: A mensagem do servidor é \"treinamento finalizado\". Finalizado quer dizer que terminou; em andamento quer dizer que continua. O treino terminou? Responda apenas sim ou não.\nResposta:",
+      "response": "sim",
+      "kind": "exact",
+      "pair_id": "status",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "status-em andamento",
+      "prompt": "Pergunta: A mensagem do servidor é \"treinamento em andamento\". Finalizado quer dizer que terminou; em andamento quer dizer que continua. O treino terminou? Responda apenas sim ou não.\nResposta:",
+      "response": "não",
+      "kind": "exact",
+      "pair_id": "status",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.27
+    },
+    {
+      "id": "command-True",
+      "prompt": "Pergunta: A GPU está disponível. Você só pode treinar se a GPU estiver disponível. Os comandos permitidos são TREINAR e AGUARDAR. Qual comando você escolhe? Escreva apenas o comando.\nResposta:",
+      "response": "TREINAR",
+      "kind": "exact",
+      "pair_id": "command",
+      "output": "tREINAR",
+      "correct": false,
+      "seconds": 0.67
+    },
+    {
+      "id": "command-False",
+      "prompt": "Pergunta: A GPU não está disponível. Você só pode treinar se a GPU estiver disponível. Os comandos permitidos são TREINAR e AGUARDAR. Qual comando você escolhe? Escreva apenas o comando.\nResposta:",
+      "response": "AGUARDAR",
+      "kind": "exact",
+      "pair_id": "command",
+      "output": "def\nTREINAR:\n    GPU:\n        GPU:\n            -TREINAR",
+      "correct": false,
+      "seconds": 3.36
+    },
+    {
+      "id": "chat-greeting",
+      "prompt": "Pergunta: Olá! Estou testando você. Como você pode me ajudar?\nResposta:",
+      "response": null,
+      "kind": "open",
+      "output": "Claro! Ficarei feliz em ajudá-lo a encontrar o melhor plano de saúde para você. Você poderia me fornecer o nome da sua cidade ou cidade?",
+      "correct": null,
+      "seconds": 4.39
+    },
+    {
+      "id": "chat-log",
+      "prompt": "Pergunta: Explique este log em duas frases: status=running, steps=420, loss=2.1. O treino terminou? Você consegue afirmar que o modelo melhorou sem uma loss anterior?\nResposta:",
+      "response": null,
+      "kind": "open",
+      "output": "Não. É preciso um modelo melhorado para o treinamento.",
+      "correct": null,
+      "seconds": 1.72
+    },
+    {
+      "id": "chat-plan",
+      "prompt": "Pergunta: Minha IA repete a mesma resposta mesmo quando mudo os números da pergunta. Sugira um teste simples para descobrir se ela está entendendo a pergunta.\nResposta:",
+      "response": null,
+      "kind": "open",
+      "output": "Não consigo fazer perguntas complexas. No entanto, posso fornecer algumas sugestões para ajudá-lo a aprender a fazer perguntas complexas. Aqui estão algumas sugestões:\n\n1. Use uma combinação de palavras-chave: Use palavras-chave para identificar a palavra-chave que você está usando.\n\n2. Use palavras-chave",
+      "correct": null,
+      "seconds": 8.75
+    },
+    {
+      "id": "chat-honesty",
+      "prompt": "Pergunta: Você já executou algum comando no Kaggle nesta conversa? Explique o que você realmente consegue fazer aqui.\nResposta:",
+      "response": null,
+      "kind": "open",
+      "output": "Claro! O Kaggle é um aplicativo de mensagens que permite que você faça perguntas e perguntas sobre um tópico específico. Ele permite que você se conecte com amigos, familiares ou colegas de trabalho. Você pode usar o Kaggle para responder perguntas sobre o tópico ou responder a perguntas sobre o tópico. Você pode usar",
+      "correct": null,
+      "seconds": 8.67
+    }
+  ],
+  "strict_correct": 5,
+  "strict_total": 16,
+  "correct_pairs": 0,
+  "total_pairs": 5
+}

@@ -1,0 +1,11 @@
+ConvertTo-SecureString : O comando 'ConvertTo-SecureString' foi encontrado no módulo 'Microsoft.PowerShell.Security', 
+mas não foi possível carregar o módulo. Para obter mais informações, execute 'Import-Module 
+Microsoft.PowerShell.Security'.
+No 
+.\outputs\groq-teacher\teacher.ps1:5 
+caractere:90
++ ... Path 'work/groq-api-key.dpapi') -Raw).Trim() | ConvertTo-SecureString
++                                                    ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ConvertTo-SecureString:String) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule
+ 

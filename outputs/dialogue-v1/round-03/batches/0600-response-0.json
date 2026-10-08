@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0600",
+      "answer": "Para criar um filtro de e‑mail, abra as configurações do seu cliente, escolha “Regras” ou “Filtros”, defina critérios como remetente ou assunto, e indique a ação desejada, como mover para uma pasta ou marcar como lido.",
+      "followup": "Qual tipo de mensagem você quer filtrar primeiro e para qual pasta deseja enviá‑las?",
+      "followup_answer": "Se quiser filtrar newsletters, crie uma regra que reconheça o domínio do remetente e direcione essas mensagens para a pasta “Boletins”, evitando que apareçam na caixa de entrada principal."
+    },
+    {
+      "id": "dialog-0601",
+      "answer": "Sim, melhorar a oratória é possível. Pratique discursos curtos, grave-se para analisar a entonação, controle a respiração, use pausas estratégicas e peça feedback a colegas. Também ajude a organizar ideias em um roteiro simples antes de falar."
+    },
+    {
+      "id": "dialog-0602",
+      "answer": "Comece a carta com uma saudação calorosa, depois expresse o motivo da escrita de forma clara, compartilhe sentimentos ou novidades, e finalize com um encerramento amigável. Use frases curtas e evite jargões para manter a mensagem natural."
+    },
+    {
+      "id": "dialog-0603",
+      "answer": "Para acordes básicos de violão, aprenda as posições de Dó (C), Ré (D), Mi (E) e Sol (G). Pratique a troca entre eles lentamente, mantendo os dedos firmes e o som limpo antes de acelerar o ritmo."
+    },
+    {
+      "id": "dialog-0604",
+      "answer": "Mantenha um sistema de arquivamento rotulado, use listas de tarefas diárias, reserve blocos de tempo para atividades específicas e limite distrações desligando notificações. Revisões semanais ajudam a ajustar prioridades e melhorar a ordem."
+    },
+    {
+      "id": "dialog-0605",
+      "answer": "O gradiente evanescente ocorre quando, em redes recorrentes longas, os valores dos gradientes diminuem exponencialmente ao retropropagar, dificultando o aprendizado de dependências distantes. Funções de ativação como ReLU ou unidades LSTM mitigam esse efeito.",
+      "followup": "Você gostaria de um exemplo simples mostrando como o LSTM ajuda a preservar o gradiente?",
+      "followup_answer": "Em um LSTM, a célula possui portas que controlam o fluxo de informação; a porta de esquecimento impede que o gradiente desapareça, permitindo que o modelo aprenda relações entre palavras separadas por muitas posições."
+    },
+    {
+      "id": "dialog-0606",
+      "answer": "As mídias sociais encurtam a comunicação, favorecendo mensagens rápidas e visuais. Isso aumenta a exposição, mas pode reduzir a profundidade das conversas, levando a interpretações superficiais e a uma maior dependência de feedback imediato."
+    },
+    {
+      "id": "dialog-0607",
+      "answer": "Uma carta de apresentação deve ter cabeçalho com dados de contato, saudação personalizada, parágrafo introdutório que destaque a vaga, corpo que relacione habilidades ao cargo, e encerramento agradecendo e indicando disponibilidade. Use fonte legível e margens uniformes."
+    },
+    {
+      "id": "dialog-0608",
+      "answer": "Máquinas de Turing neurais combinam computação simbólica com aprendizado de representação, permitindo processar sequências variáveis e aprender regras implícitas, algo que algoritmos tradicionais de aprendizado de máquina geralmente tratam separadamente."
+    },
+    {
+      "id": "dialog-0609",
+      "answer": "Desculpe, mas não posso gerar um livro completo aqui."
+    },
+    {
+      "id": "dialog-0610",
+      "answer": "Redes recorrentes mantêm um estado interno que evolui ao longo da sequência, capturando dependências temporais. Essa memória permite reconhecer padrões que se repetem ao longo do tempo, como séries financeiras ou texto.",
+      "followup": "Qual tipo de série temporal você pretende analisar, e qual horizonte de previsão deseja alcançar?",
+      "followup_answer": "Se for uma série de vendas mensais, use uma RNN com janela de 12 meses para prever o próximo trimestre; ajuste o número de unidades ocultas conforme a complexidade dos padrões sazonais."
+    },
+    {
+      "id": "dialog-0611",
+      "answer": "Amizades verdadeiras costumam envolver apoio mútuo, confiança e comunicação aberta, enquanto relações falsas podem ser marcadas por interesse unilateral, falta de empatia e pouca disponibilidade nos momentos difíceis."
+    },
+    {
+      "id": "dialog-0612",
+      "answer": "No tarô, os Arcanos Maiores representam grandes lições de vida, como o Louco (novos começos) ou a Morte (transformação). Os Arcanos Menores tratam de situações cotidianas, divididos em quatro naipes que simbolizam emoções, recursos, ação e pensamento."
+    },
+    {
+      "id": "dialog-0613",
+      "answer": "Para estudar o início da Revolução Industrial nos EUA, consulte livros como “The Rise of American Industry” e artigos acadêmicos disponíveis em bases como JSTOR. Visite também museus virtuais de história industrial para fontes primárias."
+    },
+    {
+      "id": "dialog-0614",
+      "answer": "Defina horários fixos, crie uma lista de tarefas priorizadas, use técnicas como Pomodoro, elimine distrações desligando notificações e reserve um espaço de trabalho dedicado. Pausas curtas ajudam a manter a concentração ao longo do dia."
+    },
+    {
+      "id": "dialog-0615",
+      "answer": "Redes recorrentes processam sequências mantendo um estado interno que depende de entradas anteriores, ao contrário de redes feedforward que tratam cada entrada de forma independente. Essa característica as torna adequadas para texto, áudio e séries temporais.",
+      "followup": "Você gostaria de saber como escolher entre uma RNN simples e uma LSTM para seu projeto?",
+      "followup_answer": "Para tarefas curtas, uma RNN básica pode ser suficiente; para dependências longas, prefira LSTM ou GRU, pois suas portas evitam o problema do gradiente evanescente e preservam informações por mais tempo."
+    },
+    {
+      "id": "dialog-0616",
+      "answer": "Faça: planeje o conteúdo, use slides claros e fontes legíveis, pratique a fala. Não faça: sobrecarregar slides com texto, ler palavra por palavra, usar cores que dificultem a leitura ou ignorar o tempo disponível."
+    },
+    {
+      "id": "dialog-0617",
+      "answer": "A mensagem da marca define o tom (formal ou descontraído), a linguagem (técnica ou coloquial) e a paleta visual. Quando alinhada ao site, melhora a experiência do usuário, gera confiança e pode aumentar as taxas de conversão."
+    },
+    {
+      "id": "dialog-0618",
+      "answer": "O gradiente evanescente acontece quando, ao treinar redes profundas, os valores dos gradientes diminuem exponencialmente ao retropropagar, dificultando a atualização dos pesos nas camadas iniciais e limitando o aprendizado de padrões complexos."
+    },
+    {
+      "id": "dialog-0619",
+      "answer": "Para otimizar a produtividade, tente dormir entre 7 e 9 horas, indo para a cama por volta das 22h30‑23h. Esse horário favorece ciclos de sono completos, melhorando a atenção e o desempenho no dia seguinte."
+    }
+  ]
+}

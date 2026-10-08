@@ -1,0 +1,621 @@
+{
+  "passed": true,
+  "checks": 122,
+  "examples_with_programmatic_checks": 106,
+  "total_examples": 256,
+  "manual_review": "Codex reviewed the authored targets; no independent reviewer.",
+  "limits": "JSON syntax does not independently validate the request semantics. Open language answers are not automatically proven correct.",
+  "arbitrary_code_executed": false,
+  "results": [
+    {
+      "id": "train-040",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-041",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-042",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-043",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-044",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-045",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-046",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-047",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-048",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-049",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-050",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-051",
+      "check": "inherited_arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "train-052",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-053",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-054",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-055",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-056",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-057",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-058",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-059",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "train-060",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-080",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-081",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-082",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-083",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-084",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-085",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-086",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-087",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-088",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-089",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-090",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-091",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-128",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-129",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-130",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-131",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-132",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-133",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-134",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-135",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-136",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-137",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-138",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-139",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-140",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-141",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-142",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-143",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-144",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-145",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-146",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-147",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-148",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-149",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-150",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-151",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-152",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-153",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-154",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-155",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-156",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-157",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-158",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-159",
+      "check": "arithmetic_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-160",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-161",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-162",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-163",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-164",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-165",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-166",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-167",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-168",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-169",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-170",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-171",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-172",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-173",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-174",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-175",
+      "check": "deterministic_transformation",
+      "passed": true
+    },
+    {
+      "id": "v3-train-176",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-176",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-177",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-177",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-178",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-178",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-179",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-179",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-180",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-180",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-181",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-181",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-182",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-182",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-183",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-183",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-184",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-184",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-185",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-185",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-186",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-186",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-187",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-187",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-188",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-188",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-189",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-189",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-190",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-190",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "v3-train-191",
+      "check": "json_object_syntax",
+      "passed": true
+    },
+    {
+      "id": "v3-train-191",
+      "check": "literal_to_json_value",
+      "passed": true
+    },
+    {
+      "id": "train-034",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "train-035",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-068",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-069",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-070",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-071",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-072",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-073",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    },
+    {
+      "id": "v3-train-074",
+      "check": "function_behavior_restricted_ast",
+      "passed": true
+    }
+  ]
+}

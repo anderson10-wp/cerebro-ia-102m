@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0740",
+      "answer": "Comece reiniciando o computador; se o problema persistir, verifique cabos e conexões, execute um antivírus, atualize drivers e o sistema operacional, e use o Gerenciador de Tarefas para identificar processos que consomem recursos. Se nada funcionar, procure suporte técnico.",
+      "followup": "Qual é o sintoma mais comum que indica falha de hardware?",
+      "followup_answer": "Um sintoma típico de falha de hardware é o computador desligar ou reiniciar inesperadamente, acompanhado de sons de chiado ou luzes piscando, indicando problemas na fonte de energia ou na memória RAM."
+    },
+    {
+      "id": "dialog-0741",
+      "answer": "A apresentação pode iniciar com definição de preconceito de idade, seguida de exemplos de discriminação no trabalho e na saúde, impactos psicológicos, leis de proteção e estratégias de inclusão, usando gráficos simples e casos reais para ilustrar cada ponto."
+    },
+    {
+      "id": "dialog-0742",
+      "answer": "Fonte grande e negrito transmite força, como títulos de notícias; fontes cursivas sugerem elegância ou informalidade, usadas em convites; fontes monoespaçadas lembram código ou documentos técnicos; fontes pequenas e claras facilitam leitura em textos longos."
+    },
+    {
+      "id": "dialog-0743",
+      "answer": "Pratique diariamente com aplicativos de áudio, aprenda pinyin e tons, use cartões de memória para vocabulário, converse com falantes nativos via intercâmbio online e assista a vídeos curtos com legendas, focando na compreensão oral antes de escrever."
+    },
+    {
+      "id": "dialog-0744",
+      "answer": "Organize a sala em zonas: área de instrução, grupos de trabalho e espaço de circulação. Use mobiliário flexível, rotule áreas, mantenha materiais essenciais ao alcance e guarde itens raramente usados em armários fechados."
+    },
+    {
+      "id": "dialog-0745",
+      "answer": "Desative programas que iniciam com o Windows, limpe arquivos temporários, atualize o SSD ou HDD, reduza efeitos visuais e verifique a presença de malware. Reinicie o computador após cada ajuste para observar a melhora.",
+      "followup": "Qual ferramenta simples pode ajudar a limpar arquivos temporários no Windows?",
+      "followup_answer": "A ferramenta \"Limpeza de Disco\" (Disk Cleanup) integrada ao Windows permite remover arquivos temporários, caches e outros itens desnecessários com poucos cliques."
+    },
+    {
+      "id": "dialog-0746",
+      "answer": "Pratique discursos curtos diante de um espelho, grave-se para analisar postura e entonação, participe de grupos de debate ou clubes de oratória, e peça feedback construtivo após cada apresentação."
+    },
+    {
+      "id": "dialog-0747",
+      "answer": "A pesquisa fornece fatos, contextos e referências que enriquecem a criatividade. Comece definindo o tema, busque fontes confiáveis, anote ideias relevantes e, ao escrever, integre esses dados para sustentar argumentos e inspirar novas perspectivas."
+    },
+    {
+      "id": "dialog-0748",
+      "answer": "Para falantes de inglês, o francês compartilha alfabeto latino e muitas palavras cognatas, facilitando a leitura. Contudo, a pronúncia e a gramática têm diferenças que exigem prática dedicada."
+    },
+    {
+      "id": "dialog-0749",
+      "answer": "Planeje o menu com antecedência, faça uma lista de compras, prepare parte dos pratos antes do evento, organize a mesa com utensílios à mão e ajuste a temperatura da comida pouco antes de servir."
+    },
+    {
+      "id": "dialog-0750",
+      "answer": "Redes recorrentes treinam sequências usando retroalimentação temporal, ajustando pesos com back‑propagation through time. Outros modelos, como feedforward, processam entradas independentes, sem memória de estados anteriores, o que simplifica o cálculo, mas limita a captura de dependências temporais.",
+      "followup": "Qual é a principal vantagem de usar LSTM em vez de RNN simples?",
+      "followup_answer": "LSTM resolve o problema de desaparecimento de gradiente, permitindo aprender dependências de longo prazo em sequências, o que melhora a precisão em tarefas como tradução ou reconhecimento de fala."
+    },
+    {
+      "id": "dialog-0751",
+      "answer": "Escute atentamente, evite suposições, aprenda palavras básicas da cultura alheia, respeite costumes locais, observe linguagem corporal e pergunte educadamente sobre diferenças quando necessário."
+    },
+    {
+      "id": "dialog-0752",
+      "answer": "Cartas e telegramas exigiam escrita formal e tempo de entrega, enquanto conversas cara a cara são instantâneas e permitem linguagem corporal. E‑mail e mensagens de texto são rápidos, porém variam em tom; chats de vídeo combinam velocidade com comunicação não verbal."
+    },
+    {
+      "id": "dialog-0753",
+      "answer": "Comece instalando Python, aprenda sintaxe básica com variáveis, loops e funções, pratique pequenos scripts como calculadora, e use recursos como o site oficial e tutoriais interativos para reforçar o aprendizado."
+    },
+    {
+      "id": "dialog-0754",
+      "answer": "Separe as roupas por cor em caixas, rotule cada caixa com a cor dominante, depois agrupe dentro de cada caixa por categoria (tops, calças, etc.). Assim, ao buscar uma peça, basta abrir a caixa correta e escolher a categoria."
+    },
+    {
+      "id": "dialog-0755",
+      "answer": "Abra as Configurações, vá a \"Privacidade e segurança\", selecione \"Limpar dados de navegação\", escolha o intervalo de tempo e marque \"Cache de imagens e arquivos\". Clique em \"Limpar agora\" para remover o site antigo.",
+      "followup": "Depois de limpar o cache, como garantir que o site carregue a versão mais recente?",
+      "followup_answer": "Pressione Ctrl + F5 (ou Cmd + Shift + R) para forçar o recarregamento completo, ignorando qualquer dado armazenado localmente."
+    },
+    {
+      "id": "dialog-0756",
+      "answer": "Desenvolvedores enfrentam desafios como compatibilidade de versões, gerenciamento de feedback divergente, necessidade de documentação clara e manutenção de um pipeline de integração que aceite contribuições sem quebrar a estabilidade do motor de jogo."
+    },
+    {
+      "id": "dialog-0757",
+      "answer": "Em um mundo onde todos podem visitar os sonhos alheios, Lina descobre segredos ocultos ao entrar na mente de seu irmão, ajudando‑o a superar traumas. Cada visita revela símbolos pessoais, e a fronteira entre realidade e subconsciente torna‑se tênue."
+    },
+    {
+      "id": "dialog-0758",
+      "answer": "Prós: abre oportunidades profissionais, estimula o cérebro e permite viajar culturalmente. Contras: exige tempo, pode ser frustrante no início e demanda prática constante para manter a fluência."
+    },
+    {
+      "id": "dialog-0759",
+      "answer": "Planeje tarefas na noite anterior, estabeleça metas claras, use a técnica Pomodoro, elimine distrações, faça pausas curtas e revise o progresso ao final do dia para ajustar o plano seguinte."
+    }
+  ]
+}

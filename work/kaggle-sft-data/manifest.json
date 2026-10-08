@@ -1,0 +1,30 @@
+{
+  "source": "nicholasKluge/instruct-aira-dataset-v2",
+  "revision": "c65b2bf91938480c0683ec396f4f11ca1a79782a",
+  "raw_sha256": "862be53debb5dac15330f9ec9fe51d6abd09d0f60cb88700c7ca71e6ec7707c0",
+  "counts": {
+    "train": 13244,
+    "dev": 384,
+    "audit": 384,
+    "tests": 60
+  },
+  "train_tokens": 2972361,
+  "response_tokens": 2504528,
+  "files": {
+    "audit.jsonl": "fa7d1c9799b1290c764b3ef073da65039fc3a76621252dc7d9087e4ba48d8b14",
+    "base.pt": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+    "dev.jsonl": "6ccddba9c6a9d8f9b75e3077895a539bc7160bb2c2b0c9a393d4a124026358c2",
+    "model.py": "c34ea605e4599d5f4e5430eb8f77eb050a0dce4103994d99f697a22655a06eb7",
+    "tests.jsonl": "e58843ed1c1306a6da043b5d5ada9866d9d72fd9e5477b6596eb3e7d7d6b966d",
+    "tokenizer.json": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+    "train.jsonl": "3ca088dcc4df052084a80dc4bf671d46a460d21282985717693923ae20fa619e"
+  },
+  "quality": "Automatic format, length and duplicate filters; factual quality is NOT fully reviewed. Candidate only. Audit not used for checkpoint selection.",
+  "limits": {
+    "epochs": 2,
+    "seconds": 4500,
+    "learning_rate": 1e-05,
+    "batch_size": 8,
+    "checkpoint_steps": 250
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0900",
+      "answer": "Abra o JPG em um visualizador que permita imprimir, escolha \"Imprimir\" e selecione \"Salvar como PDF\" ou use um conversor online gratuito: carregue o JPG, escolha PDF como formato de saída e baixe o arquivo resultante.",
+      "followup": "Qual programa gratuito você prefere usar para converter imagens em PDF?",
+      "followup_answer": "Você pode usar o Smallpdf ou o ILovePDF; ambos permitem arrastar o JPG, escolher PDF e baixar o resultado sem instalar software."
+    },
+    {
+      "id": "dialog-0901",
+      "answer": "Amêndoas, castanhas de caju, pistache, mix de sementes, grão‑de‑bico torrado, barra de proteína sem açúcar, biscoito integral, torrada de arroz com pasta de amendoim, jerky de carne magra e chips de banana desidratada são opções práticas e nutritivas.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0902",
+      "answer": "Querido(a) [Nome], agradeço profundamente seu apoio constante. Sua presença me deu força nos momentos difíceis e motivou minhas conquistas. Cada gesto seu reforçou minha confiança, e sou grato(a) por ter alguém tão dedicado ao meu lado.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0903",
+      "answer": "Use aplicativos como Duolingo ou Babbel, assista a séries com legendas, ouça podcasts em espanhol, pratique com parceiros de intercâmbio e consulte livros didáticos como \"Aula Internacional\"; combine leitura, áudio e conversação para reforçar o aprendizado.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0904",
+      "answer": "Planeje tarefas com blocos de tempo, elimine distrações, use a técnica Pomodoro, priorize atividades importantes, faça pausas curtas, delegue quando possível e revise seu progresso ao final do dia para ajustar prioridades.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0905",
+      "answer": "A escalabilidade de uma rede feedforward depende do número de camadas e neurônios; mais unidades aumentam a capacidade de modelar funções complexas, mas exigem mais memória e tempo de treinamento, podendo precisar de paralelismo ou GPUs para grandes modelos.",
+      "followup": "Como escolher o número ideal de camadas para um problema específico?",
+      "followup_answer": "Comece com uma arquitetura simples, avalie o erro de validação e aumente camadas gradualmente; use validação cruzada para evitar overfitting e ajuste conforme a complexidade dos dados."
+    },
+    {
+      "id": "dialog-0906",
+      "answer": "Águias douradas usam vocalizações agudas, exibições de voo e posturas corporais para marcar território e avisar sobre alimento; essas comunicações ajudam a coordenar caça, evitar conflitos e fortalecer laços de casal durante a criação dos filhotes.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0907",
+      "answer": "O artigo mostra que o desmatamento expõe solo ao vento e à água, aumentando a taxa de erosão; a perda de cobertura vegetal reduz a retenção de água, intensificando o escoamento e degradando a qualidade do solo nas áreas afetadas.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0908",
+      "answer": "Leia \"Clean Code\" de Robert C. Martin, \"Design Patterns\" de Gamma et al., \"The Pragmatic Programmer\", \"Refactoring\" de Martin Fowler, \"Structure and Interpretation of Computer Programs\", \"Software Engineering at Google\" e \"Domain‑Driven Design\" para bases sólidas.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0909",
+      "answer": "Defina objetivo e público, monte equipe de voluntários, escolha data e local, busque patrocinadores, crie campanha de divulgação nas redes, organize logística de arrecadação e estabeleça metas claras de arrecadação ou apoio.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0910",
+      "answer": "Descreva o sintoma exato (ex.: tela preta, travamento), verifique conexões de energia, reinicie em modo seguro, atualize drivers, execute verificação de vírus e, se o problema persistir, anote mensagens de erro para buscar solução específica.",
+      "followup": "Qual é o comportamento exato que seu computador apresenta ao iniciar?",
+      "followup_answer": "Ao saber se a tela fica preta, há som de inicialização ou mensagens de erro, poderei indicar passos mais precisos, como reinstalar o sistema ou substituir hardware."
+    },
+    {
+      "id": "dialog-0911",
+      "answer": "Pratique o discurso várias vezes, conheça bem o público, use histórias curtas, mantenha contato visual, respire profundamente, varie o tom de voz e use recursos visuais simples para reforçar pontos principais.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0912",
+      "answer": "O smoothie de verão combina manga doce, abacaxi cítrico e hortelã fresca; a textura cremosa acaricia o paladar, enquanto o frescor das frutas deixa uma sensação leve e revigorante, ideal para dias quentes.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0913",
+      "answer": "Aprendizado de máquina é um subconjunto da IA que cria modelos a partir de dados; IA engloba também raciocínio simbólico, planejamento e percepção. Todo algoritmo de aprendizado é IA, mas nem toda IA usa aprendizado de máquina.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0914",
+      "answer": "Separe roupas por categoria, descarte peças que não usa, use caixas etiquetadas para itens sazonais, pendure camisas e calças em cabides uniformes e aproveite organizadores de prateleira para sapatos e acessórios.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0915",
+      "answer": "Uma rede recorrente tem camadas que recebem sua própria saída em passos de tempo, permitindo memória de sequências; unidades como LSTM ou GRU controlam fluxo de informação, mitigando desaparecimento de gradiente e facilitando tarefas de texto ou série temporal.",
+      "followup": "Qual aplicação específica você pretende usar a rede recorrente?",
+      "followup_answer": "Para análise de sentimentos, por exemplo, escolha uma camada LSTM seguida de camada densa; ajuste tamanho da sequência e número de unidades para equilibrar precisão e tempo de treinamento."
+    },
+    {
+      "id": "dialog-0916",
+      "answer": "Pratique escuta ativa, peça feedback, observe linguagem corporal, participe de grupos de debate, escreva antes de falar e use técnicas de storytelling para tornar suas ideias claras e envolventes.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0917",
+      "answer": "Comece definindo tese, faça esboço com introdução, argumentos e conclusão, use fontes confiáveis, cite corretamente, revise coerência e gramática, e peça a alguém para ler antes de entregar.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0918",
+      "answer": "Experimente dança de salão (salsa), hip‑hop, dança contemporânea ou dança de salão de salão; procure aulas introdutórias em academias locais ou vídeos tutoriais gratuitos para iniciar de forma divertida.",
+      "followup": "..."
+    },
+    {
+      "id": "dialog-0919",
+      "answer": "Divida o quadro branco em colunas: datas, tarefas, responsáveis e status; use marcadores coloridos para cada membro da família, atualize semanalmente e destaque prioridades com símbolos, facilitando visualização e acompanhamento da agenda doméstica.",
+      "followup": "..."
+    }
+  ]
+}

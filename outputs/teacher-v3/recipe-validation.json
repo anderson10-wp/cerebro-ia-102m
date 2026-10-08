@@ -1,0 +1,14 @@
+{
+  "status": "recipe_validated",
+  "training_examples": 256,
+  "validation_examples": 12,
+  "masked_loss": 3.391828775405884,
+  "finite_backward": true,
+  "eos_supervised": true,
+  "optimizer_steps": 0,
+  "weights_written": false,
+  "audit_examples_evaluated": 0,
+  "cloud_jobs_started": 0,
+  "device": "cpu",
+  "hardware": "cpu"
+}

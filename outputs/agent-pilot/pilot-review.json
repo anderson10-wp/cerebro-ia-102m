@@ -1,0 +1,270 @@
+{
+  "reviewed_at": "2026-10-05T17:14:33.313218+00:00",
+  "method": "Codex inspected all 32 outputs. Preserve the frozen score; reject four mechanically accepted but irrelevant clarification questions in this separate review.",
+  "summary": {
+    "validation": {
+      "cases": 16,
+      "mechanical_correct": 8,
+      "reviewed_correct": 8
+    },
+    "multiplication": {
+      "cases": 4,
+      "mechanical_correct": 4,
+      "reviewed_correct": 4
+    },
+    "model_architecture": {
+      "cases": 4,
+      "mechanical_correct": 0,
+      "reviewed_correct": 0
+    },
+    "training_metrics": {
+      "cases": 4,
+      "mechanical_correct": 4,
+      "reviewed_correct": 4
+    },
+    "calculator_unavailable": {
+      "cases": 4,
+      "mechanical_correct": 0,
+      "reviewed_correct": 0
+    },
+    "audit": {
+      "cases": 16,
+      "mechanical_correct": 8,
+      "reviewed_correct": 4
+    },
+    "parenthesized_arithmetic": {
+      "cases": 4,
+      "mechanical_correct": 0,
+      "reviewed_correct": 0
+    },
+    "experiment_design": {
+      "cases": 4,
+      "mechanical_correct": 0,
+      "reviewed_correct": 0
+    },
+    "checkpoint_and_remaining_time": {
+      "cases": 4,
+      "mechanical_correct": 4,
+      "reviewed_correct": 4
+    },
+    "unspecified_reference": {
+      "cases": 4,
+      "mechanical_correct": 4,
+      "reviewed_correct": 0
+    }
+  },
+  "results": [
+    {
+      "id": "validation-multiplication-0",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-multiplication-1",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-multiplication-2",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-multiplication-3",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-model_architecture-0",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-model_architecture-1",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-model_architecture-2",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-model_architecture-3",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-training_metrics-0",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-training_metrics-1",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-training_metrics-2",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-training_metrics-3",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-calculator_unavailable-0",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-calculator_unavailable-1",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-calculator_unavailable-2",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "validation-calculator_unavailable-3",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-0",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-1",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-2",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-3",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-experiment_design-0",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-experiment_design-1",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-experiment_design-2",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-experiment_design-3",
+      "mechanical_correct": false,
+      "reviewed_correct": false,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-0",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-1",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-2",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-3",
+      "mechanical_correct": true,
+      "reviewed_correct": true,
+      "semantic_rejection": null
+    },
+    {
+      "id": "audit-unspecified_reference-0",
+      "mechanical_correct": true,
+      "reviewed_correct": false,
+      "semantic_rejection": "Claims the teacher is unavailable without evidence; does not ask what should be improved."
+    },
+    {
+      "id": "audit-unspecified_reference-1",
+      "mechanical_correct": true,
+      "reviewed_correct": false,
+      "semantic_rejection": "Assumes a report is missing; should ask which problem and request its description."
+    },
+    {
+      "id": "audit-unspecified_reference-2",
+      "mechanical_correct": true,
+      "reviewed_correct": false,
+      "semantic_rejection": "Assumes a report should be summarized; should ask which alteration and target."
+    },
+    {
+      "id": "audit-unspecified_reference-3",
+      "mechanical_correct": true,
+      "reviewed_correct": false,
+      "semantic_rejection": "Claims the teacher is unavailable without evidence; does not ask which options to compare."
+    }
+  ],
+  "decision": "retain_original_as_principal_archive_candidate_for_experiments",
+  "automatic_promotion": false,
+  "new_gpu_jobs_submitted_by_review": 0,
+  "job_cost_credits": 0.09533333,
+  "balance_credits": 29.78,
+  "budget_cap_credits": 2,
+  "validation_observation": "Best validation checkpoint: step 50; later training worsened validation loss.",
+  "next_experiment": {
+    "scope": "Improve data before another bounded instruction pilot; do not scale to 1B or spend the remaining balance on this recipe.",
+    "data_requirements": [
+      "Paired requests with each tool available and unavailable; vary the order of available tools.",
+      "Copy complete arithmetic expressions, including parentheses, divisions and multiple operators.",
+      "Distinguish conceptual questions about training from requests for the actual project status.",
+      "Clarifications must ask for the specific missing input, without inventing tool availability.",
+      "Include genuine diverse Portuguese requests and reviewed teacher annotations, beyond template repetition."
+    ],
+    "evaluation_policy": "The old audit is now diagnostic because its failures informed the plan. Freeze a new independent audit before another training run; never claim improvements on the old audit as fresh evidence.",
+    "training_policy": "Restart from the preserved base; validate frequently, use early stopping, select by validation only, then evaluate once on the new audit.",
+    "execution_policy": "Generated routes remain unexecuted; a valid JSON object alone is insufficient evidence of a correct action."
+  }
+}

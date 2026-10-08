@@ -1,0 +1,18 @@
+{
+  "base_checkpoint": ".\\outputs\\local-run-20261007-190808-8c59a4\\candidate\\best-model.pt",
+  "tokenizer": ".\\outputs\\h100-pretrain\\result\\tokenizer.json",
+  "base_checkpoint_sha256": "1b79d4e8091cfe5db26c73379260bffb5102bbf18774820658af6718b23541ac",
+  "train_sha256": "b0246b8e3cda4ce9178e3130cd1ae4a04b8b744bbf815c3d93825f9ceabf3cb1",
+  "validation_sha256": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e",
+  "device_default": "cpu",
+  "learning_rate": 3e-06,
+  "batch_size": 4,
+  "max_epochs": 2,
+  "max_training_seconds": 600,
+  "patience_epochs": 2,
+  "selection": "lowest validation response loss; final generation evaluation required",
+  "automatic_promotion": false,
+  "cloud_launch": false,
+  "status": "prepared_not_started",
+  "retention_policy": "Full v5 replay plus unique validated teacher examples; start from fixed v5 candidate"
+}

@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0700",
+      "answer": "Um bug é um erro no código que faz o programa se comportar de forma inesperada, como travar ou gerar resultados incorretos. Por exemplo, um cálculo de desconto que sempre subtrai 10% a mais do que deveria.",
+      "followup": "Qual foi a situação mais comum em que você encontrou um bug e como o resolveu?",
+      "followup_answer": "Na maioria das vezes, o bug aparece ao inserir dados inesperados; ao reproduzir o caso, descubro a linha que não trata a exceção e adiciono uma verificação para evitar a falha."
+    },
+    {
+      "id": "dialog-0701",
+      "answer": "Pratique a fala em voz alta, grave-se e analise o ritmo, use histórias curtas para prender a atenção, mantenha contato visual e ajuste o tom conforme a emoção que deseja transmitir.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0702",
+      "answer": "Leia textos variados, escreva diariamente, revise com foco em clareza, peça feedback, use estruturas simples e pratique resumir ideias em poucas frases para melhorar a comunicação escrita.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0703",
+      "answer": "Ensinar linguagem de sinais desenvolve a cognição, melhora a inclusão social, estimula a memória visual e permite que a criança se comunique com mais pessoas, ampliando oportunidades de aprendizado.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0704",
+      "answer": "Liste todas as tarefas, estime o tempo necessário, agrupe atividades semelhantes, reserve blocos fixos para desenvolvimento profissional e ajuste semanalmente conforme prioridades, garantindo intervalos para descanso.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0705",
+      "answer": "Comece definindo o objetivo da pesquisa, depois categorize softwares (sistemas operacionais, aplicativos de produtividade, ferramentas de design). Use fontes confiáveis como sites de avaliação e compare recursos, preço e suporte antes de escolher.",
+      "followup": "Qual tipo específico de software você precisa comparar para seu trabalho?",
+      "followup_answer": "Preciso de ferramentas de gerenciamento de projetos; assim, comparo funcionalidades de calendário, integração com e‑mail, relatórios de progresso e opções de colaboração em tempo real."
+    },
+    {
+      "id": "dialog-0706",
+      "answer": "Prepare o conteúdo com antecedência, pratique a respiração profunda, use gestos naturais, faça contato visual com diferentes partes da plateia e ajuste o ritmo para manter a atenção.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0707",
+      "answer": "Neve cobre o campo em silêncio, cristais reluzem como diamantes ao sol, o vento desenha arabescos no ar, e a paisagem branca parece um quadro de paz infinita.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0708",
+      "answer": "Estabeleça metas diárias, pratique a escuta ativa com podcasts, use aplicativos de repetição espaçada para vocabulário e converse com falantes nativos sempre que possível.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0709",
+      "answer": "Divida o quadro em colunas: metas, responsáveis, prazos e status. Atualize diariamente, use cores para indicar progresso e destaque tarefas críticas para manter a equipe focada na arrecadação.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0710",
+      "answer": "Uma câmera de backup sem fio grava o que a visão traseira principal não captura, oferecendo segurança extra ao recuar em áreas com obstáculos, reduzindo risco de colisões e facilitando a prova de responsabilidade.",
+      "followup": "Qual seria o principal benefício de usar essa câmera em ambientes urbanos movimentados?",
+      "followup_answer": "Em cidades, a câmera registra veículos e pedestres que surgem inesperadamente, ajudando a evitar multas e a comprovar incidentes em caso de acidentes."
+    },
+    {
+      "id": "dialog-0711",
+      "answer": "Treine a voz com exercícios de dicção, pratique apresentações curtas, use histórias pessoais para conectar, controle a postura e peça feedback para melhorar continuamente.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0712",
+      "answer": "O barco balança suavemente, o horizonte se funde com o azul profundo, o vento sussurra nas velas e a sensação de liberdade envolve cada respiração no vasto oceano.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0713",
+      "answer": "Apps de árabe oferecem prática interativa, feedback imediato e acesso a falantes nativos, complementando aulas presenciais ao permitir estudo flexível e reforço diário de vocabulário.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0714",
+      "answer": "Use um tom respeitoso, foque em comportamentos observáveis, ofereça exemplos concretos, sugira melhorias específicas, agende feedback regular e encerre com apoio ao desenvolvimento do colaborador.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0715",
+      "answer": "Funções de ativação transformam a soma ponderada dos neurônios em valores não lineares, permitindo que a rede aprenda padrões complexos; por exemplo, ReLU mantém valores positivos e zera negativos, facilitando treinamento profundo.",
+      "followup": "Você gostaria de um exemplo simples de rede com ReLU em duas camadas?",
+      "followup_answer": "Em uma rede de duas camadas, a primeira soma entradas multiplicadas por pesos, aplica ReLU (zera valores negativos) e passa o resultado à segunda camada, que gera a saída final."
+    },
+    {
+      "id": "dialog-0716",
+      "answer": "A matilha tem um alfa dominante que lidera a caça, enquanto outros membros ocupam posições de subordinação; a comunicação ocorre por uivos, posturas corporais e cheiros para coordenar atividades.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0717",
+      "answer": "Redija um e‑mail curto, inclua assunto claro, anexe currículo e carta, escreva saudação personalizada, destaque qualificações relevantes e finalize agradecendo pela oportunidade.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0718",
+      "answer": "Plataformas como Duolingo, Coursera e Babbel oferecem cursos estruturados, prática diária e feedback imediato, ajudando a desenvolver vocabulário e pronúncia no espanhol.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0719",
+      "answer": "Organize a lista de convidados por grupos (família, amigos, colegas), distribua mesas equilibrando números, considere relações próximas e deixe espaço para circulação, garantindo que todos se sintam confortáveis.",
+      "followup": "false"
+    }
+  ]
+}

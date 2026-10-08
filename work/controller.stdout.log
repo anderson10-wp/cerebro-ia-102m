@@ -1,0 +1,6 @@
+{"time": "2026-10-02T22:20:27.620563-03:00", "status": "preparing_corpus", "corpus_url": "https://www.kaggle.com/code/andersonluan10ad/cerebro-v1-102m-corpus"}
+{"time": "2026-10-02T22:20:30.655386-03:00", "kernel": "andersonluan10ad/cerebro-v1-102m-corpus", "kernel_status": "RUNNING"}
+{"time": "2026-10-02T23:15:48.581438-03:00", "kernel": "andersonluan10ad/cerebro-v1-102m-corpus", "kernel_status": "COMPLETE"}
+{"time": "2026-10-02T23:15:53.892598-03:00", "status": "submitting_training", "active_kernel": "andersonluan10ad/cerebro-v1-102m-train-01", "remaining_gpu_hours": 29.95, "planned_session_hours": 8.0, "tokens_processed": 0}
+{"time": "2026-10-02T23:15:57.659679-03:00", "status": "training", "active_kernel": "andersonluan10ad/cerebro-v1-102m-train-01", "active_url": "https://www.kaggle.com/code/andersonluan10ad/cerebro-v1-102m-train-01"}
+{"time": "2026-10-02T23:16:00.106591-03:00", "kernel": "andersonluan10ad/cerebro-v1-102m-train-01", "kernel_status": "RUNNING"}

@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0500",
+      "answer": "Use um layout limpo, fontes legíveis e cores sóbrias; inclua um slide de agenda, destaque os pontos principais com bullet points e use gráficos simples para visualizar dados. Ensaie a fala, ajuste o tempo e prepare respostas para possíveis perguntas.",
+      "followup": "Qual parte da sua apresentação você acha mais difícil de organizar?",
+      "followup_answer": "Identifique se o desafio está no conteúdo, no design ou na prática da fala; assim podemos focar em técnicas específicas para melhorar essa etapa."
+    },
+    {
+      "id": "dialog-0501",
+      "answer": "Comece com vasos reutilizados, escolha plantas de baixa manutenção como suculentas e use terra de boa qualidade. Regue moderadamente, aproveite luz natural e faça compostagem caseira para fertilizar sem custos.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0502",
+      "answer": "Inicie com um cabeçalho contendo seus dados e o da empresa. No primeiro parágrafo, apresente-se e indique a vaga. No segundo, destaque experiências relevantes e resultados concretos. No último, mostre entusiasmo e indique disponibilidade para entrevista.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0503",
+      "answer": "Procure recursos gratuitos como podcasts, vídeos no YouTube e aplicativos de troca de idiomas. Combine prática de escuta, leitura de textos curtos e conversas com falantes nativos para reforçar vocabulário e pronúncia.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0504",
+      "answer": "Desenvolva um programa dividido em três módulos: conhecimento do produto, técnicas de abordagem ao cliente e prática de negociação. Inclua materiais escritos, vídeos curtos e sessões de role‑play, além de feedback regular para aprimorar habilidades.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0505",
+      "answer": "Crie pastas temáticas e nomeie arquivos com data e descrição curta. Use um sistema de backup automático, como nuvem ou disco externo, e elimine arquivos duplicados periodicamente para manter o disco organizado.",
+      "followup": "Qual tipo de arquivo você costuma acumular mais?",
+      "followup_answer": "Saber se são documentos, imagens ou vídeos ajuda a escolher a melhor estratégia de organização e compressão."
+    },
+    {
+      "id": "dialog-0506",
+      "answer": "Sim, a posição do rabo indica estado emocional: rabo relaxado ou entre as pernas sinaliza medo; rabo ereto e balançando mostra confiança ou excitação; rabo rígido pode indicar alerta ou agressividade.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0507",
+      "answer": "Aplicativos como Snapseed, Lightroom Mobile (versão gratuita) e VSCO oferecem ajustes básicos, filtros e ferramentas de corte, sendo intuitivos e adequados para quem quer melhorar fotos sem gastar muito.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0508",
+      "answer": "Movimentos como o Romantismo introduziram ênfase na emoção, o Modernismo trouxe experimentação formal e o Pós‑modernismo misturou estilos. Esses legados permitem que autores atuais combinem narrativas pessoais com técnicas inovadoras.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0509",
+      "answer": "Use objetos do cotidiano (blocos, frutas) para contar histórias simples, jogue jogos de contagem e cante músicas que incluam números. Reforce conceitos com elogios e repita atividades curtas diariamente.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0510",
+      "answer": "Reserve cinco minutos ao acordar para respirar profundamente, observe sensações corporais e registre pensamentos em um diário. Durante o dia, faça pausas curtas de atenção plena ao beber água ou caminhar, mantendo foco no presente.",
+      "followup": "Qual momento do seu dia seria mais fácil inserir essa prática?",
+      "followup_answer": "Escolher um horário consistente, como antes do almoço, facilita criar o hábito e observar benefícios rapidamente."
+    },
+    {
+      "id": "dialog-0511",
+      "answer": "Plataformas de análise de mídia social oferecem métricas de alcance, engajamento e demografia. Procure ferramentas que permitam importar dados de diferentes redes e gerar relatórios claros para comparar influenciadores.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0512",
+      "answer": "A telecomunicação introduziu cabos submarinos, satélites e redes móveis, conectando continentes em tempo real. Essa infraestrutura permitiu o surgimento da internet global, facilitando comunicação instantânea e comércio internacional.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0513",
+      "answer": "O kente usa listras coloridas que simbolizam história e valores; as estampas de cera apresentam padrões geométricos que representam identidade tribal. Ambos celebram diversidade ao combinar cores vivas e motivos repetitivos que contam histórias locais.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0514",
+      "answer": "Pratique a técnica de “respiração quadrada”: inspire 4 segundos, segure 4, expire 4, segure 4. Faça isso antes de escrever; a pausa regula a ansiedade e libera espaço mental para novas ideias.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0515",
+      "answer": "O ensino on‑line ampliou o acesso a cursos, mas também gerou competição para escolas presenciais, que precisam integrar tecnologia, oferecer híbrido e repensar metodologias para manter relevância e engajamento dos alunos.",
+      "followup": "Como sua instituição tem respondido a essa mudança?",
+      "followup_answer": "Entender se adotou plataformas digitais, treinamento de professores ou aulas híbridas ajuda a sugerir melhorias específicas."
+    },
+    {
+      "id": "dialog-0516",
+      "answer": "Um líder autocrático impõe decisões sem consulta, o que pode reduzir a criatividade e gerar insatisfação. Em ONGs, isso costuma aumentar a rotatividade, pois voluntários e funcionários buscam ambientes colaborativos e com propósito compartilhado.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0517",
+      "answer": "Reinicie o computador em modo de segurança para identificar drivers problemáticos, verifique atualizações de sistema e execute um antivírus. Se o problema persistir, anote mensagens de erro e procure suporte técnico específico.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0518",
+      "answer": "Comunicar ideias claramente evita mal‑entendidos no trabalho, fortalece relações pessoais ao demonstrar empatia e impulsiona crescimento ao permitir feedback construtivo. Por exemplo, um e‑mail bem estruturado pode fechar um negócio, enquanto ouvir atentamente melhora amizades.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0519",
+      "answer": "Comece com pinceladas leves e molhadas, use papel de gramatura alta, trabalhe de claro para escuro e aproveite a transparência das camadas. Pratique gradientes de cor e controle a quantidade de água para evitar manchas indesejadas.",
+      "followup": false
+    }
+  ]
+}

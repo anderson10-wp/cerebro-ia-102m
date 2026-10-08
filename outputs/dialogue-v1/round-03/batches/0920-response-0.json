@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0920",
+      "answer": "JPEG usa compressão com perdas, reduzindo tamanho ao descartar detalhes que o olho humano não percebe; ideal para fotos. PNG usa compressão sem perdas, preserva todos os pixels e suporta transparência; indicado para ícones e imagens com áreas de cor uniforme.",
+      "followup": "Qual formato seria mais adequado para salvar um logotipo com fundo transparente?",
+      "followup_answer": "Para um logotipo com fundo transparente, escolha PNG, pois mantém a transparência e não degrada a qualidade da imagem ao salvar múltiplas vezes."
+    },
+    {
+      "id": "dialog-0921",
+      "answer": "Pratique em frente ao espelho ou grave-se falando, depois reveja para identificar pontos de melhoria; comece com pequenos grupos de amigos, aumente gradualmente o público e use técnicas de respiração profunda para reduzir a ansiedade.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0922",
+      "answer": "Os três jogos de cartas colecionáveis mais populares são Magic: The Gathering, Pokémon Trading Card Game e Yu‑Gi‑Oh!, cada um com milhões de jogadores e torneios ao redor do mundo.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0923",
+      "answer": "No aprendizado semissupervisionado, o agrupamento (clustering) ajuda a descobrir estruturas ocultas nos dados não rotulados, permitindo que o modelo use essas informações para melhorar a classificação ou a representação dos exemplos rotulados.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0924",
+      "answer": "Separe tudo em categorias (roupas, sapatos, acessórios), descarte itens que não usa, use caixas ou cestos para organizar por tipo e coloque itens usados com frequência ao alcance dos olhos.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0925",
+      "answer": "Existem placas gráficas integradas, que usam a memória do processador; placas de entrada, como a Nvidia GTX 1650, adequadas para jogos leves; e placas de alto desempenho, como a RTX 4090, usadas para IA e renderização avançada.",
+      "followup": "Qual tipo de placa seria mais indicado para quem quer editar vídeos em 4K sem gastar muito?",
+      "followup_answer": "Para edição de vídeo em 4K com orçamento limitado, uma placa de entrada ou média, como a Nvidia GTX 1660 Super, oferece boa performance sem o custo de modelos topo de linha."
+    },
+    {
+      "id": "dialog-0926",
+      "answer": "Treine em ambientes pequenos, grave suas apresentações para analisar postura e voz, peça feedback construtivo e pratique técnicas de visualização positiva para aumentar a confiança antes de falar em público.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0927",
+      "answer": "Ferramentas online úteis incluem Grammarly para correção gramatical, Hemingway App para clareza e concisão, e Google Docs com sugestões de escrita colaborativa.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0928",
+      "answer": "Métodos eficazes são a prática diária de conversação, uso de aplicativos de flashcards como Anki, imersão em mídia no idioma alvo e estudo de gramática com foco em situações reais.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0929",
+      "answer": "Reserve blocos de tempo sem interrupções, use técnicas Pomodoro, mantenha um espaço de trabalho organizado e pratique brainstorming rápido seguido de curtos períodos de execução para estimular criatividade e produtividade.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0930",
+      "answer": "A renda média de um engenheiro de software nos EUA varia entre 100 mil e 130 mil dólares anuais, dependendo da região, experiência e empresa; salários em áreas como São Francisco tendem a ser mais altos.",
+      "followup": "Qual seria a faixa salarial para um engenheiro iniciante em uma cidade de custo de vida moderado?",
+      "followup_answer": "Em cidades com custo de vida moderado, um engenheiro de software iniciante costuma ganhar entre 80 mil e 95 mil dólares por ano."
+    },
+    {
+      "id": "dialog-0931",
+      "answer": "A comunicação assertiva, que combina clareza, respeito e foco em fatos, costuma ser a mais eficaz no ambiente profissional, pois evita mal‑entendidos e promove colaboração.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0932",
+      "answer": "Planeje a estrutura antes de escrever, use uma tese clara, desenvolva argumentos com evidências, revise a coerência dos parágrafos e finalize com uma conclusão que retome a ideia principal.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0933",
+      "answer": "Escolha um idioma que tenha demanda no seu campo de interesse; por exemplo, Python para desenvolvimento de software, JavaScript para web ou R para análise de dados, pois são amplamente usados em projetos paralelos.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0934",
+      "answer": "Use uma lista de tarefas diária, priorize itens importantes com a técnica Eisenhower, bloqueie horários específicos para cada atividade e revise o progresso ao final do dia.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0935",
+      "answer": "Quanto maior a entrada, mais pesos a rede precisa processar, aumentando o tempo de cálculo; porém, camadas adicionais podem compensar, permitindo que a rede aprenda representações mais complexas sem perder eficiência excessiva.",
+      "followup": "Como reduzir o tempo de treinamento em uma rede com entradas muito grandes?",
+      "followup_answer": "Reduza o tempo de treinamento usando técnicas como normalização de entrada, camadas de pooling para diminuir a dimensionalidade ou aplicar compressão de dados antes de alimentar a rede."
+    },
+    {
+      "id": "dialog-0936",
+      "answer": "Comunique-se por mensagens curtas e claras, use videoconferências para discussões complexas, compartilhe documentos em nuvem e estabeleça horários regulares de check‑in para alinhar expectativas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0937",
+      "answer": "Leitores de ciência popular costumam ter formação universitária, interesse em tecnologia e faixa etária entre 25 e 45 anos; ao longo dos anos, o público tem se tornado mais diversificado, incluindo jovens e profissionais de áreas não científicas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0938",
+      "answer": "Estudos estatísticos revelam vieses nos dados de treinamento, destacando a necessidade de transparência, auditoria e governança ética para evitar discriminação e garantir responsabilidade nas aplicações de IA.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0939",
+      "answer": "A USAAF colaborou com o Exército e a Marinha para coordenar missões aéreas, fornecendo apoio logístico e estratégico que aumentou a eficácia conjunta durante a Segunda Guerra Mundial, integrando recursos e planejamento.",
+      "followup": false
+    }
+  ]
+}

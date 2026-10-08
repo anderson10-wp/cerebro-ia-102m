@@ -1,0 +1,34 @@
+{
+  "problem": "Respostas constantes nos exercícios técnicos.",
+  "hypothesis": "Pares com uma condição alterada podem ajudar a distinguir estados.",
+  "evidence_ids": [
+    "general_dev",
+    "technical_dev"
+  ],
+  "action": "prepare_counterfactual_pairs",
+  "data": {
+    "new_examples": 128,
+    "paired": true,
+    "vary_one_condition": true,
+    "replay": true,
+    "use_reserved_audit": false
+  },
+  "experiment": {
+    "device": "RX 580 DirectML",
+    "seconds": 300,
+    "batch_size": 2,
+    "learning_rate": 2e-06
+  },
+  "evaluation": {
+    "new_cases": 32,
+    "separate_from_training": true,
+    "paired_accuracy": true,
+    "compare_constant_baseline": true
+  },
+  "success": {
+    "must_beat_baseline": true,
+    "no_general_regressions": true,
+    "automatic_promotion": false
+  },
+  "execute_training": false
+}

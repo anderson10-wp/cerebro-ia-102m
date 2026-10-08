@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0420",
+      "answer": "Professor: A automotivação mantém você estudando mesmo quando nada parece fácil. Aluno: E a dedicação? Professor: É o hábito de praticar todos os dias, mesmo sem vontade. Juntos, eles mostram que esforço constante supera talento isolado.",
+      "followup": "Como aplicar essas ideias em um plano de estudos semanal?",
+      "followup_answer": "Divida a semana em blocos de 45 minutos para cada matéria, reserve 10 minutos de revisão ao final de cada bloco e inclua um dia leve para refletir sobre metas, ajustando o plano conforme o progresso."
+    },
+    {
+      "id": "dialog-0421",
+      "answer": "A força gravitacional entre dois corpos segue a lei de Newton: F = G·(m1·m2)/r², onde G é a constante gravitacional, m1 e m2 são as massas e r a distância entre seus centros.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0422",
+      "answer": "Comece traçando linhas básicas de proporção, copie as sombras principais da foto e use lápis de diferentes durezas para criar gradientes suaves, ajustando detalhes gradualmente até alcançar semelhança realista.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0423",
+      "answer": "Ana recebeu a proposta do emprego dos sonhos, mas seu filho precisava de cuidados. Em uma noite de reflexão, decidiu recusar a oferta, priorizando a família, e encontrou satisfação ao criar um pequeno negócio local que lhe dava flexibilidade.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0424",
+      "answer": "Memória de curto prazo retém informações por segundos a minutos, usando ativação temporária; já a de longo prazo armazena conhecimentos por dias ou anos, consolidando sinapses através de repetição e significado emocional.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0425",
+      "answer": "Elimine distrações, estabeleça metas claras, use a técnica Pomodoro (25 min foco, 5 min pausa) e recompense-se ao concluir etapas. Mantenha o ambiente organizado e pratique respiração profunda para reduzir a ansiedade.",
+      "followup": "Qual seria um exemplo de cronograma Pomodoro para escrever um relatório de 5 páginas?",
+      "followup_answer": "Divida o relatório em introdução, método, resultados, discussão e conclusão. Dedique 4 pomodoros (100 min) a cada seção, intercalando 5‑min pausas, e reserve dois pomodoros finais para revisão e formatação."
+    },
+    {
+      "id": "dialog-0426",
+      "answer": "Consulte guias de ética em IA da UNESCO, IEEE e documentos de princípios de transparência, justiça e responsabilidade. Use frameworks como o AI Ethics Canvas para mapear riscos e envolver stakeholders durante o desenvolvimento.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0427",
+      "answer": "Pratique a fala em voz alta, conheça bem o tema, use histórias curtas para conectar com a audiência e controle a respiração. Grave-se para ajustar ritmo e linguagem corporal.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0428",
+      "answer": "Defina objetivo claro, segmente a lista por interesse, crie conteúdo relevante e curto, escolha horário de abertura de caixa de entrada, espaçe envios (2‑3 dias) e inclua CTA persuasivo com benefício direto.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0429",
+      "answer": "Nos casamentos indianos, a hena simboliza fertilidade, prosperidade e proteção. Os desenhos complexos nas mãos e pés representam a união das famílias e a transição da menina para a vida adulta.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0430",
+      "answer": "No verso do poema, o corvo aparece sobre o túmulo, reforçando a sensação de perda e lembrança dolorosa, tornando o simbolismo mais intenso nesse ponto.",
+      "followup": "Qual é a interpretação mais comum desse momento para leitores iniciantes?",
+      "followup_answer": "Eles veem o corvo como um mensageiro da morte, que destaca a inevitabilidade do luto e a necessidade de aceitar a passagem do tempo."
+    },
+    {
+      "id": "dialog-0431",
+      "answer": "O gradiente evanescente faz com que os valores das derivadas diminuam ao atravessar muitas camadas, impedindo ajustes eficazes nos pesos iniciais e retardando o aprendizado profundo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0432",
+      "answer": "Empilhar roupas sem dobrar, não usar divisórias, colocar itens pesados em cima de peças leves e esquecer de revisar periodicamente são erros frequentes ao organizar armários.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0433",
+      "answer": "Computação em nuvem oferece servidores, armazenamento e serviços sob demanda via internet. Desenvolvedores podem criar, testar e escalar aplicações sem manter hardware próprio, pagando apenas pelo uso efetivo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0434",
+      "answer": "A empatia permite entender valores e normas diferentes, evitando mal‑entendidos e construindo confiança. Em comunicação intercultural, reconhecer sentimentos alheios facilita diálogos respeitosos e colaborativos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0435",
+      "answer": "A equação simplificada da fotossíntese é: 6 CO₂ + 6 H₂O + luz → C₆H₁₂O₆ + 6 O₂.",
+      "followup": "Como explicar esse processo para crianças de 8 anos?",
+      "followup_answer": "Diga que as plantas pegam ar (CO₂) e água, usam a luz do sol como energia e transformam tudo em açúcar (comida) e oxigênio, que nós respiramos."
+    },
+    {
+      "id": "dialog-0436",
+      "answer": "Desculpe, não posso criar desenhos ou pinturas, pois sou um modelo de texto.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0437",
+      "answer": "Caro desconhecido, escrevo para expressar gratidão por sua gentileza que ouvi falar. Embora nunca nos encontremos, sua atitude inspira esperança e reforça a importância de gestos anônimos que conectam pessoas.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0438",
+      "answer": "Primeiro, remova a roda, encontre o furo, use alavanca para retirar o pneu, insira a câmara nova, recoloque o pneu, encha até a pressão indicada e recoloque a roda no quadro.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0439",
+      "answer": "Organizações podem usar avaliações de desempenho, pesquisas de engajamento, métricas de retenção e análise de competências adquiridas antes e depois dos programas para medir o impacto do desenvolvimento contínuo.",
+      "followup": "false"
+    }
+  ]
+}

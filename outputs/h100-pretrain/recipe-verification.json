@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "max_parameter_difference": 9.313225746154785e-10,
+  "optimizer_migration_verified": true,
+  "gradient_accumulation_verified": true,
+  "weight_tying_verified": true,
+  "gpu_precision_and_performance_tested": false,
+  "note": "Small CPU fixture; H100 BF16 and throughput require the actual GPU run."
+}

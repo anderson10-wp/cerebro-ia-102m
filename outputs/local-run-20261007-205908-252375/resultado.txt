@@ -1,0 +1,2 @@
+A loss não melhorou: nenhum novo checkpoint selecionado.
+Modelo de conversa preservado. Avaliação de desenvolvimento pequena; não comprova melhoria geral.

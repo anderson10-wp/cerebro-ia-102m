@@ -1,0 +1,13 @@
+{
+  "id": "andersonluan10ad/gpt-oss-20b-runtime-prepare",
+  "kernel_sources": [],
+  "code_file": "run.py",
+  "is_private": true,
+  "dataset_sources": [],
+  "enable_internet": true,
+  "enable_gpu": false,
+  "language": "python",
+  "kernel_type": "script",
+  "title": "GPT OSS 20B Runtime Prepare",
+  "competition_sources": []
+}

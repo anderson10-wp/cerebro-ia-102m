@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "rounds": [
+    {
+      "seed": 1791417543,
+      "teacher_attempts": [
+        {
+          "provider": "groq",
+          "report": {
+            "model": "openai/gpt-oss-120b",
+            "requested": 24,
+            "max_calls": 1,
+            "max_output_tokens": 4096,
+            "training_started": false,
+            "billing_tier": "unknown",
+            "created_utc": "2026-10-07T23:59:03.880188+00:00",
+            "provider": "groq",
+            "usage": {
+              "queue_time": 0.241408541,
+              "prompt_tokens": 1214,
+              "prompt_time": 0.057965453,
+              "completion_tokens": 1872,
+              "completion_time": 3.9086545360000002,
+              "total_tokens": 3086,
+              "total_time": 3.966619989,
+              "completion_tokens_details": {
+                "reasoning_tokens": 1431
+              }
+            },
+            "actual_model": "openai/gpt-oss-120b",
+            "status": "completed",
+            "accepted": 24,
+            "rejected": 0
+          }
+        }
+      ],
+      "training": {
+        "run": ".\\outputs\\local-run-20261007-205908-252375",
+        "summary": {
+          "status": "completed",
+          "before_correct": 6,
+          "total": 12,
+          "promoted": false,
+          "api_calls": 0,
+          "smoke_test": true,
+          "training": {
+            "status": "completed_candidate_only",
+            "initial_validation_loss": 0.6877291247529803,
+            "base_checkpoint_sha256": "1b79d4e8091cfe5db26c73379260bffb5102bbf18774820658af6718b23541ac",
+            "validation": [
+              {
+                "epoch": 1,
+                "loss": 0.690097135192943,
+                "steps": 1
+              }
+            ],
+            "automatic_promotion": false,
+            "audit_examples_evaluated": 0,
+            "cloud_jobs_started": 0,
+            "device": "cpu",
+            "hardware": "cpu",
+            "steps": 1,
+            "response_tokens_seen": 13,
+            "best_validation_loss": 0.6877291247529803,
+            "candidate_saved": false,
+            "elapsed_seconds": 3.9540504000000283
+          }
+        }
+      },
+      "used_for_next_round": false
+    }
+  ],
+  "codex_calls": 0,
+  "chat_model_modified": false,
+  "smoke": true,
+  "stop_reason": "Sem ganho comprovado nesta avaliação, ou teste rápido"
+}

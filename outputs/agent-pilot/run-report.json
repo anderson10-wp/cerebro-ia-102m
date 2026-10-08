@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-10-04T15:16:41.999980+00:00",
+  "status": "proposal_validated",
+  "target_preference": "scratch_102m",
+  "credits_spent_by_controller": 0,
+  "paid_compute_started": false,
+  "events": [
+    {
+      "cycle": 0,
+      "seconds": 2.32,
+      "tool_names": [
+        "get_project_evidence"
+      ],
+      "finish_reason": "tool_calls",
+      "usage": {
+        "completion_tokens": 30,
+        "prompt_tokens": 352,
+        "total_tokens": 382,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "seconds": 5.0,
+      "tool_names": [
+        "propose_experiment"
+      ],
+      "finish_reason": "tool_calls",
+      "usage": {
+        "completion_tokens": 170,
+        "prompt_tokens": 1530,
+        "total_tokens": 1700,
+        "prompt_tokens_details": {
+          "cached_tokens": 352
+        }
+      }
+    }
+  ],
+  "proposal": {
+    "target": "scratch_102m",
+    "objective": "Avaliar escolha de ferramentas em CPU e preparar dados",
+    "hypothesis": "Ferramentas selecionadas melhoram precisão em 5% sem GPU",
+    "steps": [
+      "1. Preparar dataset de teste separado",
+      "2. Executar inferência em CPU com cada ferramenta",
+      "3. Medir métricas de acurácia e tempo",
+      "4. Comparar resultados antes e depois"
+    ],
+    "acceptance_checks": [
+      "Métrica de acurácia > 0.85",
+      "Tempo de inferência < 2s",
+      "Regressão não > 2%"
+    ],
+    "max_gpu_credits": 0,
+    "max_gpu_minutes": 0,
+    "limitations": [
+      "Sem treinamento nesta etapa",
+      "GPU zero"
+    ]
+  },
+  "note": "Schema and budget validated. Scientific quality requires review. No training executed."
+}

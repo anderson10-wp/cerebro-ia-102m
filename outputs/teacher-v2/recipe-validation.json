@@ -1,0 +1,16 @@
+{
+  "status": "recipe_validated",
+  "base_pretraining_tokens": 5642190848,
+  "train_examples": 64,
+  "validation_examples": 12,
+  "audit_used_for_model_evaluation": false,
+  "prompt_tokens_masked": true,
+  "first_response_token_supervised": true,
+  "eos_supervised": true,
+  "finite_backward": true,
+  "smoke_loss": 3.9755682945251465,
+  "optimizer_steps": 0,
+  "weights_written": false,
+  "paid_api_calls": 0,
+  "cloud_jobs_started": 0
+}

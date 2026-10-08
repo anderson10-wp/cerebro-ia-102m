@@ -1,0 +1,34 @@
+{
+  "checkpoint": "session-02 best-model.pt",
+  "seed": 42,
+  "new_tokens": 48,
+  "temperature": 0.7,
+  "top_k": 40,
+  "results": [
+    {
+      "prompt": "O Brasil é um país localizado na",
+      "continuation": " fronteira entre o Brasil e o Paraguai, com o nome do presidente do Brasil, Luiz Inácio Lula da Silva.\nO Brasil é o maior país do mundo, com mais de 1.700 mil habitantes, com mais de 4.000 km",
+      "seconds": 5.97
+    },
+    {
+      "prompt": "A inteligência artificial pode ajudar as pessoas a",
+      "continuation": " se sentirem mais felizes, a sentir-se mais conectadas e a ter uma vida mais saudável.\nÉ normal que alguns grupos de pessoas não se sintam mais felizes, porque podem ter diferentes emoções para lidar com cada dor e o",
+      "seconds": 4.96
+    },
+    {
+      "prompt": "Pergunta: Olá! Como você está?\nResposta:",
+      "continuation": " Bem, eu tenho vários amigos que te visitam neste momento. Como eu posso te dizer que estou muito ocupado, o que você fez? Como não estou? Você tem alguma coisa acontecendo com você? Você tem algum problema comigo?\nRes",
+      "seconds": 6.1
+    },
+    {
+      "prompt": "Pergunta: Quanto é 2 + 2?\nResposta:",
+      "continuation": " Sim. Se o peso da sua bicicleta estiver acima do peso, a sua bike irá ter uma taxa de absorção maior. Se ele tiver a sua bike tem uma taxa de absorção maior. Se ele não tiver a sua bike tem uma taxa de",
+      "seconds": 5.4
+    },
+    {
+      "prompt": "def soma(a, b):\n    ",
+      "continuation": " return sum(a + b) * b\n     return sum(a - b) * b\n\ndef add_hdf5(a, b,\n                      hdf5,\n                      hdf5,\n                      h",
+      "seconds": 5.97
+    }
+  ]
+}

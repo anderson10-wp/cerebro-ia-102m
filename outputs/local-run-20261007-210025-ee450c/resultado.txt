@@ -1,0 +1,2 @@
+Resultado: 6/12 antes; 7/12 agora. Regressões: 0.
+Modelo de conversa preservado. Avaliação de desenvolvimento pequena; não comprova melhoria geral.

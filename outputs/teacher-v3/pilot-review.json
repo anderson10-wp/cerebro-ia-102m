@@ -1,0 +1,24 @@
+{
+  "decision": "retain_current_model_candidate_not_promoted",
+  "validation_before": {
+    "correct": 0,
+    "total": 12
+  },
+  "validation_after": {
+    "correct": 4,
+    "total": 12
+  },
+  "required_correct": 9,
+  "gate_passed": false,
+  "selected_step": 128,
+  "selected_validation_loss": 1.323546996656454,
+  "training_steps": 192,
+  "training_seconds": 366.16420879999987,
+  "candidate_sha256": "a0c0609daf3c0ebc70f298db2fb7adbd5b0555148ef5826785cdbef98ec30ae5",
+  "base_checkpoint_unchanged": true,
+  "finite_weights": true,
+  "audit_evaluated": false,
+  "cloud_jobs_started": 0,
+  "human_independent_review": false,
+  "review": "Codex inspected all 12 outputs; four correct outcomes confirmed; failures are substantive rather than small formatting differences."
+}

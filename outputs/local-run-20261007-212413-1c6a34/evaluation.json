@@ -1,0 +1,119 @@
+{
+  "checkpoint_sha256": "b6d32d4f6b36586b47caa9447f862e9a4f93e2ce66c7b9286d353e9de89a761e",
+  "split": "validation",
+  "decode": "greedy, maximum 48 new tokens, stop at EOS; no output repair or grammar constraints",
+  "weights_updated": false,
+  "tools_executed": 0,
+  "results": [
+    {
+      "id": "validation-064",
+      "category": "instruction",
+      "prompt": "Pergunta: Sua saída deve conter só: cobre\nResposta:",
+      "expected": "cobre",
+      "output": " cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre",
+      "correct": false,
+      "seconds": 5.86
+    },
+    {
+      "id": "validation-065",
+      "category": "instruction",
+      "prompt": "Pergunta: Qual é a primeira palavra de \"rio largo corre\"? Escreva apenas essa palavra.\nResposta:",
+      "expected": "rio",
+      "output": "rio",
+      "correct": true,
+      "seconds": 0.22
+    },
+    {
+      "id": "validation-066",
+      "category": "context",
+      "prompt": "Pergunta: Bilhete: Rui deixou a chave na gaveta. Onde está a chave? Responda apenas o local.\nResposta:",
+      "expected": "na gaveta",
+      "output": "na gaveta",
+      "correct": true,
+      "seconds": 0.56
+    },
+    {
+      "id": "validation-067",
+      "category": "context",
+      "prompt": "Pergunta: Ficha: nome Lia; idade não registrada. Qual é a idade? Use \"não informado\" quando faltar o dado.\nResposta:",
+      "expected": "não informado",
+      "output": "não informado",
+      "correct": true,
+      "seconds": 0.45
+    },
+    {
+      "id": "validation-068",
+      "category": "arithmetic",
+      "prompt": "Pergunta: Dê somente o valor de 16 + 27.\nResposta:",
+      "expected": "43",
+      "output": "12",
+      "correct": false,
+      "seconds": 0.24
+    },
+    {
+      "id": "validation-069",
+      "category": "arithmetic",
+      "prompt": "Pergunta: Sem explicação, quanto vale 9 * 8?\nResposta:",
+      "expected": "72",
+      "output": "12",
+      "correct": false,
+      "seconds": 0.2
+    },
+    {
+      "id": "validation-070",
+      "category": "json",
+      "prompt": "Pergunta: Devolva o objeto JSON {\"modo\":\"teste\"} sem texto ao redor.\nResposta:",
+      "expected": "{\"modo\":\"teste\"}",
+      "output": "{\"modo\":\"teste\"}",
+      "correct": true,
+      "seconds": 0.72
+    },
+    {
+      "id": "validation-071",
+      "category": "json",
+      "prompt": "Pergunta: Use JSON para representar uma única chave ativo com valor booleano falso. Nenhum outro campo.\nResposta:",
+      "expected": "{\"ativo\":false}",
+      "output": "{\"aberto\":false}",
+      "correct": false,
+      "seconds": 0.78
+    },
+    {
+      "id": "validation-072",
+      "category": "tool_simulation",
+      "prompt": "Pergunta: Exercício simulado: só existe consultar_status. Gere o objeto JSON {\"ferramenta\":\"consultar_status\",\"argumentos\":{}} para consultar o treino. Não execute a consulta.\nResposta:",
+      "expected": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+      "output": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+      "correct": true,
+      "seconds": 3.14
+    },
+    {
+      "id": "validation-073",
+      "category": "tool_result",
+      "prompt": "Pergunta: Retorno simulado: {\"resultado\":91}. Diga apenas o resultado numérico.\nResposta:",
+      "expected": "91",
+      "output": "91",
+      "correct": true,
+      "seconds": 0.2
+    },
+    {
+      "id": "validation-074",
+      "category": "code",
+      "prompt": "Pergunta: Em Python, qual o valor de len([])? Retorne somente o número.\nResposta:",
+      "expected": "0",
+      "output": "3",
+      "correct": false,
+      "seconds": 0.2
+    },
+    {
+      "id": "validation-075",
+      "category": "instruction",
+      "prompt": "Pergunta: Escreva apenas a segunda palavra: manhã calma.\nResposta:",
+      "expected": "calma",
+      "output": "à tarde",
+      "correct": false,
+      "seconds": 0.26
+    }
+  ],
+  "correct": 6,
+  "evaluated": 12
+}

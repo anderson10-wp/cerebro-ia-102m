@@ -1,0 +1,14 @@
+{
+  "status": "verified",
+  "candidate_sha256": "8e8629bc83a4c22b77c1575bc0054b82e042771348c1b0c894716100eca2e296",
+  "candidate_bytes": 246493679,
+  "parameters": 102257280,
+  "selected_step": 50,
+  "finite_weights": true,
+  "original_checkpoint_unchanged": true,
+  "tokenizer_matches": true,
+  "tied_embeddings_equal": true,
+  "recorded_scores_recomputed": 32,
+  "tools_executed": 0,
+  "size_note": "Serialization duplicates the tied embedding tensors; loading restores sharing. File size does not increase the model parameter count."
+}

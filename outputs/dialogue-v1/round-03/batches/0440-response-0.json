@@ -1,0 +1,107 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0440",
+      "answer": "A autenticação multifator combina duas ou mais provas de identidade, como senha e código enviado ao celular, dificultando que invasores acessem sua conta mesmo se descobrirem a senha. Isso reduz significativamente roubos de dados e fraudes online.",
+      "followup": "Qual é o método mais simples de implementar MFA em contas pessoais?",
+      "followup_answer": "Use aplicativos autenticadores como Google Authenticator ou Authy: instale, escaneie o QR code da conta e gere códigos temporários, sem precisar de hardware extra."
+    },
+    {
+      "id": "dialog-0441",
+      "answer": "Pratique falar em voz alta diante de um espelho, grave-se e reveja, participe de grupos de debate, prepare um roteiro claro e use pausas para respirar. Também peça feedback construtivo e ajuste o tom conforme a audiência.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0442",
+      "answer": "Fotossíntese converte luz solar, água e CO₂ em glicose e oxigênio nas plantas, armazenando energia. Respiração quebra glicose usando oxigênio para liberar energia, produzindo CO₂ e água. Uma é produção, a outra consumo de energia.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0443",
+      "answer": "Escolha um local ensolarado, prepare o solo removendo pedras, adicione composto, plante sementes de vegetais fáceis como alface ou rabanete, regue regularmente e controle ervas daninhas. Comece com poucas variedades para aprender o manejo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0444",
+      "answer": "Defina uma tese clara, conte uma história pessoal que mostre seu crescimento, destaque realizações relevantes e conecte-as ao curso desejado. Use linguagem direta, revise gramática e peça a alguém para revisar antes de enviar.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0445",
+      "answer": "Use músicas e rimas para introduzir vocabulário, jogos de memória visual, histórias curtas com ilustrações e prática oral em pares. Reforce o aprendizado com atividades lúdicas que associem palavras a objetos reais.",
+      "followup": "Qual atividade lúdica pode ajudar crianças a memorizar novos verbos?",
+      "followup_answer": "Um jogo de cartões onde cada carta mostra uma ação; a criança diz o verbo em voz alta enquanto executa a ação, reforçando a forma e o significado."
+    },
+    {
+      "id": "dialog-0446",
+      "answer": "Publique histórias de impacto, use vídeos curtos e chamadas para ação, responda a comentários rapidamente e crie campanhas de arrecadação com metas visíveis. Parcerias com influenciadores aumentam alcance e engajamento.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0447",
+      "answer": "É útil ter conhecimento de lógica de programação, estruturas de dados e um idioma como Python ou Java. Cursos online, projetos pessoais e portfólio demonstram habilidades; diplomas não são obrigatórios, mas certificações podem ajudar.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0448",
+      "answer": "Feedback tátil é a informação que recebemos através do sentido do toque, como vibrações de um celular ou a resistência de um joystick, que indica ao usuário que uma ação foi reconhecida.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0449",
+      "answer": "O método de divisão e média aproxima a raiz quadrada ao dividir o número por um palpite, depois calcular a média entre o palpite e o quociente. Repetindo, o erro diminui, pois a média converge para o valor correto.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0450",
+      "answer": "Experimente fotografia, jardinagem, culinária, programação de jogos ou escalada indoor. Escolha algo que desperte curiosidade, ofereça aprendizado prático e permita praticar regularmente. Teste duas opções e veja qual traz mais prazer.",
+      "followup": "Qual hobby criativo é fácil começar com poucos materiais?",
+      "followup_answer": "Desenho à lápis: basta papel, lápis e borracha, permitindo praticar técnicas de sombra e forma sem investimento inicial."
+    },
+    {
+      "id": "dialog-0451",
+      "answer": "Jogos retrô revitalizaram mecânicas simples e estética pixel, influenciando designers modernos a incorporar nostalgia. Isso ampliou o público, gerou remakes e inspirou híbridos que combinam gráficos antigos com narrativas complexas de AAA.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0452",
+      "answer": "Ouça podcasts e músicas em francês, repita frases em voz alta, use aplicativos de flashcards para vocabulário e pratique conversação com falantes nativos via intercâmbio online. Anote erros e revise regularmente.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0453",
+      "answer": "Organizações como WWF, Greenpeace, SOS Mata Atlântica e grupos locais de limpeza de praias aceitam voluntários. Procure projetos de reflorestamento, monitoramento de fauna ou campanhas de reciclagem na sua região.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0454",
+      "answer": "Algoritmos são sequências de instruções que resolvem problemas; por exemplo, o algoritmo de busca binária encontra rapidamente um item em lista ordenada, e o algoritmo de compressão JPEG reduz tamanho de imagens para armazenamento e transmissão.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0455",
+      "answer": "Grave apresentações para autoavaliação, pratique técnicas de respiração, use gestos naturais e mantenha contato visual. Prepare um início impactante, organize ideias em tópicos claros e ajuste o ritmo conforme a reação da plateia.",
+      "followup": "Como usar histórias pessoais para melhorar uma palestra?",
+      "followup_answer": "Escolha uma experiência relevante, descreva o desafio, a ação tomada e o resultado, criando conexão emocional e ilustrando o ponto que você quer transmitir."
+    },
+    {
+      "id": "dialog-0456",
+      "answer": "Claro! \"Good morning, how are you?\" traduzido para o espanhol fica: \"Buenos días, ¿cómo estás?\""
+    },
+    {
+      "id": "dialog-0457",
+      "answer": "1. Prepare tela, pincéis, óleo e solvente. 2. Molhe a tela com solvente. 3. Aplique camada base de tinta clara. 4. Enquanto ainda úmida, pinte áreas de céu e água com cores úmidas. 5. Adicione montanhas e árvores, usando pincel úmido para mesclar. 6. Deixe secar 24h antes de detalhes finais.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0458",
+      "answer": "Viver da terra oferece autonomia, conexão com a natureza e redução de custos, mas exige trabalho físico intenso, conhecimento agrícola e adaptação a incertezas climáticas. Avalie seu estilo de vida, recursos disponíveis e disposição antes de mudar radicalmente.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0459",
+      "answer": "Redes profundas aprendem representações hierárquicas de imagens, permitindo detectar objetos com alta precisão e segmentar áreas complexas. Elas reduzem necessidade de recursos humanos, aceleram diagnósticos médicos e melhoram sistemas de vigilância e veículos autônomos.",
+      "followup": "false"
+    }
+  ]
+}

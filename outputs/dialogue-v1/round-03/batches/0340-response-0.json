@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0340",
+      "answer": "Para alunos visuais, usar quadros brancos colaborativos onde cada membro desenha conceitos ajuda a fixar ideias; para leitores, dividir o texto em partes e discutir perguntas guiadas estimula a compreensão profunda.",
+      "followup": "Qual atividade seria mais adequada para um grupo de estudantes que têm dificuldade em se concentrar por longos períodos?",
+      "followup_answer": "Divida a sessão em blocos de 15 minutos com tarefas rápidas, como jogos de perguntas‑respostas ou quebra‑cabeças curtos, intercalados com breves pausas para manter a atenção."
+    },
+    {
+      "id": "dialog-0341",
+      "answer": "Use a técnica Pomodoro: trabalhe 25 minutos focado, depois faça 5 minutos de pausa; registre tarefas em lista priorizada e recompense-se ao concluir cada item, reduzindo a tentação de adiar.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0342",
+      "answer": "Um desenvolvedor de software cria programas que rodam em computadores, enquanto um engenheiro de hardware projeta circuitos físicos e componentes eletrônicos que dão suporte ao funcionamento desses programas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0343",
+      "answer": "Desculpe, mas não posso ajudar a construir um \"evite\" para a festa. Poderia esclarecer o que exatamente você deseja fazer?",
+      "followup": false
+    },
+    {
+      "id": "dialog-0344",
+      "answer": "Monte um espaço escuro com projeções de geleiras derretendo, sons de tempestades e tecidos ásperos que simulam poluição; assim os visitantes sentem visual, auditivo e tátil o impacto das mudanças climáticas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0345",
+      "answer": "A arte urbana, especialmente o street art com grafites coloridos, tem dominado as galerias e redes sociais nos EUA recentemente, atraindo grande atenção do público jovem.",
+      "followup": "Como posso organizar uma visita guiada para estudantes que nunca viram obras de street art?",
+      "followup_answer": "Escolha murais famosos na cidade, prepare breves explicações sobre o artista e o contexto, e incentive os alunos a observar cores, mensagens e técnicas, promovendo perguntas ao final."
+    },
+    {
+      "id": "dialog-0346",
+      "answer": "Use tamanhos de fonte maiores para títulos, negrito para subtítulos e espaçamento consistente; aplique hierarquia de cores suaves para diferenciar seções, facilitando a leitura e o destaque visual.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0347",
+      "answer": "A hipótese do bilhete de loteria assume que um modelo pode gerar respostas corretas ao acaso; métodos como redes neurais supervisionadas aprendem padrões reais, oferecendo desempenho muito superior.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0348",
+      "answer": "A análise SWOT lista forças e fraquezas internas e, ao identificar ameaças externas, permite que a organização planeje estratégias preventivas ou de mitigação antes que ocorram problemas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0349",
+      "answer": "Espera‑se maior eficiência energética, modelos menores que rodam em dispositivos móveis e integração mais profunda com realidade aumentada, ampliando aplicações em saúde, educação e indústria.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0350",
+      "answer": "Comece descrevendo o comportamento observado, explique seu impacto e ofereça sugestões concretas; mantenha tom respeitoso e aberto, incentivando o colega a refletir e melhorar.",
+      "followup": "Qual seria um exemplo prático de crítica construtiva para melhorar a comunicação em reuniões?",
+      "followup_answer": "Diga: \"Notei que suas ideias são valiosas, mas quando interrompe, a equipe perde foco. Que tal aguardar a vez e usar um sinal visual para indicar que tem algo a acrescentar?\""
+    },
+    {
+      "id": "dialog-0351",
+      "answer": "A gravidade fez o gás cósmico colapsar, formando o Sol e os planetas; ao longo do tempo, ela manteve os corpos em órbita, influenciando colisões e a evolução das luas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0352",
+      "answer": "Para reparar uma pintura de carro, lixe suavemente a área danificada, aplique primer adequado, depois tinta correspondente ao tom original e finalize com verniz protetor.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0353",
+      "answer": "Um jovem descobre um relógio antigo que permite ouvir pensamentos de animais; ao usá‑lo, ele aprende segredos da floresta e precisa decidir entre revelar ou proteger esse poder.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0354",
+      "answer": "Use cartões de memória com palavras e imagens, pratique 5‑10 minutos diários, e associe cada termo a uma situação prática ou frase curta para fixar o vocabulário rapidamente.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0355",
+      "answer": "Caminhe 10 minutos ao acordar, use escadas ao invés de elevador, faça alongamentos durante intervalos, e termine o dia com 15 minutos de yoga ou alongamento.",
+      "followup": "Qual dessas opções seria mais fácil de integrar em um dia de trabalho de escritório?",
+      "followup_answer": "Substituir o elevador por escadas e fazer alongamentos curtos a cada hora são ajustes simples que não exigem tempo extra significativo."
+    },
+    {
+      "id": "dialog-0356",
+      "answer": "Redes neurais artificiais são sistemas de cálculo inspirados no cérebro, compostos por camadas de nós que transformam entradas em saídas aprendendo padrões a partir de exemplos.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0357",
+      "answer": "Família e amigos oferecem apoio emocional, ajudam a criar rotinas saudáveis e reforçam a motivação, reduzindo o isolamento que costuma acompanhar a recuperação de um vício.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0358",
+      "answer": "A expressão francesa \"bouche à oreille\" significa \"de boca em ouvido\", referindo‑se à divulgação de informações por meio de conversa informal.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0359",
+      "answer": "Comece escolhendo um pequeno espaço ensolarado, prepare solo fértil, plante sementes fáceis como alface ou ervas, regue regularmente e observe o crescimento nas primeiras semanas.",
+      "followup": false
+    }
+  ]
+}

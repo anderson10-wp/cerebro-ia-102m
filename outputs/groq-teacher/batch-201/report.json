@@ -1,0 +1,13 @@
+{
+  "model": "llama-3.3-70b-versatile",
+  "requested": 24,
+  "max_calls": 1,
+  "max_output_tokens": 4096,
+  "training_started": false,
+  "billing_tier": "unknown",
+  "created_utc": "2026-10-07T19:30:18.592630+00:00",
+  "provider": "groq",
+  "status": "api_error",
+  "http_status": 404,
+  "message": "The model `llama-3.3-70b-versatile` does not exist or you do not have access to it."
+}

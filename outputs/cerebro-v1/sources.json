@@ -1,0 +1,29 @@
+{
+  "pt": {
+    "repo": "HuggingFaceFW/fineweb-2",
+    "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+    "prefix": "data/por_Latn/train/",
+    "field": "text",
+    "weight": 0.60,
+    "license": "ODC-BY; underlying web content retains its original terms",
+    "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2"
+  },
+  "en": {
+    "repo": "HuggingFaceFW/fineweb-edu",
+    "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+    "prefix": "sample/10BT/",
+    "field": "text",
+    "weight": 0.25,
+    "license": "ODC-BY; underlying web content retains its original terms",
+    "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+  },
+  "code": {
+    "repo": "codeparrot/codeparrot-clean",
+    "revision": "35a59fb025bc0a102f7d96eac09d145b896d487b",
+    "prefix": "file-",
+    "field": "content",
+    "weight": 0.15,
+    "license": "Only records labelled mit, apache-2.0, bsd-2-clause, bsd-3-clause, isc, unlicense or cc0-1.0",
+    "url": "https://huggingface.co/datasets/codeparrot/codeparrot-clean"
+  }
+}

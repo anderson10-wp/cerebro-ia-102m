@@ -1,0 +1,57 @@
+{
+  "started_at": "2026-10-04T15:10:49.463070+00:00",
+  "status": "error",
+  "target_preference": "undecided",
+  "credits_spent_by_controller": 0,
+  "paid_compute_started": false,
+  "events": [
+    {
+      "cycle": 0,
+      "seconds": 2.26,
+      "tool_names": [
+        "get_project_evidence"
+      ],
+      "usage": {
+        "completion_tokens": 30,
+        "prompt_tokens": 396,
+        "total_tokens": 426,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "seconds": 15.09,
+      "tool_names": [],
+      "usage": {
+        "completion_tokens": 806,
+        "prompt_tokens": 1583,
+        "total_tokens": 2389,
+        "prompt_tokens_details": {
+          "cached_tokens": 410
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "seconds": 37.75,
+      "tool_names": [
+        "propose_experiment"
+      ],
+      "usage": {
+        "completion_tokens": 2048,
+        "prompt_tokens": 2398,
+        "total_tokens": 4446,
+        "prompt_tokens_details": {
+          "cached_tokens": 391
+        }
+      }
+    },
+    {
+      "rejected_tool": "propose_experiment",
+      "reason": "Unterminated string starting at: line 1 column 1172 (char 1171)"
+    }
+  ],
+  "error": "HTTPError: HTTP Error 500: Internal Server Error"
+}

@@ -1,0 +1,23 @@
+{
+  "request": "Quanto é 6 + 5?",
+  "available": [
+    "calculator",
+    "teacher",
+    "training_status",
+    "clarify"
+  ],
+  "raw_output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"6 + 5\"}}",
+  "route": {
+    "tool": "calculator",
+    "arguments": {
+      "expression": "6 + 5"
+    }
+  },
+  "format_and_availability_valid": true,
+  "validation_error": null,
+  "semantic_correctness_verified": false,
+  "tools_executed": 0,
+  "seconds": 4.731,
+  "selected_training_step": 50,
+  "note": "Experimental candidate. A valid structure can still contain the wrong tool or arguments."
+}

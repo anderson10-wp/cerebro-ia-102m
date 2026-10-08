@@ -1,0 +1,105 @@
+{
+  "reviews": [
+    {
+      "id": "dialog-0060",
+      "passed": true,
+      "reason": "Responde ao pedido, fatos corretos, sem repetições ou invenções, continuação coerente."
+    },
+    {
+      "id": "dialog-0061",
+      "passed": true,
+      "reason": "Responde ao pedido, informações corretas e concisas."
+    },
+    {
+      "id": "dialog-0062",
+      "passed": true,
+      "reason": "Responde ao pedido, fatos corretos e sem invenções."
+    },
+    {
+      "id": "dialog-0063",
+      "passed": true,
+      "reason": "Lista de adjetivos adequada e sem erros."
+    },
+    {
+      "id": "dialog-0064",
+      "passed": true,
+      "reason": "Explicação correta da expressão."
+    },
+    {
+      "id": "dialog-0065",
+      "passed": true,
+      "reason": "Aborda o tema solicitado e segue coerente ao follow‑up."
+    },
+    {
+      "id": "dialog-0066",
+      "passed": true,
+      "reason": "Dicas de gramática corretas e concisas."
+    },
+    {
+      "id": "dialog-0067",
+      "passed": true,
+      "reason": "Plano de estudos adequado e sem informações falsas."
+    },
+    {
+      "id": "dialog-0068",
+      "passed": true,
+      "reason": "Sugestões produtivas para home office, sem repetições."
+    },
+    {
+      "id": "dialog-0069",
+      "passed": true,
+      "reason": "Procedimento de solução de problema de PC correto."
+    },
+    {
+      "id": "dialog-0070",
+      "passed": true,
+      "reason": "Explicação clara da comunicação das formigas e ameaças."
+    },
+    {
+      "id": "dialog-0071",
+      "passed": true,
+      "reason": "Identifica erros comuns em mapas e soluções corretas."
+    },
+    {
+      "id": "dialog-0072",
+      "passed": true,
+      "reason": "Métodos de jardinagem para iniciantes corretos."
+    },
+    {
+      "id": "dialog-0073",
+      "passed": true,
+      "reason": "Carta de apoio adequada e sem invenções."
+    },
+    {
+      "id": "dialog-0074",
+      "passed": true,
+      "reason": "Estratégias de estudo corretas e concisas."
+    },
+    {
+      "id": "dialog-0075",
+      "passed": true,
+      "reason": "Orientações para festa surpresa completas e coerentes."
+    },
+    {
+      "id": "dialog-0076",
+      "passed": true,
+      "reason": "Dicas para aprender programação rapidamente, sem erros."
+    },
+    {
+      "id": "dialog-0077",
+      "passed": true,
+      "reason": "Sugestões criativas de presente adequadas."
+    },
+    {
+      "id": "dialog-0078",
+      "passed": true,
+      "reason": "Cálculo da área do triângulo correto."
+    },
+    {
+      "id": "dialog-0079",
+      "passed": true,
+      "reason": "Recomendações de hobbies pertinentes e corretas."
+    }
+  ],
+  "reviewer": "openai/gpt-oss-120b"
+}

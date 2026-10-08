@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "full_model_fp16_two_gpu_training": "PASS",
+  "checkpoint_resume": "PASS",
+  "tokens": 196608,
+  "max_weight_difference": 6.837246473878622e-06,
+  "note": "Synthetic fixture for software verification only, not the language pretraining corpus."
+}

@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "rounds": [
+    {
+      "seed": 1791417621,
+      "teacher_attempts": [
+        {
+          "provider": "groq",
+          "report": {
+            "model": "openai/gpt-oss-120b",
+            "requested": 24,
+            "max_calls": 1,
+            "max_output_tokens": 4096,
+            "training_started": false,
+            "billing_tier": "unknown",
+            "created_utc": "2026-10-08T00:00:21.899665+00:00",
+            "provider": "groq",
+            "usage": {
+              "queue_time": 0.356830435,
+              "prompt_tokens": 1214,
+              "prompt_time": 0.095303017,
+              "completion_tokens": 1472,
+              "completion_time": 3.093644575,
+              "total_tokens": 2686,
+              "total_time": 3.188947592,
+              "completion_tokens_details": {
+                "reasoning_tokens": 1030
+              }
+            },
+            "actual_model": "openai/gpt-oss-120b",
+            "status": "completed",
+            "accepted": 24,
+            "rejected": 0
+          }
+        }
+      ],
+      "training": {
+        "run": ".\\outputs\\local-run-20261007-210025-ee450c",
+        "summary": {
+          "status": "completed",
+          "before_correct": 6,
+          "total": 12,
+          "promoted": false,
+          "api_calls": 0,
+          "smoke_test": false,
+          "training": {
+            "status": "completed_candidate_only",
+            "initial_validation_loss": 0.6877291247529803,
+            "base_checkpoint_sha256": "1b79d4e8091cfe5db26c73379260bffb5102bbf18774820658af6718b23541ac",
+            "validation": [
+              {
+                "epoch": 1,
+                "loss": 0.5995214311581738,
+                "steps": 264
+              },
+              {
+                "epoch": 2,
+                "loss": 0.6013673060345199,
+                "steps": 317
+              }
+            ],
+            "automatic_promotion": false,
+            "audit_examples_evaluated": 0,
+            "cloud_jobs_started": 0,
+            "device": "cpu",
+            "hardware": "cpu",
+            "steps": 317,
+            "response_tokens_seen": 6042,
+            "best_validation_loss": 0.5995214311581738,
+            "candidate_saved": true,
+            "elapsed_seconds": 601.4965861999999
+          },
+          "after_correct": 7,
+          "regressions": [],
+          "improved_on_development": true
+        }
+      },
+      "used_for_next_round": true
+    }
+  ],
+  "codex_calls": 0,
+  "chat_model_modified": false,
+  "smoke": false
+}

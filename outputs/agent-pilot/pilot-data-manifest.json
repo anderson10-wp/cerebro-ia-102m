@@ -1,0 +1,20 @@
+{
+  "training_examples": 543,
+  "reviewed_teacher_seeds": 32,
+  "deterministic_augmented_examples": 511,
+  "validation_examples": 16,
+  "audit_examples": 16,
+  "total_tokens": 82288,
+  "supervised_response_tokens": 10871,
+  "train_sha256": "0fcd25e22b47239c7547af224f478d03bfc262a9df584abeb78b5adc0369d918",
+  "max_sequence_tokens": 163,
+  "scope": "A narrow tool-routing pilot. Most added examples are programmatic variations, not independent natural conversations.",
+  "selection_rule": "Select checkpoint by validation loss only; evaluate frozen audit once after selection.",
+  "continuation_gate": {
+    "minimum_audit_correct_of_16": 12,
+    "minimum_validation_correct_of_16": 12,
+    "minimum_audit_schema_valid_of_16": 14,
+    "maximum_regression_nll_ratio": 1.1
+  },
+  "gate_note": "Engineering thresholds chosen before tuning, not statistically proven guarantees. Passing allows considering a broader test, not autonomous execution."
+}

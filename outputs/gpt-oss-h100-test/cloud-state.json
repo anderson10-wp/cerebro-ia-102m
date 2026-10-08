@@ -1,0 +1,38 @@
+{
+  "budget_credits": 3,
+  "balance_before": 29.78,
+  "balance_latest": 28.5,
+  "checked_at": "2026-10-05T18:18:22.582651+00:00",
+  "hourly_h100_credits": 4.68,
+  "studio_id": "01m46hyys1s47d6d8twq5cb6gh",
+  "studio_cloud_account": "lightning-public-prod",
+  "studio_status": "Deleted",
+  "status": "cancelled_by_user",
+  "verified_remote_sha256": {
+    "compare.py": "bb4a8d21a445c048a25ac866e374b461f9d9c4eab36c0fb9ecd16b6a31cae144",
+    "cases.json": "a391b51cb5a803c50ad838f88600d4f6dc1a9f2b188dc6b2359c66de91e861d3"
+  },
+  "run_name": "gpt-oss-120b-vs-20b-h100-01",
+  "submitted_at": "2026-10-05T17:39:37.815263+00:00",
+  "command_timeout_seconds": 900,
+  "max_run_attempts": 1,
+  "studio_machine": "None",
+  "transfer_details": {
+    "expected_completion_time": "2026-10-05 17:43:40.653413+00:00",
+    "initial_transfer_started_at": "2026-10-05 17:39:40.653415+00:00",
+    "top_up_transfer_started_at": "None",
+    "source_deletion_started_at": "None",
+    "source_cluster_id": "lightning-public-prod",
+    "target_cluster_id": "lightning-lambda-prod",
+    "target_cloud_provider": "LAMBDA_LABS",
+    "start_after_transfer": "False"
+  },
+  "studio_sync": {
+    "sync_duration": "0",
+    "sync_percentage": "0",
+    "total_size_bytes": "77354158088",
+    "message": "USER_STOP_WORKLOAD_REASON_REQUESTED_BY_USER"
+  },
+  "transfer_completion_requested_at": "2026-10-05T17:55:56.480029+00:00",
+  "cancelled_at": "2026-10-05T18:19:24.598053+00:00"
+}

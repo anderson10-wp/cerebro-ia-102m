@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "train-addition-0",
+    "split": "train",
+    "family": "addition",
+    "request": "Calcule 7 + 8.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "7 + 8"
+      }
+    }
+  },
+  {
+    "id": "train-addition-1",
+    "split": "train",
+    "family": "addition",
+    "request": "Quanto é 19 + 26?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "19 + 26"
+      }
+    }
+  },
+  {
+    "id": "train-addition-2",
+    "split": "train",
+    "family": "addition",
+    "request": "Resolva 105 + 29.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "105 + 29"
+      }
+    }
+  },
+  {
+    "id": "train-addition-3",
+    "split": "train",
+    "family": "addition",
+    "request": "Calcule 34 + 68.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "34 + 68"
+      }
+    }
+  },
+  {
+    "id": "train-subtraction-0",
+    "split": "train",
+    "family": "subtraction",
+    "request": "Calcule 23 - 9.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "23 - 9"
+      }
+    }
+  },
+  {
+    "id": "train-subtraction-1",
+    "split": "train",
+    "family": "subtraction",
+    "request": "Quanto é 51 - 18?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "51 - 18"
+      }
+    }
+  },
+  {
+    "id": "train-subtraction-2",
+    "split": "train",
+    "family": "subtraction",
+    "request": "Resolva 97 - 32.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "97 - 32"
+      }
+    }
+  },
+  {
+    "id": "train-subtraction-3",
+    "split": "train",
+    "family": "subtraction",
+    "request": "Calcule 200 - 74.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "200 - 74"
+      }
+    }
+  },
+  {
+    "id": "train-python_creation-0",
+    "split": "train",
+    "family": "python_creation",
+    "request": "Escreva uma função Python que some dois números.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Escreva uma função Python que some dois números."
+      }
+    }
+  },
+  {
+    "id": "train-python_creation-1",
+    "split": "train",
+    "family": "python_creation",
+    "request": "Crie uma função Python que calcule a média de uma lista.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Crie uma função Python que calcule a média de uma lista."
+      }
+    }
+  },
+  {
+    "id": "train-python_creation-2",
+    "split": "train",
+    "family": "python_creation",
+    "request": "Escreva código Python para contar palavras.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Escreva código Python para contar palavras."
+      }
+    }
+  },
+  {
+    "id": "train-python_creation-3",
+    "split": "train",
+    "family": "python_creation",
+    "request": "Crie uma função Python que encontre o maior número.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Crie uma função Python que encontre o maior número."
+      }
+    }
+  },
+  {
+    "id": "train-text_explanation-0",
+    "split": "train",
+    "family": "text_explanation",
+    "request": "Explique a diferença entre memória RAM e armazenamento.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique a diferença entre memória RAM e armazenamento."
+      }
+    }
+  },
+  {
+    "id": "train-text_explanation-1",
+    "split": "train",
+    "family": "text_explanation",
+    "request": "Explique o que é uma variável em Python.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique o que é uma variável em Python."
+      }
+    }
+  },
+  {
+    "id": "train-text_explanation-2",
+    "split": "train",
+    "family": "text_explanation",
+    "request": "Explique o que significa uma API.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique o que significa uma API."
+      }
+    }
+  },
+  {
+    "id": "train-text_explanation-3",
+    "split": "train",
+    "family": "text_explanation",
+    "request": "Explique como funciona uma lista em Python.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique como funciona uma lista em Python."
+      }
+    }
+  },
+  {
+    "id": "train-progress-0",
+    "split": "train",
+    "family": "progress",
+    "request": "Qual é o progresso real do nosso treinamento?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-progress-1",
+    "split": "train",
+    "family": "progress",
+    "request": "O treino do nosso modelo está rodando?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-progress-2",
+    "split": "train",
+    "family": "progress",
+    "request": "Quantos tokens nosso modelo já treinou?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-progress-3",
+    "split": "train",
+    "family": "progress",
+    "request": "Mostre o estado atual do nosso treino.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-completion-0",
+    "split": "train",
+    "family": "completion",
+    "request": "O treinamento do nosso 102M terminou?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-completion-1",
+    "split": "train",
+    "family": "completion",
+    "request": "A execução de treino chegou ao objetivo?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-completion-2",
+    "split": "train",
+    "family": "completion",
+    "request": "Nosso treino finalizou sem erro?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-completion-3",
+    "split": "train",
+    "family": "completion",
+    "request": "A terceira sessão de treino já concluiu?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "train-missing_artifact-0",
+    "split": "train",
+    "family": "missing_artifact",
+    "request": "Corrija o código que esqueci de enviar.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-missing_artifact-1",
+    "split": "train",
+    "family": "missing_artifact",
+    "request": "Analise o arquivo; ainda não o anexei.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-missing_artifact-2",
+    "split": "train",
+    "family": "missing_artifact",
+    "request": "Resuma o texto que ainda vou mandar.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-missing_artifact-3",
+    "split": "train",
+    "family": "missing_artifact",
+    "request": "Compare os dois documentos que não enviei.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-teacher_unavailable-0",
+    "split": "train",
+    "family": "teacher_unavailable",
+    "request": "Explique o que é uma GPU.",
+    "available": [
+      "calculator",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-teacher_unavailable-1",
+    "split": "train",
+    "family": "teacher_unavailable",
+    "request": "Crie uma função Python de ordenação.",
+    "available": [
+      "calculator",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-teacher_unavailable-2",
+    "split": "train",
+    "family": "teacher_unavailable",
+    "request": "Explique redes neurais.",
+    "available": [
+      "calculator",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "train-teacher_unavailable-3",
+    "split": "train",
+    "family": "teacher_unavailable",
+    "request": "Escreva um programa para ler CSV.",
+    "available": [
+      "calculator",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "validation-multiplication-0",
+    "split": "validation",
+    "family": "multiplication",
+    "request": "Calcule 8 * 7.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "8 * 7"
+      }
+    }
+  },
+  {
+    "id": "validation-multiplication-1",
+    "split": "validation",
+    "family": "multiplication",
+    "request": "Quanto é 13 * 4?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "13 * 4"
+      }
+    }
+  },
+  {
+    "id": "validation-multiplication-2",
+    "split": "validation",
+    "family": "multiplication",
+    "request": "Resolva 17 * 6.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "17 * 6"
+      }
+    }
+  },
+  {
+    "id": "validation-multiplication-3",
+    "split": "validation",
+    "family": "multiplication",
+    "request": "Calcule 21 * 9.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "21 * 9"
+      }
+    }
+  },
+  {
+    "id": "validation-model_architecture-0",
+    "split": "validation",
+    "family": "model_architecture",
+    "request": "Explique atenção em um transformer.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique atenção em um transformer."
+      }
+    }
+  },
+  {
+    "id": "validation-model_architecture-1",
+    "split": "validation",
+    "family": "model_architecture",
+    "request": "Explique o que são parâmetros de um modelo.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique o que são parâmetros de um modelo."
+      }
+    }
+  },
+  {
+    "id": "validation-model_architecture-2",
+    "split": "validation",
+    "family": "model_architecture",
+    "request": "Explique a função do tokenizador.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique a função do tokenizador."
+      }
+    }
+  },
+  {
+    "id": "validation-model_architecture-3",
+    "split": "validation",
+    "family": "model_architecture",
+    "request": "Explique para que serve uma camada neural.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Explique para que serve uma camada neural."
+      }
+    }
+  },
+  {
+    "id": "validation-training_metrics-0",
+    "split": "validation",
+    "family": "training_metrics",
+    "request": "Qual foi a loss final do nosso treinamento?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "validation-training_metrics-1",
+    "split": "validation",
+    "family": "training_metrics",
+    "request": "Qual foi o resultado de validação do nosso treino?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "validation-training_metrics-2",
+    "split": "validation",
+    "family": "training_metrics",
+    "request": "Qual o número de passos registrado no treino?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "validation-training_metrics-3",
+    "split": "validation",
+    "family": "training_metrics",
+    "request": "Qual foi a duração acumulada do treino?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "validation-calculator_unavailable-0",
+    "split": "validation",
+    "family": "calculator_unavailable",
+    "request": "Calcule 9 + 2.",
+    "available": [
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "validation-calculator_unavailable-1",
+    "split": "validation",
+    "family": "calculator_unavailable",
+    "request": "Quanto é 14 * 3?",
+    "available": [
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "validation-calculator_unavailable-2",
+    "split": "validation",
+    "family": "calculator_unavailable",
+    "request": "Resolva 48 - 7.",
+    "available": [
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "validation-calculator_unavailable-3",
+    "split": "validation",
+    "family": "calculator_unavailable",
+    "request": "Calcule 81 / 9.",
+    "available": [
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "audit-parenthesized_arithmetic-0",
+    "split": "audit",
+    "family": "parenthesized_arithmetic",
+    "request": "Calcule (12 + 6) / 3.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "(12 + 6) / 3"
+      }
+    }
+  },
+  {
+    "id": "audit-parenthesized_arithmetic-1",
+    "split": "audit",
+    "family": "parenthesized_arithmetic",
+    "request": "Quanto é (8 + 2) * 5?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "(8 + 2) * 5"
+      }
+    }
+  },
+  {
+    "id": "audit-parenthesized_arithmetic-2",
+    "split": "audit",
+    "family": "parenthesized_arithmetic",
+    "request": "Resolva (30 - 12) / 6.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "(30 - 12) / 6"
+      }
+    }
+  },
+  {
+    "id": "audit-parenthesized_arithmetic-3",
+    "split": "audit",
+    "family": "parenthesized_arithmetic",
+    "request": "Calcule (7 * 4) - 9.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "calculator",
+      "arguments": {
+        "expression": "(7 * 4) - 9"
+      }
+    }
+  },
+  {
+    "id": "audit-experiment_design-0",
+    "split": "audit",
+    "family": "experiment_design",
+    "request": "Como separar exemplos de treinamento e teste?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Como separar exemplos de treinamento e teste?"
+      }
+    }
+  },
+  {
+    "id": "audit-experiment_design-1",
+    "split": "audit",
+    "family": "experiment_design",
+    "request": "Como verificar se uma nova versão realmente melhorou?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Como verificar se uma nova versão realmente melhorou?"
+      }
+    }
+  },
+  {
+    "id": "audit-experiment_design-2",
+    "split": "audit",
+    "family": "experiment_design",
+    "request": "Como evitar que um modelo memorize a avaliação?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Como evitar que um modelo memorize a avaliação?"
+      }
+    }
+  },
+  {
+    "id": "audit-experiment_design-3",
+    "split": "audit",
+    "family": "experiment_design",
+    "request": "Como construir testes para chamadas de ferramentas?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "teacher",
+      "arguments": {
+        "request": "Como construir testes para chamadas de ferramentas?"
+      }
+    }
+  },
+  {
+    "id": "audit-checkpoint_and_remaining_time-0",
+    "split": "audit",
+    "family": "checkpoint_and_remaining_time",
+    "request": "Qual checkpoint foi selecionado no nosso treino?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "audit-checkpoint_and_remaining_time-1",
+    "split": "audit",
+    "family": "checkpoint_and_remaining_time",
+    "request": "Quanto tempo falta para concluir nosso treino?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "audit-checkpoint_and_remaining_time-2",
+    "split": "audit",
+    "family": "checkpoint_and_remaining_time",
+    "request": "Em qual sessão nosso treino parou?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "audit-checkpoint_and_remaining_time-3",
+    "split": "audit",
+    "family": "checkpoint_and_remaining_time",
+    "request": "O arquivo final de pesos do nosso treino foi salvo?",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "training_status",
+      "arguments": {}
+    }
+  },
+  {
+    "id": "audit-unspecified_reference-0",
+    "split": "audit",
+    "family": "unspecified_reference",
+    "request": "Melhore isso.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "audit-unspecified_reference-1",
+    "split": "audit",
+    "family": "unspecified_reference",
+    "request": "Resolva o problema.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "audit-unspecified_reference-2",
+    "split": "audit",
+    "family": "unspecified_reference",
+    "request": "Faça aquela alteração.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  },
+  {
+    "id": "audit-unspecified_reference-3",
+    "split": "audit",
+    "family": "unspecified_reference",
+    "request": "Compare as opções.",
+    "available": [
+      "calculator",
+      "teacher",
+      "training_status",
+      "clarify"
+    ],
+    "expected": {
+      "tool": "clarify",
+      "arguments": {
+        "question": "Pode fornecer a informação que falta ou escolher uma ferramenta disponível?"
+      }
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "budget_credits": 27,
+  "balance_before": 28.5,
+  "created_at": "2026-10-07T00:20:14.324638+00:00",
+  "balance_latest": 2.07,
+  "checked_at": "2026-10-07T12:56:28.327667+00:00",
+  "h100_catalog": [
+    {
+      "cloud_account": "lightning-nebius-prod",
+      "instance_id": "nb-h100-1gpu-16vcpu-200gb",
+      "slug_multi_cloud": "lit-h100-80gb-1",
+      "cost": 5.68,
+      "enabled": true,
+      "out_of_capacity": false,
+      "is_tier_restricted": false,
+      "available_in_seconds": "334"
+    },
+    {
+      "cloud_account": "lightning-lambda-prod",
+      "instance_id": "gpu_1x_h100_sxm5",
+      "slug_multi_cloud": "lit-h100-80gb-1",
+      "cost": 4.68,
+      "enabled": true,
+      "out_of_capacity": true,
+      "is_tier_restricted": false,
+      "available_in_seconds": "307"
+    }
+  ],
+  "studio_id": "01m49xq2evsk2wqgkr73m98bpp",
+  "provider": "lightning-nebius-prod",
+  "status": "submitted",
+  "staging_report": {
+    "status": "prepared",
+    "gpu_used": false,
+    "completed_files": [
+      {
+        "name": "code-train.bin",
+        "bytes": 600000000,
+        "sha256": "0453fc67601b6a04611fce8dce2a57f7e2f5ede14706a463ddd154d6129de8ab"
+      },
+      {
+        "name": "code-validation.bin",
+        "bytes": 2000000,
+        "sha256": "31e4859a541674d03064f3646560cf68c36ab6cdfa076feaa9758fe76f84d1fd"
+      },
+      {
+        "name": "en-train.bin",
+        "bytes": 1000000000,
+        "sha256": "0038516beb8dd97881d0e78167cda0b09aebc68496975eb1b50db7c95d890672"
+      },
+      {
+        "name": "en-validation.bin",
+        "bytes": 2000000,
+        "sha256": "5fd8dbdf63c99aa7882c72b99f15de2539fc83126f2bbd1fb6e1825c23ba9180"
+      },
+      {
+        "name": "pt-train.bin",
+        "bytes": 2400000000,
+        "sha256": "b140132ba78817baa0eb4b6097a7ff8b8826808782aa6eb6e809d64ab940af51"
+      },
+      {
+        "name": "pt-validation.bin",
+        "bytes": 2000000,
+        "sha256": "71517e3c0663be3334c121f4a69cbc6d935cedd09a09b92ed0e12dcf85a0c2ce"
+      },
+      {
+        "name": "source.pt",
+        "bytes": 1227227759,
+        "sha256": "6fef373e2ea7e3b18a8fa2846ea4b0a6b95c0b0b21a62fc042f8a267b2c5b798"
+      }
+    ],
+    "target_id": "01m49xq2evsk2wqgkr73m98bpp",
+    "credentials_persisted": false
+  },
+  "training_seconds": 16200,
+  "external_timeout_seconds": 16800,
+  "job_id": "job_01m49xxzt086mt03he04k8eehn",
+  "job_url": "https://lightning.ai/anderson10-wp/default-project/studios/cerebro-102m-h100-continuation-nebius/app?app_id=jobs&job_name=cerebro-102m-h100-01",
+  "submitted_at": "2026-10-07T00:59:04.451391+00:00",
+  "hourly_credits": 5.68,
+  "max_run_attempts": 1,
+  "job_status": "Completed",
+  "job_cost": 26.221088
+}

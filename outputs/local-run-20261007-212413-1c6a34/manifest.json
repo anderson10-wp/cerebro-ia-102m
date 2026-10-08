@@ -1,0 +1,14 @@
+{
+  "train": {
+    "sha256": "4e96d3721680fdd7826121c79c8b366b564de0e88d6e1d0e70a2d5a45375b72c"
+  },
+  "validation": {
+    "sha256": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e"
+  },
+  "audit": {
+    "sha256": "7bd4ffaecee5c30803235b6b6d915ff92610005dacb835a34cfab661c42fa2c2"
+  },
+  "tokenizer_sha256": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+  "examples": 1134,
+  "teacher_examples_added": 115
+}

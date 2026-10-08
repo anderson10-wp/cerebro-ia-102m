@@ -1,0 +1,12 @@
+{
+  "status": "cpu_recipe_validated",
+  "weights_updated": false,
+  "parameters": 102257280,
+  "train_examples": 32,
+  "validation_examples": 16,
+  "audit_examples_seen": 0,
+  "supervised_tokens_in_smoke_batch": 36,
+  "masked_loss_smoke_batch": 3.5986642837524414,
+  "lightning_credits_used": 0,
+  "note": "One forward pass checks token masking and model compatibility. Training and billing are not tested."
+}

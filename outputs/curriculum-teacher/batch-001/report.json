@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "accepted": 80,
+  "aira_adapted": 16,
+  "technical_scenarios": 64,
+  "reserved_technical_tests": 16,
+  "api_calls": 0,
+  "training_started": false,
+  "source_cache_sha256": "53e729bb4f6a0cb18d6495173784dff80aadf793649e6a69d00f34708508e6ee",
+  "notes": "Technical examples are original local scenarios, not extracted course text. Aira sample is small and not representative. Reserved technical cases share templates; they only test narrow transfer."
+}

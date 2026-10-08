@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0280",
+      "answer": "Pratique em frente ao espelho, grave-se e reveja, participe de grupos de discurso como Toastmasters, faça exercícios de respiração profunda e visualize o sucesso antes de subir ao palco. Cada técnica reduz a ansiedade e melhora a confiança.",
+      "followup": "Qual dessas estratégias você acha mais viável para começar hoje?",
+      "followup_answer": "Começar gravando um pequeno vídeo de 2 minutos sobre um tema familiar permite observar a postura e a voz, além de criar um registro para melhorar gradualmente."
+    },
+    {
+      "id": "dialog-0281",
+      "answer": "Desculpe, não posso fornecer instruções detalhadas para esse jogo.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0282",
+      "answer": "Use pinceladas soltas, cores não‑realistas, sobreposição de formas e técnicas de raspado ou espátula. Reduza detalhes, enfatize texturas e experimente diluir a tinta para criar efeitos de transparência que sugerem abstração.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0283",
+      "answer": "Ao acordar em um bosque desconhecido, Ana percebe que os pássaros lhe contam segredos. Cada conversa revela memórias perdidas da vila, e ela aprende a curar feridas animais, enquanto o mundo ao seu redor se transforma em um canto mágico.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0284",
+      "answer": "Identifique o público, liste pré‑requisitos, descreva passo a passo com capturas de tela, use linguagem clara e termos consistentes, formate com títulos, listas numeradas e tabelas, inclua FAQ e teste com usuários para garantir compreensão.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0285",
+      "answer": "Exemplos incluem a Internacional da Juventude Socialista, que organizou campanhas transnacionais contra o nacionalismo, e a Rede de Solidariedade Latino‑Americana, que coordenou projetos de saúde e educação entre países de orientação socialista.",
+      "followup": "Você gostaria de saber como essas redes se estruturam operacionalmente?",
+      "followup_answer": "Essas redes criam comitês regionais, utilizam plataformas digitais para comunicação e financiam projetos por meio de contribuições voluntárias e fundos de solidariedade, mantendo decisões consensuais entre membros."
+    },
+    {
+      "id": "dialog-0286",
+      "answer": "Analise gargalos de CPU e memória, otimize algoritmos, use compilação com flags de desempenho, habilite cache e paralelismo, remova processos desnecessários e atualize drivers. Monitoramento constante garante que melhorias persistam.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0287",
+      "answer": "Em uma cafeteria agitada, Clara e Marco trocam olhares enquanto esperam o café. Conversam sobre um livro que ambos leram, descobrindo que compartilham o mesmo sonho de viajar, criando uma conexão inesperada que ilumina o dia de ambos.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0288",
+      "answer": "Substantivos possessivos indicam propriedade (meu, teu, seu), enquanto plurais mostram quantidade (livros, casas). Possessivo pode aparecer no singular ou plural, mas o plural nunca indica posse.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0289",
+      "answer": "Pincéis de cerdas sintéticas para coberturas amplas, cerdas de pelos de marta para detalhes finos, e espátulas de silicone para texturas. Cada tipo controla a fluidez da tinta acrílica de maneira distinta.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0290",
+      "answer": "Use linhas curtas, verbos ativos e destaque o principal benefício. Seja direto, mas inclua um detalhe que desperte curiosidade. Revise para garantir que o assunto reflita exatamente o conteúdo da mensagem.",
+      "followup": "Qual seria um exemplo de linha de assunto para um boletim mensal de saúde?",
+      "followup_answer": "“5 dicas rápidas para melhorar sua energia diária – edição de junho” combina clareza, benefício e data, alinhando expectativa ao conteúdo."
+    },
+    {
+      "id": "dialog-0291",
+      "answer": "Comece com tutoriais de modelagem em argila ou massa de modelar, siga vídeos no YouTube, leia livros introdutórios e pratique esculpir formas simples. Cursos online gratuitos e grupos locais de arte oferecem feedback valioso.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0292",
+      "answer": "Verifique a situação legal do imóvel, faça inspeção de manutenção, prepare contrato claro, solicite documentos de renda e referências, estabeleça critérios de seleção e defina regras de uso antes de assinar o aluguel.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0293",
+      "answer": "Domine lógica de programação, estruturas de dados, algoritmos, controle de versões (Git) e práticas de teste. Aprenda linguagens como Python ou Java, e desenvolva projetos reais para ganhar experiência prática.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0294",
+      "answer": "Pratique respiração diafragmática, visualize o sucesso, faça ensaios curtos com amigos, use linguagem corporal aberta e procure feedback para ajustar ritmo e entonação, aumentando gradualmente o tempo de fala.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0295",
+      "answer": "A tradução mais comum é “self‑love”.",
+      "followup": "Você quer saber como usar essa expressão em uma frase em inglês?",
+      "followup_answer": "Ela pode aparecer assim: “She practices self‑love by setting healthy boundaries.”"
+    },
+    {
+      "id": "dialog-0296",
+      "answer": "Use ajuste de exposição, correção de cores, remoção de manchas com ferramenta de clonagem, ajuste de nitidez e aplicação de filtros leves. Salve em formato sem perdas para preservar qualidade.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0297",
+      "answer": "Prefira um estilo formal, objetivo e cortês: saudação padrão, parágrafo introdutório claro, corpo com argumentos organizados, conclusão resumida e despedida respeitosa. Evite gírias e linguagem coloquial.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0289",
+      "answer": "Desculpe, não entendi a pergunta. Poderia esclarecer o que deseja saber?",
+      "followup": false
+    },
+    {
+      "id": "dialog-0299",
+      "answer": "Faça uma lista de tarefas: limpar janelas, aspirar carpetes, lavar cortinas, organizar armários, limpar despensa, lavar tapetes e trocar roupas de cama. Divida em blocos de 30 minutos e use música animada para tornar a limpeza mais leve.",
+      "followup": false
+    }
+  ]
+}

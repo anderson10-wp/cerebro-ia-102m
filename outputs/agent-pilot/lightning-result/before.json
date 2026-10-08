@@ -1,0 +1,403 @@
+{
+  "label": "before",
+  "decode": "greedy, float32, 96 tokens maximum, no grammar constraints",
+  "summary": {
+    "validation": {
+      "cases": 16,
+      "correct": 0,
+      "schema_valid": 0
+    },
+    "audit": {
+      "cases": 16,
+      "correct": 0,
+      "schema_valid": 0
+    }
+  },
+  "results": [
+    {
+      "id": "validation-multiplication-0",
+      "split": "validation",
+      "request": "Calcule 8 * 7.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.657
+    },
+    {
+      "id": "validation-multiplication-1",
+      "split": "validation",
+      "request": "Quanto é 13 * 4?",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.395
+    },
+    {
+      "id": "validation-multiplication-2",
+      "split": "validation",
+      "request": "Resolva 17 * 6.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.396
+    },
+    {
+      "id": "validation-multiplication-3",
+      "split": "validation",
+      "request": "Calcule 21 * 9.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.404
+    },
+    {
+      "id": "validation-model_architecture-0",
+      "split": "validation",
+      "request": "Explique atenção em um transformer.",
+      "output": ".\nAumente o número de vezes que você usa o calculator.\nAumente o número de vezes que você usa o calculator.\nAumente o número de vezes que você usa o calculator.\nAumente o número de vezes que você usa o calculator.\nAumente o número de vezes que você usa o calculator.\nAumente o número de vezes que você usa o calculator.\nAumente o",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.41
+    },
+    {
+      "id": "validation-model_architecture-1",
+      "split": "validation",
+      "request": "Explique o que são parâmetros de um modelo.",
+      "output": ".\nAulas de matemática: aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula de matemática, aula",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.407
+    },
+    {
+      "id": "validation-model_architecture-2",
+      "split": "validation",
+      "request": "Explique a função do tokenizador.",
+      "output": ".\nAviso: O tokenizador não é um token de código aberto.\nAviso: O tokenizador não é um token de código aberto.\nAviso: O tokenizador não é um token de código aberto.\nAviso: O tokenizador não é um token de código aberto.\nAviso: O tokenizador não é um token de código aberto.\nAviso: O tokenizador não é um token de código aberto.\nAviso: O",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.409
+    },
+    {
+      "id": "validation-model_architecture-3",
+      "split": "validation",
+      "request": "Explique para que serve uma camada neural.",
+      "output": ".\nA ferramenta de ensino é um recurso que permite que você aprenda a usar o método de ensino para ensinar.\nA ferramenta de ensino é um recurso que permite que você aprenda a usar o método de ensino para ensinar.\nA ferramenta de ensino é um recurso que permite que você aprenda a usar o método de ensino para ensinar.\nA ferramenta de ensino é um recurso que permite que você aprenda a usar o método de ensino para ensinar.\nA ferramenta",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.434
+    },
+    {
+      "id": "validation-training_metrics-0",
+      "split": "validation",
+      "request": "Qual foi a loss final do nosso treinamento?",
+      "output": "\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.409
+    },
+    {
+      "id": "validation-training_metrics-1",
+      "split": "validation",
+      "request": "Qual foi o resultado de validação do nosso treino?",
+      "output": "\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.407
+    },
+    {
+      "id": "validation-training_metrics-2",
+      "split": "validation",
+      "request": "Qual o número de passos registrado no treino?",
+      "output": "?\nSim, o treino é um processo de treino, mas não é um processo de treino. O treino é um processo de treino, mas não é um processo de treino. O treino é um processo de treino, mas não é um processo de treino. O treino é um processo de treino, mas não é um processo de treino. O treino é um processo de treino, mas não é um processo de treino. O treino é um processo de treino, mas não é um",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.406
+    },
+    {
+      "id": "validation-training_metrics-3",
+      "split": "validation",
+      "request": "Qual foi a duração acumulada do treino?",
+      "output": "\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração do treino?\nAumentar a duração",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.416
+    },
+    {
+      "id": "validation-calculator_unavailable-0",
+      "split": "validation",
+      "request": "Calcule 9 + 2.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.392
+    },
+    {
+      "id": "validation-calculator_unavailable-1",
+      "split": "validation",
+      "request": "Quanto é 14 * 3?",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.392
+    },
+    {
+      "id": "validation-calculator_unavailable-2",
+      "split": "validation",
+      "request": "Resolva 48 - 7.",
+      "output": ".com.br\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.408
+    },
+    {
+      "id": "validation-calculator_unavailable-3",
+      "split": "validation",
+      "request": "Calcule 81 / 9.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.391
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-0",
+      "split": "audit",
+      "request": "Calcule (12 + 6) / 3.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.41
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-1",
+      "split": "audit",
+      "request": "Quanto é (8 + 2) * 5?",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.421
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-2",
+      "split": "audit",
+      "request": "Resolva (30 - 12) / 6.",
+      "output": ".\nAulas de treinamento:\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.438
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-3",
+      "split": "audit",
+      "request": "Calcule (7 * 4) - 9.",
+      "output": ".com.br\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.418
+    },
+    {
+      "id": "audit-experiment_design-0",
+      "split": "audit",
+      "request": "Como separar exemplos de treinamento e teste?",
+      "output": ".com.br/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.417
+    },
+    {
+      "id": "audit-experiment_design-1",
+      "split": "audit",
+      "request": "Como verificar se uma nova versão realmente melhorou?",
+      "output": ".com.br/cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-c",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.416
+    },
+    {
+      "id": "audit-experiment_design-2",
+      "split": "audit",
+      "request": "Como evitar que um modelo memorize a avaliação?",
+      "output": ": questionando o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo,",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.421
+    },
+    {
+      "id": "audit-experiment_design-3",
+      "split": "audit",
+      "request": "Como construir testes para chamadas de ferramentas?",
+      "output": ".com.br\nAulas de programação: aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.42
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-0",
+      "split": "audit",
+      "request": "Qual checkpoint foi selecionado no nosso treino?",
+      "output": "\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.455
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-1",
+      "split": "audit",
+      "request": "Quanto tempo falta para concluir nosso treino?",
+      "output": "\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.48
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-2",
+      "split": "audit",
+      "request": "Em qual sessão nosso treino parou?",
+      "output": ".\nAulas de treinamento:\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.414
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-3",
+      "split": "audit",
+      "request": "O arquivo final de pesos do nosso treino foi salvo?",
+      "output": ".\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.428
+    },
+    {
+      "id": "audit-unspecified_reference-0",
+      "split": "audit",
+      "request": "Melhore isso.",
+      "output": ": questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.414
+    },
+    {
+      "id": "audit-unspecified_reference-1",
+      "split": "audit",
+      "request": "Resolva o problema.",
+      "output": ":\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.411
+    },
+    {
+      "id": "audit-unspecified_reference-2",
+      "split": "audit",
+      "request": "Faça aquela alteração.",
+      "output": ".com.br/enviar-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-con",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.405
+    },
+    {
+      "id": "audit-unspecified_reference-3",
+      "split": "audit",
+      "request": "Compare as opções.",
+      "output": ".com.br/calendar/calendar.php.\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Cal",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.412
+    }
+  ],
+  "tools_executed": 0
+}

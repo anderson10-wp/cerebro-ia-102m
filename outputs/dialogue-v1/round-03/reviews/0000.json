@@ -1,0 +1,105 @@
+{
+  "reviews": [
+    {
+      "id": "dialog-0000",
+      "passed": true,
+      "reason": "Responde ao pedido com fatos corretos, sem repetições ou invenções, e mantém coerência."
+    },
+    {
+      "id": "dialog-0001",
+      "passed": true,
+      "reason": "Fornece resposta factual e direta, sem informações falsas ou circulares."
+    },
+    {
+      "id": "dialog-0002",
+      "passed": true,
+      "reason": "Apresenta instruções claras e corretas, sem alegações de execução."
+    },
+    {
+      "id": "dialog-0003",
+      "passed": true,
+      "reason": "Poema atende ao pedido, usando linguagem vívida e sem invenções factuais."
+    },
+    {
+      "id": "dialog-0004",
+      "passed": true,
+      "reason": "Sugestões de estudo são precisas e relevantes, sem repetições."
+    },
+    {
+      "id": "dialog-0005",
+      "passed": true,
+      "reason": "Aborda o tema solicitado com conselhos factuais e segue coerente ao follow‑up."
+    },
+    {
+      "id": "dialog-0006",
+      "passed": true,
+      "reason": "Lista ferramentas corretas e pertinentes ao desenvolvimento de produtos."
+    },
+    {
+      "id": "dialog-0007",
+      "passed": true,
+      "reason": "Recomenda jogo adequado e descreve benefícios sem inventar fatos."
+    },
+    {
+      "id": "dialog-0008",
+      "passed": true,
+      "reason": "Explica o significado da frase de forma precisa e concisa."
+    },
+    {
+      "id": "dialog-0009",
+      "passed": true,
+      "reason": "Descreve importância do timing na fotografia de vida selvagem corretamente."
+    },
+    {
+      "id": "dialog-0010",
+      "passed": true,
+      "reason": "Dá orientações de formatação claras e segue ao follow‑up de forma coerente."
+    },
+    {
+      "id": "dialog-0011",
+      "passed": true,
+      "reason": "Explica elementos de storytelling de forma correta e sem repetições."
+    },
+    {
+      "id": "dialog-0012",
+      "passed": true,
+      "reason": "Fornece boas práticas de organização de arquivos, factual e direta."
+    },
+    {
+      "id": "dialog-0013",
+      "passed": true,
+      "reason": "Aponta limitações de redes feedforward corretamente."
+    },
+    {
+      "id": "dialog-0014",
+      "passed": true,
+      "reason": "Descreve impacto das revistas impressas nos padrões de beleza de forma factual."
+    },
+    {
+      "id": "dialog-0015",
+      "passed": true,
+      "reason": "Explica fotossíntese e sua relação com a cadeia alimentar sem erros."
+    },
+    {
+      "id": "dialog-0016",
+      "passed": true,
+      "reason": "Dicas de jardinagem orgânica são corretas e úteis."
+    },
+    {
+      "id": "dialog-0017",
+      "passed": true,
+      "reason": "Informação sobre entonação finlandesa está correta e não inventa."
+    },
+    {
+      "id": "dialog-0018",
+      "passed": true,
+      "reason": "Oferece estratégias de estudo de matemática adequadas e factuais."
+    },
+    {
+      "id": "dialog-0019",
+      "passed": true,
+      "reason": "Sugestões para ONGs são realistas e coerentes com o contexto."
+    }
+  ],
+  "reviewer": "openai/gpt-oss-120b"
+}

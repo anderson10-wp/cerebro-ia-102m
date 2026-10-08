@@ -1,0 +1,7 @@
+{
+  "max_session_hours": 4,
+  "kernel_url": "https://www.kaggle.com/code/andersonluan10ad/gpt-oss-20b-dual-t4-api",
+  "authentication": "Bearer key stored with Windows DPAPI",
+  "model": "gpt-oss-20b",
+  "base_url": "https://winners-assign-joan-paintball.trycloudflare.com/v1"
+}

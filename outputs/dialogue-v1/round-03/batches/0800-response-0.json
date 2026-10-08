@@ -1,0 +1,124 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0800",
+      "answer": "O primeiro computador com programa armazenado foi o ENIAC, concluído em 1945, mas só passou a usar programa armazenado em 1948, quando John Mauchly e J. Presper Eckert modificaram‑o para ler instruções da memória, permitindo maior flexibilidade.",
+      "followup": "Qual foi a importância dessa mudança para a evolução dos computadores?",
+      "followup_answer": "A mudança permitiu que o ENIAC executasse diferentes tarefas sem reconfiguração física, inaugurando o conceito de software separado do hardware, base para os computadores modernos que carregam programas na memória."
+    },
+    {
+      "id": "dialog-0801",
+      "answer": "Escute sem julgar, mostre empatia e escolha um momento tranquilo. Use linguagem clara, evite críticas e pergunte como ela se sente. Valide emoções, ofereça apoio e estabeleça limites de forma respeitosa, mantendo diálogo aberto e constante.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0802",
+      "answer": "Querido(a) [Nome], sua força interior ilumina meus dias. A coragem que demonstra diante dos desafios me inspira a seguir em frente. Agradeço por ser exemplo de resiliência e por me lembrar que, com determinação, tudo é possível. Com gratidão, [Seu Nome].",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0803",
+      "answer": "Para alunos analíticos, ofereça sequências lógicas, exercícios passo a passo e diagramas. Para globais, use mapas conceituais, histórias e projetos integrados. Misture ambas as abordagens, permitindo que cada estudante escolha a forma que melhor compreende o conteúdo.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0804",
+      "answer": "Use uma agenda ou app para listar tarefas diárias, priorizando as mais importantes. Defina blocos de tempo, elimine distrações e reserve intervalos curtos para descanso. Revise seu plano à noite e ajuste conforme necessário.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0805",
+      "answer": "Um servidor fornece recursos – como arquivos, aplicativos ou serviços – a outros computadores (clientes) em uma rede, processando solicitações e respondendo com dados ou funcionalidades. Ele centraliza o gerenciamento e facilita o acesso compartilhado.",
+      "followup": "Qual a diferença entre um servidor dedicado e um servidor virtual?",
+      "followup_answer": "Um servidor dedicado usa hardware exclusivo para um único cliente, oferecendo controle total e desempenho máximo. Um servidor virtual (VPS) compartilha o mesmo hardware entre várias máquinas virtuais, reduzindo custos, mas com recursos limitados por partilha."
+    },
+    {
+      "id": "dialog-0806",
+      "answer": "Pratique a fala em voz alta, conheça bem o tema e organize ideias em três partes: introdução, desenvolvimento e conclusão. Use pausas, contato visual e gestos naturais. Grave-se para ajustar ritmo e entonação.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0807",
+      "answer": "Comece definindo uma história pessoal que mostre seu crescimento. Estruture em introdução, desafio, ação e resultado. Seja autêntico, destaque valores e metas, e revise para clareza e impacto antes de enviar.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0808",
+      "answer": "Consulte biografias de Steve Jobs, Elon Musk e Oprah Winfrey; explore podcasts como \"How I Built This\"; leia artigos da Harvard Business Review e assista a documentários sobre startups. Esses recursos mostram trajetórias e lições de empreendedores bem‑sucedidos.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0809",
+      "answer": "Mantenha apenas o essencial na mesa, use organizadores para papéis e utensílios, e crie zonas: trabalho, armazenamento e descanso. Defina um horário diário para limpar a área, evitando acúmulo de bagunça.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0810",
+      "answer": "Redes neurais permitiram avanços em reconhecimento de voz, visão computacional e tradução automática, ao modelar padrões complexos. Elas popularizaram aprendizado profundo, reduzindo a necessidade de regras explícitas e impulsionando pesquisas em IA e aplicações práticas.",
+      "followup": "Como o aprendizado profundo difere do aprendizado de máquina tradicional?",
+      "followup_answer": "O aprendizado profundo usa múltiplas camadas de neurônios para extrair hierarquias de características automaticamente, enquanto o aprendizado tradicional depende de engenharia de recursos e algoritmos mais simples, exigindo intervenção humana para definir atributos relevantes."
+    },
+    {
+      "id": "dialog-0811",
+      "answer": "Pratique diante de um espelho, controle a respiração e faça pausas estratégicas. Conheça seu público, use histórias curtas e repita os pontos principais. Prepare slides simples e ensaie várias vezes para ganhar confiança.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0812",
+      "answer": "Queridos irmãos, agradeço por cada momento compartilhado, pelas risadas e apoio nos momentos difíceis. Vocês são meu alicerce e inspiração diária. Sou grato por ter vocês ao meu lado e por tudo que fazemos juntos. Com carinho, [Seu Nome].",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0813",
+      "answer": "Divida o conteúdo em tópicos menores e estude um de cada vez. Resolva exercícios passo a passo, procure vídeos explicativos e pratique com provas antigas. Forme um grupo de estudo para trocar dúvidas e reforçar conceitos.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0814",
+      "answer": "Descarte itens que não usa, agrupe utensílios por tipo e use divisórias ou cestos. Coloque os itens mais usados à altura dos olhos e os menos usados nas prateleiras superiores. Rotule as áreas para facilitar a localização.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0815",
+      "answer": "As linguagens mais demandadas atualmente são Python (data science, IA), JavaScript (web), Java (empresas) e SQL (bancos de dados). Elas oferecem ampla oferta de vagas e são usadas em diversos setores tecnológicos.",
+      "followup": "Qual linguagem seria melhor para iniciar uma carreira em desenvolvimento web?",
+      "followup_answer": "JavaScript é a escolha ideal para desenvolvimento web, pois roda no navegador, tem vasto ecossistema (React, Node.js) e permite criar tanto interfaces front‑end quanto back‑end, facilitando a entrada no mercado."
+    },
+    {
+      "id": "dialog-0816",
+      "answer": "Comunicação clara, confiança mútua e objetivos compartilhados são essenciais. Distribuir tarefas conforme habilidades, reconhecer contribuições e resolver conflitos rapidamente também favorecem a colaboração eficaz no ambiente de trabalho.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0817",
+      "answer": "Reality shows focam em situações reais ou competições com participantes não‑atuais, enquanto programas de TV incluem ficção, notícias e entretenimento roteirizado. A produção de reality costuma envolver improviso, já o programa tradicional segue script definido.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0818",
+      "answer": "Não. Aprendizagem autossupervisionada é um método de aprendizado não‑supervisionado que cria rótulos a partir dos próprios dados. Aprendizagem por reforço envolve um agente que aprende por recompensas e punições ao interagir com um ambiente.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0819",
+      "answer": "Crie uma lista de tarefas diárias e semanais, delegue responsabilidades entre os pais e use um calendário visível. Estabeleça rotinas para alimentação, banho e sono, e reserve tempo para revisar e ajustar o plano regularmente.",
+      "followup": "",
+      "followup_answer": ""
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "decision": "Keep the scratch 102M for one bounded instruction-tuning pilot; defer scratch 1B pretraining.",
+  "user_delegated_model_size_decision": true,
+  "principal": "scratch_102m",
+  "teacher": "gpt-oss-20b",
+  "last_confirmed_lightning_balance": 29.88,
+  "initial_pilot_budget_credits": 2,
+  "unallocated_balance_after_full_pilot_budget": 27.88,
+  "no_remaining_budget_committed_to_102m": true,
+  "rationale": [
+    "The existing 102M has completed approximately 2B pretraining tokens but has not received instruction tuning.",
+    "The 0/16 routing probe measures one prompt format and decoding setup; it does not establish the model's ultimate capacity after tuning.",
+    "Using the approximate 6ND compute model, 1B parameters at the same token count needs 9.78 times the compute.",
+    "A 1B/20B-token planning reference needs about 97.79 times the compute of the completed 102M/2B-token run. This is not a universal minimum or a wall-clock/cost estimate.",
+    "Measured instruction learning on held-out tasks should precede further GPU spending or a new model-size commitment."
+  ],
+  "next_work": [
+    "Expand and validate teacher examples beyond the 32-example seed.",
+    "Freeze independent evaluation cases and record the original model's baseline before tuning.",
+    "Run a short instruction-tuning pilot on a separate candidate checkpoint, with cloud runtime/billing controls implemented before launch.",
+    "Compare complete generations, tool selection, argument correctness and language regressions; validation loss alone is insufficient.",
+    "Reassess further spending based on measured gains. Do not infer general intelligence or autonomous training from a narrow routing test."
+  ],
+  "training_launched_by_this_decision": false,
+  "credits_spent_by_this_decision": 0,
+  "financial_cap_enforcement_implemented": false,
+  "sources": [
+    "https://arxiv.org/html/2203.15556v1",
+    "https://lightning.ai/pricing"
+  ]
+}

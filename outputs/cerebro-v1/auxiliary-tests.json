@@ -1,0 +1,11 @@
+{
+  "endpoint": "https://grumpy-kings-greet.loca.lt/v1/chat/completions",
+  "results": [
+    {
+      "test": "arithmetic",
+      "prompt": "Responda apenas com o número: (17 * 23) - 19.",
+      "error": "HTTP Error 503: Service Unavailable",
+      "seconds": 0.78
+    }
+  ]
+}

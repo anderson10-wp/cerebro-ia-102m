@@ -1,0 +1,82 @@
+{
+  "seed": 20261003,
+  "vocabulary": 32768,
+  "counts": {
+    "pt": {
+      "train": 1200000000,
+      "validation": 1000000,
+      "audit": 1000000
+    },
+    "en": {
+      "train": 500000000,
+      "validation": 1000000,
+      "audit": 1000000
+    },
+    "code": {
+      "train": 300000000,
+      "validation": 1000000,
+      "audit": 1000000
+    }
+  },
+  "documents": {
+    "pt": {
+      "train": 1765003,
+      "validation": 1564,
+      "audit": 1486
+    },
+    "en": {
+      "train": 452713,
+      "validation": 985,
+      "audit": 945
+    },
+    "code": {
+      "train": 111605,
+      "validation": 395,
+      "audit": 376
+    }
+  },
+  "sources": {
+    "pt": {
+      "repo": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "prefix": "data/por_Latn/train/",
+      "field": "text",
+      "weight": 0.6,
+      "license": "ODC-BY; underlying web content retains its original terms",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2"
+    },
+    "en": {
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "prefix": "sample/10BT/",
+      "field": "text",
+      "weight": 0.25,
+      "license": "ODC-BY; underlying web content retains its original terms",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+    },
+    "code": {
+      "repo": "codeparrot/codeparrot-clean",
+      "revision": "35a59fb025bc0a102f7d96eac09d145b896d487b",
+      "prefix": "file-",
+      "field": "content",
+      "weight": 0.15,
+      "license": "Only records labelled mit, apache-2.0, bsd-2-clause, bsd-3-clause, isc, unlicense or cc0-1.0",
+      "url": "https://huggingface.co/datasets/codeparrot/codeparrot-clean"
+    }
+  },
+  "sha256": {
+    "pt-train.bin": "b140132ba78817baa0eb4b6097a7ff8b8826808782aa6eb6e809d64ab940af51",
+    "pt-validation.bin": "71517e3c0663be3334c121f4a69cbc6d935cedd09a09b92ed0e12dcf85a0c2ce",
+    "pt-audit.bin": "6740b462605a56644a1f83af30718ef016220288163098b9666f6e1f4cf7ea13",
+    "en-train.bin": "0038516beb8dd97881d0e78167cda0b09aebc68496975eb1b50db7c95d890672",
+    "en-validation.bin": "5fd8dbdf63c99aa7882c72b99f15de2539fc83126f2bbd1fb6e1825c23ba9180",
+    "en-audit.bin": "01b8f4df4321a535221a8ec0fa62d427a5b007db00ce45b6bc8cc5ad001e8ffe",
+    "code-train.bin": "0453fc67601b6a04611fce8dce2a57f7e2f5ede14706a463ddd154d6129de8ab",
+    "code-validation.bin": "31e4859a541674d03064f3646560cf68c36ab6cdfa076feaa9758fe76f84d1fd",
+    "code-audit.bin": "2090505dc56bb6ad27a8ac2f822c1abb99592232bad4341589b2b27b367f2a4c",
+    "tokenizer.json": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e"
+  },
+  "preparation_seconds": 3936.7401160150002,
+  "split_policy": "normalized exact-text hash; validation buckets 0..4, audit 5..9; tokenizer trained on train only",
+  "deduplication": "normalized exact document text across all three corpora; no near-duplicate guarantee"
+}

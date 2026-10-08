@@ -1,0 +1,271 @@
+{
+  "model_repo": "ggml-org/gpt-oss-20b-GGUF",
+  "revision": "ef9b12f2ff56c69cf32153a02784e7a3c88bf524",
+  "llama_release": "b11391",
+  "files": {
+    "cloudflared": {
+      "bytes": 40122749,
+      "sha256": "77e26d8d900e0b8469f416239d14b5f296525fdf79fee6f511ef55609e3fbac2"
+    },
+    "gpt-oss-20b-MXFP4.gguf": {
+      "bytes": 12109566624,
+      "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+    },
+    "llama/llama-b11391/libggml-rpc.so": {
+      "bytes": 259400,
+      "sha256": "52914cc9c82a25cc784035556095aaefc49abf0ed7d422e4734f3c0bb3e3cd48"
+    },
+    "llama/llama-b11391/llama-tts": {
+      "bytes": 40728,
+      "sha256": "5d6638a3b89036c5d9c1e8eb7c9879e3008d14286bc749bf083578f16d3985bf"
+    },
+    "llama/llama-b11391/libllama-common.so.0": {
+      "bytes": 6300712,
+      "sha256": "58fc128880dd46be597d7d4dca05922e90eba5bc19c54a816455b5a53cdeb001"
+    },
+    "llama/llama-b11391/llama-llava-cli": {
+      "bytes": 17008,
+      "sha256": "b97e6722bf5d263b68e0f25dd6480d44f2e12ec752fc80204600a82e2d773372"
+    },
+    "llama/llama-b11391/llama-minicpmv-cli": {
+      "bytes": 17008,
+      "sha256": "b97e6722bf5d263b68e0f25dd6480d44f2e12ec752fc80204600a82e2d773372"
+    },
+    "llama/llama-b11391/llama-bench": {
+      "bytes": 17888,
+      "sha256": "15daaa7b5bea7e7fb9fdff2d4cc1ec0b7744114286957a520767e58480f96b09"
+    },
+    "llama/llama-b11391/libggml-cpu-alderlake.so": {
+      "bytes": 1406504,
+      "sha256": "da40ac5853fcd990801388e1064cb3e929101b670c455f4f0e2d5e3564068596"
+    },
+    "llama/llama-b11391/libllama-server-impl.so": {
+      "bytes": 7298928,
+      "sha256": "7c07f743fe429e932eec497a7d34b117afd465824e065f9bdafa7f0b65460fba"
+    },
+    "llama/llama-b11391/libggml-cpu-icelake.so": {
+      "bytes": 1674080,
+      "sha256": "1d242a73e4a4f7a033d45297b0cafa0af7ce0ad995806765fccf8f5eceac9a8d"
+    },
+    "llama/llama-b11391/llama-fit-params": {
+      "bytes": 15968,
+      "sha256": "140a1326c0556d44fb96fad5fed3d1910e28525911c57676f5ff0fd11923265e"
+    },
+    "llama/llama-b11391/llama-gemma3-cli": {
+      "bytes": 17008,
+      "sha256": "b97e6722bf5d263b68e0f25dd6480d44f2e12ec752fc80204600a82e2d773372"
+    },
+    "llama/llama-b11391/llama-tokenize": {
+      "bytes": 40808,
+      "sha256": "bfd9952e1f6299966c724b052d928126ec8d1f288c48d6ee3af9ba77c251d980"
+    },
+    "llama/llama-b11391/llama": {
+      "bytes": 58088,
+      "sha256": "3bf23b012d0097ba831cff55cba8d3522d6967582e64a4d4d5e38973fe8c623a"
+    },
+    "llama/llama-b11391/llama-quantize": {
+      "bytes": 17888,
+      "sha256": "04cc68bb9943834bcdfd3c18bad8c306266ff77933164701c8930e05c6145346"
+    },
+    "llama/llama-b11391/libggml-base.so": {
+      "bytes": 955456,
+      "sha256": "fb8d8f178bbe6fadc0252a2da77ec40fccc1e5027e5a063c9f23b885fe6eaf73"
+    },
+    "llama/llama-b11391/libllama-batched-bench-impl.so": {
+      "bytes": 44656,
+      "sha256": "f34967f6e61a9e5dfd812ebc0ac5fa190092a2e5d1740ed30321c1a562d8673e"
+    },
+    "llama/llama-b11391/libggml-cpu-cascadelake.so": {
+      "bytes": 1674080,
+      "sha256": "8eed7cabc539152bc931b7a146479bf3c98eee35385c3067a3de2865f6ca5aae"
+    },
+    "llama/llama-b11391/libllama.so.0.5.0": {
+      "bytes": 4872664,
+      "sha256": "9f9c5d70bc0e8e3eac387b8e5065c97f6ccd06d536fd47b5da782270b354e7d5"
+    },
+    "llama/llama-b11391/libggml-base.so.0": {
+      "bytes": 955456,
+      "sha256": "fb8d8f178bbe6fadc0252a2da77ec40fccc1e5027e5a063c9f23b885fe6eaf73"
+    },
+    "llama/llama-b11391/libggml-cpu-sapphirerapids.so": {
+      "bytes": 1915928,
+      "sha256": "b66298a5b16a002116619f02cb79e391101dc0809f061d0da62611b3eabd73cd"
+    },
+    "llama/llama-b11391/libllama-cli-impl.so": {
+      "bytes": 243240,
+      "sha256": "7b24496d486ee6a9a726666c9324a05e5e1cf8dbfa4c6fc2c92e30cdfb8eddc2"
+    },
+    "llama/llama-b11391/libggml-cpu-cooperlake.so": {
+      "bytes": 1674240,
+      "sha256": "6a93a866a7e9fc874e490f94258a4856928dde7c4db9c88e891895169ac9ae28"
+    },
+    "llama/llama-b11391/libggml-cpu-haswell.so": {
+      "bytes": 1406504,
+      "sha256": "e423908053d789f1eb2932a681744e5dc77837c0e17713914ee0d71aa17c60f4"
+    },
+    "llama/llama-b11391/libllama.so": {
+      "bytes": 4872664,
+      "sha256": "9f9c5d70bc0e8e3eac387b8e5065c97f6ccd06d536fd47b5da782270b354e7d5"
+    },
+    "llama/llama-b11391/libggml-cpu-cannonlake.so": {
+      "bytes": 1662088,
+      "sha256": "356904dac525c701da39b3b8c8586f3c39e36f8c5b10ca3b3097227b8f487bfa"
+    },
+    "llama/llama-b11391/libllama-quantize-impl.so": {
+      "bytes": 89800,
+      "sha256": "f9ecfdd4451cf051532ffe4df02e68e6e2d0d6186df696b3ba88731ef17e0173"
+    },
+    "llama/llama-b11391/ggml-rpc-server": {
+      "bytes": 197488,
+      "sha256": "b6193549199a89bbd30b750cca364795540425f53289be88cf39a14eca3c06f8"
+    },
+    "llama/llama-b11391/libggml-cpu-x64.so": {
+      "bytes": 989696,
+      "sha256": "95a3c54aa08ab6d2f9007b7957c0b0382f4170dbdac463be0d7a47c6b97cb2ea"
+    },
+    "llama/llama-b11391/libggml-cpu-zen4.so": {
+      "bytes": 1674240,
+      "sha256": "1934427f5ae6edf830edee972134aae303a8923a37775d4f963a5a8e88d4820a"
+    },
+    "llama/llama-b11391/libggml-cpu-skylakex.so": {
+      "bytes": 1662088,
+      "sha256": "0750f44381dc4a620481677af91c89d447a64770f4ce4313fd7d38e963f831d6"
+    },
+    "llama/llama-b11391/llama-results": {
+      "bytes": 50296,
+      "sha256": "5faeb288f1a57e7b2226eb347c54f81f7056f75e18e30ef16357622bf6bb2997"
+    },
+    "llama/llama-b11391/llama-mtmd-cli": {
+      "bytes": 101208,
+      "sha256": "6c5e02b9d2ccdf880fce0bea0893955a278802249cc84faa43af4d73d56199c3"
+    },
+    "llama/llama-b11391/libggml-cpu-piledriver.so": {
+      "bytes": 1325752,
+      "sha256": "dd7091ff918349e72f7f7f0e1245ac8c68334262a010fcddec9caa5214c400ba"
+    },
+    "llama/llama-b11391/llama-completion": {
+      "bytes": 15968,
+      "sha256": "15472995c69d23fd6350f84b1fb73156698bab77b20438b617bcd8e1e9a9a11f"
+    },
+    "llama/llama-b11391/libmtmd.so.0.5.0": {
+      "bytes": 1967216,
+      "sha256": "e65002335e4162f8a63791c59c1b47300dde677b2a4534d1b26f24b8155d8403"
+    },
+    "llama/llama-b11391/libllama-common.so": {
+      "bytes": 6300712,
+      "sha256": "58fc128880dd46be597d7d4dca05922e90eba5bc19c54a816455b5a53cdeb001"
+    },
+    "llama/llama-b11391/libggml.so": {
+      "bytes": 60112,
+      "sha256": "6fe347469e77a19024f3ec2b1d949cf8221f014495318af3758af0df3a646bc1"
+    },
+    "llama/llama-b11391/libggml.so.0": {
+      "bytes": 60112,
+      "sha256": "6fe347469e77a19024f3ec2b1d949cf8221f014495318af3758af0df3a646bc1"
+    },
+    "llama/llama-b11391/libllama-common.so.0.5.0": {
+      "bytes": 6300712,
+      "sha256": "58fc128880dd46be597d7d4dca05922e90eba5bc19c54a816455b5a53cdeb001"
+    },
+    "llama/llama-b11391/llama-batched-bench": {
+      "bytes": 15976,
+      "sha256": "7859f175883f9c37443f6e5f1e07425f4b5885031d90ebacb4c1e97e60d8788c"
+    },
+    "llama/llama-b11391/libllama-perplexity-impl.so": {
+      "bytes": 164776,
+      "sha256": "d8672d0d7ce1a9002797c70cfd93e4244cb85ed7ed1c22419b9bc92068cc5609"
+    },
+    "llama/llama-b11391/libmtmd.so.0": {
+      "bytes": 1967216,
+      "sha256": "e65002335e4162f8a63791c59c1b47300dde677b2a4534d1b26f24b8155d8403"
+    },
+    "llama/llama-b11391/libggml-cuda.so": {
+      "bytes": 176358920,
+      "sha256": "b1a2f0f813c2367d4bfe3f8cb4388c6fb8af0d0297f4a17a91b8833876bacdc4"
+    },
+    "llama/llama-b11391/llama-gguf-split": {
+      "bytes": 48752,
+      "sha256": "d2a649c9622343682b22bbc55c3cd6007304a518031e1970a2ff95b4b9fdaf09"
+    },
+    "llama/llama-b11391/libllama-bench-impl.so": {
+      "bytes": 485856,
+      "sha256": "f0b97e82dd36087df7ecd449a311b8a7983be4f2607171421015515410d38416"
+    },
+    "llama/llama-b11391/libggml-cpu-sandybridge.so": {
+      "bytes": 1320536,
+      "sha256": "20111b16955de69987ef2eca4f7475586a3069258dd0d24bafb0fed7cfd47290"
+    },
+    "llama/llama-b11391/llama-imatrix": {
+      "bytes": 233656,
+      "sha256": "58740fb15311c8c292f150da7fece0f5ac07c9b6f0b3d064bfe168cc3afc49a4"
+    },
+    "llama/llama-b11391/libggml-cpu-sse42.so": {
+      "bytes": 989616,
+      "sha256": "0ad3c07e9fd66794d57b41773998b4d9bd9c3a241aad2cd902b889f1bee24bf5"
+    },
+    "llama/llama-b11391/llama-cli": {
+      "bytes": 1436720,
+      "sha256": "475dfb1c203c746e53a1a99e3f0e1c33858c2154038474cee54eb197d3e370de"
+    },
+    "llama/llama-b11391/libllama-fit-params-impl.so": {
+      "bytes": 39568,
+      "sha256": "e0fb8f12b5042d8181490a096dd3c80583e0c3ccd14845fe6a678854bd489422"
+    },
+    "llama/llama-b11391/libllama.so.0": {
+      "bytes": 4872664,
+      "sha256": "9f9c5d70bc0e8e3eac387b8e5065c97f6ccd06d536fd47b5da782270b354e7d5"
+    },
+    "llama/llama-b11391/libggml.so.0.25.3": {
+      "bytes": 60112,
+      "sha256": "6fe347469e77a19024f3ec2b1d949cf8221f014495318af3758af0df3a646bc1"
+    },
+    "llama/llama-b11391/libggml-base.so.0.25.3": {
+      "bytes": 955456,
+      "sha256": "fb8d8f178bbe6fadc0252a2da77ec40fccc1e5027e5a063c9f23b885fe6eaf73"
+    },
+    "llama/llama-b11391/libggml-cpu-ivybridge.so": {
+      "bytes": 1325752,
+      "sha256": "812bc97fcb22e19d29c4dd3e9e99311decfb5b8834023202821bea043dbc7f4f"
+    },
+    "llama/llama-b11391/llama-server": {
+      "bytes": 17888,
+      "sha256": "154d8d22656143f42d0cf14e715cb1872f0b4737736d401162e6e960cdf69739"
+    },
+    "llama/llama-b11391/libllama-completion-impl.so": {
+      "bytes": 110872,
+      "sha256": "df18bccf2e956d2edf594d3f80e8b7074f38dd4550aa133603538997af1aac4a"
+    },
+    "llama/llama-b11391/llama-perplexity": {
+      "bytes": 15968,
+      "sha256": "92594986686a4bbe23a2834695792ce32f8b18b9d57bf3c50e0ac87aba715fdd"
+    },
+    "llama/llama-b11391/LICENSE": {
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    "llama/llama-b11391/llama-mtmd-debug": {
+      "bytes": 54480,
+      "sha256": "741b96eb7b404ea6a781b69df200f29719e50a0ee279c35dd348f587a37b362e"
+    },
+    "llama/llama-b11391/libmtmd.so": {
+      "bytes": 1967216,
+      "sha256": "e65002335e4162f8a63791c59c1b47300dde677b2a4534d1b26f24b8155d8403"
+    },
+    "llama/llama-b11391/llama-qwen2vl-cli": {
+      "bytes": 17008,
+      "sha256": "b97e6722bf5d263b68e0f25dd6480d44f2e12ec752fc80204600a82e2d773372"
+    },
+    "llama/cudart-llama-b11391-bin-ubuntu-cuda-12.8-x64/libcublasLt.so.12": {
+      "bytes": 751775824,
+      "sha256": "974927b9af78cadc0412ea3ab296da791af02c2dd0de5a35b5f0fbb8dc5d0a4d"
+    },
+    "llama/cudart-llama-b11391-bin-ubuntu-cuda-12.8-x64/libcublas.so.12": {
+      "bytes": 116388640,
+      "sha256": "18a5df540d156e9aff0363776fefab7884b614f122847b51c3eb1da772048e5c"
+    },
+    "llama/cudart-llama-b11391-bin-ubuntu-cuda-12.8-x64/libcudart.so.12": {
+      "bytes": 728800,
+      "sha256": "c3a75b33af334a3486d197dbd1584a2985183ba4688d237a2be5f2f679329920"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0820",
+      "answer": "Primeiro, faça backup dos seus arquivos importantes. Depois, tente restaurar o sistema usando a opção de recuperação do Windows ou reinstale o sistema a partir de um mídia de instalação, seguindo as instruções passo a passo.",
+      "followup": "Qual é o sistema operacional que você está usando?",
+      "followup_answer": "Se for Windows, use a ferramenta de reparo automático; se for Linux, reinicie em modo de recuperação e reinstale os pacotes críticos."
+    },
+    {
+      "id": "dialog-0821",
+      "answer": "Um jogo de perguntas e respostas, como um quiz temático, funciona bem em videochamadas: cada participante responde, marca pontos e o ambiente permanece leve e interativo."
+    },
+    {
+      "id": "dialog-0822",
+      "answer": "Prezados, sou criativo, organizado e apaixonado por design. Tenho experiência em projetos visuais e produção de conteúdo, e busco aplicar minhas habilidades para contribuir com a equipe, trazendo ideias inovadoras e resultados de alta qualidade."
+    },
+    {
+      "id": "dialog-0823",
+      "answer": "Comece aprendendo a postura correta das mãos e praticando escalas simples diariamente. Use um método para iniciantes, como o método de Alfred, e dedique 15‑20 minutos por dia ao estudo."
+    },
+    {
+      "id": "dialog-0824",
+      "answer": "Em uma cidade sombria, Lara recebeu um chamado urgente: um grupo de reféns estava nas mãos de uma organização terrorista. Com coragem e estratégia, ela infiltrou o esconderijo, libertou os cativos e garantiu a segurança de todos."
+    },
+    {
+      "id": "dialog-0825",
+      "answer": "Procure cursos que ofereçam projetos práticos, feedback de instrutores e comunidade ativa. Plataformas como Coursera, Udemy ou edX costumam ter opções bem avaliadas para iniciantes e avançados.",
+      "followup": "Qual é o seu nível atual de conhecimento em Python?",
+      "followup_answer": "Se for iniciante, escolha um curso introdutório com foco em sintaxe básica; se já conhece o básico, opte por um avançado que cubra bibliotecas como pandas e Flask."
+    },
+    {
+      "id": "dialog-0826",
+      "answer": "Escute atentamente, use linguagem clara e empática, registre informações importantes e siga um script de solução de problemas. Sempre confirme se o cliente entendeu e ofereça um resumo das próximas etapas."
+    },
+    {
+      "id": "dialog-0827",
+      "answer": "Prezados, ao chegar ao hotel, encontrei o quarto sujo, com poeira nos móveis e lençóis manchados. Solicito limpeza imediata ou mudança de quarto, pois a condição comprometeu minha estadia."
+    },
+    {
+      "id": "dialog-0828",
+      "answer": "Sim, uma rede neural convolucional pré‑treinada pode servir como extratora de características em novos conjuntos de dados, permitindo que o modelo aprenda rapidamente com menos exemplos."
+    },
+    {
+      "id": "dialog-0829",
+      "answer": "Use listas de tarefas diárias, priorize itens importantes, reserve blocos de tempo no calendário e mantenha um espaço de trabalho organizado para reduzir distrações."
+    },
+    {
+      "id": "dialog-0830",
+      "answer": "Um computador permite buscar, filtrar e analisar grandes volumes de informação em segundos, facilitando a comparação de fontes e a visualização de dados de forma interativa.",
+      "followup": "Qual tipo de pesquisa você costuma realizar?",
+      "followup_answer": "Para pesquisas acadêmicas, use bases como Google Scholar; para informações gerais, combine buscas em sites confiáveis e verifique a data de publicação."
+    },
+    {
+      "id": "dialog-0831",
+      "answer": "Crie um questionário com três seções: satisfação geral (escala de 1 a 5), avaliação de atendimento (texto livre) e sugestões de melhoria (campo aberto). Distribua via link e analise as respostas para identificar tendências."
+    },
+    {
+      "id": "dialog-0832",
+      "answer": "Comece com uma saudação formal, apresente seu nome e objetivo, destaque habilidades relevantes, cite experiências que comprovem seu valor e encerre agradecendo pela oportunidade e indicando disponibilidade para entrevista."
+    },
+    {
+      "id": "dialog-0833",
+      "answer": "Estude hiragana e katakana primeiro, pratique com flashcards, escute podcasts curtos e repita frases em voz alta. Use aplicativos de revisão espaçada para memorizar vocabulário diariamente."
+    },
+    {
+      "id": "dialog-0834",
+      "answer": "Divida a tarefa em partes menores, estabeleça prazos curtos para cada parte, elimine distrações e use um cronômetro (técnica Pomodoro) para manter foco e concluir a lição a tempo."
+    },
+    {
+      "id": "dialog-0835",
+      "answer": "Um sistema de amortecimento em computadores reduz vibrações mecânicas, protegendo componentes sensíveis como discos rígidos e melhorando a estabilidade durante o uso.",
+      "followup": "Você está interessado em amortecimento para laptops ou desktops?",
+      "followup_answer": "Para laptops, escolha capas com espuma de memória; para desktops, use suportes de borracha sob o gabinete para minimizar vibrações."
+    },
+    {
+      "id": "dialog-0836",
+      "answer": "Aplicativos como Discord ou Telegram permitem criar canais de texto e voz, facilitando conversas mais profundas e organizadas entre amigos, com recursos de compartilhamento de mídia e mensagens privadas."
+    },
+    {
+      "id": "dialog-0837",
+      "answer": "No silêncio da noite, meu gato ronrona, como um farol suave, guiando meus sonhos. Seus olhos curiosos brilham, e cada salto traz alegria ao coração que o observa."
+    },
+    {
+      "id": "dialog-0838",
+      "answer": "Assista a séries ou filmes com legendas, anote expressões novas e repita-as em contextos reais. Use aplicativos de flashcards para revisar e praticar a pronúncia diariamente."
+    },
+    {
+      "id": "dialog-0839",
+      "answer": "Uma rotina matinal estruturada aumenta energia, melhora foco e reduz estresse. Comece acordando cedo, hidratando-se, praticando exercícios leves e planejando as tarefas do dia para alcançar maior produtividade."
+    }
+  ]
+}

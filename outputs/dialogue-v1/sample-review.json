@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "training_started": false,
+  "review": "Codex sample review",
+  "notes": "Rejected: missing-context hallucinations, unverified current recommendations, follow-up role confusion, reject markers accepted as answers.",
+  "examples_of_failure": [
+    "dialog-0010",
+    "dialog-0021",
+    "dialog-0027",
+    "dialog-0031",
+    "dialog-0058",
+    "dialog-0062",
+    "dialog-0070",
+    "dialog-0080"
+  ]
+}

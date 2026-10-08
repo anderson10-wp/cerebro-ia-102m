@@ -1,0 +1,124 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0960",
+      "answer": "O salário médio de um engenheiro de software iniciante varia bastante; no Brasil costuma ficar entre R$ 4.000 e R$ 7.000 por mês, dependendo da região, da empresa e das tecnologias dominadas.",
+      "followup": "Quais habilidades técnicas aumentam mais esse salário inicial?",
+      "followup_answer": "Dominar linguagens como Python ou Java, conhecer desenvolvimento ágil, ter experiência com cloud (AWS, Azure) e saber testes automatizados costuma elevar o salário inicial em até 20 %."
+    },
+    {
+      "id": "dialog-0961",
+      "answer": "Escute sem julgar, ofereça presença física ou virtual, ajude em tarefas cotidianas e sugira apoio profissional se necessário; pequenos gestos de empatia costumam aliviar o sofrimento.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0962",
+      "answer": "Plataformas como Coursera, edX e Khan Academy oferecem cursos de redação com avaliações e certificados; procure por módulos de escrita criativa ou acadêmica e verifique avaliações de outros alunos.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0963",
+      "answer": "Na aprendizagem federada, a privacidade de dados impede que informações pessoais sejam enviadas ao servidor central, usando apenas atualizações de modelo agregadas, o que reduz risco de exposição e cumpre regulações como a LGPD.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0964",
+      "answer": "Organizações como Partnership on AI, AI Now Institute e IEEE Global Initiative publicam diretrizes e projetos focados em ética da IA, abordando viés, transparência e responsabilidade social.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0965",
+      "answer": "Pesquisadores usam unidades LSTM ou GRU, que mantêm memória de longo prazo, e aplicam inicialização cuidadosa, normalização de camadas ou gradientes recortados para evitar que o gradiente desapareça.",
+      "followup": "Qual a diferença prática entre LSTM e GRU?",
+      "followup_answer": "LSTM tem três portas (entrada, esquecimento, saída) e uma célula de memória, oferecendo maior controle, enquanto GRU combina portas em duas, sendo mais simples e geralmente mais rápido, porém com capacidade semelhante em muitas tarefas."
+    },
+    {
+      "id": "dialog-0966",
+      "answer": "Comece com saudação breve, apresente seu nome e objetivo, destaque competências relevantes, cite um projeto ou resultado concreto e encerre agradecendo e indicando disponibilidade para entrevista.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0967",
+      "answer": "Use um início que conecte sua experiência ao cargo, destaque realizações quantificáveis, mostre entusiasmo pela empresa e finalize com um convite para conversar, mantendo o texto claro e objetivo.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0968",
+      "answer": "Recursos gratuitos como o tutorial oficial do Python, Codecademy, o curso \"Python para Iniciantes\" da Coursera e o livro online \"Automate the Boring Stuff\" são ótimos pontos de partida.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0969",
+      "answer": "Liste tarefas, estime tempo e urgência, use a matriz Eisenhower (urgente/importante) e reserve blocos de foco; revise diariamente para ajustar prioridades entre trabalho e vida pessoal.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0970",
+      "answer": "\"Clean Code\" de Robert C. Martin ensina boas práticas, \"Structure and Interpretation of Computer Programs\" oferece fundamentos e \"The Pragmatic Programmer\" foca em mentalidade de desenvolvimento.",
+      "followup": "Qual desses livros é mais indicado para quem está começando?",
+      "followup_answer": "Para iniciantes, \"Clean Code\" costuma ser mais acessível, pois combina exemplos práticos com princípios claros, ajudando a formar bons hábitos de programação desde o início."
+    },
+    {
+      "id": "dialog-0971",
+      "answer": "Os smartphones permitiram comunicação instantânea, acesso a redes sociais e aplicativos de mensagem, mudando hábitos de interação; agora as pessoas compartilham momentos em tempo real e mantêm contato constante, independentemente da distância.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0972",
+      "answer": "Leia textos variados, pratique escrita diária, revise com foco em clareza, peça feedback, estude gramática e use ferramentas de correção; também escreva resumos de artigos para treinar síntese.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0973",
+      "answer": "\"A História da China\" de John Keay, \"China: Uma História\" de Michael Wood e \"The Search for Modern China\" de Jonathan Spence são leituras recomendadas para entender diferentes períodos.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0974",
+      "answer": "Indivíduos podem estudar culturas diferentes, praticar escuta ativa e refletir sobre preconceitos; organizações devem promover treinamentos interculturais, incentivar equipes diversas e criar políticas de comunicação inclusiva.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0975",
+      "answer": "Uma máquina de Turing neural combina a estrutura de uma Turing machine (cinta infinita) com unidades neurais, permitindo computação simbólica e aprendizado simultâneos, diferindo de redes convencionais que operam apenas com funções diferenciais.",
+      "followup": "Em que tipo de problema essa combinação se destaca?",
+      "followup_answer": "Ela se destaca em tarefas que exigem manipulação de sequências simbólicas complexas, como interpretação de linguagens formais ou resolução de problemas de programação, onde a memória de cinta oferece capacidade de armazenamento explícita."
+    },
+    {
+      "id": "dialog-0976",
+      "answer": "Um café da manhã leve, como torradas com queijo, frutas frescas e suco natural, costuma agradar grupos; é fácil de dividir e combina bem com conversas descontraídas.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0977",
+      "answer": "Exemplos úteis: \"Além disso,\", \"Por outro lado,\", \"Consequentemente,\", \"Em resumo,\" ajudam a conectar ideias entre parágrafos de forma fluida.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0978",
+      "answer": "Plataformas como MIT OpenCourseWare, Coursera (curso de Física Quântica), Khan Academy e o canal YouTube \"MinutePhysics\" oferecem material gratuito e estruturado para iniciantes.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0979",
+      "answer": "Crie um programa de boas-vindas com mentor, sessões de treinamento curtas, materiais de referência claros e feedback frequente; isso acelera a adaptação e aumenta o engajamento dos novos funcionários.",
+      "followup": "",
+      "followup_answer": ""
+    }
+  ]
+}

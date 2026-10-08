@@ -1,0 +1,124 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0380",
+      "answer": "Comece listando seus interesses e procure sites, fóruns ou grupos nas redes sociais que tratem desses temas. Leia artigos, veja vídeos e participe de comunidades para descobrir recursos, custos e nível de dificuldade antes de escolher.",
+      "followup": "Qual recurso online você acha mais confiável para iniciar um hobby?",
+      "followup_answer": "Plataformas como YouTube e Reddit costumam ter tutoriais gratuitos; escolha canais com boa reputação, avaliações positivas e conteúdo atualizado para garantir aprendizado seguro e eficaz."
+    },
+    {
+      "id": "dialog-0381",
+      "answer": "Workshops de escrita criativa oferecem prática guiada, feedback imediato e troca de ideias com outros escritores. Essa interação ajuda a melhorar estilo, gerar novas ideias e superar bloqueios, tornando o processo de publicação mais viável.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0382",
+      "answer": "Aprendizagem por reforço ensina um agente a agir por recompensas e punições, enquanto a supervisionada usa pares entrada‑saída corretos e a não supervisionada busca padrões sem rótulos. Cada método se adapta a tipos diferentes de problema.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0383",
+      "answer": "Reduza o consumo de plástico, reutilize sacolas, opte por transporte público ou bicicleta, e economize energia apagando luzes desnecessárias. Pequenas mudanças diárias acumulam grande impacto ambiental.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0384",
+      "answer": "• Python\n• JavaScript\n• Java\n• C#\n• Ruby\n• Go\n• Rust\n• Kotlin\n• Swift\n• PHP",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0385",
+      "answer": "Pratique conversas reais com falantes nativos, assista a séries sem legendas e repita frases em voz alta. Use aplicativos de troca de idiomas e registre seu progresso para identificar áreas que precisam de mais atenção.",
+      "followup": "Qual tipo de situação cotidiana você gostaria de simular para melhorar a conversação?",
+      "followup_answer": "Simular diálogos em cafés, entrevistas de emprego ou chamadas de serviço ao cliente ajuda a focar vocabulário específico e a ganhar confiança ao falar."
+    },
+    {
+      "id": "dialog-0386",
+      "answer": "Na fotossíntese, a clorofila absorve luz, excitando elétrons que geram energia química. Essa energia converte dióxido de carbono e água em glicose e oxigênio, armazenando energia nos laços de carbono da glicose.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0387",
+      "answer": "Experimente desenho, jardinagem, fotografia, culinária ou jogos de tabuleiro. Escolha algo que desperte curiosidade, que possa ser praticado em casa e que ofereça aprendizado progressivo sem exigir grande investimento inicial.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0388",
+      "answer": "Ana tem medo de altura, mas seu filho ficou preso no telhado. Ela respira fundo, lembra técnicas de relaxamento e sobe, enfrentando o pavor. Ao resgatar o filho, sente coragem renovada e supera a fobia.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0389",
+      "answer": "Comece com tutoriais gratuitos como Codecademy, freeCodeCamp ou Khan Academy. Eles ensinam lógica básica, sintaxe e pequenos projetos, permitindo prática gradual antes de avançar para cursos pagos ou livros especializados.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0390",
+      "answer": "Dedique parte do tempo a aprender um novo idioma, fazer voluntariado, praticar exercícios físicos ou desenvolver um hobby criativo. Essas atividades mantêm a mente ativa e trazem satisfação pessoal.",
+      "followup": "Qual dessas opções parece mais atraente para você começar agora?",
+      "followup_answer": "Se escolher aprender um idioma, use aplicativos de prática diária e converse com falantes nativos; se preferir voluntariado, procure organizações locais que precisem de ajuda."
+    },
+    {
+      "id": "dialog-0391",
+      "answer": "Descreva o sintoma ou mensagem de erro que aparece. Verifique conexões de cabos, reinicie o computador e atualize drivers. Se o problema persistir, procure suporte técnico especializado com detalhes específicos.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0392",
+      "answer": "Uma boa apresentação tem objetivo claro, estrutura lógica, slides limpos e visualmente agradáveis, e uso de exemplos relevantes. Fale com confiança, mantenha contato visual e reserve tempo para perguntas ao final.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0393",
+      "answer": "Para realçar o sabor, adicione uma pitada de sal ou um toque de limão ao lanche. O sal equilibra o doce, enquanto o limão traz frescor sem alterar a textura.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0394",
+      "answer": "Use luz suave e difusa, como softboxes ou luz natural filtrada. Posicione duas fontes: uma principal a 45° do produto e outra de preenchimento oposta para eliminar sombras duras.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0395",
+      "answer": "Sim, as vivências pessoais do poeta influenciam escolhas de imagens, símbolos e emoções no poema. Leitores com experiências diferentes podem interpretar o mesmo verso de maneiras distintas, enriquecendo o debate crítico.",
+      "followup": "Como a sua própria experiência pode mudar a leitura de um poema que você acabou de encontrar?",
+      "followup_answer": "Ao relacionar temas do poema com momentos da sua vida, você destaca sentidos que outros podem não perceber, criando uma interpretação única e pessoal."
+    },
+    {
+      "id": "dialog-0396",
+      "answer": "Machine learning gera inimigos controlados por IA, cria mundos procedurais e ajusta dificuldade em tempo real. Algoritmos analisam o estilo do jogador e personalizam desafios para manter engajamento.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0397",
+      "answer": "Comece com introdução que apresenta a tese, siga com parágrafos de apoio contendo evidências e argumentos, e finalize com conclusão que resume e reforça a ideia principal. Use transições claras entre as partes.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0398",
+      "answer": "Desligue o computador, abra o gabinete, fixe o disco no compartimento com parafusos, conecte cabo de dados SATA ao motherboard e cabo de energia. Feche o gabinete e ligue o sistema para reconhecer o novo disco.",
+      "followup": "",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-0399",
+      "answer": "Professores gravam observações durante a performance, oferecem comentários específicos sobre técnica, ritmo e expressão, e sugerem exercícios focados. Também utilizam avaliações escritas para reforçar teoria musical e acompanhar o progresso.",
+      "followup": "",
+      "followup_answer": ""
+    }
+  ]
+}

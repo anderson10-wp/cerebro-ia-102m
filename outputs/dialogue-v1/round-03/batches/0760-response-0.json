@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0760",
+      "answer": "Um escritório doméstico eficaz precisa de mesa ergonômica, cadeira ajustável, monitor com suporte, teclado e mouse sem fio, e boa iluminação. Use software de videoconferência, gerenciamento de tarefas e backup automático. Organize o espaço longe de TV, cozinha e áreas de passagem para reduzir distrações.",
+      "followup": "Qual seria um exemplo de layout físico que maximize a produtividade em um espaço pequeno?",
+      "followup_answer": "Coloque a mesa perto de uma janela para luz natural, mas com persianas para evitar reflexos. Posicione o monitor a 70 cm de distância, a cadeira centralizada e use prateleiras acima para documentos, mantendo o chão livre de cabos e objetos que atraiam atenção."
+    },
+    {
+      "id": "dialog-0761",
+      "answer": "Comece definindo a mensagem principal e o público. Use verbos fortes como \"inspirar\" ou \"transformar\". Inclua uma história curta que ilustre o tema. Termine com um chamado à ação claro e agradeça ao público."
+    },
+    {
+      "id": "dialog-0762",
+      "answer": "Línguas de sinais têm gramática própria, com ordem de palavras, uso de espaço e expressões faciais que substituem entonação. Não dependem de sons, mas de movimentos visuais, e podem marcar tempo e aspecto de forma diferente das línguas faladas."
+    },
+    {
+      "id": "dialog-0763",
+      "answer": "Visite centros culturais, museus e feiras locais; participe de grupos nas redes sociais da cidade; experimente restaurantes típicos e eventos comunitários. Pergunte a moradores sobre tradições e lugares menos turísticos para descobrir a vida cotidiana."
+    },
+    {
+      "id": "dialog-0764",
+      "answer": "Anote todas as receitas e despesas em um aplicativo ou planilha; categorize gastos; estabeleça metas mensais de economia; revise o orçamento semanalmente e ajuste gastos supérfluos. Automatize pagamentos recorrentes para evitar atrasos."
+    },
+    {
+      "id": "dialog-0765",
+      "answer": "1) Defina o objetivo e orçamento; 2) Escolha componentes compatíveis (CPU, placa‑mãe, RAM, SSD, fonte, gabinete); 3) Monte a placa‑mãe, conecte a CPU e a memória; 4) Instale a fonte e os cabos; 5) Fixe o SSD e teste antes de fechar o gabinete.",
+      "followup": "Qual seria um exemplo de lista de componentes para um PC básico de uso doméstico?",
+      "followup_answer": "Processador AMD Ryzen 3 3200G, placa‑mãe B450, 8 GB DDR4, SSD 240 GB, fonte 450 W, gabinete com boa ventilação e cabo HDMI para monitor."
+    },
+    {
+      "id": "dialog-0766",
+      "answer": "No Japão, sushi de Osaka costuma usar arroz temperado levemente e peixe local, enquanto em Tóquio o arroz é mais ácido e o peixe pode ser servido como nigiri. Em regiões costeiras, frutos do mar frescos substituem o atum, e em áreas interiores o sushi pode ser feito com legumes."
+    },
+    {
+      "id": "dialog-0767",
+      "answer": "Querido(a) [Nome],\n\nQuero agradecer por sua presença constante e pelos conselhos sábios que sempre me guiam. Sua generosidade e carinho são um apoio essencial na minha vida. Espero retribuir todo o amor que recebo.\n\nCom carinho,\n[Seu Nome]"
+    },
+    {
+      "id": "dialog-0768",
+      "answer": "Lembro-me de correr descalço pelo quintal da avó, sentindo a grama fria sob os pés enquanto o sol se punha. O cheiro de pão recém‑assado invadia a casa, e as risadas ecoavam. Aquela tarde guardo como um refúgio de inocência e calor familiar."
+    },
+    {
+      "id": "dialog-0769",
+      "answer": "Defina metas claras (SMART), divida-as em tarefas menores, atribua prazos e prioridades, e use um quadro Kanban ou aplicativo de gestão. Revise o progresso semanalmente e ajuste as ações conforme necessário."
+    },
+    {
+      "id": "dialog-0770",
+      "answer": "Uma rede neural feedforward tem camadas de neurônios onde a informação flui apenas para frente, da entrada à saída, sem ciclos. Cada camada aplica pesos, soma e uma função de ativação não linear, permitindo aprender padrões complexos.",
+      "followup": "Pode dar um exemplo simples de rede feedforward com duas camadas ocultas?",
+      "followup_answer": "Imagine uma rede com 3 entradas, camada oculta 1 com 4 neurônios (ativação ReLU), camada oculta 2 com 2 neurônios (tanh) e 1 saída (sigmoide). Os dados passam sequencialmente por cada camada até gerar a predição."
+    },
+    {
+      "id": "dialog-0771",
+      "answer": "São Paulo, 8 de outubro de 2026 – A empresa TechTrack lança hoje seu novo aplicativo de rastreamento de afirmações diárias, permitindo que usuários registrem metas, monitorem progresso e recebam lembretes personalizados. Disponível gratuitamente nas lojas iOS e Android."
+    },
+    {
+      "id": "dialog-0772",
+      "answer": "Educação: o motor que impulsiona economia, crescimento pessoal e progresso social"
+    },
+    {
+      "id": "dialog-0773",
+      "answer": "Procure cursos em plataformas como Coursera, Udemy ou edX que ofereçam módulos de HTML, CSS e JavaScript para iniciantes. Verifique avaliações, carga horária e se há projetos práticos incluídos."
+    },
+    {
+      "id": "dialog-0774",
+      "answer": "Esvazie tudo, separe por tipo (roupas, sapatos, acessórios). Descarte itens sem uso. Use caixas ou cestos para categorias, coloque itens mais usados ao alcance e reserve espaço superior para itens sazonais."
+    },
+    {
+      "id": "dialog-0775",
+      "answer": "Uma rede neural convolucional (CNN) usa camadas de convolução que aplicam filtros a imagens, extraindo características como bordas e texturas. Seguem‑se camadas de pooling para reduzir dimensões e camadas totalmente conectadas para classificação final.",
+      "followup": "Qual seria um exemplo de aplicação prática de uma CNN em um projeto simples?",
+      "followup_answer": "Treinar uma CNN para reconhecer dígitos manuscritos (MNIST) permite criar um aplicativo que converte números escritos à mão em texto digital, útil para digitalizar formulários."
+    },
+    {
+      "id": "dialog-0776",
+      "answer": "Na noite fria, quatro amigos entraram na floresta onde lendas falavam de sombras que sussurram. Ao acenderem a fogueira, ouviram passos invisíveis. Um grito ecoou, e a luz apagou. Quando a manhã chegou, só encontraram marcas de garras e o medo ainda vivo."
+    },
+    {
+      "id": "dialog-0777",
+      "answer": "Comece com o cabeçalho (nome da empresa, endereço, data). Em seguida, inclua saudação, corpo com objetivo claro, detalhes e chamada à ação. Termine com despedida formal, assinatura e dados de contato. Use fonte legível e margens de 2,5 cm."
+    },
+    {
+      "id": "dialog-0778",
+      "answer": "Para iniciantes, Python é recomendado por sua sintaxe simples. Use recursos como o curso gratuito da Codecademy, o tutorial “Automate the Boring Stuff” e vídeos no YouTube. Pratique resolvendo pequenos desafios no site HackerRank."
+    },
+    {
+      "id": "dialog-0779",
+      "answer": "Planejamento patrimonial organiza bens pessoais, sucessão e proteção de ativos familiares. Planejamento fiduciário envolve a criação de trusts ou fundos geridos por fiduciários para garantir que recursos sejam usados conforme desejos do criador, muitas vezes com benefícios fiscais."
+    }
+  ]
+}

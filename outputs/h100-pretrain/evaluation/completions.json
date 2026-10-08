@@ -1,0 +1,42 @@
+[
+  {
+    "model": "before",
+    "prompt": "2 + 2 =",
+    "continuation": " 0.5\n    assert_equal(np.sum(np.array(np.array(np.array(np.array(np.array"
+  },
+  {
+    "model": "before",
+    "prompt": "A capital da França é",
+    "continuation": " a cidade de Paris.\nA cidade é conhecida por ser a capital da França, mas também é conhecida por ser a capital da França.\nA cidade é"
+  },
+  {
+    "model": "before",
+    "prompt": "O Brasil fica na América do",
+    "continuation": " Sul, onde o Brasil é o maior produtor de soja do mundo.\nO Brasil é o maior produtor de soja do mundo, com uma produção de cerca de"
+  },
+  {
+    "model": "before",
+    "prompt": "def add(a, b):\n    return",
+    "continuation": " a.add(a)\n\n\ndef add_b(a, b):\n    return a.add(b)\n\n\ndef add"
+  },
+  {
+    "model": "after",
+    "prompt": "2 + 2 =",
+    "continuation": " 2\n        self.assertEqual(\n            self.client.get_client(\n                'https://www.googleapis.com/auth/user/"
+  },
+  {
+    "model": "after",
+    "prompt": "A capital da França é",
+    "continuation": " a capital da França.\nA capital da França é a capital da França.\nA capital da França é a capital da França.\nA capital da França"
+  },
+  {
+    "model": "after",
+    "prompt": "O Brasil fica na América do",
+    "continuation": " Sul, mas o Brasil é o segundo maior produtor de soja do mundo.\nO Brasil é o segundo maior produtor de soja do mundo, atrás apenas de Estados"
+  },
+  {
+    "model": "after",
+    "prompt": "def add(a, b):\n    return",
+    "continuation": " a + b\n\n\ndef add_b(a, b):\n    return a + b\n\n\ndef add_b(a, b"
+  }
+]

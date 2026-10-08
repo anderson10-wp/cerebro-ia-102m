@@ -1,0 +1,6 @@
+{
+  "python_code": "def soma(a, b):\n     return a.sum(2)\n    \n     return a\n    \n#\n#  Licensed to the Apache Software Foundation (ASF) under one\n#  or more contributor license agreements.  See the NOTICE",
+  "syntax_valid": true,
+  "correct_for_numeric_addition": false,
+  "note": "Generated a.sum(2); numeric inputs have no sum method. Generated code was not executed."
+}

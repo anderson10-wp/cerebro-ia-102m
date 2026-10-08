@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0980",
+      "answer": "Prepare respostas para perguntas sobre sua experiência em projetos, como você resolve bugs, trabalha em equipe e lida com prazos. Também pratique perguntas técnicas de algoritmos, estruturas de dados e design de sistemas, explicando seu raciocínio passo a passo.",
+      "followup": "Qual exemplo de pergunta técnica eu devo treinar para demonstrar conhecimento em design de sistemas?",
+      "followup_answer": "Um bom exemplo é: \"Como você projetaria um serviço de upload de arquivos que suporte milhões de usuários simultâneos?\" Descreva a arquitetura, balanceamento de carga, armazenamento, cache e estratégias de escalabilidade."
+    },
+    {
+      "id": "dialog-0981",
+      "answer": "Comece ouvindo o ponto de vista do amigo sem interromper, mostre empatia e repita o que entendeu. Depois exponha sua perspectiva usando \"eu sinto\" em vez de acusações, buscando um acordo que atenda a ambos."
+    },
+    {
+      "id": "dialog-0982",
+      "answer": "Prezados responsáveis da Escola XYZ, solicito gentilmente agendar uma visita às instalações para conhecer a infraestrutura, metodologias de ensino e projetos em andamento. A visita ajudará a avaliar a adequação da escola ao desenvolvimento dos nossos filhos. Agradeço a atenção."
+    },
+    {
+      "id": "dialog-0983",
+      "answer": "O Sistema Solar tem o Sol no centro, rodeado por oito planetas. Mercúrio e Vênus são rochosos internos; Terra e Marte também. Júpiter e Saturno são gigantes gasosos; Urano e Netuno são gelados. Cada planeta tem luas, anéis e características únicas."
+    },
+    {
+      "id": "dialog-0984",
+      "answer": "Organizações internacionais escolhem representantes com experiência diplomática, conhecimento técnico do tema e habilidades de negociação. Avaliam histórico de liderança, fluência em línguas relevantes e capacidade de trabalhar em ambientes multiculturais."
+    },
+    {
+      "id": "dialog-0985",
+      "answer": "Redes neurais são usadas em reconhecimento de voz para transcrever fala, em diagnóstico médico para analisar imagens, e em recomendações de produtos que sugerem itens com base no histórico de compras. Cada aplicação aproveita a capacidade de aprender padrões complexos.",
+      "followup": "Pode dar um exemplo simples de como uma rede neural reconhece imagens de gatos?",
+      "followup_answer": "A rede recebe pixels da foto, passa por camadas que detectam bordas, texturas e formas; na última camada, ativa um neurônio que indica \"gato\" quando a combinação de características corresponde ao que aprendeu durante o treinamento."
+    },
+    {
+      "id": "dialog-0986",
+      "answer": "Roupas e postura influenciam a comunicação não‑verbal; cores vibrantes podem transmitir energia, enquanto roupas formais sugerem seriedade. Para estar mais consciente, observe como seu visual afeta a reação dos outros e ajuste conforme o contexto da conversa."
+    },
+    {
+      "id": "dialog-0987",
+      "answer": "O enredo define a sequência de eventos, os personagens dão vida à história, o cenário cria atmosfera e o diálogo revela emoções e motivações. Estilos como realismo, fantasia ou suspense mudam o tom, permitindo ao autor gerar impacto emocional e manter o leitor engajado."
+    },
+    {
+      "id": "dialog-0988",
+      "answer": "Comunidade agrícola de Vila Verde criou um programa de coleta de água da chuva, instalou sensores de umidade e treinou agricultores em técnicas de plantio resiliente. Em três anos, a produção aumentou 20 % apesar de secas mais frequentes, demonstrando adaptação colaborativa."
+    },
+    {
+      "id": "dialog-0989",
+      "answer": "Divida tarefas em blocos curtos, use a técnica Pomodoro (25 min trabalho, 5 min pausa) e elimine distrações. Defina metas claras, recompense-se ao concluir e reflita sobre os gatilhos que levam à procrastinação."
+    },
+    {
+      "id": "dialog-0990",
+      "answer": "Para configurar a rede doméstica, escolha um roteador, conecte-o ao modem, defina SSID e senha forte, ative criptografia WPA3 e configure DHCP para distribuir IPs. Teste a conexão em vários dispositivos e ajuste canais para melhorar o sinal.",
+      "followup": "Como posso melhorar o sinal Wi‑Fi em um cômodo distante do roteador?",
+      "followup_answer": "Posicione o roteador em local central, eleve‑o, evite obstáculos metálicos e use um repetidor ou adaptador Powerline para levar o sinal até o cômodo distante, garantindo canal menos congestionado."
+    },
+    {
+      "id": "dialog-0991",
+      "answer": "Use analogias simples, quebrem a ideia em passos curtos e ilustrem com diagramas ou exemplos do cotidiano. Repita o conceito com palavras diferentes e verifique a compreensão fazendo perguntas ao público."
+    },
+    {
+      "id": "dialog-0992",
+      "answer": "Durante uma tempestade no mar, Ana luta contra ondas gigantes para entregar uma mensagem de paz a um vilarejo isolado. Sua coragem e determinação inspiram os pescadores a unir forças, mostrando que a solidariedade supera qualquer tormenta."
+    },
+    {
+      "id": "dialog-0993",
+      "answer": "Reserve 30 minutos diários, siga um método estruturado como acordes básicos, pratique músicas simples e use um metrônomo. Combine aulas online curtas com prática autodidata e registre seu progresso para manter a motivação."
+    },
+    {
+      "id": "dialog-0994",
+      "answer": "Sim, várias organizações sem fins lucrativos, universidades e plataformas de ensino oferecem cursos gratuitos ou com bolsa em desenvolvimento web, abordando HTML, CSS, JavaScript e frameworks modernos."
+    },
+    {
+      "id": "dialog-0995",
+      "answer": "Para iniciar um negócio online, escolha um nicho, registre um domínio, crie um site ou loja virtual, configure pagamento seguro e estratégias de marketing digital. Também é essencial entender a legislação fiscal e proteger dados dos clientes.",
+      "followup": "Qual seria um primeiro passo prático para validar a ideia de produto antes de lançar a loja?",
+      "followup_answer": "Crie uma página simples com descrição e formulário de interesse, compartilhe em redes sociais e avalie quantas pessoas se inscrevem; isso indica demanda antes de investir em estoque ou desenvolvimento completo."
+    },
+    {
+      "id": "dialog-0996",
+      "answer": "Escute ativamente, use linguagem clara e evite críticas agressivas. Valide sentimentos dos filhos, explique razões de forma simples e ofereça escolhas quando possível, reforçando comportamentos positivos com elogios."
+    },
+    {
+      "id": "dialog-0997",
+      "answer": "Queridos mãe e pai, gostaria de saber se posso estudar no exterior no primeiro ano da faculdade. A oportunidade oferece bolsa parcial e programa de apoio acadêmico. Agradeço a compreensão e aguardo sua opinião."
+    },
+    {
+      "id": "dialog-0998",
+      "answer": "Use experimentos práticos, como construir circuitos simples, e relacione leis físicas a situações do dia a dia. Combine demonstrações visuais, vídeos curtos e problemas desafiadores que incentivem o raciocínio crítico."
+    },
+    {
+      "id": "dialog-0999",
+      "answer": "Pesticidas podem matar microrganismos benéficos, reduzir a biodiversidade do solo e alterar sua estrutura, o que diminui a retenção de água e a fertilidade. A longo prazo, isso pode reduzir a produtividade das culturas."
+    }
+  ]
+}

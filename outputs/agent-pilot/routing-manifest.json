@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-04T15:21:22.147929+00:00",
+  "counts": {
+    "train": 32,
+    "validation": 16,
+    "audit": 16
+  },
+  "family_policy": "Manually separated task categories; normalized exact requests are distinct. This is a small probe, not a broad benchmark.",
+  "teacher_policy": "Teacher sees training requests only; validation/audit labels are independently specified.",
+  "weights_policy": "Use the existing scratch 102M weights and tokenizer; no pretrained principal weights.",
+  "tool_policy": "Outputs are requests only. No tool is executed by this pilot."
+}

@@ -1,0 +1,13 @@
+{
+  "original_plan_format_valid": true,
+  "original_plan_approved_for_execution": false,
+  "reasons": [
+    "The predicted 5% gain has no empirical basis and no training intervention.",
+    "The CPU latency threshold of 2 seconds was not measured or justified.",
+    "Accuracy and regression thresholds were invented rather than agreed and tied to a specified test."
+  ],
+  "replacement_next_step": "Record the frozen scratch-102M baseline; review training-only teacher examples; expand the instruction dataset before proposing a capped GPU run.",
+  "principal_model": "scratch_102m",
+  "teacher": "gpt-oss-20b",
+  "execute_training": false
+}

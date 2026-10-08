@@ -1,0 +1,306 @@
+{
+  "checkpoint_sha256": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+  "split": "validation",
+  "decode": "greedy, maximum 48 new tokens, stop at EOS; no output repair or grammar constraints",
+  "weights_updated": false,
+  "tools_executed": 0,
+  "results": [
+    {
+      "id": "paired-validation-promotion-100-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 120 acertos. Candidato: 122 acertos. Regressões: 0. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "output": "manter",
+      "correct": false,
+      "seconds": 0.5
+    },
+    {
+      "id": "paired-validation-status-100-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"running\",\"steps\":300}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-promotion-101-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 121 acertos. Candidato: 123 acertos. Regressões: 0. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "output": "manter",
+      "correct": false,
+      "seconds": 0.39
+    },
+    {
+      "id": "paired-validation-loss-102-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.14. Loss atual: 9.09. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.3
+    },
+    {
+      "id": "paired-validation-status-100-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"completed\",\"steps\":300}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "paired-validation-promotion-100-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 120 acertos. Candidato: 122 acertos. Regressões: 1. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "output": "manter",
+      "correct": true,
+      "seconds": 0.41
+    },
+    {
+      "id": "paired-validation-status-103-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"completed\",\"steps\":303}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "paired-validation-loss-100-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.00. Loss atual: 9.03. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-budget-103-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 133 minutos. Tempo consumido: 132 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.95
+    },
+    {
+      "id": "paired-validation-status-101-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"completed\",\"steps\":301}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "paired-validation-budget-102-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 132 minutos. Tempo consumido: 131 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "output": "regra: encerrar ao atingir o limite",
+      "correct": false,
+      "seconds": 1.23
+    },
+    {
+      "id": "paired-validation-budget-100-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 130 minutos. Tempo consumido: 129 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.97
+    },
+    {
+      "id": "paired-validation-loss-103-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.21. Loss atual: 9.15. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-loss-102-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.14. Loss atual: 9.19. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-promotion-103-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 123 acertos. Candidato: 125 acertos. Regressões: 0. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "output": "manter",
+      "correct": false,
+      "seconds": 0.39
+    },
+    {
+      "id": "paired-validation-promotion-102-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 122 acertos. Candidato: 124 acertos. Regressões: 1. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "output": "manter",
+      "correct": true,
+      "seconds": 0.41
+    },
+    {
+      "id": "paired-validation-budget-100-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 130 minutos. Tempo consumido: 130 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.95
+    },
+    {
+      "id": "paired-validation-loss-100-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.00. Loss atual: 8.97. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-status-101-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"running\",\"steps\":301}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.27
+    },
+    {
+      "id": "paired-validation-promotion-103-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 123 acertos. Candidato: 125 acertos. Regressões: 1. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "output": "manter",
+      "correct": true,
+      "seconds": 0.39
+    },
+    {
+      "id": "paired-validation-budget-103-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 133 minutos. Tempo consumido: 133 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.95
+    },
+    {
+      "id": "paired-validation-status-102-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"completed\",\"steps\":302}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.26
+    },
+    {
+      "id": "paired-validation-budget-102-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 132 minutos. Tempo consumido: 132 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.95
+    },
+    {
+      "id": "paired-validation-status-103-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"running\",\"steps\":303}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.27
+    },
+    {
+      "id": "paired-validation-loss-103-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.21. Loss atual: 9.27. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-status-102-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Registro recebido: {\"status\":\"running\",\"steps\":302}. completed significa concluído; running significa em execução. A execução foi concluída? Só sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-loss-101-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.07. Loss atual: 9.03. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-budget-101-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 131 minutos. Tempo consumido: 130 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.95
+    },
+    {
+      "id": "paired-validation-loss-101-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Loss anterior: 9.07. Loss atual: 9.11. Compare no mesmo conjunto de validação: houve redução? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "paired-validation-promotion-102-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 122 acertos. Candidato: 124 acertos. Regressões: 0. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "output": "manter",
+      "correct": false,
+      "seconds": 0.39
+    },
+    {
+      "id": "paired-validation-promotion-101-0",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Versão anterior: 121 acertos. Candidato: 123 acertos. Regressões: 1. Regra: promover só com mais acertos e zero regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "output": "manter",
+      "correct": true,
+      "seconds": 0.39
+    },
+    {
+      "id": "paired-validation-budget-101-1",
+      "category": "training_operations_paired",
+      "prompt": "Pergunta: Orçamento de tempo: 131 minutos. Tempo consumido: 131 minutos. Regra: encerrar ao atingir o limite. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "output": "reduzir ao atingir o limite",
+      "correct": false,
+      "seconds": 0.94
+    }
+  ],
+  "hardware": "AMD Radeon RX 580 2048SP",
+  "cases_path": ".\\outputs\\paired-evaluation\\validation.jsonl",
+  "cases_sha256": "5fc317efb14ad31343cb1c1672d12cbd08c04e633593a7d7a54ad9c0800f3db5",
+  "correct": 12,
+  "evaluated": 32,
+  "correct_pairs": 0,
+  "total_pairs": 16,
+  "constant_baseline_correct": 16,
+  "constant_baseline_correct_pairs": 0
+}

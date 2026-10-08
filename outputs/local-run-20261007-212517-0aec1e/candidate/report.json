@@ -1,0 +1,27 @@
+{
+  "status": "completed_candidate_only",
+  "initial_validation_loss": 0.6877404496354876,
+  "base_checkpoint_sha256": "1b79d4e8091cfe5db26c73379260bffb5102bbf18774820658af6718b23541ac",
+  "validation": [
+    {
+      "epoch": 1,
+      "loss": 0.5965941289685807,
+      "steps": 284
+    },
+    {
+      "epoch": 2,
+      "loss": 0.5829672779677049,
+      "steps": 373
+    }
+  ],
+  "automatic_promotion": false,
+  "audit_examples_evaluated": 0,
+  "cloud_jobs_started": 0,
+  "device": "privateuseone:0",
+  "hardware": "AMD Radeon RX 580 2048SP",
+  "steps": 373,
+  "response_tokens_seen": 7139,
+  "best_validation_loss": 0.5829672779677049,
+  "candidate_saved": true,
+  "elapsed_seconds": 601.281
+}

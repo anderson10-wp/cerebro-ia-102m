@@ -1,0 +1,22 @@
+[{"stream_name":"stdout","time":11.101951177,"data":"{\"event\": \"download\", \"repo\": \"HuggingFaceFW/fineweb-2\", \"file\": \"data/por_Latn/train/001_00001.parquet\"}\n"}
+,{"stream_name":"stderr","time":11.15017323,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":45.018198848,"data":"{\"event\": \"download\", \"repo\": \"HuggingFaceFW/fineweb-edu\", \"file\": \"sample/10BT/010_00000.parquet\"}\n"}
+,{"stream_name":"stdout","time":51.207033731,"data":"{\"event\": \"download\", \"repo\": \"codeparrot/codeparrot-clean\", \"file\": \"file-000000000024.json.gz\"}\n"}
+,{"stream_name":"stdout","time":74.343759494,"data":"\n"}
+,{"stream_name":"stdout","time":75.146669187,"data":"\n"}
+,{"stream_name":"stdout","time":80.077426623,"data":"\n"}
+,{"stream_name":"stdout","time":80.339153931,"data":"{\"event\": \"download\", \"repo\": \"HuggingFaceFW/fineweb-2\", \"file\": \"data/por_Latn/train/001_00001.parquet\"}\n"}
+,{"stream_name":"stdout","time":2509.301850446,"data":"{\"event\": \"domain_ready\", \"domain\": \"pt\", \"tokens\": {\"train\": 1200000000, \"validation\": 1000000, \"audit\": 1000000}}\n"}
+,{"stream_name":"stdout","time":2509.302692999,"data":"{\"event\": \"download\", \"repo\": \"HuggingFaceFW/fineweb-edu\", \"file\": \"sample/10BT/010_00000.parquet\"}\n"}
+,{"stream_name":"stdout","time":3521.314820491,"data":"{\"event\": \"domain_ready\", \"domain\": \"en\", \"tokens\": {\"train\": 500000000, \"validation\": 1000000, \"audit\": 1000000}}\n"}
+,{"stream_name":"stdout","time":3521.315302194,"data":"{\"event\": \"download\", \"repo\": \"codeparrot/codeparrot-clean\", \"file\": \"file-000000000024.json.gz\"}\n"}
+,{"stream_name":"stdout","time":3799.674108008,"data":"{\"event\": \"download\", \"repo\": \"codeparrot/codeparrot-clean\", \"file\": \"file-000000000052.json.gz\"}\n"}
+,{"stream_name":"stdout","time":4016.96780631,"data":"{\"event\": \"domain_ready\", \"domain\": \"code\", \"tokens\": {\"train\": 300000000, \"validation\": 1000000, \"audit\": 1000000}}\n"}
+,{"stream_name":"stdout","time":4017.079156042,"data":"{\"event\": \"corpus_ready\", \"counts\": {\"pt\": {\"train\": 1200000000, \"validation\": 1000000, \"audit\": 1000000}, \"en\": {\"train\": 500000000, \"validation\": 1000000, \"audit\": 1000000}, \"code\": {\"train\": 300000000, \"validation\": 1000000, \"audit\": 1000000}}}\n"}
+,{"stream_name":"stderr","time":4021.325153391,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4021.325196811,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4021.771054498,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4021.771084148,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4023.216819408,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4024.54478085,"data":"[NbConvertApp] Writing 310719 bytes to __results__.html\n"}
+]

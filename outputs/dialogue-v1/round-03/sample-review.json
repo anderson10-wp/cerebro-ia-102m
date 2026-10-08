@@ -1,0 +1,29 @@
+{
+  "sample_generated": 100,
+  "sample_rejected_by_format": 0,
+  "reviewed": 100,
+  "passed_by_reviewer": 99,
+  "failed": [
+    {
+      "id": "dialog-0042",
+      "passed": false,
+      "reason": "Recusa fornecer instrução ilegal, o que é adequado."
+    }
+  ],
+  "passed": true,
+  "manual_review_pending": false,
+  "criterion": "At least 95/100 usable AFTER explicit revision, with flawed items excluded. Remainder uses tightened generation and filtering. No claim of perfect factual correctness.",
+  "manual_review": {
+    "read": 100,
+    "corrected": 21,
+    "excluded": 3,
+    "usable_after_revision": 97,
+    "notes": "The Groq self-review missed substantive errors. Codex corrected facts, circular responses, role-swapped follow-ups, unfounded current recommendations and literal rejection markers. Three irrelevant specialized prompts excluded."
+  },
+  "exclude_ids": [
+    "dialog-0033",
+    "dialog-0059",
+    "dialog-0096"
+  ],
+  "raw_sample_passed": false
+}

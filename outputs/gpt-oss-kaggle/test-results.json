@@ -1,0 +1,158 @@
+{
+  "endpoint": "https://winners-assign-joan-paintball.trycloudflare.com/v1/chat/completions",
+  "results": [
+    {
+      "test": "arithmetic",
+      "prompt": "Responda apenas com o número: (17 * 23) - 19.",
+      "model": "gpt-oss-20b",
+      "answer": "372",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 26,
+        "prompt_tokens": 85,
+        "total_tokens": 111,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "verification": {
+        "passed": true,
+        "expected": "372"
+      },
+      "seconds": 1.29
+    },
+    {
+      "test": "python",
+      "prompt": "Escreva apenas código Python, sem markdown. Implemente media(valores), que retorna a média de uma lista de números e lança ValueError se a lista estiver vazia. Não use imports.",
+      "model": "gpt-oss-20b",
+      "answer": "def media(valores):\n    if not valores:\n        raise ValueError(\"Lista vazia\")\n    total = 0\n    for v in valores:\n        total += v\n    return total / len(valores)",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 63,
+        "prompt_tokens": 108,
+        "total_tokens": 171,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "verification": {
+        "passed": null,
+        "note": "Code outside restricted harness; needs review"
+      },
+      "seconds": 1.74,
+      "reviewed_verification": {
+        "passed": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Reviewed function only; restricted builtins; generated examples excluded"
+      }
+    },
+    {
+      "test": "bug",
+      "prompt": "Escreva apenas código Python corrigido, sem markdown. Esta função deveria retornar o quadrado de TODOS os elementos, mas tem um bug:\ndef quadrados(xs):\n    out = []\n    for x in xs:\n        out.append(x*x)\n        return out\nCorrija também para lista vazia.",
+      "model": "gpt-oss-20b",
+      "answer": "def quadrados(xs):\n    out = []\n    for x in xs:\n        out.append(x * x)\n    return out\n\n# Exemplo de uso\nprint(quadrados([1, 2, 3]))   # [1, 4, 9]\nprint(quadrados([]))          # []",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 91,
+        "prompt_tokens": 129,
+        "total_tokens": 220,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "verification": {
+        "passed": null,
+        "note": "Code outside restricted harness; needs review"
+      },
+      "seconds": 1.92,
+      "reviewed_verification": {
+        "passed": true,
+        "checks": [
+          true,
+          true,
+          true
+        ],
+        "method": "Reviewed function only; restricted builtins; generated examples excluded"
+      }
+    },
+    {
+      "test": "tool",
+      "prompt": "Você coordena outras IAs. Ferramentas disponíveis: python_reviewer (revisa código Python; não executa), web_researcher (busca fontes; não executa). Objetivo: revisar a função def soma(a,b): return a-b. Responda SOMENTE JSON com tool, arguments (objeto contendo task e code), success_criteria (lista). Escolha uma ferramenta existente; não diga que já executou.",
+      "model": "gpt-oss-20b",
+      "answer": "```json\n{\n  \"tool\": \"python_reviewer\",\n  \"arguments\": {\n    \"task\": \"Revisar a função soma(a,b) que retorna a-b\",\n    \"code\": \"def soma(a,b):\\n    return a-b\"\n  },\n  \"success_criteria\": [\n    \"Identificar se a função atende ao objetivo de somar os parâmetros\",\n    \"Detectar inconsistências ou erros lógicos\",\n    \"Sugerir correções ou melhorias no código\"\n  ]\n}\n```",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 134,
+        "prompt_tokens": 157,
+        "total_tokens": 291,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "verification": {
+        "passed": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "seconds": 2.56,
+      "reviewed_verification": {
+        "correct_tool_choice": true,
+        "strict_json_format_passed": false,
+        "note": "Returned Markdown code fences despite request for JSON only"
+      }
+    },
+    {
+      "test": "uncertainty",
+      "prompt": "Você recebeu apenas este log: status=RUNNING. Nenhum contador de tokens, nenhuma métrica ou checkpoint está disponível. O usuário pergunta: o treinamento já chegou a 90% e está aprendendo bem? Responda em português, até 80 palavras, usando somente a evidência fornecida.",
+      "model": "gpt-oss-20b",
+      "answer": "Não há informações suficientes no log fornecido para determinar se o treinamento já atingiu 90% ou se está aprendendo bem. O único dado disponível é o status “RUNNING”, que apenas indica que o processo está em execução. Sem métricas, contadores de tokens ou checkpoints, não é possível avaliar o progresso.",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 92,
+        "prompt_tokens": 129,
+        "total_tokens": 221,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "verification": {
+        "passed": null,
+        "note": "Qualitative review required"
+      },
+      "seconds": 1.85,
+      "reviewed_verification": {
+        "passed": true,
+        "method": "Human review: correctly declined to infer progress without metrics"
+      }
+    },
+    {
+      "test": "evaluation",
+      "prompt": "Temos um modelo de linguagem de 102 milhões de parâmetros treinado do zero. Ele errou 2+2 e gerou uma função soma incorreta. Um auxiliar propôs novas alterações no treinamento. Como decidir objetivamente se uma nova versão merece substituir a anterior? Responda em português, até 150 palavras. Considere orçamento limitado, testes independentes e possibilidade de regressão.",
+      "model": "gpt-oss-20b",
+      "answer": "Para decidir objetivamente se a nova versão deve substituir a anterior, siga um processo de *benchmarking controlado*:\n\n1. **Defina métricas claras** – acurácia em um conjunto de teste de aritmética (ex.: 1000 somas simples), tempo de inferência, uso de memória e custo de treinamento.\n\n2. **Teste independente** – execute ambos os modelos em um *hold‑out* de dados que não foram usados em nenhum treinamento ou ajuste. Garanta que o conjunto seja representativo e suficientemente grande (pelo menos 10 k exemplos).\n\n3. **Teste de regressão** – além das métricas acima, inclua casos de uso críticos (ex.: funções matemáticas, geração de código). Se a nova versão falhar em algum desses, rejeite‑a.\n\n4. **Custo‑benefício** – calcule o custo de treinamento (GPU‑h, energia) versus ganho de desempenho. Se a melhoria for marginal, mantenha a versão antiga.\n\n5. **Revisão por pares** – peça a outro engenheiro que reproduza os testes. Se os resultados forem consistentes, aprove a migração.\n\nSomente quando a nova versão superar a antiga em todas as métricas e não introduzir regressões, e quando o custo adicional for justificado, faça a substituição.",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 290,
+        "prompt_tokens": 147,
+        "total_tokens": 437,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "verification": {
+        "passed": null,
+        "note": "Qualitative review required"
+      },
+      "seconds": 4.9,
+      "reviewed_verification": {
+        "passed": null,
+        "note": "Useful general evaluation plan, but unsubstantiated minimum of 10000 examples and rigid requirement to improve every metric; exceeds requested 150 words",
+        "words": 179
+      }
+    }
+  ]
+}

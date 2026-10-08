@@ -1,0 +1,188 @@
+{
+  "reviewer": "Codex",
+  "teacher_examples_accepted": 28,
+  "teacher_examples_corrected": 4,
+  "reviews": [
+    {
+      "id": "train-addition-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-addition-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-addition-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-addition-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-subtraction-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-subtraction-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-subtraction-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-subtraction-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-python_creation-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-python_creation-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-python_creation-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-python_creation-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-text_explanation-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-text_explanation-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-text_explanation-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-text_explanation-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-progress-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-progress-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-progress-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-progress-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-completion-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-completion-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-completion-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-completion-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-missing_artifact-0",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-missing_artifact-1",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-missing_artifact-2",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-missing_artifact-3",
+      "accepted": true,
+      "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+    },
+    {
+      "id": "train-teacher_unavailable-0",
+      "accepted": false,
+      "corrected": true,
+      "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+    },
+    {
+      "id": "train-teacher_unavailable-1",
+      "accepted": false,
+      "corrected": true,
+      "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+    },
+    {
+      "id": "train-teacher_unavailable-2",
+      "accepted": false,
+      "corrected": true,
+      "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+    },
+    {
+      "id": "train-teacher_unavailable-3",
+      "accepted": false,
+      "corrected": true,
+      "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+    }
+  ],
+  "split_counts": {
+    "train": 32,
+    "validation": 16,
+    "audit": 16
+  },
+  "maximum_sequence_tokens": 163,
+  "weights_updated": false,
+  "lightning_credits_used": 0,
+  "tokenizer_sha256": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+  "training_response_tokens": 647,
+  "training_total_tokens": 4814,
+  "limits": [
+    "32 training examples are a seed for a routing experiment, not a complete instruction-tuning dataset.",
+    "16 validation and 16 audit cases are too small to establish broad competence.",
+    "Clarification correctness in automated scoring only measures routing/schema; language meaning was reviewed separately for training examples.",
+    "No tools or autonomous training are enabled in the 102M by these exports."
+  ]
+}

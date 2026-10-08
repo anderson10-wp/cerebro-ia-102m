@@ -1,0 +1,13 @@
+{"studio_created": "01m46hyys1s47d6d8twq5cb6gh", "cloud_account": "lightning-public-prod"}
+/teamspace/studios/this_studio
+Filesystem      Size  Used Avail Use% Mounted on
+lightning       387G   35G  353G   9% /teamspace/studios/this_studio
+{"event": "download_start", "file": "gpt-oss-20b-MXFP4.gguf"}
+{"event": "download_start", "file": "gpt-oss-120b-MXFP4.gguf"}
+{"event": "download_start", "file": "llama-b11391-bin-ubuntu-cuda-12.8-x64.tar.gz"}
+{"event": "download_start", "file": "cudart-llama-b11391-bin-ubuntu-cuda-12.8-x64.tar.gz"}
+{"event": "download_verified", "file": "llama-b11391-bin-ubuntu-cuda-12.8-x64.tar.gz", "bytes": 171499631, "seconds": 1.92, "sha256": "3a76d8d1b0f3d558d0de2d060283f2da0afac79a9f68dd1486b987b9fedc5bc5"}
+{"event": "download_verified", "file": "cudart-llama-b11391-bin-ubuntu-cuda-12.8-x64.tar.gz", "bytes": 594377794, "seconds": 6.72, "sha256": "8cd7789d811ed44d8b5ccc53feb7c1e2a0e3ab92e8e3fc450f43282fb2c81a87"}
+{"event": "download_verified", "file": "gpt-oss-20b-MXFP4.gguf", "bytes": 12109566624, "seconds": 224.9, "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"}
+{"event": "download_verified", "file": "gpt-oss-120b-MXFP4.gguf", "bytes": 63387346208, "seconds": 272.75, "sha256": "582bd40f6886200101f4c4ed9f25f3fe80cc14c86e9e2b37746cd8904a0c622d"}
+{"event": "runtime_prepared", "models": 2, "llama_server": "/teamspace/studios/this_studio/runtime/llama/llama-b11391/llama-server"}

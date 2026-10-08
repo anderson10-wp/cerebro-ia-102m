@@ -1,0 +1,124 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0780",
+      "answer": "Uma rede neural feedforward envia informações apenas em uma direção, da camada de entrada para a saída, sem ciclos. Outras redes, como recorrentes, permitem conexões que retornam a camadas anteriores, criando memória temporal.",
+      "followup": "Qual exemplo simples de rede feedforward poderia ser usado para ensinar crianças?",
+      "followup_answer": "Um perceptron que classifica imagens de frutas (maçã ou banana) usando duas entradas (cor e forma) e uma saída (tipo). As informações passam uma vez, facilitando a visualização do fluxo de dados."
+    },
+    {
+      "id": "dialog-0781",
+      "answer": "Pratique em ambientes pequenos, grave-se falando e reveja o vídeo. Prepare um roteiro, respire profundamente antes de iniciar e concentre-se em transmitir ideias, não em ser perfeito. Feedback construtivo ajuda a melhorar gradualmente.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0782",
+      "answer": "O estilo do autor, como uso de frases curtas ou descrições detalhadas, cria ritmo que reforça o tema. Por exemplo, linguagem poética pode acentuar um clima melancólico, enquanto diálogos rápidos dão sensação de urgência.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0783",
+      "answer": "Explore novos mercados, diversifique produtos, invista em marketing digital e parcerias estratégicas. Avalie a concorrência, melhore a experiência do cliente e considere franquias ou e‑commerce para ampliar alcance.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0784",
+      "answer": "Defina metas claras, use técnicas Pomodoro, elimine distrações e organize o espaço de trabalho. Priorize tarefas importantes, faça pausas curtas e mantenha uma rotina de revisão diária para ajustar prioridades.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0785",
+      "answer": "JavaScript controla interatividade em páginas web, cria APIs back‑end com Node.js, desenvolve aplicativos móveis via React Native e automatiza testes. É essencial para front‑end, mas também útil em servidores e scripts.",
+      "followup": "Pode dar um exemplo de uso simples de JavaScript para crianças aprenderem lógica?",
+      "followup_answer": "Um pequeno script que muda a cor de um quadrado ao clicar, usando if/else para escolher entre vermelho e azul. As crianças veem a causa‑efeito e praticam condições."
+    },
+    {
+      "id": "dialog-0786",
+      "answer": "Lia descobriu que, ao sussurrar ao vaso de rosas, as folhas tremiam levemente. Ela aprendeu a interpretar esses movimentos como respostas, criando diálogos silenciosos que ajudavam a cuidar do jardim.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0787",
+      "answer": "Comece com saudação e objetivo da carta. Destaque habilidades relevantes, mostre entusiasmo pela vaga e relacione experiências ao cargo. Termine agradecendo e indicando disponibilidade para entrevista.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0788",
+      "answer": "Combine aulas curtas diárias, aplicativos de vocabulário, podcasts e prática de conversação com falantes nativos. Foque em frases úteis e repita em voz alta para melhorar a pronúncia rapidamente.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0789",
+      "answer": "Organizar workshops comunitários, usar pesquisas online para entender necessidades e criar protótipos participativos são estratégias eficazes. Compartilhar resultados em redes locais aumenta engajamento e confiança no projeto.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0790",
+      "answer": "Resolva exercícios reais, contribua para projetos open‑source e revise código de colegas. Use livros focados em boas práticas e pratique diariamente. Pergunte em fóruns quando encontrar dúvidas específicas.",
+      "followup": "Qual exercício prático pode ajudar a melhorar a manipulação de listas em Python?",
+      "followup_answer": "Crie um programa que leia nomes de convidados, remova duplicatas, ordene alfabeticamente e gere duas listas: uma para confirmar presença e outra para lista de espera."
+    },
+    {
+      "id": "dialog-0791",
+      "answer": "Abelhas usam danças no ar, principalmente a “dança do tremor”, para indicar direção e distância de fontes de alimento. Também trocam feromônios que sinalizam alarmes ou necessidade de cuidados na colmeia.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0792",
+      "answer": "Pedalar pelas trilhas de cascalho da Baía oferece liberdade e conexão com a natureza, enquanto a cidade ainda está ao alcance. Essa combinação única atrai aventureiros que buscam velocidade e paisagens costeiras.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0793",
+      "answer": "Escolha um idioma que lhe agrade, use aplicativos de aprendizado diário, pratique com falantes nativos e consuma mídia (filmes, músicas). Defina metas pequenas e revise regularmente para manter o progresso.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0794",
+      "answer": "Divida tarefas grandes em blocos menores, use técnicas Pomodoro e elimine distrações digitais. Estabeleça recompensas ao concluir etapas e registre seu progresso para reforçar a disciplina a longo prazo.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0795",
+      "answer": "Inclua formação acadêmica, projetos relevantes, habilidades técnicas (linguagens, frameworks) e experiência prática. Destaque contribuições em código aberto, estágios e certificações que comprovem competência em desenvolvimento de software.",
+      "followup": "Qual seção do currículo deve receber mais destaque para um desenvolvedor junior?",
+      "followup_answer": "A seção de projetos deve ser priorizada, descrevendo brevemente objetivo, tecnologias usadas e resultados alcançados, pois demonstra aplicação prática das habilidades ao empregador."
+    },
+    {
+      "id": "dialog-0796",
+      "answer": "Comece com uma saudação amigável, faça uma pergunta aberta sobre o contexto ou interesse da outra pessoa e escute atentamente. Compartilhe algo breve sobre si e procure pontos em comum para aprofundar a conversa.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0797",
+      "answer": "A escrita cuneiforme registrou leis, comércio e literatura acadiana, permitindo que informações fossem copiadas e distribuídas. Isso facilitou a padronização da língua e a transmissão cultural entre gerações.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0798",
+      "answer": "Não recomendo cursos específicos, mas procure plataformas que ofereçam aulas com professores nativos, material interativo e avaliações regulares. Verifique avaliações de alunos e se o curso cobre gramática, conversação e compreensão auditiva.",
+      "followup": null,
+      "followup_answer": null
+    },
+    {
+      "id": "dialog-0799",
+      "answer": "Planeje seu dia com prioridades claras, bloqueie períodos para tarefas importantes e use timers para manter foco. Elimine interrupções, delegue quando possível e reserve tempo para revisão e descanso regular.",
+      "followup": null,
+      "followup_answer": null
+    }
+  ]
+}

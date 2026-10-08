@@ -1,0 +1,22 @@
+{
+  "previous_correct": 4,
+  "current_correct": 5,
+  "total": 12,
+  "changes": [
+    {
+      "id": "validation-065",
+      "previous": false,
+      "current": true
+    }
+  ],
+  "promotion_gate": 9,
+  "promotion_gate_passed": false,
+  "promoted": false,
+  "audit_evaluated": false,
+  "cloud_jobs_started": 0,
+  "retained_correct": 4,
+  "new_correct": [
+    "validation-065"
+  ],
+  "regressions": []
+}

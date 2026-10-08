@@ -1,0 +1,16 @@
+{
+  "parameters": 102257280,
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "tokens_per_second": 27559.79156853251,
+  "micro_batch_per_gpu": 8,
+  "context": 1024,
+  "peak_memory_gb_per_gpu": 9.912295936,
+  "initial_loss": 10.513970375061035,
+  "last_loss": 8.242939949035645,
+  "estimated_hours_2b_compute_only": 20.158191478845698,
+  "torch": "2.11.0+cu128",
+  "status": "PASS"
+}

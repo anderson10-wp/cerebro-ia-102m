@@ -1,0 +1,15 @@
+{
+  "id": "andersonluan10ad/cerebro-102m-sft-treino-oct08",
+  "title": "Cerebro 102M SFT Treino Oct08",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["andersonluan10ad/cerebro-102m-sft-oct08"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

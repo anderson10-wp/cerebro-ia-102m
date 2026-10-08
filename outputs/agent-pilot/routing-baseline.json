@@ -1,0 +1,211 @@
+{
+  "started_at": "2026-10-04T15:21:30.785660+00:00",
+  "status": "complete",
+  "checkpoint": ".\\outputs\\cerebro-v1\\trained\\brain\\best-model.pt",
+  "checkpoint_tokens": 1999962112,
+  "device": "cpu",
+  "decode": "greedy, no grammar constraints",
+  "max_new_tokens": 96,
+  "split": "audit",
+  "results": [
+    {
+      "id": "audit-parenthesized_arithmetic-0",
+      "request": "Calcule (12 + 6) / 3.",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 28.86
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-1",
+      "request": "Quanto é (8 + 2) * 5?",
+      "output": ".\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 28.65
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-2",
+      "request": "Resolva (30 - 12) / 6.",
+      "output": ".\nAulas de treinamento:\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 27.65
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-3",
+      "request": "Calcule (7 * 4) - 9.",
+      "output": ".com.br\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:\n1.0\nAvaliação:",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 27.8
+    },
+    {
+      "id": "audit-experiment_design-0",
+      "request": "Como separar exemplos de treinamento e teste?",
+      "output": ".com.br/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar/encontrar",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 28.61
+    },
+    {
+      "id": "audit-experiment_design-1",
+      "request": "Como verificar se uma nova versão realmente melhorou?",
+      "output": ".com.br/cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-cadastro-de-c",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 28.03
+    },
+    {
+      "id": "audit-experiment_design-2",
+      "request": "Como evitar que um modelo memorize a avaliação?",
+      "output": ": questionando o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo, o modelo,",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 28.1
+    },
+    {
+      "id": "audit-experiment_design-3",
+      "request": "Como construir testes para chamadas de ferramentas?",
+      "output": ".com.br\nAulas de programação: aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de programação, aulas de",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 26.61
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-0",
+      "request": "Qual checkpoint foi selecionado no nosso treino?",
+      "output": "\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 28.65
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-1",
+      "request": "Quanto tempo falta para concluir nosso treino?",
+      "output": "\nAvaliação:\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 26.8
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-2",
+      "request": "Em qual sessão nosso treino parou?",
+      "output": ".\nAulas de treinamento:\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 27.08
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-3",
+      "request": "O arquivo final de pesos do nosso treino foi salvo?",
+      "output": ".\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é: sim.\nA resposta é",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 27.22
+    },
+    {
+      "id": "audit-unspecified_reference-0",
+      "request": "Melhore isso.",
+      "output": ": questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando, questionando",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 27.5
+    },
+    {
+      "id": "audit-unspecified_reference-1",
+      "request": "Resolva o problema.",
+      "output": ":\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 26.3
+    },
+    {
+      "id": "audit-unspecified_reference-2",
+      "request": "Faça aquela alteração.",
+      "output": ".com.br/enviar-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-conformidade-para-um-sistema-de-con",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 27.16
+    },
+    {
+      "id": "audit-unspecified_reference-3",
+      "request": "Compare as opções.",
+      "output": ".com.br/calendar/calendar.php.\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Calendar\nAulas de Cal",
+      "generated_tokens": 96,
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Not a complete JSON response"
+      },
+      "seconds": 26.75
+    }
+  ],
+  "tool_execution_count": 0,
+  "summary": {
+    "cases": 16,
+    "schema_valid": 0,
+    "correct": 0,
+    "mean_seconds": 27.61
+  }
+}

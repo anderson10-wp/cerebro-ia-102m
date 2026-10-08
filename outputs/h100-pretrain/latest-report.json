@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "parameters": 102257280,
+  "source_tokens": 1999962112,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.8.0+cu128",
+  "precision": "BF16 autocast; FP32 master weights and AdamW state",
+  "optimizer_resumed": true,
+  "global_batch_tokens": 65536,
+  "benchmark": [
+    {
+      "micro_batch": 8,
+      "tokens_per_second": 173178.25099749852,
+      "peak_memory_bytes": 9719547904,
+      "status": "ok"
+    },
+    {
+      "micro_batch": 16,
+      "tokens_per_second": 209899.50318236148,
+      "peak_memory_bytes": 17894443008,
+      "status": "ok"
+    },
+    {
+      "micro_batch": 32,
+      "tokens_per_second": 221120.411076678,
+      "peak_memory_bytes": 34259175424,
+      "status": "ok"
+    },
+    {
+      "micro_batch": 64,
+      "tokens_per_second": 231744.5954044946,
+      "peak_memory_bytes": 66969044992,
+      "status": "ok"
+    }
+  ],
+  "corpus_hash": "ff5896512591627d0782774501aa26dc9be812eb4c9b210c9e6f382bd0d75e18",
+  "tokenizer_hash": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+  "dataset_note": "Repeated passes through the existing 2B-token training corpus; not additional unique tokens.",
+  "original_model_replaced": false,
+  "audit_used_for_selection": false,
+  "micro_batch": 64,
+  "accumulation": 1,
+  "baseline_validation": {
+    "pt": 3.127233624458313,
+    "en": 3.3299021124839783,
+    "code": 1.5295662134885788,
+    "weighted": 2.938250634819269
+  },
+  "tokens_processed": 5642190848,
+  "tokens_this_run": 3642228736,
+  "steps": 86093,
+  "best_validation_loss": 2.8639794826507567,
+  "latest_validation": {
+    "pt": 3.0538158118724823,
+    "en": 3.2409065067768097,
+    "code": 1.4764224588871002,
+    "weighted": 2.8639794826507567
+  },
+  "elapsed_seconds": 16212.254828072002,
+  "stop_reason": "time_or_token_limit",
+  "validation_improved": true,
+  "training_seconds": 16202.401192006
+}

@@ -1,0 +1,429 @@
+{
+  "label": "after",
+  "decode": "greedy, float32, 96 tokens maximum, no grammar constraints",
+  "summary": {
+    "validation": {
+      "cases": 16,
+      "correct": 8,
+      "schema_valid": 11
+    },
+    "audit": {
+      "cases": 16,
+      "correct": 8,
+      "schema_valid": 15
+    }
+  },
+  "results": [
+    {
+      "id": "validation-multiplication-0",
+      "split": "validation",
+      "request": "Calcule 8 * 7.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"8 * 7\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.242
+    },
+    {
+      "id": "validation-multiplication-1",
+      "split": "validation",
+      "request": "Quanto é 13 * 4?",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"13 * 4\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.243
+    },
+    {
+      "id": "validation-multiplication-2",
+      "split": "validation",
+      "request": "Resolva 17 * 6.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"17 * 6\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.242
+    },
+    {
+      "id": "validation-multiplication-3",
+      "split": "validation",
+      "request": "Calcule 21 * 9.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"21 * 9\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.241
+    },
+    {
+      "id": "validation-model_architecture-0",
+      "split": "validation",
+      "request": "Explique atenção em um transformer.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.375
+    },
+    {
+      "id": "validation-model_architecture-1",
+      "split": "validation",
+      "request": "Explique o que são parâmetros de um modelo.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.37
+    },
+    {
+      "id": "validation-model_architecture-2",
+      "split": "validation",
+      "request": "Explique a função do tokenizador.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.384
+    },
+    {
+      "id": "validation-model_architecture-3",
+      "split": "validation",
+      "request": "Explique para que serve uma camada neural.",
+      "output": "{\"tool\":\"teacher\",\"arguments\":{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"request\":\"{\"",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Incomplete or invalid JSON"
+      },
+      "seconds": 1.45
+    },
+    {
+      "id": "validation-training_metrics-0",
+      "split": "validation",
+      "request": "Qual foi a loss final do nosso treinamento?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.162
+    },
+    {
+      "id": "validation-training_metrics-1",
+      "split": "validation",
+      "request": "Qual foi o resultado de validação do nosso treino?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.157
+    },
+    {
+      "id": "validation-training_metrics-2",
+      "split": "validation",
+      "request": "Qual o número de passos registrado no treino?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.157
+    },
+    {
+      "id": "validation-training_metrics-3",
+      "split": "validation",
+      "request": "Qual foi a duração acumulada do treino?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.156
+    },
+    {
+      "id": "validation-calculator_unavailable-0",
+      "split": "validation",
+      "request": "Calcule 9 + 2.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"9 + 2\"}}",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Unknown or unavailable tool"
+      },
+      "seconds": 0.24
+    },
+    {
+      "id": "validation-calculator_unavailable-1",
+      "split": "validation",
+      "request": "Quanto é 14 * 3?",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"14 * 3\"}}",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Unknown or unavailable tool"
+      },
+      "seconds": 0.24
+    },
+    {
+      "id": "validation-calculator_unavailable-2",
+      "split": "validation",
+      "request": "Resolva 48 - 7.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"48 - 7\"}}",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Unknown or unavailable tool"
+      },
+      "seconds": 0.256
+    },
+    {
+      "id": "validation-calculator_unavailable-3",
+      "split": "validation",
+      "request": "Calcule 81 / 9.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"9 / 9\"}}",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Unknown or unavailable tool"
+      },
+      "seconds": 0.248
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-0",
+      "split": "audit",
+      "request": "Calcule (12 + 6) / 3.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"12 + 6\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.24
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-1",
+      "split": "audit",
+      "request": "Quanto é (8 + 2) * 5?",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"9 + 2\"}}",
+      "verification": {
+        "schema_valid": false,
+        "correct": false,
+        "reason": "Expression was not copied from request"
+      },
+      "seconds": 0.242
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-2",
+      "split": "audit",
+      "request": "Resolva (30 - 12) / 6.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"30 - 12\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.245
+    },
+    {
+      "id": "audit-parenthesized_arithmetic-3",
+      "split": "audit",
+      "request": "Calcule (7 * 4) - 9.",
+      "output": "{\"tool\":\"calculator\",\"arguments\":{\"expression\":\"7 * 4\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.243
+    },
+    {
+      "id": "audit-experiment_design-0",
+      "split": "audit",
+      "request": "Como separar exemplos de treinamento e teste?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.158
+    },
+    {
+      "id": "audit-experiment_design-1",
+      "split": "audit",
+      "request": "Como verificar se uma nova versão realmente melhorou?",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.368
+    },
+    {
+      "id": "audit-experiment_design-2",
+      "split": "audit",
+      "request": "Como evitar que um modelo memorize a avaliação?",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.369
+    },
+    {
+      "id": "audit-experiment_design-3",
+      "split": "audit",
+      "request": "Como construir testes para chamadas de ferramentas?",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": false,
+        "reason": "Wrong tool or arguments",
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.369
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-0",
+      "split": "audit",
+      "request": "Qual checkpoint foi selecionado no nosso treino?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.157
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-1",
+      "split": "audit",
+      "request": "Quanto tempo falta para concluir nosso treino?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.156
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-2",
+      "split": "audit",
+      "request": "Em qual sessão nosso treino parou?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.157
+    },
+    {
+      "id": "audit-checkpoint_and_remaining_time-3",
+      "split": "audit",
+      "request": "O arquivo final de pesos do nosso treino foi salvo?",
+      "output": "{\"tool\":\"training_status\",\"arguments\":{}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "seconds": 0.156
+    },
+    {
+      "id": "audit-unspecified_reference-0",
+      "split": "audit",
+      "request": "Melhore isso.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.367
+    },
+    {
+      "id": "audit-unspecified_reference-1",
+      "split": "audit",
+      "request": "Resolva o problema.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"Pode enviar o relatório para análise?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.298
+    },
+    {
+      "id": "audit-unspecified_reference-2",
+      "split": "audit",
+      "request": "Faça aquela alteração.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"Pode enviar o relatório para eu resumir?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.324
+    },
+    {
+      "id": "audit-unspecified_reference-3",
+      "split": "audit",
+      "request": "Compare as opções.",
+      "output": "{\"tool\":\"clarify\",\"arguments\":{\"question\":\"O professor está indisponível. Você quer aguardar para continuar?\"}}",
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "seconds": 0.368
+    }
+  ],
+  "tools_executed": 0
+}

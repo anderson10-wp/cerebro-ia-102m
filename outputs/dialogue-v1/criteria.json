@@ -1,0 +1,7 @@
+{
+  "frozen_test_sha256": "4c4e0ed999a8bd54f4258855456fc3c59088fb816616474e991cb7a47bacba1d",
+  "open_cases": 32,
+  "exact_cases": 24,
+  "promotion": "No automatic promotion. At least 16/32 useful open replies, gain at least 8 open replies, no regressions on prior 12, and no major loss on objective test. Independent blind teacher review plus Codex checks. Lower dev loss alone does not pass.",
+  "large_training": "Not authorized automatically if qualitative gate fails."
+}

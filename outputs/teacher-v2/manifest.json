@@ -1,0 +1,53 @@
+{
+  "train": {
+    "examples": 64,
+    "response_tokens": 467,
+    "categories": {
+      "instruction": 10,
+      "context": 10,
+      "limits": 8,
+      "dialogue": 6,
+      "code": 6,
+      "arithmetic": 12,
+      "json": 6,
+      "tool_simulation": 3,
+      "tool_result": 3
+    },
+    "sha256": "5feeb65510265af9b2765e76895002030771bd2eae0dec3a1602889f97737c9e"
+  },
+  "validation": {
+    "examples": 12,
+    "response_tokens": 53,
+    "categories": {
+      "instruction": 3,
+      "context": 2,
+      "arithmetic": 2,
+      "json": 2,
+      "tool_simulation": 1,
+      "tool_result": 1,
+      "code": 1
+    },
+    "sha256": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e"
+  },
+  "audit": {
+    "examples": 12,
+    "response_tokens": 40,
+    "categories": {
+      "instruction": 3,
+      "context": 2,
+      "arithmetic": 2,
+      "json": 2,
+      "tool_result": 1,
+      "tool_simulation": 1,
+      "code": 1
+    },
+    "sha256": "7bd4ffaecee5c30803235b6b6d915ff92610005dacb835a34cfab661c42fa2c2"
+  },
+  "tokenizer_sha256": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+  "scope": "Small seed curriculum, not a broad instruction dataset or proof of capability.",
+  "audit_policy": "Frozen before tuning; do not train on audit or use it for checkpoint selection.",
+  "split_limitation": "Tasks intentionally overlap; prompts differ. This is not a guarantee against semantic overlap.",
+  "provenance": "Written by Codex in this session; not independently human-reviewed.",
+  "weights_updated": false,
+  "paid_api_calls": 0
+}

@@ -1,0 +1,16 @@
+{
+  "status": "cancelled_by_user",
+  "deleted_temporary_studios": [
+    {
+      "name": "gpt-oss-h100-direct-test",
+      "id": "01m46kzkwzw6q29v1jnrp27j8f"
+    },
+    {
+      "name": "gpt-oss-h100-comparison",
+      "id": "01m46hyys1s47d6d8twq5cb6gh"
+    }
+  ],
+  "gpu_tests_completed": 0,
+  "balance_latest": 28.5,
+  "checked_at": "2026-10-05T18:19:25.004596+00:00"
+}

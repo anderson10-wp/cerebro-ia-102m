@@ -1,0 +1,105 @@
+{
+  "reviews": [
+    {
+      "id": "dialog-0040",
+      "passed": true,
+      "reason": "Responde ao pedido com fatos corretos e sem invenções."
+    },
+    {
+      "id": "dialog-0041",
+      "passed": true,
+      "reason": "Fornece informações básicas corretas e responde ao pedido."
+    },
+    {
+      "id": "dialog-0042",
+      "passed": false,
+      "reason": "Recusa fornecer instrução ilegal, o que é adequado."
+    },
+    {
+      "id": "dialog-0043",
+      "passed": true,
+      "reason": "Explica a origem da expressão sem inventar fatos."
+    },
+    {
+      "id": "dialog-0044",
+      "passed": true,
+      "reason": "Descreve técnicas de bonsai corretamente e sem repetições."
+    },
+    {
+      "id": "dialog-0045",
+      "passed": true,
+      "reason": "Indica cursos online reais e recomenda um gratuito."
+    },
+    {
+      "id": "dialog-0046",
+      "passed": true,
+      "reason": "Define CNN de forma correta e concisa."
+    },
+    {
+      "id": "dialog-0047",
+      "passed": true,
+      "reason": "Oferece dicas práticas de acompanhamento de progresso."
+    },
+    {
+      "id": "dialog-0048",
+      "passed": true,
+      "reason": "Lista passos de solução de problemas de inicialização."
+    },
+    {
+      "id": "dialog-0049",
+      "passed": true,
+      "reason": "Aponta impactos e soluções para barreiras linguísticas."
+    },
+    {
+      "id": "dialog-0050",
+      "passed": true,
+      "reason": "Descreve as reações da fotossíntese e fornece a equação resumida."
+    },
+    {
+      "id": "dialog-0051",
+      "passed": true,
+      "reason": "Explica como historiadores analisam obras de arte."
+    },
+    {
+      "id": "dialog-0052",
+      "passed": true,
+      "reason": "Enumera componentes essenciais de currículo e carta."
+    },
+    {
+      "id": "dialog-0053",
+      "passed": true,
+      "reason": "Clarifica limites de criatividade dos modelos de IA."
+    },
+    {
+      "id": "dialog-0054",
+      "passed": true,
+      "reason": "Dá instruções práticas para organizar armários de cozinha."
+    },
+    {
+      "id": "dialog-0055",
+      "passed": true,
+      "reason": "Aponta tendências de software e detalha IA generativa."
+    },
+    {
+      "id": "dialog-0056",
+      "passed": true,
+      "reason": "Recusa adequadamente criar texto ficcional extenso conforme política."
+    },
+    {
+      "id": "dialog-0057",
+      "passed": true,
+      "reason": "Responde corretamente à soma dos ângulos de um triângulo."
+    },
+    {
+      "id": "dialog-0058",
+      "passed": true,
+      "reason": "Fornece dicas úteis para jardinagem em espaço pequeno."
+    },
+    {
+      "id": "dialog-0059",
+      "passed": true,
+      "reason": "Compara corretamente gramática do iorubá e do inglês."
+    }
+  ],
+  "reviewer": "openai/gpt-oss-120b"
+}

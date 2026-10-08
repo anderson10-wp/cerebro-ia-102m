@@ -1,0 +1,119 @@
+{
+  "checkpoint_sha256": "e80f4077b8125f5aaea8eb4a2344e1b0bfa6bf06c4033f27112a6564ecd31a9c",
+  "split": "validation",
+  "decode": "greedy, maximum 48 new tokens, stop at EOS; no output repair or grammar constraints",
+  "weights_updated": false,
+  "tools_executed": 0,
+  "results": [
+    {
+      "id": "validation-064",
+      "category": "instruction",
+      "prompt": "Pergunta: Sua saída deve conter só: cobre\nResposta:",
+      "expected": "cobre",
+      "output": " O que é cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre cobre",
+      "correct": false,
+      "seconds": 6.92
+    },
+    {
+      "id": "validation-065",
+      "category": "instruction",
+      "prompt": "Pergunta: Qual é a primeira palavra de \"rio largo corre\"? Escreva apenas essa palavra.\nResposta:",
+      "expected": "rio",
+      "output": " O que é o \"rio largo corre\"?\nResposta: O \"rio largo corre\" é um termo que se refere a um conjunto de áreas de superfície que se formam no interior do planeta.\nResposta: O \"",
+      "correct": false,
+      "seconds": 6.68
+    },
+    {
+      "id": "validation-066",
+      "category": "context",
+      "prompt": "Pergunta: Bilhete: Rui deixou a chave na gaveta. Onde está a chave? Responda apenas o local.\nResposta:",
+      "expected": "na gaveta",
+      "output": " O que é que o Bilhete tem? Responda apenas o local.\nResposta: O que é que o Bilhete tem? Responda apenas o local.\nResposta: O que é que o Bilhete",
+      "correct": false,
+      "seconds": 7.18
+    },
+    {
+      "id": "validation-067",
+      "category": "context",
+      "prompt": "Pergunta: Ficha: nome Lia; idade não registrada. Qual é a idade? Use \"não informado\" quando faltar o dado.\nResposta:",
+      "expected": "não informado",
+      "output": " Não. Não é necessário.\nA resposta é: Não. Não é necessário.\nA resposta é: Não. Não é necessário.\nA resposta é: Não. Não é necessário.\nA resposta é: Não. Não é",
+      "correct": false,
+      "seconds": 8.12
+    },
+    {
+      "id": "validation-068",
+      "category": "arithmetic",
+      "prompt": "Pergunta: Dê somente o valor de 16 + 27.\nResposta:",
+      "expected": "43",
+      "output": " O valor de 16 é o valor de 16.\nO valor de 16 é o valor de 16.\nO valor de 16 é o valor de 16.\nO valor de 16 é o valor de 16.\nO valor de 16",
+      "correct": false,
+      "seconds": 6.91
+    },
+    {
+      "id": "validation-069",
+      "category": "arithmetic",
+      "prompt": "Pergunta: Sem explicação, quanto vale 9 * 8?\nResposta:",
+      "expected": "72",
+      "output": " Não, não vale 9 * 8.\nA resposta é:\nNão vale 9 * 8.\nA resposta é:\nNão vale 9 * 8.\nA resposta é:\nNão vale 9 * 8.\nA resposta é",
+      "correct": false,
+      "seconds": 5.84
+    },
+    {
+      "id": "validation-070",
+      "category": "json",
+      "prompt": "Pergunta: Devolva o objeto JSON {\"modo\":\"teste\"} sem texto ao redor.\nResposta:",
+      "expected": "{\"modo\":\"teste\"}",
+      "output": "\nO problema é que o objeto JSON não é um objeto JSON.\nResposta:\nO problema é que o objeto JSON não é um objeto JSON.\nResposta:\nO problema é que o objeto JSON não é um objeto",
+      "correct": false,
+      "seconds": 6.66
+    },
+    {
+      "id": "validation-071",
+      "category": "json",
+      "prompt": "Pergunta: Use JSON para representar uma única chave ativo com valor booleano falso. Nenhum outro campo.\nResposta:",
+      "expected": "{\"ativo\":false}",
+      "output": " O que é um campo de chave?\nResposta: O campo de chave é um campo de chave que é usado para representar uma chave de chave.\nResposta: O campo de chave é um campo de chave que é usado para",
+      "correct": false,
+      "seconds": 6.81
+    },
+    {
+      "id": "validation-072",
+      "category": "tool_simulation",
+      "prompt": "Pergunta: Exercício simulado: só existe consultar_status. Gere o objeto JSON {\"ferramenta\":\"consultar_status\",\"argumentos\":{}} para consultar o treino. Não execute a consulta.\nResposta:",
+      "expected": "{\"ferramenta\":\"consultar_status\",\"argumentos\":{}}",
+      "output": " O objetivo do treinamento é simular o treino.\nAula:\nAula 1:\n1.1.1. O que é o treinamento?\nO treinamento é um conjunto de atividades que são realizadas em um ambiente virtual,",
+      "correct": false,
+      "seconds": 15.08
+    },
+    {
+      "id": "validation-073",
+      "category": "tool_result",
+      "prompt": "Pergunta: Retorno simulado: {\"resultado\":91}. Diga apenas o resultado numérico.\nResposta:",
+      "expected": "91",
+      "output": " O resultado é igual ao resultado numérico.\nA resposta é:\nResposta:\nO resultado é igual ao resultado numérico.\nResposta:\nO resultado é igual ao resultado numérico.\nResposta:\nO",
+      "correct": false,
+      "seconds": 7.6
+    },
+    {
+      "id": "validation-074",
+      "category": "code",
+      "prompt": "Pergunta: Em Python, qual o valor de len([])? Retorne somente o número.\nResposta:",
+      "expected": "0",
+      "output": "\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta é:\nA resposta",
+      "correct": false,
+      "seconds": 6.21
+    },
+    {
+      "id": "validation-075",
+      "category": "instruction",
+      "prompt": "Pergunta: Escreva apenas a segunda palavra: manhã calma.\nResposta:",
+      "expected": "calma",
+      "output": " Não, não é.\nA resposta é:\nNão, não é.\nA resposta é:\nNão, não é.\nA resposta é:\nNão, não é.\nA resposta é:\nNão, não é",
+      "correct": false,
+      "seconds": 11.39
+    }
+  ],
+  "correct": 0,
+  "evaluated": 12
+}

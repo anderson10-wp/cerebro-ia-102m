@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0880",
+      "answer": "Para se candidatar a uma vaga de engenharia de software, atualize seu currículo destacando projetos relevantes, crie um perfil no LinkedIn, procure vagas em sites especializados e envie a candidatura com carta personalizada.",
+      "followup": "Qual é a sua experiência atual em programação?",
+      "followup_answer": "Se você tem experiência em Python ou Java, destaque projetos pessoais ou acadêmicos; caso ainda esteja iniciando, faça cursos online e contribua em projetos de código aberto para fortalecer seu portfólio."
+    },
+    {
+      "id": "dialog-0881",
+      "answer": "Para construir relacionamentos fortes, pratique escuta ativa, faça perguntas abertas, mantenha contato regular e ofereça ajuda antes de pedir. Em eventos, aproxime-se de pessoas com interesses semelhantes e troque cartões.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0882",
+      "answer": "Concentre‑se em clareza, coerência e argumentação. Revise gramática, amplie vocabulário, pratique escrita de resumos e ensaios, e peça feedback a colegas ou professores para melhorar a estrutura dos textos.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0883",
+      "answer": "Compare as linhas de pesquisa, publicações recentes, laboratórios e oportunidades de estágio. Verifique se há professores cujos interesses alinham‑se aos seus e avalie recursos como bolsas e infraestrutura.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0884",
+      "answer": "Use móveis multifuncionais, organize documentos em caixas rotuladas, aproveite paredes para prateleiras e mantenha apenas itens essenciais à vista. Uma boa iluminação e cores claras ampliam a sensação de espaço.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0885",
+      "answer": "Um engenheiro de software costuma precisar de domínio em linguagens de programação, lógica de algoritmos, controle de versão, testes e boas práticas de documentação, além de habilidades de trabalho em equipe.",
+      "followup": "Qual área de desenvolvimento lhe interessa mais, front‑end ou back‑end?",
+      "followup_answer": "Se prefere front‑end, foque em HTML, CSS e JavaScript; para back‑end, aprofunde-se em Java, Python ou Node.js e aprenda sobre bancos de dados e APIs."
+    },
+    {
+      "id": "dialog-0886",
+      "answer": "Estabeleça metas claras, comunique expectativas, compartilhe responsabilidades e use ferramentas de gestão de tarefas. Pratique feedback construtivo, escuta ativa e celebre conquistas coletivas para melhorar a colaboração.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0887",
+      "answer": "Leia textos variados, escreva diariamente, revise seu próprio trabalho e peça críticas. Aprenda regras gramaticais, amplie o vocabulário e pratique diferentes estilos, como narrativo e argumentativo.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0888",
+      "answer": "Redes profundas aprendem correlações estatísticas, mas não inferem relações de causa‑efeito. Elas podem confundir coincidência com causalidade, exigindo métodos específicos ou dados experimentais para validar causas.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0889",
+      "answer": "Planeje análise de requisitos, configure ambientes de teste, execute migrações em etapas, valide funcionalidades, monitore desempenho e documente alterações. Uma revisão pós‑implementação garante ajustes necessários.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0890",
+      "answer": "Redes neurais são treinadas ajustando pesos via retropropagação: calculam erro entre saída prevista e desejada, propagam esse erro para trás e atualizam pesos usando gradiente descendente.",
+      "followup": "Qual tipo de problema você deseja resolver com redes neurais?",
+      "followup_answer": "Para classificação de imagens, use arquiteturas convolucionais; para séries temporais, redes recorrentes ou transformadores são mais adequados, ajustando hiperparâmetros conforme a complexidade dos dados."
+    },
+    {
+      "id": "dialog-0891",
+      "answer": "O chefe sobe ao palco, cumprimenta a equipe, apresenta os resultados trimestrais com gráficos claros, destaca conquistas, reconhece esforços individuais e encerra incentivando perguntas e sugestões para o próximo ciclo.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0892",
+      "answer": "A inteligência emocional permite reconhecer emoções próprias e dos colegas, adaptar a comunicação, resolver conflitos e criar um ambiente de confiança, o que aumenta a eficácia e a coesão da equipe.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0893",
+      "answer": "Sim, modelos de aprendizagem profunda podem refletir vieses culturais presentes nos dados de treinamento, reproduzindo estereótipos regionais ou linguísticos se não houver balanceamento adequado.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0894",
+      "answer": "Empregadores podem usar plataformas de e‑learning para oferecer cursos flexíveis, acompanhar progresso, personalizar trilhas de desenvolvimento e incentivar a aprendizagem contínua, alinhando competências às metas organizacionais.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0895",
+      "answer": "Faça backups regulares em mídia externa ou nuvem, use software de agendamento, verifique integridade dos arquivos e mantenha pelo menos duas cópias em locais diferentes para segurança.",
+      "followup": "Qual tipo de dados você considera mais crítico para proteger?",
+      "followup_answer": "Se são documentos de trabalho, priorize backups automáticos na nuvem; para arquivos pessoais, combine disco externo com serviço de armazenamento online para redundância."
+    },
+    {
+      "id": "dialog-0896",
+      "answer": "Pratique discursos curtos diante de um espelho, grave e analise, participe de grupos de oratória, controle a respiração e peça feedback para melhorar postura e clareza ao falar.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0897",
+      "answer": "O rio desliza calmo, refletindo o céu sereno; suas águas sussurram segredos antigos, enquanto a margem abraça a paz que só a corrente lenta pode oferecer.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0898",
+      "answer": "Segure o taco firmemente, posicione os pés na largura dos ombros, alinhe o ombro, quadril e pé dianteiro, faça um swing suave e acompanhe o movimento até o final.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0899",
+      "answer": "ONGs equilibram captação de recursos com impacto ao diversificar fontes de financiamento, envolver voluntários, medir resultados e comunicar transparência, garantindo que fundos sustentem projetos efetivos na comunidade.",
+      "followup": false
+    }
+  ]
+}

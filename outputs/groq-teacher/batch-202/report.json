@@ -1,0 +1,25 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "requested": 24,
+  "max_calls": 1,
+  "max_output_tokens": 4096,
+  "training_started": false,
+  "billing_tier": "unknown",
+  "created_utc": "2026-10-07T19:30:29.978585+00:00",
+  "provider": "groq",
+  "usage": {
+    "queue_time": 1.259727758,
+    "prompt_tokens": 1115,
+    "prompt_time": 0.303446025,
+    "completion_tokens": 1232,
+    "completion_time": 2.666269329,
+    "total_tokens": 2347,
+    "total_time": 2.969715354,
+    "completion_tokens_details": {
+      "reasoning_tokens": 864
+    }
+  },
+  "status": "completed",
+  "accepted": 24,
+  "rejected": 0
+}

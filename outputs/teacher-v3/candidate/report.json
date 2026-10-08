@@ -1,0 +1,30 @@
+{
+  "status": "completed_candidate_only",
+  "initial_validation_loss": 5.123161396890317,
+  "base_checkpoint_sha256": "e80f4077b8125f5aaea8eb4a2344e1b0bfa6bf06c4033f27112a6564ecd31a9c",
+  "validation": [
+    {
+      "epoch": 1,
+      "loss": 1.39045291126899,
+      "steps": 64
+    },
+    {
+      "epoch": 2,
+      "loss": 1.323546996656454,
+      "steps": 128
+    },
+    {
+      "epoch": 3,
+      "loss": 1.4160988915641353,
+      "steps": 192
+    }
+  ],
+  "automatic_promotion": false,
+  "audit_examples_evaluated": 0,
+  "cloud_jobs_started": 0,
+  "steps": 192,
+  "response_tokens_seen": 5553,
+  "best_validation_loss": 1.323546996656454,
+  "candidate_saved": true,
+  "elapsed_seconds": 366.16420879999987
+}

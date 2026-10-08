@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0320",
+      "answer": "Comece definindo metas claras e um público-alvo, depois escolha plataformas (crowdfunding, redes sociais) adequadas. Crie uma narrativa envolvente, estabeleça recompensas atrativas e um cronograma de divulgação. Use vídeos curtos, atualize apoiadores regularmente e agradeça publicamente cada contribuição.",
+      "followup": "Qual seria um exemplo de cronograma de divulgação para os primeiros 30 dias da campanha?",
+      "followup_answer": "Semana 1: lance a página e compartilhe nas redes pessoais; Semana 2: envie e‑mail para contatos e publique um vídeo de apresentação; Semana 3: peça a influenciadores locais para repostar; Semana 4: ofereça uma recompensa limitada e faça um live para responder dúvidas."
+    },
+    {
+      "id": "dialog-0321",
+      "answer": "Um desenvolvedor de software cria programas para sistemas operacionais, aplicativos ou dispositivos, usando linguagens como C++ ou Java. Um desenvolvedor web foca em sites e aplicações online, trabalhando com HTML, CSS, JavaScript e frameworks específicos para front‑end ou back‑end.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0322",
+      "answer": "Cultive confiança ouvindo ativamente, expressando sentimentos sem culpar e praticando empatia. Reserve momentos regulares para conversar, estabeleça limites claros e celebre conquistas juntos. A honestidade constante fortalece o vínculo e previne mal‑entendidos ao longo do tempo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0323",
+      "answer": "Em hindi, verbos mudam de forma ao passar do passado ao presente adicionando sufixos como –ता (masc.) ou –ती (fem.) para o presente habitual, e removendo o sufixo –ा (passado). Por exemplo, “खाया” (khāyā) torna‑se “खाता है” (khātā hai) no presente.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0324",
+      "answer": "Experimente desenho com lápis, caminhada fotográfica, jardinagem em vasos, culinária de receitas simples ou jogos de tabuleiro. Todas exigem pouco investimento, permitem criatividade e podem ser iniciadas em casa ou em parques locais.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0325",
+      "answer": "1. Desembale o hub e conecte à tomada. 2. Baixe o app oficial no celular. 3. Abra o app, crie conta e siga o assistente para adicionar dispositivos via Wi‑Fi. 4. Nomeie cada item (ex.: Luz Sala). 5. Crie rotinas: “Boa noite” apaga luzes às 22h. 6. Se falhar, reinicie o hub, verifique senha Wi‑Fi e consulte a seção de solução no app.",
+      "followup": "Qual seria um exemplo visual simples para ilustrar a conexão do hub ao roteador?",
+      "followup_answer": "Um diagrama com três ícones: tomada → hub (seta) → roteador Wi‑Fi (seta) → smartphone, mostrando linhas de energia e sinal."
+    },
+    {
+      "id": "dialog-0326",
+      "answer": "Existem estilos visual, auditivo e cinestésico. Visual: prefere gráficos, diagramas e leitura. Auditivo: aprende melhor ouvindo explicações ou podcasts. Cinestésico: retém informação ao praticar, tocar objetos ou fazer exercícios físicos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0327",
+      "answer": "Comunidades socialistas criaram assembleias populares, conselhos de trabalhadores e cooperativas autogeridas. Essas estruturas permitiam que membros votassem decisões econômicas, educacionais e de planejamento urbano, promovendo participação direta e responsabilidade coletiva.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0328",
+      "answer": "Abra as Configurações, vá em Atualização e Segurança, clique em “Verificar atualizações”. Se houver, selecione “Instalar”. Reinicie o computador quando solicitado. Caso falhe, use o solucionador de problemas de Windows Update ou baixe o pacote manualmente no site da fabricante.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0329",
+      "answer": "Pratique em frente ao espelho, grave apresentações e reveja pontos de melhoria. Estruture seu discurso com introdução, três ideias principais e conclusão. Controle a respiração, faça pausas e mantenha contato visual. Peça feedback a amigos antes de falar em público.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0330",
+      "answer": "A fotossíntese transforma luz solar em energia química, liberando oxigênio e absorvendo dióxido de carbono. Isso reduz gases de efeito estufa, melhora a qualidade do ar e fornece alimento básico para plantas, animais e humanos, sustentando cadeias alimentares e ecossistemas.",
+      "followup": "Como posso explicar esse processo a crianças de oito anos?",
+      "followup_answer": "Diga que as plantas são como fábricas que usam luz do sol, água e ar para fazer comida e respirar, soltando ar puro que todos nós precisamos."
+    },
+    {
+      "id": "dialog-0331",
+      "answer": "Defina seu nicho (casamentos, retratos), crie um portfólio online simples e use redes sociais para divulgar. Invista em equipamento básico, aprenda a editar fotos gratuitamente e ofereça preços promocionais para os primeiros clientes. Peça recomendações e construa reputação local.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0332",
+      "answer": "Contos de fadas clássicos usam subtexto para transmitir lições morais ocultas, como coragem ou justiça. Versões modernas mantêm esses temas, mas adicionam críticas sociais, diversidade e empoderamento, tornando o subtexto mais explícito e adaptado ao público contemporâneo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0333",
+      "answer": "Considere sua motivação (viagens, carreira), a dificuldade gramatical, a disponibilidade de recursos e a comunidade de falantes. Avalie também a similaridade com seu idioma nativo e a utilidade prática no seu dia a dia.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0334",
+      "answer": "Organizações como WWF, Conservation International e The Nature Conservancy trabalham para proteger habitats. Projetos regionais incluem o Programa de Conservação da Amazônia e a iniciativa de corredores ecológicos na África, focando em espécies ameaçadas e restauração de ecossistemas.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0335",
+      "answer": "Sim, use técnicas como data augmentation, transferência de aprendizado e redes menores. Comece com um modelo pré‑treinado, ajuste camadas finais com seu conjunto limitado e aplique regularização para evitar overfitting.",
+      "followup": "Qual seria um exemplo prático de transferência de aprendizado para imagens de plantas?",
+      "followup_answer": "Use um modelo ResNet treinado em ImageNet, remova a camada final e treine apenas as últimas duas camadas com 200 fotos de folhas, ajustando a taxa de aprendizado para adaptar ao novo domínio."
+    },
+    {
+      "id": "dialog-0336",
+      "answer": "Esculturas antigas, como as gregas, enfatizavam proporção ideal e mitologia; a arte barroca trouxe dramatismo e movimento. No século XX, o cubismo rompeu formas, enquanto o street art usa materiais urbanos. Cada estilo reflete valores culturais, técnicas e materiais da época.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0337",
+      "answer": "Pratique conjugação diária com cartões de memória, escreva frases curtas e revise verbos irregulares em grupos (presente, passado, futuro). Use aplicativos gratuitos que corrigem erros e escute músicas francesas para internalizar padrões.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0338",
+      "answer": "Título: Jardinagem Sustentável para Iniciantes. Capítulo 1: Escolha de sementes nativas. Capítulo 2: Compostagem caseira simples. Capítulo 3: Reuso de água de chuva. Capítulo 4: Controle natural de pragas. Cada seção inclui ilustrações passo a passo e dicas de economia.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0339",
+      "answer": "Feitiços e maldições simbolizam desafios internos ou forças externas que os heróis devem superar. Eles criam tensão narrativa, representam medos coletivos e permitem que a moral da história seja transmitida através da vitória sobre o sobrenatural.",
+      "followup": "false"
+    }
+  ]
+}

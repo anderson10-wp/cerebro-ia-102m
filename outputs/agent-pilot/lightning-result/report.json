@@ -1,0 +1,130 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-04T16:17:15.593009+00:00",
+  "gpu": "Tesla T4",
+  "torch": "2.8.0+cu128",
+  "parameters": 102257280,
+  "base_pretraining_tokens": 1999962112,
+  "base_sha256": "a9ec50900c31a4862efce009b17186992cc31a816f53ac8549eaa4ad40e4e703",
+  "data": {
+    "training_examples": 543,
+    "reviewed_teacher_seeds": 32,
+    "deterministic_augmented_examples": 511,
+    "validation_examples": 16,
+    "audit_examples": 16,
+    "total_tokens": 82288,
+    "supervised_response_tokens": 10871,
+    "train_sha256": "0fcd25e22b47239c7547af224f478d03bfc262a9df584abeb78b5adc0369d918",
+    "max_sequence_tokens": 163,
+    "scope": "A narrow tool-routing pilot. Most added examples are programmatic variations, not independent natural conversations.",
+    "selection_rule": "Select checkpoint by validation loss only; evaluate frozen audit once after selection.",
+    "continuation_gate": {
+      "minimum_audit_correct_of_16": 12,
+      "minimum_validation_correct_of_16": 12,
+      "minimum_audit_schema_valid_of_16": 14,
+      "maximum_regression_nll_ratio": 1.1
+    },
+    "gate_note": "Engineering thresholds chosen before tuning, not statistically proven guarantees. Passing allows considering a broader test, not autonomous execution."
+  },
+  "steps": 600,
+  "optimizer_updates": 599,
+  "response_tokens_seen": 95948,
+  "max_training_minutes": 15,
+  "max_steps": 600,
+  "batch_size": 8,
+  "peak_learning_rate": 0.0001,
+  "validation": [
+    {
+      "step": 50,
+      "loss": 0.8175046785956337
+    },
+    {
+      "step": 100,
+      "loss": 0.9770321058375495
+    },
+    {
+      "step": 150,
+      "loss": 0.9427268536672706
+    },
+    {
+      "step": 200,
+      "loss": 1.0641115684594427
+    },
+    {
+      "step": 250,
+      "loss": 1.051798034849621
+    },
+    {
+      "step": 300,
+      "loss": 1.1711617664212273
+    },
+    {
+      "step": 350,
+      "loss": 1.1343001993639128
+    },
+    {
+      "step": 400,
+      "loss": 1.1108744116766112
+    },
+    {
+      "step": 450,
+      "loss": 1.1600505427945227
+    },
+    {
+      "step": 500,
+      "loss": 1.1899776344497999
+    },
+    {
+      "step": 550,
+      "loss": 1.2255712127401714
+    },
+    {
+      "step": 600,
+      "loss": 1.2483518134979974
+    }
+  ],
+  "automatic_promotion": false,
+  "language_before": {
+    "weighted_nll": 3.4042289359437907,
+    "tokens": 163,
+    "documents": 8,
+    "note": "Small fixed language probe; does not establish broad knowledge or reasoning quality."
+  },
+  "initial_validation_loss": 3.569596592585246,
+  "selected_step": 50,
+  "elapsed_training_seconds": 74.73,
+  "peak_gpu_memory_gb": 2.747382272,
+  "language_after": {
+    "weighted_nll": 3.5677466290128743,
+    "tokens": 163,
+    "documents": 8,
+    "note": "Small fixed language probe; does not establish broad knowledge or reasoning quality."
+  },
+  "before": {
+    "validation": {
+      "cases": 16,
+      "correct": 0,
+      "schema_valid": 0
+    },
+    "audit": {
+      "cases": 16,
+      "correct": 0,
+      "schema_valid": 0
+    }
+  },
+  "after": {
+    "validation": {
+      "cases": 16,
+      "correct": 8,
+      "schema_valid": 11
+    },
+    "audit": {
+      "cases": 16,
+      "correct": 8,
+      "schema_valid": 15
+    }
+  },
+  "language_regression_ratio": 1.0480336946033713,
+  "passes_narrow_pilot_gate": false,
+  "note": "Narrow routing experiment only. Review clarification semantics separately. No autonomous actions and no automatic replacement of the original model."
+}

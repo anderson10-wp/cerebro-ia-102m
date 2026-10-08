@@ -1,0 +1,692 @@
+{
+  "started_at": "2026-10-04T15:21:23.325351+00:00",
+  "model": "gpt-oss-20b",
+  "split_seen_by_teacher": "train",
+  "batches": [
+    {
+      "count": 8,
+      "seconds": 5.09,
+      "finish_reason": "tool_calls",
+      "usage": {
+        "completion_tokens": 206,
+        "prompt_tokens": 557,
+        "total_tokens": 763,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      }
+    },
+    {
+      "count": 8,
+      "seconds": 5.91,
+      "finish_reason": "tool_calls",
+      "usage": {
+        "completion_tokens": 271,
+        "prompt_tokens": 579,
+        "total_tokens": 850,
+        "prompt_tokens_details": {
+          "cached_tokens": 229
+        }
+      }
+    },
+    {
+      "count": 8,
+      "seconds": 3.6,
+      "finish_reason": "tool_calls",
+      "usage": {
+        "completion_tokens": 165,
+        "prompt_tokens": 559,
+        "total_tokens": 724,
+        "prompt_tokens_details": {
+          "cached_tokens": 229
+        }
+      }
+    },
+    {
+      "count": 8,
+      "seconds": 5.53,
+      "finish_reason": "tool_calls",
+      "usage": {
+        "completion_tokens": 286,
+        "prompt_tokens": 568,
+        "total_tokens": 854,
+        "prompt_tokens_details": {
+          "cached_tokens": 229
+        }
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "train-addition-0",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "7+8"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-addition-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-addition-1",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "19+26"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-addition-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-addition-2",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "105+29"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-addition-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-addition-3",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "34+68"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-addition-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-subtraction-0",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "23-9"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-subtraction-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-subtraction-1",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "51-18"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-subtraction-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-subtraction-2",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "97-32"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-subtraction-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-subtraction-3",
+      "route": {
+        "tool": "calculator",
+        "arguments": {
+          "expression": "200-74"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-subtraction-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-python_creation-0",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Escreva uma função Python que some dois números."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-python_creation-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-python_creation-1",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Crie uma função Python que calcule a média de uma lista."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-python_creation-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-python_creation-2",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Escreva código Python para contar palavras."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-python_creation-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-python_creation-3",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Crie uma função Python que encontre o maior número."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-python_creation-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-text_explanation-0",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Explique a diferença entre memória RAM e armazenamento."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-text_explanation-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-text_explanation-1",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Explique o que é uma variável em Python."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-text_explanation-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-text_explanation-2",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Explique o que significa uma API."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-text_explanation-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-text_explanation-3",
+      "route": {
+        "tool": "teacher",
+        "arguments": {
+          "request": "Explique como funciona uma lista em Python."
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-text_explanation-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-progress-0",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-progress-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-progress-1",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-progress-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-progress-2",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-progress-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-progress-3",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-progress-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-completion-0",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-completion-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-completion-1",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-completion-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-completion-2",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-completion-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-completion-3",
+      "route": {
+        "tool": "training_status",
+        "arguments": {}
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": false
+      },
+      "editor_review": {
+        "id": "train-completion-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-missing_artifact-0",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Qual código você esqueceu de enviar?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-missing_artifact-0",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-missing_artifact-1",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Qual arquivo você quer que eu analise?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-missing_artifact-1",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-missing_artifact-2",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Qual texto você quer que eu resuma?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-missing_artifact-2",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-missing_artifact-3",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Quais documentos você quer que eu compare?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-missing_artifact-3",
+        "accepted": true,
+        "reason": "Tool and arguments checked against the independent case; clarification requests ask for the missing artifact."
+      }
+    },
+    {
+      "id": "train-teacher_unavailable-0",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Você pode fornecer mais detalhes sobre o que deseja saber sobre GPU?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-teacher_unavailable-0",
+        "accepted": false,
+        "corrected": true,
+        "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+      }
+    },
+    {
+      "id": "train-teacher_unavailable-1",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Você pode especificar os requisitos da função de ordenação?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-teacher_unavailable-1",
+        "accepted": false,
+        "corrected": true,
+        "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+      }
+    },
+    {
+      "id": "train-teacher_unavailable-2",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Você pode indicar quais aspectos das redes neurais deseja que eu explique?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-teacher_unavailable-2",
+        "accepted": false,
+        "corrected": true,
+        "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+      }
+    },
+    {
+      "id": "train-teacher_unavailable-3",
+      "route": {
+        "tool": "clarify",
+        "arguments": {
+          "question": "Você pode descrever o formato e o conteúdo do CSV que deseja ler?"
+        }
+      },
+      "verification": {
+        "schema_valid": true,
+        "correct": true,
+        "reason": null,
+        "semantic_question_review_needed": true
+      },
+      "editor_review": {
+        "id": "train-teacher_unavailable-3",
+        "accepted": false,
+        "corrected": true,
+        "reason": "The original question asked for extra detail instead of explaining that the required teacher was unavailable."
+      }
+    }
+  ],
+  "paid_api_calls": 0,
+  "status": "reviewed",
+  "normalized_expression_rule": "Ignore arithmetic whitespace only; preserve numbers and operators."
+}

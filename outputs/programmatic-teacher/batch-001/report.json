@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "provider": "programmatic-local",
+  "note": "Respostas calculadas por codigo (referencia deterministica). Sem chamadas de API.",
+  "gerado_por": "zcode",
+  "seed": 20261007,
+  "examples": 585
+}

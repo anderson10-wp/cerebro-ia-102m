@@ -1,0 +1,17 @@
+{
+  "base_checkpoint": "../teacher-v3/candidate/best-model.pt",
+  "tokenizer": "../h100-pretrain/result/tokenizer.json",
+  "base_checkpoint_sha256": "a0c0609daf3c0ebc70f298db2fb7adbd5b0555148ef5826785cdbef98ec30ae5",
+  "train_sha256": "5083bb0449ef2fe41e93ad7e80f29150c281db42501780b954ed9f69ec6a86d5",
+  "validation_sha256": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e",
+  "device_default": "cpu",
+  "learning_rate": 5e-06,
+  "batch_size": 4,
+  "max_epochs": 2,
+  "max_training_seconds": 600,
+  "patience_epochs": 2,
+  "selection": "lowest validation response loss; final generation evaluation required",
+  "automatic_promotion": false,
+  "cloud_launch": false,
+  "status": "prepared_not_started"
+}

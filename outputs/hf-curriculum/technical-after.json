@@ -1,0 +1,158 @@
+{
+  "checkpoint_sha256": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+  "split": "validation",
+  "decode": "greedy, maximum 48 new tokens, stop at EOS; no output repair or grammar constraints",
+  "weights_updated": false,
+  "tools_executed": 0,
+  "results": [
+    {
+      "id": "training-ops-validation-71-0",
+      "category": "training_operations",
+      "prompt": "Pergunta: Experimento 71: loss de validação anterior 1.71; atual 1.66, no mesmo conjunto. A loss diminuiu? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.3
+    },
+    {
+      "id": "training-ops-validation-71-1",
+      "category": "training_operations",
+      "prompt": "Pergunta: Rodada 71: modelo anterior acertou 6 de 12; candidato acertou 7. Regra: promover somente com mais acertos e sem regressões. Houve 0 regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "output": "manter",
+      "correct": false,
+      "seconds": 0.41
+    },
+    {
+      "id": "training-ops-validation-71-2",
+      "category": "training_operations",
+      "prompt": "Pergunta: Execução 71: limite de 81 minutos, já foram usados 80. Ao atingir o limite, encerrar. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "output": "encerrar",
+      "correct": false,
+      "seconds": 0.56
+    },
+    {
+      "id": "training-ops-validation-71-3",
+      "category": "training_operations",
+      "prompt": "Pergunta: Registro do treino 71: {\"status\":\"completed\",\"steps\":121}. O processo terminou? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.27
+    },
+    {
+      "id": "training-ops-validation-72-0",
+      "category": "training_operations",
+      "prompt": "Pergunta: Experimento 72: loss de validação anterior 1.72; atual 1.77, no mesmo conjunto. A loss diminuiu? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    },
+    {
+      "id": "training-ops-validation-72-1",
+      "category": "training_operations",
+      "prompt": "Pergunta: Rodada 72: modelo anterior acertou 6 de 12; candidato acertou 5. Regra: promover somente com mais acertos e sem regressões. Houve 1 regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "output": "manter",
+      "correct": true,
+      "seconds": 0.41
+    },
+    {
+      "id": "training-ops-validation-72-2",
+      "category": "training_operations",
+      "prompt": "Pergunta: Execução 72: limite de 82 minutos, já foram usados 82. Ao atingir o limite, encerrar. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "output": "encerrar",
+      "correct": true,
+      "seconds": 0.55
+    },
+    {
+      "id": "training-ops-validation-72-3",
+      "category": "training_operations",
+      "prompt": "Pergunta: Registro do treino 72: {\"status\":\"running\",\"steps\":122}. O processo terminou? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.26
+    },
+    {
+      "id": "training-ops-validation-73-0",
+      "category": "training_operations",
+      "prompt": "Pergunta: Experimento 73: loss de validação anterior 1.73; atual 1.68, no mesmo conjunto. A loss diminuiu? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.28
+    },
+    {
+      "id": "training-ops-validation-73-1",
+      "category": "training_operations",
+      "prompt": "Pergunta: Rodada 73: modelo anterior acertou 6 de 12; candidato acertou 7. Regra: promover somente com mais acertos e sem regressões. Houve 0 regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "output": "manter",
+      "correct": false,
+      "seconds": 0.41
+    },
+    {
+      "id": "training-ops-validation-73-2",
+      "category": "training_operations",
+      "prompt": "Pergunta: Execução 73: limite de 83 minutos, já foram usados 82. Ao atingir o limite, encerrar. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "output": "encerrar",
+      "correct": false,
+      "seconds": 0.55
+    },
+    {
+      "id": "training-ops-validation-73-3",
+      "category": "training_operations",
+      "prompt": "Pergunta: Registro do treino 73: {\"status\":\"completed\",\"steps\":123}. O processo terminou? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "output": "não",
+      "correct": false,
+      "seconds": 0.28
+    },
+    {
+      "id": "training-ops-validation-74-0",
+      "category": "training_operations",
+      "prompt": "Pergunta: Experimento 74: loss de validação anterior 1.74; atual 1.79, no mesmo conjunto. A loss diminuiu? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.27
+    },
+    {
+      "id": "training-ops-validation-74-1",
+      "category": "training_operations",
+      "prompt": "Pergunta: Rodada 74: modelo anterior acertou 6 de 12; candidato acertou 5. Regra: promover somente com mais acertos e sem regressões. Houve 1 regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "output": "manter",
+      "correct": true,
+      "seconds": 0.41
+    },
+    {
+      "id": "training-ops-validation-74-2",
+      "category": "training_operations",
+      "prompt": "Pergunta: Execução 74: limite de 84 minutos, já foram usados 84. Ao atingir o limite, encerrar. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "output": "encerrar",
+      "correct": true,
+      "seconds": 0.55
+    },
+    {
+      "id": "training-ops-validation-74-3",
+      "category": "training_operations",
+      "prompt": "Pergunta: Registro do treino 74: {\"status\":\"running\",\"steps\":124}. O processo terminou? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "output": "não",
+      "correct": true,
+      "seconds": 0.28
+    }
+  ],
+  "hardware": "AMD Radeon RX 580 2048SP",
+  "cases_path": "outputs\\hf-curriculum\\technical-validation.jsonl",
+  "cases_sha256": "a837a9fc51a4bea6512e82bc9dd533fb23f0307a1b93c9e7f1b7a297976314cd",
+  "correct": 8,
+  "evaluated": 16
+}

@@ -1,0 +1,208 @@
+{
+  "status": "complete",
+  "weights_updated": false,
+  "cloud_jobs_started": 0,
+  "api_teacher_calls": 0,
+  "tokenizer_sha256": {
+    "cerebro-v1\\trained\\brain\\tokenizer.json": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+    "h100-pretrain\\result\\tokenizer.json": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+    "h100-pretrain\\data\\corpus\\tokenizer.json": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e"
+  },
+  "tokenizer_tests": [
+    {
+      "text": "Olá! A GPU não está disponível.",
+      "tokens": 9,
+      "unknown_tokens": 0,
+      "roundtrip_exact": true
+    },
+    {
+      "text": "A loss caiu de 1,50 para 1,32.",
+      "tokens": 12,
+      "unknown_tokens": 0,
+      "roundtrip_exact": true
+    },
+    {
+      "text": "Responda somente com a palavra azul.",
+      "tokens": 8,
+      "unknown_tokens": 0,
+      "roundtrip_exact": true
+    },
+    {
+      "text": "23 + 18 = 41.",
+      "tokens": 6,
+      "unknown_tokens": 0,
+      "roundtrip_exact": true
+    },
+    {
+      "text": "{\"pronto\":false}",
+      "tokens": 6,
+      "unknown_tokens": 0,
+      "roundtrip_exact": true
+    }
+  ],
+  "label_alignment_tests": [
+    {
+      "first_answer_token_supervised": true,
+      "eos_supervised": true,
+      "label_count": 3
+    },
+    {
+      "first_answer_token_supervised": true,
+      "eos_supervised": true,
+      "label_count": 2
+    }
+  ],
+  "base_training": {
+    "status": "completed",
+    "parameters": 102257280,
+    "source_tokens": 1999962112,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "torch": "2.8.0+cu128",
+    "precision": "BF16 autocast; FP32 master weights and AdamW state",
+    "optimizer_resumed": true,
+    "global_batch_tokens": 65536,
+    "benchmark": [
+      {
+        "micro_batch": 8,
+        "tokens_per_second": 173178.25099749852,
+        "peak_memory_bytes": 9719547904,
+        "status": "ok"
+      },
+      {
+        "micro_batch": 16,
+        "tokens_per_second": 209899.50318236148,
+        "peak_memory_bytes": 17894443008,
+        "status": "ok"
+      },
+      {
+        "micro_batch": 32,
+        "tokens_per_second": 221120.411076678,
+        "peak_memory_bytes": 34259175424,
+        "status": "ok"
+      },
+      {
+        "micro_batch": 64,
+        "tokens_per_second": 231744.5954044946,
+        "peak_memory_bytes": 66969044992,
+        "status": "ok"
+      }
+    ],
+    "corpus_hash": "ff5896512591627d0782774501aa26dc9be812eb4c9b210c9e6f382bd0d75e18",
+    "tokenizer_hash": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+    "dataset_note": "Repeated passes through the existing 2B-token training corpus; not additional unique tokens.",
+    "original_model_replaced": false,
+    "audit_used_for_selection": false,
+    "micro_batch": 64,
+    "accumulation": 1,
+    "baseline_validation": {
+      "pt": 3.127233624458313,
+      "en": 3.3299021124839783,
+      "code": 1.5295662134885788,
+      "weighted": 2.938250634819269
+    },
+    "tokens_processed": 5642190848,
+    "tokens_this_run": 3642228736,
+    "steps": 86093,
+    "best_validation_loss": 2.8639794826507567,
+    "latest_validation": {
+      "pt": 3.0538158118724823,
+      "en": 3.2409065067768097,
+      "code": 1.4764224588871002,
+      "weighted": 2.8639794826507567
+    },
+    "elapsed_seconds": 16212.254828072002,
+    "stop_reason": "time_or_token_limit",
+    "validation_improved": true,
+    "training_seconds": 16202.401192006
+  },
+  "corpus_counts": {
+    "pt": {
+      "train": 1200000000,
+      "validation": 1000000,
+      "audit": 1000000
+    },
+    "en": {
+      "train": 500000000,
+      "validation": 1000000,
+      "audit": 1000000
+    },
+    "code": {
+      "train": 300000000,
+      "validation": 1000000,
+      "audit": 1000000
+    }
+  },
+  "models": [
+    {
+      "name": "base-pretrained",
+      "checkpoint_sha256": "e80f4077b8125f5aaea8eb4a2344e1b0bfa6bf06c4033f27112a6564ecd31a9c",
+      "config": {
+        "vocab_size": 32768,
+        "dim": 640,
+        "layers": 16,
+        "heads": 10,
+        "hidden_dim": 1792,
+        "context": 1024,
+        "rope_base": 10000.0
+      },
+      "parameters": 102257280,
+      "all_weights_finite": true,
+      "generations": [
+        {
+          "prompt": "O Brasil é um país da América do Sul. Sua capital é",
+          "output": " a cidade de São Paulo, capital do estado de São Paulo.\nA cidade de São Paulo é a capital do Brasil, e a capital do Brasil. Sua capital é a cidade de São Paulo.\nA cidade de São Paulo é a"
+        },
+        {
+          "prompt": "Para estudar um assunto novo, é importante",
+          "output": " que você tenha uma boa noção de como ele é feito.\n-\n1\nFaça uma lista de todos os assuntos que você quer estudar.\n-\n2\nFaça uma lista de todos os assuntos que você quer estudar.\n-"
+        },
+        {
+          "prompt": "As plantas precisam de água e luz porque",
+          "output": " não precisam de água.\nA água é um dos principais componentes do nosso corpo, e por isso, é importante que ela seja sempre limpa e não poluída.\nA água é um dos principais componentes do nosso corpo, e por isso"
+        },
+        {
+          "prompt": "Pergunta: Olá, como você pode me ajudar?\nResposta:",
+          "output": " Sim, eu sei que você pode me ajudar, mas eu não sei como você pode me ajudar.\nEu sei que você pode me ajudar, mas eu não sei como você pode me ajudar.\nEu sei que você pode me ajudar,"
+        }
+      ],
+      "hardware": "AMD Radeon RX 580 2048SP",
+      "causal_prefix_max_difference": 0.0
+    },
+    {
+      "name": "current-instruction-reference",
+      "checkpoint_sha256": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+      "config": {
+        "vocab_size": 32768,
+        "dim": 640,
+        "layers": 16,
+        "heads": 10,
+        "hidden_dim": 1792,
+        "context": 1024,
+        "rope_base": 10000.0
+      },
+      "parameters": 102257280,
+      "all_weights_finite": true,
+      "generations": [
+        {
+          "prompt": "O Brasil é um país da América do Sul. Sua capital é",
+          "output": " a cidade de São Paulo."
+        },
+        {
+          "prompt": "Para estudar um assunto novo, é importante",
+          "output": " analisar o que você quer estudar e o que você quer estudar.\nPara isso, é importante analisar o que você quer estudar e o que você quer estudar. É importante analisar o que você quer estudar e o que você quer estudar.\n"
+        },
+        {
+          "prompt": "As plantas precisam de água e luz porque",
+          "output": " não precisam de água.\nA água é um dos principais componentes do nosso corpo. Ela é responsável por manter a temperatura e a umidade do nosso corpo.\nA água é um dos principais componentes do nosso corpo. Ela é responsável por manter"
+        },
+        {
+          "prompt": "Pergunta: Olá, como você pode me ajudar?\nResposta:",
+          "output": "Não. O que você pode me ajudar?"
+        }
+      ],
+      "hardware": "AMD Radeon RX 580 2048SP",
+      "causal_prefix_max_difference": 0.0
+    }
+  ],
+  "limitations": "Spot checks and source review, not a complete corpus or numerical kernel audit. CPU loads checkpoint metadata; all model inference uses RX580."
+}

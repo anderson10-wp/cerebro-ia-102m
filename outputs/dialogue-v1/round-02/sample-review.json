@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "training_started": false,
+  "review": "Codex sample review",
+  "notes": "Rejected: domain classifier used substring matches and admitted niche/current factual prompts. Invented player statistics, misdefined DMA, generic plot without identifying movie.",
+  "examples_of_failure": [
+    "dialog-0000",
+    "dialog-0001",
+    "dialog-0016",
+    "dialog-0017",
+    "dialog-0020",
+    "dialog-0031",
+    "dialog-0051",
+    "dialog-0075",
+    "dialog-0081",
+    "dialog-0093"
+  ]
+}

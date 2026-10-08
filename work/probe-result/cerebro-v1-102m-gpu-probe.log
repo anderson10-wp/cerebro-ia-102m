@@ -1,0 +1,14 @@
+[{"stream_name":"stderr","time":10.950084698,"data":"\n"}
+,{"stream_name":"stderr","time":10.950129066,"data":"*****************************************\n"}
+,{"stream_name":"stderr","time":10.9501357,"data":"Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":10.950141712,"data":"*****************************************\n"}
+,{"stream_name":"stderr","time":24.175419479,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":24.175457976,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":34.896393026,"data":"{\"parameters\": 102257280, \"gpus\": [\"Tesla T4\", \"Tesla T4\"], \"tokens_per_second\": 27559.79156853251, \"micro_batch_per_gpu\": 8, \"context\": 1024, \"peak_memory_gb_per_gpu\": 9.912295936, \"initial_loss\": 10.513970375061035, \"last_loss\": 8.242939949035645, \"estimated_hours_2b_compute_only\": 20.158191478845698, \"torch\": \"2.11.0+cu128\", \"status\": \"PASS\"}\n"}
+,{"stream_name":"stderr","time":42.649699441,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":42.649747112,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":42.989099367,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":42.989128508,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":43.942235513,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":45.142973728,"data":"[NbConvertApp] Writing 292988 bytes to __results__.html\n"}
+]

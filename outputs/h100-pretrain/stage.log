@@ -1,0 +1,4 @@
+{"event": "free_cpu_ready", "gpu_started": false, "endpoint_auth": true}
+{"status": "failed", "gpu_used": false, "completed_files": [], "error_type": "RuntimeError"}
+{"event": "cpu_stopped", "status": "Stopped"}
+{"error_type": "RuntimeError", "function": "main", "line": 72}

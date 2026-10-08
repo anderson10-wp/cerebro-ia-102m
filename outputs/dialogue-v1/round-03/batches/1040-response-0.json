@@ -1,0 +1,107 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-1040",
+      "answer": "Redes neurais imitam o cérebro para aprender padrões. Elas analisam muitos exemplos, como fotos de gatos, e ajustam conexões internas. Assim, aprendem a classificar coisas novas sozinhas, sem regras fixas.",
+      "followup": "Como uma rede neural aprende a reconhecer um gato?",
+      "followup_answer": "Ela recebe muitas fotos rotuladas. Se errar, ajusta levemente suas conexões internas. Repetindo isso milhares de vezes, os ajustes acumulam-se e o reconhecimento melhora, como treinar um músculo."
+    },
+    {
+      "id": "dialog-1041",
+      "answer": "Normas sociais podem influenciar como mulheres formam amizades, incentivando maior proximidade emocional e cuidado com a harmonia do grupo. Contudo, isso varia muito entre culturas, gerações e personalidades individuais.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1042",
+      "answer": "Querida tia, escrevo para compartilhar algo difícil. Enfrentei um período de ansiedade que me isolou. Com ajuda profissional e paciência, aprendi a respirar fundo e pedir apoio. Hoje sigo em frente, mais forte.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1043",
+      "answer": "Comece com Python, por ser simples e versátil, ou JavaScript, se quiser criar sites. Escolha uma e pratique projetos pequenos. O importante é a constância, não a quantidade de linguagens.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1044",
+      "answer": "Crie pastas por ano e tipo de documento. Nomeie os arquivos de forma clara, como '2024-contrato-fornecedor.pdf'. Use busca e exclua o que não precisa. Revise uma vez por semana.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1045",
+      "answer": "Feche programas desnecessários e reinicie o computador. Verifique se há atualizações do sistema. Limpe arquivos temporários e desative programas que iniciam sozinhos. Se for muito lento, pode precisar de mais memória.",
+      "followup": "Meu computador está lento ao abrir programas ou ao navegar na internet?",
+      "followup_answer": "Se for ao abrir programas, pode ser falta de memória ou disco cheio. Se for na internet, verifique sua conexão. Cada caso exige uma solução diferente."
+    },
+    {
+      "id": "dialog-1046",
+      "answer": "Escolha um momento calmo e use frases em primeira pessoa, como 'Eu me sinto... quando...'. Seja claro sobre o que precisa, sem culpar. Ouça a outra pessoa e proponha um acordo.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1047",
+      "answer": "Erros comuns: confundir 'mas' e 'mais', usar 'a' sem crase antes de verbo, e concordância verbal. Leia em voz alta para identificar sons estranhos. Dúvidas, consulte um dicionário confiável.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1048",
+      "answer": "Estudar uma língua abre portas para viagens, trabalho e cultura. Treina a memória e a flexibilidade mental. Também amplia a visão de mundo, mostrando que existem outras formas de pensar e viver.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1049",
+      "answer": "Escolha um aplicativo conforme sua necessidade: para organização automática, busque reconhecimento facial; para privacidade, prefira opções locais. Teste versões gratuitas antes de decidir, comparando facilidade de uso.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1050",
+      "answer": "Desafios incluem bugs acumulados e equipe sobrecarregada. Estratégias que funcionam: dividir o projeto em partes menores, revisar código regularmente e documentar decisões. Comunicação clara evita retrabalho e confusão.",
+      "followup": "Como evitar que bugs se acumulem durante a expansão?",
+      "followup_answer": "Revisando o código frequentemente e automatizando testes. Assim, erros são descobertos cedo, quando são mais baratos e fáceis de corrigir, antes de se tornarem problemas grandes."
+    },
+    {
+      "id": "dialog-1051",
+      "answer": "Distância física altera tom de voz e contato visual. Perto, gestos e expressões contam muito. Para conectar, mantenha contato visual suave, sorria e incline-se levemente para frente, mostrando interesse.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1052",
+      "answer": "Prezado(a) chefe, peço desculpas pelo erro ocorrido. Reconheço minha responsabilidade e já tomei medidas para corrigir. Comprometo-me a evitar repetição. Agradeço pela oportunidade de aprender.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1053",
+      "answer": "Comece com cores primárias e pincéis grossos. Tente pintar uma maçã simples, misturando vermelho e amarelo. Use camadas finas e espere secar entre elas. Pratique em papel antes do quadro.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1054",
+      "answer": "Use pastas por assunto e etiquetas coloridas. Marque urgentes com destaque e arquive o que já foi resolvido. Reserve 15 minutos diários para organizar. Desinscreva-se de newsletters desnecessárias.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1055",
+      "answer": "Redes convolucionais entendem melhor imagens porque analisam padrões locais, como bordas e texturas, antes de formas complexas. Técnicas tradicionais exigem que um humano descreva essas características manualmente.",
+      "followup": "Por que redes convolucionais entendem melhor imagens?",
+      "followup_answer": "Porque analisam padrões locais, como bordas e texturas, antes de formas complexas. Técnicas tradicionais exigem que um humano descreva essas características manualmente, o que é limitado."
+    },
+    {
+      "id": "dialog-1056",
+      "answer": "Manual de crise: monitore menções 24h, tenha um porta-voz, responda rápido com fatos. Modelo: 'Reconhecemos o ocorrido. Estamos apurando e informaremos em breve. Pedimos paciência.' Evite culpar terceiros.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1057",
+      "answer": "Ambos usam verbos auxiliares e artigos definidos. Francês tem mais sons nasais e regras de gênero complexas; espanhol tem pronúncia mais regular e usa 'tú' e 'vosotros'. Ambos têm subjuntivo.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1058",
+      "answer": "Existem plataformas gratuitas com exercícios, vídeos e conversação. Escolha uma com aulas estruturadas e prática de fala. Combine com leitura de notícias simples e músicas em francês.",
+      "followup": ""
+    },
+    {
+      "id": "dialog-1059",
+      "answer": "Sirva risoto de legumes, frango ao curry com arroz, ou massa com molho rápido. Acompanhe com salada fresca e pão. Planeje com antecedência para cozinhar menos no dia."
+    }
+  ]
+}

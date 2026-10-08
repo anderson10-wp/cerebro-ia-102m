@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0940",
+      "answer": "Redes neurais artificiais são modelos computacionais inspirados no cérebro, compostos por camadas de nós (neurônios) que recebem valores, aplicam pesos e funções de ativação, e produzem saídas. Por exemplo, uma rede simples pode reconhecer dígitos escritos à mão ao aprender padrões de pixels.",
+      "followup": "Como posso treinar uma rede neural simples usando apenas planilha?",
+      "followup_answer": "Em uma planilha, crie colunas para entradas, pesos e bias; use fórmulas para multiplicar entradas pelos pesos, somar o bias e aplicar uma função de ativação como sigmoid. Atualize os pesos manualmente com a regra de aprendizado (por exemplo, gradiente descendente) após comparar a saída com o valor desejado."
+    },
+    {
+      "id": "dialog-0941",
+      "answer": "Pratique ouvir atentamente, fale de forma clara e curta, use gestos para reforçar ideias, peça feedback e ajuste seu tom conforme o interlocutor. Também escreva pontos principais antes de conversar e observe a linguagem corporal dos outros.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0942",
+      "answer": "Comece estudando os tempos verbais básicos (presente, passado, futuro) e a concordância de gênero e número. Use frases curtas, destaque o sujeito e o verbo, e pratique com exercícios que trocam apenas uma palavra por vez.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0943",
+      "answer": "Defina metas pequenas, estude em blocos de 25‑30 minutos com intervalos, elimine distrações, revise o conteúdo no dia seguinte e registre o progresso em um planner. Recompense-se ao cumprir cada etapa.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0944",
+      "answer": "Não posso indicar recursos específicos, mas procure guias gratuitos online sobre casamentos econômicos, fóruns de viajantes e listas de verificação de planejamento. Avalie opções de destinos, custos de fornecedores locais e avaliações de outros casais.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0945",
+      "answer": "Verifique se a tomada funciona, confirme que o cabo de energia está bem conectado e que o botão de energia está pressionado. Teste outra tomada, examine o fusível ou a fonte de alimentação e, se nada funcionar, procure assistência técnica.",
+      "followup": "Qual é o procedimento seguro para abrir o gabinete do computador?",
+      "followup_answer": "Desligue o aparelho da tomada, espere alguns minutos, use uma chave de fenda adequada para remover os parafusos da parte traseira, abra o gabinete com cuidado, toque em uma superfície metálica para descarregar eletricidade estática e evite tocar nos componentes internos."
+    },
+    {
+      "id": "dialog-0946",
+      "answer": "Os municípios podem criar fóruns de diálogo regular, oferecer treinamentos de mediação, disponibilizar canais digitais anônimos e estabelecer protocolos claros de prestação de contas, garantindo transparência e participação da comunidade nas decisões de segurança.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0947",
+      "answer": "O oceano, vasto e azul, guarda segredos de vida e cor. Suas ondas cantam, alimentam e regulam o clima. Proteger suas águas preserva a biodiversidade, garante recursos futuros e mantém o equilíbrio do planeta para as próximas gerações.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0948",
+      "answer": "Aprender espanhol melhora a memória, abre oportunidades de trabalho, facilita viagens a países hispânicos, permite acessar cultura, literatura e música em sua forma original, e aumenta a confiança ao comunicar-se com milhões de falantes ao redor do mundo.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0949",
+      "answer": "Faça circuitos de corpo inteiro: 3 séries de 15 agachamentos, 10 flexões, 20 polichinelos, 30 segundos de prancha. Alterne dias de cardio (corrida leve ou bicicleta) e dias de força, sempre aquecendo antes e alongando depois.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0950",
+      "answer": "Aumente a quantidade de dados de treinamento, use augmentação de imagens, ajuste a taxa de aprendizado, adicione camadas de normalização em lote e experimente arquiteturas mais profundas ou residuais. Também pode aplicar regularização como dropout para evitar overfitting.",
+      "followup": "Qual técnica de augmentação é mais simples para começar?",
+      "followup_answer": "Rotacionar imagens em pequenos ângulos (5‑15 graus) e espelhá‑las horizontalmente são técnicas simples que aumentam a variedade dos dados sem exigir ferramentas avançadas."
+    },
+    {
+      "id": "dialog-0951",
+      "answer": "Considere os hobbies do amigo, como música, esportes ou leitura, e escolha algo relacionado: um livro de autor favorito, ingressos para um show, um kit de artes ou um vale‑presente de loja que ele costuma visitar.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0952",
+      "answer": "Prezado(a) Professor(a), agradeço sinceramente pelo passe de dia do jeans que recebeu do pai de um aluno. Esse gesto demonstra apoio à comunidade escolar e reforça nosso compromisso com a educação. Muito obrigado!",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0953",
+      "answer": "Sem ensinar tolerância, crianças podem desenvolver preconceitos, exclusão e violência. Isso gera conflitos sociais, discriminação institucionalizada e dificulta a cooperação. Uma sociedade intolerante tende a ser menos coesa, mais polarizada e menos capaz de resolver problemas coletivos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0954",
+      "answer": "Com asas no lugar dos braços, segurar talheres exige garras ou presas, dificultando a coordenação ao comer. Escovar os dentes requer adaptar o cabo da escova ou usar suportes. Usar celular implica prender o aparelho ao peito ou usar suportes magnéticos.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0955",
+      "answer": "Redes convolucionais são projetadas para analisar padrões espaciais em imagens, mas podem ser adaptadas para sequências de texto usando convoluções 1‑D. Embora funcionem, arquiteturas como Transformers costumam ser mais eficazes para tarefas de linguagem natural.",
+      "followup": "Em que situação uma CNN seria preferível ao Transformer para texto?",
+      "followup_answer": "Quando o conjunto de dados é pequeno e a tarefa requer captura rápida de n‑gramas locais, uma CNN pode treinar mais rápido e evitar overfitting, oferecendo desempenho suficiente sem a complexidade de um Transformer."
+    },
+    {
+      "id": "dialog-0956",
+      "answer": "Escolha um momento calmo, prepare o que quer dizer, use frases em primeira pessoa (“eu sinto…”) e escute sem interromper. Foque no problema, não na pessoa, e proponha soluções concretas para melhorar a situação.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0957",
+      "answer": "Prezado(a) recrutador(a), sou formado em [área] com experiência em [competência chave]. Na empresa X, aumentei a eficiência em 20% ao otimizar processos. Estou motivado a contribuir com minhas habilidades analíticas e criatividade para o sucesso da sua equipe.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0958",
+      "answer": "Ensine truques curtos em sessões de 5 minutos, recompense imediatamente com petisco e elogio, repita o gesto várias vezes e associe um comando verbal. Seja consistente, paciente e aumente a dificuldade gradualmente.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0959",
+      "answer": "Manter-se organizado reduz estresse, aumenta a produtividade e evita perdas de tempo. Use listas de tarefas, categorize documentos em pastas, reserve um horário diário para revisar prioridades e elimine itens desnecessários regularmente.",
+      "followup": "false"
+    }
+  ]
+}

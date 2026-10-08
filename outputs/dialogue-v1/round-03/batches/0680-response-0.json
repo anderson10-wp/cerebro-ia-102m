@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0680",
+      "answer": "Modelos comuns de precificação de software incluem assinatura mensal ou anual, licenciamento perpétuo, pagamento por uso (pay‑as‑you‑go) e modelo freemium, onde recursos básicos são gratuitos e funcionalidades avançadas são pagas.",
+      "followup": "Qual modelo seria mais adequado para uma startup que ainda está validando o produto?",
+      "followup_answer": "Para uma startup em fase de validação, o modelo freemium ou pay‑as‑you‑go costuma ser mais flexível, pois permite atrair usuários rapidamente e cobrar apenas quando o valor é comprovado."
+    },
+    {
+      "id": "dialog-0681",
+      "answer": "Comece com uma saudação simples, como “Olá, tudo bem? Sou [seu nome] e trabalho com [área]. Posso ajudar em algo?” Isso demonstra cordialidade e deixa claro seu propósito sem invadir a privacidade alheia."
+    },
+    {
+      "id": "dialog-0682",
+      "answer": "Ao enviar o formulário, exiba a mensagem: “Obrigado por se inscrever! Recebemos sua inscrição e você começará a receber nossa newsletter em breve.” Essa confirmação reforça a confiança do usuário."
+    },
+    {
+      "id": "dialog-0683",
+      "answer": "A maneira mais fácil é combinar recursos gratuitos: aplicativos de vocabulário, podcasts, vídeos com legendas e prática diária de leitura e fala, usando materiais que lhe interessam para manter a motivação."
+    },
+    {
+      "id": "dialog-0684",
+      "answer": "Organizações de vela costumam usar barcos de classe específica, como Laser, 470 ou 49er, que garantem igualdade de desempenho. Cada classe tem regras de tamanho, peso e vela para competições justas."
+    },
+    {
+      "id": "dialog-0685",
+      "answer": "Redes neurais convolucionais são usadas em reconhecimento de imagens, detecção de objetos, análise de vídeo, classificação de documentos escaneados e até na segmentação de imagens médicas para identificar tumores.",
+      "followup": "Pode dar um exemplo simples de como uma CNN reconhece um gato em uma foto?",
+      "followup_answer": "A CNN extrai padrões como bordas e texturas em camadas iniciais, depois combina esses recursos para identificar formas típicas de gato, como orelhas pontudas e olhos, produzindo uma probabilidade alta de que a imagem contenha um gato."
+    },
+    {
+      "id": "dialog-0686",
+      "answer": "A comunicação contínua pode ser facilitada por encontros regulares, grupos de apoio e plataformas digitais seguras. Profissionais atuam como mediadores, oferecendo orientação, garantindo que informações sensíveis sejam compartilhadas de forma respeitosa e ajudando a construir confiança entre as partes."
+    },
+    {
+      "id": "dialog-0687",
+      "answer": "A gramática francesa tem gêneros masculino/feminino e concordância de artigos, enquanto o espanhol também possui gêneros, mas usa pronome “se” para reflexivos e tem diferenças nos tempos verbais, como o pretérito perfeito simples versus o composto."
+    },
+    {
+      "id": "dialog-0688",
+      "answer": "O aprendizado profundo pode identificar sequências temporais em séries de dados, reconhecendo padrões de ritmo e duração. Redes recorrentes ou Transformers aprendem dependências temporais, ajudando a prever eventos futuros ou a classificar intervalos de tempo."
+    },
+    {
+      "id": "dialog-0689",
+      "answer": "Na UPR, estudantes podem se envolver em organizações voluntárias como o Programa de Tutoria Acadêmica, grupos de conservação ambiental e iniciativas de extensão comunitária, que oferecem oportunidades de serviço e desenvolvimento de habilidades."
+    },
+    {
+      "id": "dialog-0690",
+      "answer": "Estratégias eficazes incluem reintrodução de espécies nativas, controle de espécies invasoras, restauração de hidrologia natural e monitoramento contínuo. Em zonas húmidas, criar áreas de retenção de água ajuda a recuperar habitats e proteger a biodiversidade.",
+      "followup": "Qual seria o primeiro passo prático para restaurar uma pastagem degradada?",
+      "followup_answer": "O primeiro passo é avaliar a condição do solo e remover espécies invasoras, seguido da semeadura de gramíneas nativas adaptadas ao clima local, garantindo cobertura rápida e prevenção de erosão."
+    },
+    {
+      "id": "dialog-0691",
+      "answer": "Armadilhas comuns incluem assumir que o bebê entende tudo, usar críticas públicas, não ouvir as necessidades emocionais e impor expectativas rígidas, o que pode gerar ressentimento e dificultar a comunicação saudável."
+    },
+    {
+      "id": "dialog-0692",
+      "answer": "Cartaz: \"Preserve os habitats costeiros! Eles protegem a biodiversidade, reduzem a erosão e sustentam a pesca. Cada ação conta: evite lixo, apoie áreas protegidas e respeite a vida marinha.\" Use cores azul e verde e imagens de manguezais."
+    },
+    {
+      "id": "dialog-0693",
+      "answer": "Um bom ponto de partida é usar aplicativos gratuitos de aprendizado, assistir a vídeos com legendas e praticar conversas simples com falantes nativos em grupos de troca de idiomas online."
+    },
+    {
+      "id": "dialog-0694",
+      "answer": "Para melhorar foco e produtividade, pratique a técnica Pomodoro, faça pausas curtas, mantenha o ambiente livre de distrações, exercite-se regularmente e durma pelo menos sete horas por noite."
+    },
+    {
+      "id": "dialog-0695",
+      "answer": "Manipular formas 2D em computador envolve usar bibliotecas gráficas que permitem criar, mover, rotacionar e redimensionar objetos por meio de coordenadas x‑y e transformações matriciais simples.",
+      "followup": "Qual biblioteca simples pode ser usada por iniciantes em Python?",
+      "followup_answer": "A biblioteca Pygame oferece funções básicas para desenhar retângulos, círculos e linhas, além de permitir mover e redimensionar essas formas com poucos comandos, sendo ideal para quem está começando."
+    },
+    {
+      "id": "dialog-0696",
+      "answer": "Apresentação: 1) Introdução – energia renovável nas cidades; 2) Benefícios sociais – redução de poluição, criação de empregos verdes, melhoria da saúde pública; 3) Estudos de caso; 4) Conclusão com chamadas à ação para políticas locais."
+    },
+    {
+      "id": "dialog-0697",
+      "answer": "Instalar grama artificial reduz manutenção, economiza água e evita uso de pesticidas. Além disso, oferece aparência verde o ano todo e pode ser mais segura para crianças, pois não tem áreas úmidas escorregadias."
+    },
+    {
+      "id": "dialog-0698",
+      "answer": "Chatbots podem oferecer prática de conversação, corrigir pronúncia, sugerir vocabulário e responder dúvidas em tempo real, tornando o aprendizado mais interativo e disponível a qualquer hora."
+    },
+    {
+      "id": "dialog-0699",
+      "answer": "Organize a garagem por zonas: pendure ferramentas em painéis perfurados, use caixas transparentes rotuladas e coloque itens grandes em prateleiras superiores. Reserve um corredor central para acesso rápido e mantenha um inventário simples."
+    }
+  ]
+}

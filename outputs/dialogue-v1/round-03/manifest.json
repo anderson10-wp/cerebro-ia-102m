@@ -1,0 +1,24 @@
+{
+  "source": "nicholasKluge/instruct-aira-dataset-v2",
+  "revision": "c65b2bf91938480c0683ec396f4f11ca1a79782a",
+  "source_license": "Apache-2.0, author Nicholas Kluge Correa; modified answers, no endorsement",
+  "seed_sha256": "fde79c609177eb36ca3566b292d569340ad06de75fbfdad8e79e480ef8a0eaf0",
+  "counts": {
+    "comunicacao": 189,
+    "conceitos": 68,
+    "cotidiano": 88,
+    "escrita": 189,
+    "estudo": 189,
+    "organizacao": 189,
+    "tecnologia": 188
+  },
+  "recipe": "1100 distinct source questions and 100 reserve; regenerate all answers, 20% with a natural follow-up; first 100 require review before remaining generation",
+  "limits": {
+    "max_calls": 80,
+    "max_total_tokens": 250000,
+    "max_completion_tokens": 4096,
+    "retries_per_batch": 2
+  },
+  "training_started": false,
+  "quality": "Filters are not factual certification. First sample and model responses need review."
+}

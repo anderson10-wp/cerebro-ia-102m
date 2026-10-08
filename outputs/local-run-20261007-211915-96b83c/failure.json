@@ -1,0 +1,5 @@
+{
+  "status": "interrupted_or_failed",
+  "error": "Etapa falhou. Consulte .\\outputs\\local-run-20261007-211915-96b83c\\check.log",
+  "promoted": false
+}

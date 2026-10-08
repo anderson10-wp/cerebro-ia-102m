@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0460",
+      "answer": "Para adaptar um GPT a uma tarefa, coleta‑se dados específicos da tarefa, ajusta‑se o modelo com aprendizado supervisionado (fine‑tuning) usando esses exemplos, e opcionalmente aplica‑se ajuste de parâmetros (prompt engineering) para melhorar respostas no domínio desejado.",
+      "followup": "Qual seria um exemplo de prompt bem estruturado para um assistente que ajuda a escrever e‑mails profissionais?",
+      "followup_answer": "Um bom prompt inclui o objetivo, tom e detalhes essenciais, por exemplo: “Escreva um e‑mail formal ao cliente agradecendo a compra, solicitando feedback e oferecendo um cupom de desconto de 10 %. Use tom cordial e conciso.”"
+    },
+    {
+      "id": "dialog-0461",
+      "answer": "Redes recorrentes comuns são a RNN simples, que processa sequências passo a passo; a LSTM, que usa portas para lembrar informações por longos períodos; e a GRU, mais simples que a LSTM mas com desempenho semelhante em muitas tarefas.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0462",
+      "answer": "reject",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0463",
+      "answer": "A fotossíntese transforma luz solar, água e CO₂ em glicose e O₂. As plantas armazenam energia química na glicose, alimentam outros seres e liberam oxigênio, essencial para a respiração de animais e manutenção da vida na biosfera.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0464",
+      "answer": "A proporção áurea (≈1,618) pode guiar composições, mas não é uma fórmula obrigatória. Artistas a usam como sugestão estética; a criatividade permite outras proporções que também produzem obras visualmente agradáveis.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0465",
+      "answer": "Marcos, alvo de preconceito por sua origem, encontrou apoio em um grupo de leitura. Ao compartilhar histórias, percebeu seu valor e aprendeu a amar suas raízes, desenvolvendo autoconfiança que transformou sua vida.",
+      "followup": "Qual seria um título curto e impactante para esse conto?",
+      "followup_answer": "\"Raízes de Resiliência\""
+    },
+    {
+      "id": "dialog-0466",
+      "answer": "Para conhecer plantas, comece com guias como \"Plantas de Casa\" (editora XYZ) e sites de horticultura. Aprenda sobre necessidades de luz, água e solo; pratique rega regular e observe sinais de saúde para ajustar cuidados.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0467",
+      "answer": "Formulário de Avaliação de Funcionário:\n\n1. Pontualidade (1‑5)\n2. Comunicação (1‑5)\n3. Conhecimento do trabalho (1‑5)\n4. Trabalho em equipe (1‑5)\n5. Resolução de problemas (1‑5)\n6. Produtividade geral (1‑5)\n\nComentários gerais:\n[Espaço amplo]\n\nRecomendações de melhoria:\n[Espaço amplo]\n\nObservação: Use linguagem clara e objetiva, mantendo tom profissional.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0468",
+      "answer": "Exemplos de redes neurais artificiais incluem a Perceptron de camada única, a Rede Multicamadas (MLP), a Convolucional (CNN) para imagens, a Recorrente (RNN) para sequências, e a Rede de Atenção (Transformer) usada em modelos de linguagem.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0469",
+      "answer": "Comunique‑se ouvindo ativamente, expressando sentimentos com \"eu sinto\" em vez de acusações, e reservando tempo sem distrações. Pergunte ao parceiro sobre necessidades e valide emoções para criar um diálogo aberto e respeitoso.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0470",
+      "answer": "A fotossíntese tem duas fases: a fase clara, onde a luz gera ATP e NADPH nas cloroplastos; e o ciclo de Calvin, que usa ATP e NADPH para fixar CO₂ em glicose. Juntas, produzem energia química e oxigênio.",
+      "followup": "Poderia dar um exemplo simples de como o ciclo de Calvin transforma CO₂ em glicose?",
+      "followup_answer": "O ciclo de Calvin incorpora CO₂ em uma molécula de cinco carbonos, que depois se divide em duas moléculas de três carbonos (gliceraldeído‑3‑fosfato). Duas dessas moléculas se combinam para formar uma glicose completa."
+    },
+    {
+      "id": "dialog-0471",
+      "answer": "Aquarela e acrílico são mídias diferentes: a aquarela usa pigmento solúvel em água, enquanto o acrílico é à base de polímero. Você pode usar aquarela sobre papel e, depois que secar, aplicar acrílico para detalhes, mas não mistura‑los como única tinta.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0472",
+      "answer": "Os três ramos do governo são: Executivo, que administra políticas e serviços; Legislativo, que cria leis e fiscaliza o Executivo; e Judiciário, que interpreta leis e resolve conflitos, garantindo a justiça e a constitucionalidade.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0473",
+      "answer": "Para esqui, precisa de botas, esquis, fixações, bastões, capacete e roupa térmica. Aprenda a postura básica, controle de velocidade com curva em “pizza” e técnica de paralela. Comece em pista verde, evolua com aulas e pratique equilíbrio.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0474",
+      "answer": "Mantenha rotina fixa, crie um espaço de trabalho dedicado, use técnicas Pomodoro, faça pausas curtas, limite distrações digitais e estabeleça metas diárias claras. Comunicação regular com a equipe também ajuda a manter foco e motivação.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0475",
+      "answer": "Redes neurais artificiais apresentam: camadas de neurônios interconectados, aprendizado por ajuste de pesos, capacidade de generalização, não‑linearidade via funções de ativação e treinamento supervisionado ou não supervisionado. Elas podem modelar relações complexas em dados variados.",
+      "followup": "Qual característica torna as funções de ativação essenciais para a aprendizagem profunda?",
+      "followup_answer": "As funções de ativação introduzem não‑linearidade, permitindo que a rede represente padrões complexos e aprenda relações que não seriam capturáveis com apenas combinações lineares de entradas."
+    },
+    {
+      "id": "dialog-0476",
+      "answer": "Para amizades adultas, participe de grupos com interesses comuns, mantenha contato regular (mensagens ou encontros), ofereça apoio em momentos difíceis, compartilhe experiências e seja autêntico. A confiança cresce com tempo e reciprocidade.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0477",
+      "answer": "Prepare a superfície limpa, escolha pincéis adequados ao tipo de tinta, misture cores antes de aplicar, trabalhe em camadas finas, deixe secar entre elas e use luz natural para avaliar cores. Limpe os pincéis imediatamente após uso.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0478",
+      "answer": "Folhas douradas caem, dançam ao vento, tapete de outono cobre o chão, silêncio colorido, lembrança de verão que se despede, natureza pinta memórias em tons de cobre e marrom.",
+      "followup": "false"
+    },
+    {
+      "id": "dialog-0479",
+      "answer": "Um estudo relevante é \"Ethics of AI: A Systematic Review\" publicado na revista *AI & Society* (2022). Ele analisa princípios éticos, impactos sociais e recomendações para desenvolvimento responsável de inteligência artificial.",
+      "followup": "false"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0720",
+      "answer": "Redes neurais artificiais são modelos computacionais inspirados no cérebro, compostos por camadas de neurônios que transformam entradas em saídas usando pesos ajustáveis. Elas aprendem reconhecendo padrões em dados, como identificar imagens ou traduzir textos.",
+      "followup": "Qual exemplo simples de rede neural pode ser usado para classificar frutas?",
+      "followup_answer": "Um exemplo simples é uma rede com uma camada oculta que recebe características como cor e tamanho da fruta e, após treinamento, classifica como maçã, banana ou laranja."
+    },
+    {
+      "id": "dialog-0721",
+      "answer": "As mídias sociais encurtam a distância entre pessoas, permitindo comunicação instantânea e compartilhamento massivo de informações. Isso aumenta a velocidade das notícias, mas também pode gerar desinformação e reduzir interações presenciais.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0722",
+      "answer": "Ana, tímida, temia falar em público. Inscreveu‑se em um clube de debates, praticou discursos curtos e recebeu feedback gentil. Com o tempo, sua confiança cresceu e, no último evento, liderou a apresentação com segurança.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0723",
+      "answer": "Use aplicativos gratuitos de aprendizado, como Duolingo, e combine com podcasts em inglês. Assista a séries com legendas, pratique conversação com parceiros online e reserve 15 minutos diários para revisar vocabulário.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0724",
+      "answer": "Adote criptografia e políticas de retenção mínima, guardando apenas dados essenciais. Quando houver ordem judicial, forneça apenas as informações solicitadas, preservando anonimato de outros usuários sempre que possível.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0725",
+      "answer": "Analisar tráfego web ajuda a entender quem visita o site, como se comportam e onde melhorar. Métricas críticas incluem visitas, taxa de rejeição, tempo médio na página e conversões. Ferramentas como Google Analytics e Matomo coletam esses dados; interpretar padrões permite otimizar conteúdo e design.",
+      "followup": "Quais métricas devo priorizar ao melhorar a taxa de conversão?",
+      "followup_answer": "Foque em taxa de conversão, valor médio do pedido, abandono de carrinho e caminho de navegação; esses indicadores mostram onde os usuários desistem e onde intervenções são mais eficazes."
+    },
+    {
+      "id": "dialog-0726",
+      "answer": "Pratique discursos curtos diante de um espelho, grave‑se para observar a linguagem corporal e peça feedback a amigos. Aprenda a estruturar apresentações com introdução, ponto principal e conclusão, e controle a respiração para reduzir a ansiedade.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0727",
+      "answer": "Comece com saudação e objetivo da carta. Destaque experiências relevantes, mostre como pode contribuir para a empresa e encerre agradecendo e indicando disponibilidade para entrevista. Use tom profissional e mantenha o texto em um parágrafo curto.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0728",
+      "answer": "Estudos frequentemente citados incluem \"The Ethics of Artificial Intelligence\" de Bostrom (2014), \"Fairness and Machine Learning\" de Barocas e Selbst (2016) e o relatório da UNESCO sobre IA ética (2021). Eles abordam viés, responsabilidade e governança.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0729",
+      "answer": "Aplicativos como Todoist, Trello e Notion permitem criar listas, definir prazos e acompanhar progresso. Eles sincronizam entre dispositivos, enviam lembretes e facilitam a visualização de tarefas pendentes.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0730",
+      "answer": "Primeiro, reinicie o computador e verifique cabos. Em seguida, identifique se o problema é de hardware ou software: teste com outro monitor, atualize drivers e execute diagnóstico de disco. Se persistir, procure suporte técnico.",
+      "followup": "Como posso testar se a memória RAM está com defeito?",
+      "followup_answer": "Use o utilitário Windows Memory Diagnostic ou o MemTest86, que executa vários testes de leitura/escrita e indica falhas se houver problemas na RAM."
+    },
+    {
+      "id": "dialog-0731",
+      "answer": "Use um design limpo: fundo claro, fontes legíveis e cores contrastantes. Organize o conteúdo em blocos, destaque títulos com tamanho maior e inclua imagens ou ícones que reforcem a mensagem sem sobrecarregar o slide.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0732",
+      "answer": "Você pode me chamar de Assistente ou simplesmente de ChatGPT, conforme preferir.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0733",
+      "answer": "Considere aprender programação básica, fotografia, culinária saudável ou um idioma novo. Escolha algo que desperte curiosidade e que tenha recursos gratuitos online para começar.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0734",
+      "answer": "Crie uma agenda diária com blocos de trabalho e pausas. Use ferramentas de lista de tarefas, mantenha um espaço de trabalho organizado e estabeleça metas pequenas para manter a motivação.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0735",
+      "answer": "Baixe o instalador do dock, execute como administrador e siga as instruções na tela. Após a instalação, reinicie o computador e ajuste as preferências de posicionamento nas configurações do sistema.",
+      "followup": "Como remover um dock que já está instalado?",
+      "followup_answer": "Acesse o Painel de Controle ou Configurações, localize o programa na lista de aplicativos, selecione \"Desinstalar\" e siga o assistente; depois, reinicie o sistema para limpar resíduos."
+    },
+    {
+      "id": "dialog-0736",
+      "answer": "Escute o ponto de vista do amigo sem interromper, expresse seus sentimentos usando \"eu sinto\" e procure um compromisso que atenda a ambas as necessidades. Se necessário, peça a um mediador neutro.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0737",
+      "answer": "Editores recebem submissões, leem manuscritos e avaliam qualidade literária, originalidade e adequação ao público da revista. Uma comissão de leitura faz a seleção final, considerando espaço disponível e linha editorial.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0738",
+      "answer": "Divida o semestre em blocos temáticos, reserve horários fixos diários para estudo e inclua revisões semanais. Use um calendário digital, priorize tarefas importantes e ajuste o plano conforme a carga de trabalho do emprego.",
+      "followup": false
+    },
+    {
+      "id": "dialog-0739",
+      "answer": "Comece listando três tarefas prioritárias, elimine distrações, use a técnica Pomodoro (25 minutos focado, 5 minutos pausa) e finalize revisando o que foi concluído para ajustar o plano do dia seguinte.",
+      "followup": false
+    }
+  ]
+}

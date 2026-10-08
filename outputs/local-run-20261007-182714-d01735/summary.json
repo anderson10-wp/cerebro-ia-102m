@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "before_correct": 5,
+  "total": 12,
+  "promoted": false,
+  "api_calls": 0,
+  "smoke_test": false,
+  "training": {
+    "status": "completed_candidate_only",
+    "initial_validation_loss": 1.1004557249681004,
+    "base_checkpoint_sha256": "64760b7bdb5805719d3dacddbb9994950c248688046ab37fe5c0fe124ce4bd78",
+    "validation": [
+      {
+        "epoch": 1,
+        "loss": 1.0817567267507877,
+        "steps": 109
+      },
+      {
+        "epoch": 2,
+        "loss": 1.1102941800963204,
+        "steps": 218
+      }
+    ],
+    "automatic_promotion": false,
+    "audit_examples_evaluated": 0,
+    "cloud_jobs_started": 0,
+    "device": "cpu",
+    "hardware": "cpu",
+    "steps": 218,
+    "response_tokens_seen": 4854,
+    "best_validation_loss": 1.0817567267507877,
+    "candidate_saved": true,
+    "elapsed_seconds": 389.3431718000011
+  },
+  "after_correct": 5,
+  "regressions": [],
+  "improved_on_development": false
+}

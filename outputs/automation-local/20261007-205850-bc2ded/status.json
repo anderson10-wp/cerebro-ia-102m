@@ -1,0 +1,26 @@
+{
+  "status": "failed_or_interrupted",
+  "rounds": [
+    {
+      "seed": 1791417530,
+      "teacher_attempts": [
+        {
+          "provider": "groq",
+          "report": {
+            "status": "failed"
+          }
+        },
+        {
+          "provider": "openrouter",
+          "report": {
+            "status": "failed"
+          }
+        }
+      ]
+    }
+  ],
+  "codex_calls": 0,
+  "chat_model_modified": false,
+  "smoke": true,
+  "error": "Professores indisponíveis: rodada encerrada sem treino"
+}

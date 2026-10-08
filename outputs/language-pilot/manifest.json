@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "train": 2413,
+    "dev": 64,
+    "test": 72,
+    "replay": 1134,
+    "retention": 12
+  },
+  "new_train_response_tokens": 18752,
+  "checks": "Exact prompt disjointness; deterministic source text and transformations; reviewed authored answers; no blind source labels",
+  "limitations": "Synthetic related tasks and authored facts; this is a pilot, not comprehensive factual coverage or independent human review. Four-pair groups can include accidental identical answers; pair score only includes distinct labels.",
+  "api_teacher_calls": 0,
+  "training_started": false,
+  "sha256": {
+    "train": "650a1b1fd8d807480aa69d083a6f6b3e6df57f84a87e6d97a38be25890690903",
+    "dev": "a6c80cb7841426f32d36f9e1ed4d0da9b392738325b8facb7a5b237acfad944d",
+    "test": "caf1bc94b93b15424f63e3829c53dd343c8dc59917d1ae403cb925ac0d588446",
+    "replay": "4e96d3721680fdd7826121c79c8b366b564de0e88d6e1d0e70a2d5a45375b72c",
+    "retention": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e"
+  }
+}

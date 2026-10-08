@@ -1,0 +1,105 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-1060",
+      "answer": "Não existe uma lista única de programas mais bem avaliados, pois isso depende do objetivo. Para aprender, escolha ferramentas gratuitas e populares. Para trabalho, avalie a compatibilidade com sua equipe.",
+      "followup": "Que tipo de projeto de software você quer desenvolver?",
+      "followup_answer": "Para um projeto pequeno, comece com um editor de código gratuito e um sistema de controle de versão. Para equipes, avalie ferramentas com suporte e integração."
+    },
+    {
+      "id": "dialog-1061",
+      "answer": "Ser multilíngue ajuda a conversar diretamente com pessoas de outras culturas, evitando erros de tradução. Por exemplo, um médico que fala a língua do paciente entende melhor os sintomas e cria confiança.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1062",
+      "answer": "A frase está confusa. Para reduzir o racismo, foque em ações concretas: escutar experiências diversas, corrigir preconceitos e apoiar políticas de igualdade. A eficácia depende do contexto e da audiência.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1063",
+      "answer": "O primeiro passo é ensinar a criança a andar com os esquis, mantendo o equilíbrio e a postura correta. Depois, pratique deslizar em terreno plano antes de tentar descer.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1064",
+      "answer": "Comece listando todas as entradas e saídas de dinheiro por um mês. Depois, classifique os gastos em essenciais e opcionais. Ajuste o orçamento conforme suas metas financeiras.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1065",
+      "answer": "O engenheiro de software foca no desenvolvimento de programas e sistemas de informação. O engenheiro de sistemas integra hardware, software e redes para resolver problemas complexos.",
+      "followup_answer": "A formação de software é mais voltada para programação, enquanto a de sistemas cobre hardware e infraestrutura. Ambas exigem lógica e resolução de problemas."
+    },
+    {
+      "id": "dialog-1066",
+      "answer": "Pratique ouvir ativamente, sem interromper. Organize suas ideias antes de falar e adapte sua linguagem ao interlocutor. Peça feedback para melhorar continuamente.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1067",
+      "answer": "Prezado [Nome], é com prazer que oferecemos o cargo de [Cargo] em [Empresa]. Suas qualificações impressionaram nossa equipe. A remuneração será [valor] e o início em [data]. Aguardamos sua resposta.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1068",
+      "answer": "Os melhores materiais dependem do seu idioma e objetivo. Para gramática, use livros didáticos. Para prática, aplicativos de conversação e vídeos nativos são excelentes. Combine várias fontes.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1069",
+      "answer": "Separe as roupas por estação e tipo. Dobre peças leves e pendure as delicadas. Use organizadores de gaveta e caixas para itens sazonais. Doe o que não usa.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1070",
+      "answer": "O termo 'algoritmo simultâneo síncrono' não é padrão. Talvez você queira dizer algoritmos síncronos, que executam operações em sequência, ou assíncronos, que aguardam resultados.",
+      "followup_answer": "Em programação paralela, processos rodam ao mesmo tempo. Em sistemas síncronos, cada etapa espera a anterior terminar antes de continuar."
+    },
+    {
+      "id": "dialog-1071",
+      "answer": "Prepare o conteúdo com antecedência e pratique em voz alta. Vista-se adequadamente, chegue cedo e mantenha contato visual. Respire fundo antes de começar.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1072",
+      "answer": "O deserto se estendia infinitamente, coberto por dunas douradas que brilhavam sob o sol implacável. O vento moldava a areia em ondas suaves, enquanto o céu azul intenso contrastava com a paisagem árida e silenciosa.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1073",
+      "answer": "Não. Cada pessoa aprende de forma diferente. Alguns preferem ver, outros ouvir ou praticar. O ideal é combinar métodos para atender a todos.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1074",
+      "answer": "Use perguntas de conhecimento geral, charadas visuais e jogos de associação. Divida os convidados em times e premie os vencedores com doces ou brindes temáticos.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1075",
+      "answer": "Verifique se há energia: a tomada está ligada? O cabo está conectado? Tente outro cabo ou bateria. Se nada funcionar, pode ser problema interno. Preciso saber a marca e modelo.",
+      "followup_answer": "Com essas informações, posso sugerir testes específicos, como verificar a luz de carga ou tentar ligar sem periféricos."
+    },
+    {
+      "id": "dialog-1076",
+      "answer": "Em vez de culpar, descreva o fato e diga como se sente. Por exemplo: 'Quando você chegou tarde, fiquei preocupado'. Isso reduz a defesa e abre diálogo.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1077",
+      "answer": "Crie um protagonista com um desejo claro e um obstáculo difícil. Para o enredo, use a estrutura: introdução, conflito, clímax e resolução. Personagens com falhas são mais atraentes.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1078",
+      "answer": "Rochas metamórficas formam-se por calor e pressão. Exemplos comuns: mármore (de calcário), ardósia (de argila) e gnaisse. Elas podem ter camadas ou cristais visíveis.",
+      "followup_answer": ""
+    },
+    {
+      "id": "dialog-1079",
+      "answer": "Planeje o dia anterior, priorize tarefas importantes e use blocos de tempo. Faça pausas regulares e elimine distrações. Revisar a agenda semanalmente ajuda a manter o foco.",
+      "followup_answer": ""
+    }
+  ]
+}

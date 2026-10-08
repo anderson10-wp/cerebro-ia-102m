@@ -1,0 +1,67 @@
+{
+  "version": "teacher-v3",
+  "train": {
+    "examples": 256,
+    "response_tokens": 1851,
+    "total_tokens": 8409,
+    "max_sequence_tokens": 73,
+    "categories": {
+      "instruction": 26,
+      "context": 26,
+      "limits": 8,
+      "dialogue": 18,
+      "code": 18,
+      "arithmetic": 44,
+      "json": 18,
+      "tool_simulation": 15,
+      "tool_result": 3,
+      "clarification": 12,
+      "grounding": 12,
+      "classification": 12,
+      "editing": 12,
+      "transformation": 16,
+      "structured_data": 16
+    },
+    "origins": {
+      "inherited_v2": 64,
+      "teacher_authored": 128,
+      "rule_generated": 64
+    },
+    "sha256": "738ba58defcc09deac769e5c5b3cd3ee4a11c36aba0ca3ae5f8cecd15344d927"
+  },
+  "validation": {
+    "examples": 12,
+    "response_tokens": 53,
+    "categories": {
+      "instruction": 3,
+      "context": 2,
+      "arithmetic": 2,
+      "json": 2,
+      "tool_simulation": 1,
+      "tool_result": 1,
+      "code": 1
+    },
+    "sha256": "0b313ee8fd4f34ce33e4d01a6ae07614f8e7265d8d116e2a21c957c464f0ee8e"
+  },
+  "audit": {
+    "examples": 12,
+    "response_tokens": 40,
+    "categories": {
+      "instruction": 3,
+      "context": 2,
+      "arithmetic": 2,
+      "json": 2,
+      "tool_result": 1,
+      "tool_simulation": 1,
+      "code": 1
+    },
+    "sha256": "7bd4ffaecee5c30803235b6b6d915ff92610005dacb835a34cfab661c42fa2c2"
+  },
+  "tokenizer_sha256": "53b3785adbcff2c283e868e1cd096cce7e1250fa7521db3aeb4ddd77a972fc7e",
+  "weights_updated": false,
+  "paid_api_calls": 0,
+  "cloud_jobs_started": 0,
+  "scope": "Small pilot curriculum, not a complete instruction corpus.",
+  "provenance": "Codex-authored and programmatically derived; no independent human review.",
+  "heldout_note": "v2 validation is development data with a known baseline. Audit is not run. Shared skills and some output schemas are intentional; lexical separation does not prove semantic independence."
+}

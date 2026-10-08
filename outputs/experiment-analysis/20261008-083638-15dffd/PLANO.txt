@@ -1,0 +1,10 @@
+PROPOSTA PARA REVISÃO — NENHUM TREINO INICIADO
+
+Problema: Respostas constantes nos exercícios técnicos.
+Hipótese: Pares com uma condição alterada podem ajudar a distinguir estados.
+
+Dados novos: 128; casos de avaliação: 32.
+Experimento proposto: DirectML, até 300 segundos, batch 2.
+Comparar pares, superar respostas constantes e preservar acertos gerais. Não promover automaticamente.
+
+A validação confirma formato e limites, não qualidade científica. Os dados e a avaliação propostos ainda precisam ser implementados.

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File ".\outputs\local-run-20261007-211915-96b83c\pilot.py", line 8, in <module>
+    if __name__=='__main__': pilot.main()
+                             ~~~~~~~~~~^^
+  File ".\outputs\teacher-v3\pilot.py", line 24, in main
+    assert digest(original)==recipe['base_checkpoint_sha256']
+           ~~~~~~^^^^^^^^^^
+  File ".\outputs\teacher-v3\pilot.py", line 11, in digest
+    def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+                                         ~~~~~~~~~~~~^^
+  File "C:\Users\Fernando\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fernando\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '.\\outputs\\local-run-20261007-211915-96b83c\\outputs\\local-run-20261007-190808-8c59a4\\candidate\\best-model.pt'

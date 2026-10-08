@@ -1,0 +1,15 @@
+{
+  "title": "GPT OSS 20B Dual T4 API",
+  "enable_gpu": true,
+  "competition_sources": [],
+  "code_file": "run.py",
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "language": "python",
+  "is_private": true,
+  "kernel_sources": [],
+  "model_sources": [],
+  "id": "andersonluan10ad/gpt-oss-20b-dual-t4-api",
+  "kernel_type": "script",
+  "dataset_sources": []
+}

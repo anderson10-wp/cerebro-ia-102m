@@ -1,0 +1,10 @@
+.venv*/
+__pycache__/
+*.pyc
+*.dpapi
+.env*
+arquivos-release/
+*.pt
+*.bin
+*.partial
+*.parquet

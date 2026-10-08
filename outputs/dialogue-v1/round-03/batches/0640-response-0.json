@@ -1,0 +1,92 @@
+{
+  "dialogs": [
+    {
+      "id": "dialog-0640",
+      "answer": "Controle de versão registra alterações no código ao longo do tempo, permitindo que desenvolvedores revertam mudanças, colaborem simultaneamente e mantenham histórico claro. Sem ele, integrar trabalhos de vários programadores seria confuso e propenso a erros.",
+      "followup": "Qual ferramenta de controle de versão é mais indicada para iniciantes?",
+      "followup_answer": "Git é a escolha mais comum para iniciantes, pois é gratuito, tem ampla documentação e funciona bem tanto localmente quanto em serviços online como GitHub, facilitando aprendizado e colaboração."
+    },
+    {
+      "id": "dialog-0641",
+      "answer": "Defina data, local e tema; faça uma lista de convidados e envie convites discretos. Planeje comida que o aniversariante goste, decore conforme o tema e organize uma surpresa com ajuda de alguém próximo para garantir que ele chegue sem suspeitar."
+    },
+    {
+      "id": "dialog-0642",
+      "answer": "Comece com saudação e referência à vaga, destaque experiências relevantes, mostre como suas habilidades atendem às necessidades da empresa e encerre agradecendo e indicando disponibilidade para entrevista. Seja claro, objetivo e personalize para cada oportunidade."
+    },
+    {
+      "id": "dialog-0643",
+      "answer": "Modelos de aprendizagem profunda podem auxiliar em tarefas de memória, como reforçar aprendizado ou detectar padrões, mas não alteram diretamente a biologia cerebral. Eles são ferramentas de apoio, não substitutos de intervenções médicas ou cognitivas comprovadas."
+    },
+    {
+      "id": "dialog-0644",
+      "answer": "Estabeleça horários fixos, crie lista de tarefas diárias, use técnicas como Pomodoro, mantenha um espaço de trabalho organizado e limite distrações. Revise seu progresso ao final do dia para ajustar rotinas conforme necessário."
+    },
+    {
+      "id": "dialog-0645",
+      "answer": "Qual é a extensão e o tipo do arquivo que você está tentando abrir? Saber o programa original ou o sistema operacional ajuda a indicar a solução mais adequada.",
+      "followup": "É um documento .docx no Windows 10.",
+      "followup_answer": "Tente abrir com o Microsoft Word ou o LibreOffice Writer. Se falhar, reinstale o aplicativo ou use o visualizador online do Office; arquivos corrompidos podem precisar de reparo com a ferramenta de recuperação do Word."
+    },
+    {
+      "id": "dialog-0646",
+      "answer": "Compartilhe informações claras sobre impactos ambientais, proponha pequenas ações coletivas e reconheça esforços positivos. Organize desafios ou projetos práticos que mostrem resultados tangíveis, incentivando a participação voluntária."
+    },
+    {
+      "id": "dialog-0647",
+      "answer": "Inicie com saudação e referência à vaga, descreva brevemente sua formação, destaque conquistas relevantes e explique como pode contribuir para a empresa. Termine agradecendo e indicando disponibilidade para entrevista."
+    },
+    {
+      "id": "dialog-0648",
+      "answer": "Um projeto de aprendizagem profunda bem-sucedido inclui dados de qualidade, arquitetura de rede adequada, funções de ativação apropriadas, treinamento com otimização correta, validação rigorosa e infraestrutura computacional suficiente para experimentos."
+    },
+    {
+      "id": "dialog-0649",
+      "answer": "Governos podem criar normas de acessibilidade, adaptar calçadas e transportes, oferecer incentivos para edificações inclusivas, treinar funcionários públicos sobre necessidades especiais e garantir fiscalização contínua para cumprimento das leis."
+    },
+    {
+      "id": "dialog-0650",
+      "answer": "Funções de ativação introduzem não‑linearidade nas redes neurais, permitindo que aprendam relações complexas entre entradas e saídas. Sem elas, a rede seria equivalente a uma única camada linear, incapaz de resolver problemas não lineares.",
+      "followup": "Qual a diferença prática entre ReLU e sigmoid?",
+      "followup_answer": "ReLU (Retorno Linear Unit) devolve zero para valores negativos e o próprio valor para positivos, sendo mais rápida e reduzindo o problema de gradiente desaparecido. Sigmoid comprime tudo entre 0 e 1, útil para saídas probabilísticas, mas pode saturar e tornar o treinamento mais lento."
+    },
+    {
+      "id": "dialog-0651",
+      "answer": "Gorilas vivem em grupos liderados por um macho dominante (silverback) que protege e decide movimentos. A comunicação inclui vocalizações, gestos e expressões faciais; reforços positivos como abraços mantêm a coesão social."
+    },
+    {
+      "id": "dialog-0652",
+      "answer": "Comece com saudação e referência à vaga, apresente brevemente sua formação, destaque experiências que se alinham ao cargo e explique como pode agregar valor. Finalize agradecendo e indicando disponibilidade para entrevista."
+    },
+    {
+      "id": "dialog-0653",
+      "answer": "Use exposição diária ao idioma: converse, leia livros infantis, assista a desenhos e pratique jogos de vocabulário. Combine atividades lúdicas com correção suave para manter o interesse e reforçar a pronúncia."
+    },
+    {
+      "id": "dialog-0654",
+      "answer": "Liste os tópicos principais, escreva um ponto‑chave para cada um e organize em ordem lógica. Use marcadores ou um pequeno mapa mental para visualizar a sequência antes da reunião."
+    },
+    {
+      "id": "dialog-0655",
+      "answer": "Qual o modelo da impressora e o sistema operacional do computador? Saber se a conexão será via Wi‑Fi ou Ethernet ajuda a indicar os passos corretos.",
+      "followup": "É uma HP LaserJet 200, Windows 11.",
+      "followup_answer": "Instale o driver do site da HP, conecte a impressora à rede Wi‑Fi usando o painel da própria impressora, depois adicione o dispositivo nas Configurações > Impressoras e scanners do Windows. Teste imprimindo uma página de teste."
+    },
+    {
+      "id": "dialog-0656",
+      "answer": "Pratique escuta ativa, faça perguntas abertas, observe linguagem corporal e procure feedback. Participar de grupos de debate ou apresentações curtas também ajuda a ganhar confiança e clareza na comunicação."
+    },
+    {
+      "id": "dialog-0657",
+      "answer": "Leia textos variados, escreva diariamente, revise com foco em clareza, peça críticas a colegas e estude estruturas de frases. Use ferramentas de correção para identificar padrões de erro."
+    },
+    {
+      "id": "dialog-0658",
+      "answer": "Defina metas pequenas, pratique diariamente, use aplicativos de flashcards, converse com falantes nativos e exponha‑se a músicas ou séries no idioma. A consistência supera a intensidade esporádica."
+    },
+    {
+      "id": "dialog-0659",
+      "answer": "Acorde e durma no mesmo horário, planeje blocos de trabalho com pausas curtas, elimine distrações digitais e reserve tempo para exercício físico e revisão de metas ao final do dia."
+    }
+  ]
+}

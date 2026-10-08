@@ -1,0 +1,74 @@
+{
+  "checkpoint_sha256": "e80f4077b8125f5aaea8eb4a2344e1b0bfa6bf06c4033f27112a6564ecd31a9c",
+  "tokens": 5642190848,
+  "parameters": 102257280,
+  "seed": 42,
+  "new_tokens": 48,
+  "temperature": 0.7,
+  "top_k": 40,
+  "results": [
+    {
+      "case": "geography",
+      "prompt": "O Brasil é um país localizado na",
+      "continuation": " fronteira entre o Brasil e o Paraguai, com o seu território mais conhecido, o Paraguai, com mais de dois milhões de habitantes, e o resto do mundo, com mais de três milhões de habitantes. E é esse o sentido de mundo em",
+      "seconds": 6.81
+    },
+    {
+      "case": "explanation",
+      "prompt": "A inteligência artificial pode ajudar as pessoas a",
+      "continuation": " se tornarem mais eficazes em sua própria vida, ajudando-as a encontrar o melhor caminho para o futuro.\nÉ por isso que a tecnologia é tão importante, especialmente para a sociedade, pois permite que as pessoas se tornem mais inteligentes e",
+      "seconds": 6.54
+    },
+    {
+      "case": "greeting",
+      "prompt": "Pergunta: Olá! Como você está?\nResposta:",
+      "continuation": " Bem, você está em um ambiente de escritório com duas portas, uma para o escritório e outra para o escritório, o que significa que você não precisa mais se preocupar com isso e nem com a sua imagem.\nO escritório é o ambiente",
+      "seconds": 6.73
+    },
+    {
+      "case": "arithmetic",
+      "prompt": "Pergunta: Quanto é 2 + 2?\nResposta:",
+      "continuation": " Sim. Se o peso da criança estiver acima do peso do adulto, a criança deverá ter o peso acima.\nO que é isso?\nO corpo humano é formado por duas partes: o núcleo, que é formado pelo corpo humano e",
+      "seconds": 6.22
+    },
+    {
+      "case": "python",
+      "prompt": "def soma(a, b):\n    ",
+      "continuation": " return sum(a + b) * sum(b)\n\n\ndef sum(a, b):\n  return sum(a + b) * sum(b)\n\n\ndef sum_sum(a, b):",
+      "seconds": 7.19,
+      "syntax_valid": false
+    },
+    {
+      "case": "instruction",
+      "prompt": "Pergunta: Responda apenas com a palavra azul.\nResposta:",
+      "continuation": " Não responder com a palavra azul, pois se você estiver certo será considerado um problema.\n3. O que fazer quando a pessoa em questão estiver suja?\nResposta: O ideal é fazer uma limpeza geral, antes de se su",
+      "seconds": 5.98,
+      "exact_instruction_correct": false
+    },
+    {
+      "case": "self_knowledge",
+      "prompt": "Pergunta: Você consegue treinar outra IA sozinho?\nResposta:",
+      "continuation": " Sim, sim. E é isso que acontece. Na verdade, você consegue treinar IA sozinho, mas na verdade, você pode treinar outros computadores e ainda por cima, pode se tornar um professor.\nA resposta é de que você tem que",
+      "seconds": 5.81
+    },
+    {
+      "case": "tool_plan",
+      "prompt": "Pergunta: Antes de iniciar um treinamento pago, quais verificações você deve fazer?\nResposta:",
+      "continuation": "\nNão, isso é uma coisa. É uma coisa que não tem nada a ver com a sua saúde, se não for um curso, se não tiver um bom resultado em sua vida, se não tiver uma boa educação financeira, não tem",
+      "seconds": 6.54
+    },
+    {
+      "case": "json",
+      "prompt": "Pergunta: Escreva um JSON válido com a chave \"acao\" e o valor \"consultar_status\".\nResposta:",
+      "continuation": " De acordo com as informações dadas em \"Aceitar como cliente\" você tem que clicar em um botão de ativação para poder selecionar o que deseja.\nEm \"Aceitar como cliente\" você poderá adicionar um cliente de uma página para",
+      "seconds": 5.65,
+      "exact_json_correct": false
+    },
+    {
+      "case": "english",
+      "prompt": "Question: What is the capital of France?\nAnswer:",
+      "continuation": " The French are the most populous and largest of the nations, and the French are the most populous in the world. As a result, the number of French workers has fallen so steadily because of the changes in the economy",
+      "seconds": 4.87
+    }
+  ]
+}

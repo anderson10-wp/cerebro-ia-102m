@@ -1,0 +1,73 @@
+{
+  "checkpoint_sha256": "1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e",
+  "facts": {
+    "general_dev": {
+      "correct": 8,
+      "total": 12,
+      "independent": false
+    },
+    "technical_dev": {
+      "correct": 8,
+      "total": 16,
+      "constant_answer_baseline": 8,
+      "constant_by_template": true,
+      "independent": false
+    },
+    "compute": {
+      "device": "RX 580 DirectML",
+      "max_training_seconds": 600,
+      "max_batch_size": 4
+    }
+  },
+  "examples": [
+    {
+      "id": "training-ops-validation-71-0",
+      "question": "Pergunta: Experimento 71: loss de validação anterior 1.71; atual 1.66, no mesmo conjunto. A loss diminuiu? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "actual": "não"
+    },
+    {
+      "id": "training-ops-validation-71-1",
+      "question": "Pergunta: Rodada 71: modelo anterior acertou 6 de 12; candidato acertou 7. Regra: promover somente com mais acertos e sem regressões. Houve 0 regressões. Responda promover ou manter.\nResposta:",
+      "expected": "promover",
+      "actual": "manter"
+    },
+    {
+      "id": "training-ops-validation-71-2",
+      "question": "Pergunta: Execução 71: limite de 81 minutos, já foram usados 80. Ao atingir o limite, encerrar. Responda continuar ou encerrar.\nResposta:",
+      "expected": "continuar",
+      "actual": "encerrar"
+    },
+    {
+      "id": "training-ops-validation-71-3",
+      "question": "Pergunta: Registro do treino 71: {\"status\":\"completed\",\"steps\":121}. O processo terminou? Responda sim ou não.\nResposta:",
+      "expected": "sim",
+      "actual": "não"
+    },
+    {
+      "id": "training-ops-validation-72-0",
+      "question": "Pergunta: Experimento 72: loss de validação anterior 1.72; atual 1.77, no mesmo conjunto. A loss diminuiu? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "actual": "não"
+    },
+    {
+      "id": "training-ops-validation-72-1",
+      "question": "Pergunta: Rodada 72: modelo anterior acertou 6 de 12; candidato acertou 5. Regra: promover somente com mais acertos e sem regressões. Houve 1 regressões. Responda promover ou manter.\nResposta:",
+      "expected": "manter",
+      "actual": "manter"
+    },
+    {
+      "id": "training-ops-validation-72-2",
+      "question": "Pergunta: Execução 72: limite de 82 minutos, já foram usados 82. Ao atingir o limite, encerrar. Responda continuar ou encerrar.\nResposta:",
+      "expected": "encerrar",
+      "actual": "encerrar"
+    },
+    {
+      "id": "training-ops-validation-72-3",
+      "question": "Pergunta: Registro do treino 72: {\"status\":\"running\",\"steps\":122}. O processo terminou? Responda sim ou não.\nResposta:",
+      "expected": "não",
+      "actual": "não"
+    }
+  ],
+  "limitations": "Small observed development sets; no evidence of autonomous training competence. Do not train or execute commands."
+}
