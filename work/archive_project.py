@@ -1,6 +1,6 @@
 """Archive this workspace without credentials; large files become release assets."""
 from pathlib import Path
-import argparse, hashlib, http.client, json, os, re, shutil, subprocess, urllib.request, urllib.error, urllib.parse, zipfile
+import argparse, hashlib, http.client, json, os, re, shutil, subprocess, urllib.request, urllib.error, urllib.parse, zipfile, time
 
 SOURCE = Path(__file__).resolve().parent.parent
 EXPORT = SOURCE / 'archive-export'
@@ -12,6 +12,9 @@ PATTERNS = [r'(?i)KGAT_[A-Za-z0-9]{20,}', r'sk-or-v1-[a-f0-9]{32,}', r'gsk_[A-Za
 
 def emit(**data):
     print(json.dumps(data, ensure_ascii=False), flush=True)
+    if EXPORT.exists():
+        with (EXPORT/'progress.jsonl').open('a',encoding='utf-8') as f:
+            f.write(json.dumps({'time_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),**data},ensure_ascii=False)+'\n')
 
 def sha(path):
     h = hashlib.sha256()
@@ -187,8 +190,14 @@ def publish():
     for obj in manifest['objects']:
         name=obj['asset'];path=EXPORT/'assets'/name
         if name in existing:
-            if existing[name]['size']!=path.stat().st_size:raise SystemExit('Existing asset size mismatch')
-            continue
+            old=existing[name]
+            if old['state']=='uploaded' and old['size']==path.stat().st_size:
+                if old.get('digest') and old['digest']!='sha256:'+obj['asset_sha256']:raise SystemExit('Existing asset digest mismatch')
+                continue
+            # Remove only this archive's incomplete upload before resuming.
+            req=urllib.request.Request(old['url'],method='DELETE',headers={'Authorization':'Bearer '+token,'User-Agent':'project-archive'})
+            with urllib.request.urlopen(req,timeout=60) as r:r.read()
+            emit(restarting_incomplete_asset=name)
         url=urllib.parse.urlsplit(release['upload_url'].split('{')[0]+'?name='+name)
         connection=http.client.HTTPSConnection(url.netloc,timeout=180)
         connection.putrequest('POST',url.path+'?'+url.query)
