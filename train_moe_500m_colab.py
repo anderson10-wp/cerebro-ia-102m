@@ -27,10 +27,26 @@ CHECKPOINT_FILE = "best-model.pt"
 TOKENIZER_FILE = "tokenizer.json"
 
 if not os.path.exists(CHECKPOINT_FILE):
-    print("📥 Baixando checkpoint original 102M (best-model.pt)...")
-    url = "https://github.com/anderson10-wp/cerebro-ia-102m/releases/download/arquivo-2026-10-08/best-model.pt"
-    urllib.request.urlretrieve(url, CHECKPOINT_FILE)
-    print("✅ Checkpoint 102M pronto!")
+    # Verifica se já existe em outputs
+    local_candidates = list(Path('.').rglob('best-model.pt'))
+    if local_candidates:
+        CHECKPOINT_FILE = str(local_candidates[0])
+        print(f"✅ Checkpoint encontrado localmente em: {CHECKPOINT_FILE}")
+    else:
+        print("📥 Baixando checkpoint original 102M do GitHub Releases...")
+        import zipfile, shutil
+        url = "https://github.com/anderson10-wp/cerebro-ia-102m/releases/download/arquivo-2026-10-08/artifact-1ea8da9fa900f7f2ec1beaf5f34511d449ea695732e19d1f7744d4efb21f9a9e.zip"
+        zip_path = "checkpoint_102m.zip"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as resp, open(zip_path, 'wb') as out_f:
+            shutil.copyfileobj(resp, out_f)
+        print("📦 Extraindo pesos para best-model.pt...")
+        with zipfile.ZipFile(zip_path, 'r') as z:
+            with z.open('payload') as src, open(CHECKPOINT_FILE, 'wb') as dst:
+                shutil.copyfileobj(src, dst)
+        if os.path.exists(zip_path):
+            os.remove(zip_path)
+        print("✅ Checkpoint 102M pronto e verificado!")
 
 if not os.path.exists(TOKENIZER_FILE):
     # Procura no repositório local ou baixa
