@@ -190,60 +190,63 @@ class BrainMoE(nn.Module):
         loss = F.cross_entropy(logits.reshape(-1, self.cfg.vocab_size).float(), targets.reshape(-1), ignore_index=-100)
         return logits, loss, total_aux_loss
 
-model = BrainMoE(cfg)
-total_params = sum(p.numel() for p in model.parameters())
-print(f"🔥 Modelo Cérebro MoE 500M instanciado: {total_params:,} Parâmetros!")
+if __name__ == '__main__':
+    model = BrainMoE(cfg)
+    total_params = sum(p.numel() for p in model.parameters())
+    print(f"🔥 Modelo Cérebro MoE 500M instanciado: {total_params:,} Parâmetros!")
 
-# 4. Carregamento e Preparação do Modelo MoE 500M
-round1_ckpt = None
-for candidate in [
-    "cerebro-moe-500m-modo-pensar.pt",
-    "/content/drive/MyDrive/cerebro-moe-500m-modo-pensar.pt"
-]:
-    if os.path.exists(candidate):
-        round1_ckpt = candidate
-        break
+    # 4. Carregamento e Preparação do Modelo MoE 500M
+    round1_ckpt = None
+    for candidate in [
+        "cerebro-moe-500m-modo-pensar.pt",
+        "/content/drive/MyDrive/cerebro-moe-500m-modo-pensar.pt"
+    ]:
+        if os.path.exists(candidate):
+            round1_ckpt = candidate
+            break
 
-if round1_ckpt:
-    print(f"🔄 Checkpoint MoE 500M da Rodada 1 detectado em: {round1_ckpt}")
-    print("🚀 Retomando treinamento a partir da Rodada 1 para a RODADA 2 (Refinamento Avançado)...")
-    try:
-        raw_500 = torch.load(round1_ckpt, map_location='cpu', weights_only=False)
-    except Exception:
-        raw_500 = torch.load(round1_ckpt, map_location='cpu')
-    state_500 = raw_500['model'] if isinstance(raw_500, dict) and 'model' in raw_500 else raw_500
-    model.load_state_dict(state_500)
-    print("✅ Checkpoint da Rodada 1 carregado com sucesso!")
-else:
-    print("🔄 Executando Upcycling de pesos do zero (102M -> 500M MoE)...")
-    try:
-        raw_state = torch.load(CHECKPOINT_FILE, map_location='cpu', weights_only=False)
-    except Exception:
-        raw_state = torch.load(CHECKPOINT_FILE, map_location='cpu')
-    state = raw_state['model'] if isinstance(raw_state, dict) and 'model' in raw_state else raw_state
+    if round1_ckpt:
+        print(f"🔄 Checkpoint MoE 500M da Rodada 1 detectado em: {round1_ckpt}")
+        print("🚀 Retomando treinamento a partir da Rodada 1 para a RODADA 2 (Refinamento Avançado)...")
+        import __main__
+        __main__.Config = Config
+        try:
+            raw_500 = torch.load(round1_ckpt, map_location='cpu', weights_only=False)
+        except Exception:
+            raw_500 = torch.load(round1_ckpt, map_location='cpu')
+        state_500 = raw_500['model'] if isinstance(raw_500, dict) and 'model' in raw_500 else raw_500
+        model.load_state_dict(state_500)
+        print("✅ Checkpoint da Rodada 1 carregado com sucesso!")
+    else:
+        print("🔄 Executando Upcycling de pesos do zero (102M -> 500M MoE)...")
+        try:
+            raw_state = torch.load(CHECKPOINT_FILE, map_location='cpu', weights_only=False)
+        except Exception:
+            raw_state = torch.load(CHECKPOINT_FILE, map_location='cpu')
+        state = raw_state['model'] if isinstance(raw_state, dict) and 'model' in raw_state else raw_state
 
-    moe_state = model.state_dict()
-    for key in state:
-        if 'gate.weight' in key or 'up.weight' in key or 'down.weight' in key:
-            parts = key.split('.')
-            block_idx = parts[1]
-            weight_name = parts[2]
-            for exp_idx in range(cfg.num_experts):
-                target_key = f'blocks.{block_idx}.moe.experts.{exp_idx}.{weight_name}.weight'
-                w = state[key].clone()
-                if exp_idx > 0:
-                    w = w + torch.randn_like(w) * (0.005 * w.std())
-                moe_state[target_key] = w
-        else:
-            moe_state[key] = state[key]
+        moe_state = model.state_dict()
+        for key in state:
+            if 'gate.weight' in key or 'up.weight' in key or 'down.weight' in key:
+                parts = key.split('.')
+                block_idx = parts[1]
+                weight_name = parts[2]
+                for exp_idx in range(cfg.num_experts):
+                    target_key = f'blocks.{block_idx}.moe.experts.{exp_idx}.{weight_name}.weight'
+                    w = state[key].clone()
+                    if exp_idx > 0:
+                        w = w + torch.randn_like(w) * (0.005 * w.std())
+                    moe_state[target_key] = w
+            else:
+                moe_state[key] = state[key]
 
-    for l in range(cfg.layers):
-        nn.init.zeros_(model.blocks[l].moe.router.weight)
+        for l in range(cfg.layers):
+            nn.init.zeros_(model.blocks[l].moe.router.weight)
 
-    model.load_state_dict(moe_state)
-    print(f"✅ Upcycling inicial concluído com 100% dos pesos base preservados!")
+        model.load_state_dict(moe_state)
+        print(f"✅ Upcycling inicial concluído com 100% dos pesos base preservados!")
 
-model = model.to(device)
+    model = model.to(device)
 
 # 5. Tokenizer & Dataset
 try:
