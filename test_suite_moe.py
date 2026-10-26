@@ -29,7 +29,10 @@ loaded = False
 for ckpt_path in checkpoint_candidates:
     if os.path.exists(ckpt_path):
         print(f"📦 Carregando modelo treinado de: {ckpt_path}")
-        raw = torch.load(ckpt_path, map_location='cpu')
+        try:
+            raw = torch.load(ckpt_path, map_location='cpu', weights_only=False)
+        except TypeError:
+            raw = torch.load(ckpt_path, map_location='cpu')
         state = raw['model'] if isinstance(raw, dict) and 'model' in raw else raw
         model.load_state_dict(state)
         loaded = True
