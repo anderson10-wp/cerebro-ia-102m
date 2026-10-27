@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-MINERADOR GROQ TURBO (OPENAI/GPT-OSS-20B)
-Alta vazão: 1.300+ tokens a cada 1.8 segundos com modo JSON estrito!
-Gera diálogos estruturados com raciocínio (<think>) em português brasileiro.
+MINERADOR GROQ TURBO — CADÊNCIA CALIBRADA (ANTI-429)
+Controla a taxa de Tokens Por Minuto (TPM) para operar 100% contínuo
+abaixo do teto de 8.000 TPM da conta gratuita da Groq.
 """
 
 import urllib.request
@@ -47,14 +47,14 @@ def obter_chave():
 
 def gerar_lote_groq(api_key, tema_titulo, tema_desc):
     prompt_sistema = """Você é um sintetizador de dados para treinamento de inteligência artificial em português do Brasil.
-Retorne SEMPRE e ESTRITAMENTE um objeto JSON com a chave "dialogos" contendo uma lista de 6 objetos.
+Retorne SEMPRE e ESTRITAMENTE um objeto JSON com a chave "dialogos" contendo uma lista de 3 objetos.
 Cada objeto DEVE ter os campos:
 - "tema": título do tema
 - "pergunta": pergunta realista e natural do usuário em português
 - "pensamento": reflexão no modo pensar (<think>) planejando a resposta de forma clara, técnica e empática
 - "resposta": resposta final completa e bem estruturada."""
 
-    prompt_usuario = f"""Gere 6 diálogos variados sobre: {tema_titulo} ({tema_desc}).
+    prompt_usuario = f"""Gere 3 diálogos variados sobre: {tema_titulo} ({tema_desc}).
 Retorne o JSON no formato:
 {{
   "dialogos": [
@@ -85,25 +85,43 @@ Retorne o JSON no formato:
     )
 
     with urllib.request.urlopen(req, timeout=30) as resp:
-        res = json.loads(resp.read().decode("utf-8"))
-        raw_text = res["choices"][0]["message"]["content"]
+        # Telemetria de Rate Limit oficial da Groq
+        remaining_tokens = resp.headers.get("x-ratelimit-remaining-tokens")
+        reset_time_str = resp.headers.get("x-ratelimit-reset-tokens", "5s")
+        
+        raw_text = resp.read().decode("utf-8")
         parsed = json.loads(raw_text)
         
+        dialogos = []
         if isinstance(parsed, dict):
             if "dialogos" in parsed and isinstance(parsed["dialogos"], list):
-                return parsed["dialogos"]
-            for v in parsed.values():
-                if isinstance(v, list):
-                    return v
-        if isinstance(parsed, list):
-            return parsed
-        return []
+                dialogos = parsed["dialogos"]
+            else:
+                for v in parsed.values():
+                    if isinstance(v, list):
+                        dialogos = v
+                        break
+        elif isinstance(parsed, list):
+            dialogos = parsed
+            
+        return dialogos, remaining_tokens, reset_time_str
+
+def parse_reset_seconds(s):
+    try:
+        s = s.strip().lower()
+        if "ms" in s:
+            return float(s.replace("ms", "")) / 1000.0
+        if "s" in s:
+            return float(s.replace("s", ""))
+        return 5.0
+    except:
+        return 5.0
 
 def main():
     print("=" * 70)
-    print("⚡ MINERADOR GROQ TURBO — ATIVO (ALTA VELOCIDADE)")
+    print("⚡ MINERADOR GROQ TURBO — FLUXO CONTÍNUO (CALIBRADO)")
     print(f"📁 Arquivo de Saída: {OUTPUT_FILE}")
-    print(f"🤖 Modelo Base: {MODEL_NAME} (~700 tokens/s)")
+    print(f"🤖 Modelo Base: {MODEL_NAME}")
     print("=" * 70)
 
     api_key = obter_chave()
@@ -120,11 +138,11 @@ def main():
     while True:
         tema_titulo, tema_desc = random.choice(TEMAS)
         hora = time.strftime("%H:%M:%S")
-        print(f"[{hora}] [Rodada {rodada}] Minerando 6 amostras de '{tema_titulo}'...")
+        print(f"[{hora}] [Rodada {rodada}] Minerando 3 amostras de '{tema_titulo}'...")
 
         try:
             t0 = time.time()
-            lote = gerar_lote_groq(api_key, tema_titulo, tema_desc)
+            lote, remaining_tokens, reset_str = gerar_lote_groq(api_key, tema_titulo, tema_desc)
             dt = time.time() - t0
             novos = 0
 
@@ -149,24 +167,36 @@ def main():
                         total += 1
 
             erros = 0
-            print(f"   ✅ +{novos} amostras salvas em {dt:.2f}s! Total acumulado: {total}")
+            rem_info = f" | Restam {remaining_tokens} tokens" if remaining_tokens else ""
+            print(f"   ✅ +{novos} amostras gravadas em {dt:.2f}s! Total: {total}{rem_info}")
             rodada += 1
 
-            # Intervalo suave de 2.0s
-            time.sleep(2.0)
+            # Gestão Adaptativa de Cota: se estiver com menos de 1.500 tokens livres, espera o reset
+            if remaining_tokens:
+                try:
+                    if int(remaining_tokens) < 1500:
+                        espera = parse_reset_seconds(reset_str) + 1.0
+                        print(f"   ⏳ Balde de tokens quase cheio. Aguardando {espera:.1f}s para reset...")
+                        time.sleep(espera)
+                        continue
+                except:
+                    pass
+
+            # Intervalo padrão seguro de 5.0 segundos (taxa média de ~7.000 TPM)
+            time.sleep(5.0)
 
         except urllib.error.HTTPError as http_err:
-            print(f"   ❌ Erro HTTP {http_err.code}: {http_err.reason}")
             if http_err.code == 429:
-                print("   ⏳ Rate limit atingido. Aguardando 25s...")
-                time.sleep(25)
+                print("   ⏳ Rate limit de 1 minuto atingido (429). Pausa de 15s para esvaziar balde...")
+                time.sleep(15)
             else:
+                print(f"   ❌ Erro HTTP {http_err.code}: {http_err.reason}. Aguardando 10s...")
                 time.sleep(10)
             erros += 1
 
         except Exception as e:
-            print(f"   ⚠️ Erro ao processar lote: {e}. Aguardando 3s...")
-            time.sleep(3)
+            print(f"   ⚠️ Erro ao processar lote: {e}. Aguardando 4s...")
+            time.sleep(4)
             erros += 1
 
         if erros >= 10:
