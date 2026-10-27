@@ -10,3 +10,5 @@ arquivos-release/
 *.parquet
 
 .groq_key
+
+alpaca-gpt4-portuguese.json

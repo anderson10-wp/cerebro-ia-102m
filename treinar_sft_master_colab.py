@@ -33,7 +33,9 @@ else:
 DRIVE_BASE = Path("/content/drive/MyDrive")
 MODEL_INPUT = DRIVE_BASE / "cerebro-moe-500m-continuo.pt"
 MODEL_OUTPUT = DRIVE_BASE / "cerebro-moe-500m-synapse.pt"
-DATASET_FILE = Path("dataset_sft_master.jsonl")
+DATASET_FILE = Path("dataset_sft_master_v2.jsonl")
+if not DATASET_FILE.exists():
+    DATASET_FILE = Path("dataset_sft_master.jsonl")
 TOKENIZER_FILE = Path("tokenizer.json")
 
 if not TOKENIZER_FILE.exists():
