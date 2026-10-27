@@ -263,11 +263,12 @@ def main():
     dataset = MaskedChatDataset(DATASET_FILE, tokenizer, max_len=512)
     loader = DataLoader(dataset, batch_size=8, shuffle=True)
 
-    optimizer = torch.optim.AdamW(model.parameters(), lr=1e-5, weight_decay=0.01)
+    epochs = 8
+    optimizer = torch.optim.AdamW(model.parameters(), lr=6e-5, weight_decay=0.01)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs * len(loader), eta_min=1e-5)
 
-    epochs = 4
     print("\n" + "=" * 70)
-    print(f"⚡ INICIANDO CALIBRAÇÃO COM MÁSCARA -100 ({epochs} Épocas)...")
+    print(f"⚡ INICIANDO CALIBRAÇÃO COM MÁSCARA -100 ({epochs} Épocas | LR: 6e-5 -> 1e-5)...")
     print("=" * 70)
 
     model.train()
@@ -286,13 +287,15 @@ def main():
             total_batch_loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()
+            scheduler.step()
             
             total_loss += loss.item()
             steps += 1
             
         dt = time.time() - t0
         avg_loss = total_loss / steps
-        print(f"Época [{ep}/{epochs}] | Loss nas Respostas: {avg_loss:.4f} | Tempo: {dt:.2f}s")
+        current_lr = scheduler.get_last_lr()[0]
+        print(f"Época [{ep}/{epochs}] | Loss nas Respostas: {avg_loss:.4f} | LR: {current_lr:.2e} | Tempo: {dt:.2f}s")
 
     # Salvar Checkpoint
     print(f"\n💾 Salvando checkpoint calibrado em: {MODEL_OUTPUT}...")
@@ -319,10 +322,22 @@ def main():
             for _ in range(160):
                 curr = torch.tensor([generated[-cfg.context:]], device=device)
                 logits, _ = model(curr)
-                next_token_logits = logits[0, -1, :]
+                next_token_logits = logits[0, -1, :].clone()
                 next_token_logits[pad_token_id] = -float('inf')
                 
-                probs = F.softmax(next_token_logits / 0.7, dim=-1)
+                # Penalidade de repetição para evitar loops
+                for tok_id in set(generated[-30:]):
+                    if next_token_logits[tok_id] > 0:
+                        next_token_logits[tok_id] /= 1.15
+                    else:
+                        next_token_logits[tok_id] *= 1.15
+                
+                # Amostragem Top-K (40) com temperatura 0.6
+                top_k = 40
+                v, _ = torch.topk(next_token_logits, min(top_k, next_token_logits.size(-1)))
+                next_token_logits[next_token_logits < v[-1]] = -float('inf')
+                
+                probs = F.softmax(next_token_logits / 0.6, dim=-1)
                 nxt = torch.multinomial(probs, 1).item()
                 if nxt == (tokenizer.token_to_id("<eos>") or 2):
                     break
