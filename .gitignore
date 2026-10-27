@@ -11,5 +11,6 @@ arquivos-release/
 
 .groq_key
 .openrouter_key
+.gemini_key
 
 alpaca-gpt4-portuguese.json
