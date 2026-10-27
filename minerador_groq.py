@@ -89,8 +89,12 @@ Retorne o JSON no formato:
         remaining_tokens = resp.headers.get("x-ratelimit-remaining-tokens")
         reset_time_str = resp.headers.get("x-ratelimit-reset-tokens", "5s")
         
-        raw_text = resp.read().decode("utf-8")
-        parsed = json.loads(raw_text)
+        # 1. Extrair resposta da API OpenAI/Groq
+        api_res = json.loads(resp.read().decode("utf-8"))
+        model_content = api_res["choices"][0]["message"]["content"]
+        
+        # 2. Fazer o parse do JSON gerado pelo modelo
+        parsed = json.loads(model_content)
         
         dialogos = []
         if isinstance(parsed, dict):
@@ -98,7 +102,7 @@ Retorne o JSON no formato:
                 dialogos = parsed["dialogos"]
             else:
                 for v in parsed.values():
-                    if isinstance(v, list):
+                    if isinstance(v, list) and len(v) > 0 and isinstance(v[0], dict):
                         dialogos = v
                         break
         elif isinstance(parsed, list):
