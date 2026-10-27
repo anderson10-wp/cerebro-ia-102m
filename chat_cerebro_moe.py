@@ -18,9 +18,9 @@ BOLD = "\033[1m"
 DIM = "\033[2m"
 RESET = "\033[0m"
 
-print(f"{BOLD}{MAGENTA}{'='*70}{RESET}")
-print(f"{BOLD}{MAGENTA}🧠 CÉREBRO MoE 500M — CHAT INTERATIVO (MODO PENSAR + KV-CACHE TURBO){RESET}")
-print(f"{BOLD}{MAGENTA}{'='*70}{RESET}")
+print(f"{BOLD}{CYAN}{'='*70}{RESET}")
+print(f"{BOLD}{CYAN}🧠 SYNAPSE MoE 500M — CHAT INTERATIVO (RX 580 TURBO DIRECTML){RESET}")
+print(f"{BOLD}{CYAN}{'='*70}{RESET}")
 
 # 1. Hardware Detection: AMD Radeon RX 580 (DirectML) or CPU
 device_name = "CPU"
@@ -46,41 +46,50 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 # 2. Localização dos Pesos e Tokenizador
-CHECKPOINT_PATHS = [
-    os.path.expanduser(r"~\Downloads\cerebro-moe-500m-modo-pensar.pt"),
-    r"C:\Users\Fernando\Downloads\cerebro-moe-500m-modo-pensar.pt",
-    "cerebro-moe-500m-modo-pensar.pt",
-    r"C:\Users\Fernando\.gemini\antigravity\scratch\cerebro-ia-102m\cerebro-moe-500m-modo-pensar.pt"
+WORKSPACE = Path(r"C:\Users\Fernando\.gemini\antigravity\scratch\cerebro-ia-102m")
+DOWNLOADS = Path(os.path.expanduser(r"~\Downloads"))
+
+CHECKPOINT_CANDIDATES = [
+    WORKSPACE / "cerebro-moe-500m-synapse.pt",
+    DOWNLOADS / "cerebro-moe-500m-synapse.pt",
+    WORKSPACE / "cerebro-moe-500m-modo-pensar.pt",
+    DOWNLOADS / "cerebro-moe-500m-modo-pensar.pt",
 ]
 
 CKPT_FILE = None
-for cp in CHECKPOINT_PATHS:
-    if os.path.exists(cp):
-        CKPT_FILE = cp
+for cp in CHECKPOINT_CANDIDATES:
+    if cp.exists():
+        CKPT_FILE = str(cp)
         break
 
 if not CKPT_FILE:
-    print(f"{YELLOW}❌ Arquivo 'cerebro-moe-500m-modo-pensar.pt' não encontrado!{RESET}")
+    print(f"\n{YELLOW}❌ Checkpoint 'cerebro-moe-500m-synapse.pt' não encontrado!{RESET}")
+    print(f"Baixe o arquivo do seu Google Drive e coloque em:")
+    print(f" -> {WORKSPACE / 'cerebro-moe-500m-synapse.pt'}")
+    print(f" ou em:")
+    print(f" -> {DOWNLOADS / 'cerebro-moe-500m-synapse.pt'}")
     sys.exit(1)
 
-TOK_PATHS = [
-    r"C:\Users\Fernando\.gemini\antigravity\scratch\cerebro-ia-102m\outputs\h100-pretrain\result\tokenizer.json",
-    "tokenizer.json",
-    "work/kaggle-sft-data/tokenizer.json"
+TOK_CANDIDATES = [
+    WORKSPACE / "tokenizer.json",
+    WORKSPACE / "outputs" / "h100-pretrain" / "result" / "tokenizer.json",
 ]
 
 TOK_FILE = None
-for tp in TOK_PATHS:
-    if os.path.exists(tp):
-        TOK_FILE = tp
+for tp in TOK_CANDIDATES:
+    if tp.exists():
+        TOK_FILE = str(tp)
         break
 
 if not TOK_FILE:
-    tok_candidates = list(Path(".").rglob("tokenizer.json"))
-    if tok_candidates:
-        TOK_FILE = str(tok_candidates[0])
+    tok_cand = list(WORKSPACE.rglob("tokenizer.json"))
+    if tok_cand:
+        TOK_FILE = str(tok_cand[0])
+    else:
+        print(f"{YELLOW}❌ Tokenizador não encontrado!{RESET}")
+        sys.exit(1)
 
-# 3. Definição da Arquitetura MoE 500M com KV-Cache
+# 3. Definição da Arquitetura MoE 500M Oficial (RoPE + QKV Fundido + KV-Cache)
 @dataclass
 class Config:
     vocab_size: int = 32768
@@ -109,7 +118,6 @@ class Attention(nn.Module):
         super().__init__()
         self.heads = cfg.heads
         self.head_dim = cfg.dim // cfg.heads
-        assert cfg.dim % cfg.heads == 0 and self.head_dim % 2 == 0
         self.qkv = nn.Linear(cfg.dim, 3 * cfg.dim, bias=False)
         self.out = nn.Linear(cfg.dim, cfg.dim, bias=False)
         inv = cfg.rope_base ** (-torch.arange(0, self.head_dim, 2).float() / self.head_dim)
@@ -218,30 +226,38 @@ class BrainMoE(nn.Module):
         return logits, new_caches
 
 # 4. Carregamento dos Pesos
-print(f"📦 Carregando modelo ({CKPT_FILE})...")
+print(f"📦 Carregando modelo ({Path(CKPT_FILE).name})...")
 model = BrainMoE(cfg)
 t0 = time.time()
 raw = torch.load(CKPT_FILE, map_location='cpu', weights_only=False)
-state = raw['model'] if isinstance(raw, dict) and 'model' in raw else raw
-model.load_state_dict(state)
+
+if isinstance(raw, dict):
+    state = raw.get("model_state_dict", raw.get("model_state", raw.get("model", raw)))
+else:
+    state = raw
+
+# Remove prefixo de compilação se houver
+cleaned_state = {}
+for k, v in state.items():
+    if k.startswith("_orig_mod."):
+        cleaned_state[k[len("_orig_mod."):]] = v
+    else:
+        cleaned_state[k] = v
+
+model.load_state_dict(cleaned_state)
 model = model.to(device)
 model.eval()
-print(f"{GREEN}✅ Modelo MoE 500M pronto na memória ({device_name}) em {time.time()-t0:.2f}s!{RESET}")
+print(f"{GREEN}✅ Synapse MoE 500M pronto na memória ({device_name}) em {time.time()-t0:.2f}s!{RESET}")
 
 from tokenizers import Tokenizer
 tok = Tokenizer.from_file(TOK_FILE)
+eos_id = tok.token_to_id("<eos>") or 2
+pad_id = tok.token_to_id("<pad>") or 0
 print(f"{GREEN}✅ Tokenizador pronto!{RESET}")
 
-SYSTEM_PROMPT = (
-    "Você é o Cérebro IA, um modelo de linguagem avançado com 500 milhões de parâmetros "
-    "operando em arquitetura Mixture of Experts (MoE) com 8 especialistas e Modo Pensar ativo. "
-    "Sua missão é responder com clareza, inteligência e profundidade, raciocinando passo a passo "
-    "dentro de tags <think>...</think> antes de fornecer sua resposta final em português."
-)
-
-print(f"\n{BOLD}{CYAN}💬 System Prompt Ativo:{RESET}")
-print(f"{DIM}{SYSTEM_PROMPT}{RESET}\n")
-print(f"{YELLOW}💡 Dica: Digite sua pergunta e pressione ENTER. Digite 'sair' para encerrar.{RESET}\n")
+print(f"\n{BOLD}{CYAN}💬 SYNAPSE ONLINE — PRONTA PARA CONVERSAR{RESET}")
+print(f"{DIM}Identidade: Synapse | Criador: Nandinho | Hardware: AMD Radeon RX 580{RESET}")
+print(f"{YELLOW}Dica: Digite sua mensagem e pressione ENTER. Digite 'sair' para encerrar.{RESET}\n")
 
 while True:
     try:
@@ -253,43 +269,78 @@ while True:
     if not user_input:
         continue
     if user_input.lower() in ["sair", "exit", "quit"]:
-        print(f"\n{MAGENTA}Encerrando sessão com o Cérebro IA. Até breve!{RESET}")
+        print(f"\n{CYAN}Encerrando sessão com a Synapse. Até breve!{RESET}")
         break
         
-    prompt = f"Sistema: {SYSTEM_PROMPT}\n\nPergunta: {user_input}\nResposta: <think>\n"
+    # Template calibrado no SFT
+    prompt = f"### Usuário:\n{user_input}\n\n### Assistente:\n"
     prompt_ids = tok.encode(prompt).ids
     input_tensor = torch.tensor([prompt_ids], dtype=torch.long, device=device)
     
-    print(f"\n{BOLD}{MAGENTA}Cérebro IA:{RESET} ", end="", flush=True)
+    print(f"\n{BOLD}{CYAN}🤖 Synapse:{RESET} ", end="", flush=True)
     
-    in_think = True
+    in_think = False
     generated_tokens = list(prompt_ids)
     
-    # 1. Prefill com KV-Cache (rápido!)
     with torch.no_grad():
+        # Prefill rápido com KV-Cache
         logits, kv_caches = model(input_tensor, kv_caches=[(None, None)]*cfg.layers, start_pos=0)
-        next_token = torch.multinomial(F.softmax(logits[0, -1, :] / 0.65, dim=-1), num_samples=1)
-        generated_tokens.append(next_token.item())
+        next_token_logits = logits[0, -1, :].clone()
+        next_token_logits[pad_id] = -float('inf')
         
-        # Stream do primeiro token
-        first_token_str = tok.decode([next_token.item()])
-        sys.stdout.write(f"{YELLOW}{first_token_str}{RESET}")
+        # Top-K (40) e temperatura 0.6
+        top_k = 40
+        v, _ = torch.topk(next_token_logits, min(top_k, next_token_logits.size(-1)))
+        next_token_logits[next_token_logits < v[-1]] = -float('inf')
+        probs = F.softmax(next_token_logits / 0.6, dim=-1)
+        next_token = torch.multinomial(probs, num_samples=1)
+        
+        first_id = next_token.item()
+        generated_tokens.append(first_id)
+        
+        first_str = tok.decode([first_id])
+        if "<think>" in first_str:
+            in_think = True
+            sys.stdout.write(f"\n{DIM}{YELLOW}<think>{RESET}\n")
+        else:
+            sys.stdout.write(first_str)
         sys.stdout.flush()
         
-        # 2. Decoding Token a Token com KV-Cache acelerado O(1)
+        # Decoding Token a Token
         curr_token_tensor = next_token.unsqueeze(0)
         curr_pos = len(prompt_ids)
         
-        for _ in range(250):
+        for _ in range(256):
             logits, kv_caches = model(curr_token_tensor, kv_caches=kv_caches, start_pos=curr_pos)
-            next_token = torch.multinomial(F.softmax(logits[0, -1, :] / 0.65, dim=-1), num_samples=1)
-            token_id = next_token.item()
-            generated_tokens.append(token_id)
+            next_token_logits = logits[0, -1, :].clone()
+            next_token_logits[pad_id] = -float('inf')
             
+            # Penalidade de repetição leve
+            for tok_id in set(generated_tokens[-25:]):
+                if next_token_logits[tok_id] > 0:
+                    next_token_logits[tok_id] /= 1.15
+                else:
+                    next_token_logits[tok_id] *= 1.15
+                    
+            # Top-K (40) com temp 0.6
+            v, _ = torch.topk(next_token_logits, min(top_k, next_token_logits.size(-1)))
+            next_token_logits[next_token_logits < v[-1]] = -float('inf')
+            probs = F.softmax(next_token_logits / 0.6, dim=-1)
+            next_token = torch.multinomial(probs, num_samples=1)
+            token_id = next_token.item()
+            
+            if token_id == eos_id:
+                break
+                
+            generated_tokens.append(token_id)
             token_str = tok.decode([token_id])
-            if "</think>" in token_str:
+            
+            if "<think>" in token_str:
+                in_think = True
+                sys.stdout.write(f"\n{DIM}{YELLOW}<think>{RESET}\n")
+            elif "</think>" in token_str:
                 in_think = False
-                sys.stdout.write(f"\n{BOLD}Resposta:{RESET}\n")
+                sys.stdout.write(f"\n{DIM}{YELLOW}</think>{RESET}\n\n")
             else:
                 if in_think:
                     sys.stdout.write(f"{YELLOW}{token_str}{RESET}")
@@ -299,8 +350,7 @@ while True:
             
             curr_token_tensor = next_token.unsqueeze(0)
             curr_pos += 1
-            
             if curr_pos >= cfg.context:
                 break
                 
-    print("\n" + "-" * 70)
+    print("\n" + "-" * 70 + "\n")
