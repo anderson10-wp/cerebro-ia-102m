@@ -10,5 +10,6 @@ arquivos-release/
 *.parquet
 
 .groq_key
+.openrouter_key
 
 alpaca-gpt4-portuguese.json
