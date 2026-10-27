@@ -3,15 +3,25 @@
 MINERADOR GROQ TURBO — CADÊNCIA CALIBRADA (ANTI-429)
 Controla a taxa de Tokens Por Minuto (TPM) para operar 100% contínuo
 abaixo do teto de 8.000 TPM da conta gratuita da Groq.
+Compatível com Windows (UTF-8/cp1252), Linux e Termux.
 """
+
+import os
+import sys
+
+# Configura UTF-8 imediato no console do Windows
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
 
 import urllib.request
 import urllib.error
 import json
 import time
 import random
-import os
-import sys
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL_NAME = "openai/gpt-oss-20b"
@@ -32,17 +42,17 @@ def obter_chave():
         with open(".groq_key", "r", encoding="utf-8") as f:
             return f.read().strip()
     
-    print("\n🔑 Nenhuma chave Groq encontrada.")
+    print("\n[CHAVE] Nenhuma chave Groq encontrada.")
     k = input("Cole sua Chave da API Groq (gsk_...): ").strip()
     if k.startswith("gsk_"):
         try:
             with open(".groq_key", "w", encoding="utf-8") as f:
                 f.write(k)
-            print("💾 Chave salva em .groq_key para próximas execuções!\n")
+            print("[INFO] Chave salva em .groq_key para próximas execuções!\n")
         except Exception:
             pass
         return k
-    print("❌ Chave inválida! Deve começar com 'gsk_'.")
+    print("[ERRO] Chave inválida! Deve começar com 'gsk_'.")
     sys.exit(1)
 
 def gerar_lote_groq(api_key, tema_titulo, tema_desc):
@@ -123,9 +133,9 @@ def parse_reset_seconds(s):
 
 def main():
     print("=" * 70)
-    print("⚡ MINERADOR GROQ TURBO — FLUXO CONTÍNUO (CALIBRADO)")
-    print(f"📁 Arquivo de Saída: {OUTPUT_FILE}")
-    print(f"🤖 Modelo Base: {MODEL_NAME}")
+    print("MINERADOR GROQ TURBO — FLUXO CONTINUO (CALIBRADO)")
+    print(f"Arquivo de Saida: {OUTPUT_FILE}")
+    print(f"Modelo Base: {MODEL_NAME}")
     print("=" * 70)
 
     api_key = obter_chave()
@@ -134,7 +144,7 @@ def main():
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             total = sum(1 for line in f if line.strip())
 
-    print(f"📦 Amostras já existentes no arquivo: {total}\n")
+    print(f"Amostras ja existentes no arquivo: {total}\n")
 
     rodada = 1
     erros = 0
@@ -172,39 +182,39 @@ def main():
 
             erros = 0
             rem_info = f" | Restam {remaining_tokens} tokens" if remaining_tokens else ""
-            print(f"   ✅ +{novos} amostras gravadas em {dt:.2f}s! Total: {total}{rem_info}")
+            print(f"   [OK] +{novos} amostras gravadas em {dt:.2f}s! Total acumulado: {total}{rem_info}")
             rodada += 1
 
-            # Gestão Adaptativa de Cota: se estiver com menos de 1.500 tokens livres, espera o reset
+            # Gestão Adaptativa de Cota
             if remaining_tokens:
                 try:
                     if int(remaining_tokens) < 1500:
                         espera = parse_reset_seconds(reset_str) + 1.0
-                        print(f"   ⏳ Balde de tokens quase cheio. Aguardando {espera:.1f}s para reset...")
+                        print(f"   [PAUSA] Balde quase cheio. Aguardando {espera:.1f}s para reset...")
                         time.sleep(espera)
                         continue
                 except:
                     pass
 
-            # Intervalo padrão seguro de 5.0 segundos (taxa média de ~7.000 TPM)
+            # Intervalo padrão seguro de 5.0 segundos
             time.sleep(5.0)
 
         except urllib.error.HTTPError as http_err:
             if http_err.code == 429:
-                print("   ⏳ Rate limit de 1 minuto atingido (429). Pausa de 15s para esvaziar balde...")
+                print("   [PAUSA 429] Rate limit atingido. Pausa de 15s para esvaziar balde...")
                 time.sleep(15)
             else:
-                print(f"   ❌ Erro HTTP {http_err.code}: {http_err.reason}. Aguardando 10s...")
+                print(f"   [ERRO HTTP {http_err.code}] {http_err.reason}. Aguardando 10s...")
                 time.sleep(10)
             erros += 1
 
         except Exception as e:
-            print(f"   ⚠️ Erro ao processar lote: {e}. Aguardando 4s...")
+            print(f"   [ERRO] Falha ao processar lote: {e}. Aguardando 4s...")
             time.sleep(4)
             erros += 1
 
         if erros >= 10:
-            print("❌ Mais de 10 erros consecutivos. Pausando minerador.")
+            print("[ERRO] Mais de 10 erros consecutivos. Pausando minerador.")
             break
 
 if __name__ == "__main__":
