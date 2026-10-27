@@ -312,10 +312,14 @@ while True:
         curr_token_tensor = next_token.unsqueeze(0)
         curr_pos = len(prompt_ids)
         
-        for _ in range(256):
+        for step in range(256):
             logits, kv_caches = model(curr_token_tensor, kv_caches=kv_caches, start_pos=curr_pos)
             next_token_logits = logits[0, -1, :].clone()
             next_token_logits[pad_id] = -float('inf')
+            
+            # Trava de Integridade: NÃO permitir <eos> prematuro enquanto estiver dentro do <think>
+            if in_think:
+                next_token_logits[eos_id] = -float('inf')
             
             # Penalidade de repetição leve
             for tok_id in set(generated_tokens[-25:]):
@@ -331,17 +335,24 @@ while True:
             next_token = torch.multinomial(probs, num_samples=1)
             token_id = next_token.item()
             
-            if token_id == eos_id:
+            if token_id == eos_id and not in_think:
                 break
                 
             generated_tokens.append(token_id)
             token_str = tok.decode([token_id])
+            accum_str = tok.decode(generated_tokens[len(prompt_ids):])
             
-            if "<think>" in token_str:
+            # Atualiza estado do pensamento
+            was_in_think = in_think
+            if "<think>" in accum_str and "</think>" not in accum_str:
                 in_think = True
-                sys.stdout.write(f"\n{DIM}{YELLOW}<think>{RESET}\n")
-            elif "</think>" in token_str:
+            elif "</think>" in accum_str:
                 in_think = False
+            
+            # Formatação visual fluida no terminal
+            if "<think>" in token_str:
+                sys.stdout.write(f"\n{DIM}{YELLOW}<think>{RESET}\n")
+            elif was_in_think and not in_think:
                 sys.stdout.write(f"\n{DIM}{YELLOW}</think>{RESET}\n\n")
             else:
                 if in_think:
