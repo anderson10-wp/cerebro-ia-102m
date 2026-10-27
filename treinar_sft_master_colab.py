@@ -204,7 +204,25 @@ def main():
         model_path = MODEL_INPUT
 
     checkpoint = torch.load(model_path, map_location="cpu", weights_only=False)
-    state_dict = checkpoint["model_state"] if "model_state" in checkpoint else checkpoint
+    
+    # Extrair state_dict independentemente da convenção usada no salvamento
+    if isinstance(checkpoint, dict):
+        if "model_state_dict" in checkpoint:
+            raw_state = checkpoint["model_state_dict"]
+        elif "model_state" in checkpoint:
+            raw_state = checkpoint["model_state"]
+        else:
+            raw_state = checkpoint
+    else:
+        raw_state = checkpoint
+
+    # Limpar prefixos caso tenha sido salvo via torch.compile
+    state_dict = {}
+    for k, v in raw_state.items():
+        if k.startswith("_orig_mod."):
+            state_dict[k[len("_orig_mod."):]] = v
+        else:
+            state_dict[k] = v
     
     model = BrainMoE(cfg)
     model.load_state_dict(state_dict)
@@ -249,7 +267,11 @@ def main():
 
     # Salvar Checkpoint
     print(f"\n💾 Salvando checkpoint calibrado em: {MODEL_OUTPUT}...")
-    torch.save({"model_state": model.state_dict(), "cfg": cfg}, MODEL_OUTPUT)
+    torch.save({
+        "model_state_dict": model.state_dict(),
+        "model_state": model.state_dict(),
+        "cfg": cfg
+    }, MODEL_OUTPUT)
     print("✅ Checkpoint salvo com sucesso no Google Drive!")
 
     # Chat Interativo
