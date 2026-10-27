@@ -103,6 +103,8 @@ class Config:
     top_k: int = 2
 
 cfg = Config()
+import __main__
+__main__.Config = Config
 
 class RMSNorm(nn.Module):
     def __init__(self, dim):
