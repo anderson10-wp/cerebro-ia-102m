@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-MINERADOR GROQ — ALTA VAZÃO (30 RPM / 14.400 RPD)
-Gera datasets ricos com raciocínio (<think>) em português brasileiro
-usando Llama 3.3 70B / Llama 3.1 8B na infraestrutura ultra-rápida da Groq.
-Compatível com Termux, Linux, Windows (apenas biblioteca padrão urllib).
+MINERADOR GROQ TURBO (OPENAI/GPT-OSS-20B)
+Alta vazão: 1.300+ tokens a cada 1.8 segundos com modo JSON estrito!
+Gera diálogos estruturados com raciocínio (<think>) em português brasileiro.
 """
 
 import urllib.request
@@ -14,41 +13,55 @@ import random
 import os
 import sys
 
-# Configurações da API Groq
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-
-# Modelo rápido e com alta cota diária
-MODEL_NAME = "llama-3.1-8b-instant"  # Alternativa 70B: "llama-3.3-70b-versatile"
+MODEL_NAME = "openai/gpt-oss-20b"
 OUTPUT_FILE = "dataset_minerado_groq.jsonl"
 
 TEMAS = [
-    ("Programação & Python", "Conceitos reais de Python, listas vs tuplas, funções, decorators, classes, boas práticas e depuração de bugs comuns."),
-    ("Lógica & Resolução de Problemas", "Enigmas de lógica do dia a dia, tomada de decisão prática, planejamento financeiro e estimativas simples."),
-    ("Cotidiano & Relacionamentos", "Dúvidas reais do dia a dia, conselhos empáticos sobre trabalho, rotina, convivência e autocuidado."),
-    ("Ciência & Curiosidades", "Explicações científicas claras sobre astronomia, corpo humano, física cotidiana e história brasileira de forma acessível."),
-    ("Carreira & Tecnologia", "Transição de carreira para TI, preparação para entrevistas técnicas, rotina de desenvolvedor e portfólio."),
-    ("Finanças para Iniciantes", "Reserva de emergência, controle de gastos, planejamento para sair de dívidas e noções de juros compostos.")
+    ("Python Sintaxe & Prática", "Diferença entre lista e tupla, dicionários, métodos de string, funções com def, try/except, loops for/while e list comprehensions com exemplos concisos de código."),
+    ("Lógica & Resolução de Problemas", "Raciocínio lógico estruturado, tomada de decisão prática, resolução de problemas cotidianos e pensamento analítico."),
+    ("Conversação Brasileira & Cotidiano", "Diálogos autênticos, histórias curiosas, conselhos de vida, relacionamentos, trabalho e rotina sem formalismo excessivo."),
+    ("Ciência & Conhecimento Geral", "Explicações claras sobre biologia, física cotidiana, espaço, história e curiosidades do Brasil e do mundo."),
+    ("Carreira & Tecnologia", "Como construir portfólio real, dicas para desenvolvedor júnior, boas práticas de código limpo e rotina de home office.")
 ]
 
+def obter_chave():
+    if os.environ.get("GROQ_API_KEY"):
+        return os.environ.get("GROQ_API_KEY").strip()
+    if os.path.exists(".groq_key"):
+        with open(".groq_key", "r", encoding="utf-8") as f:
+            return f.read().strip()
+    
+    print("\n🔑 Nenhuma chave Groq encontrada.")
+    k = input("Cole sua Chave da API Groq (gsk_...): ").strip()
+    if k.startswith("gsk_"):
+        try:
+            with open(".groq_key", "w", encoding="utf-8") as f:
+                f.write(k)
+            print("💾 Chave salva em .groq_key para próximas execuções!\n")
+        except Exception:
+            pass
+        return k
+    print("❌ Chave inválida! Deve começar com 'gsk_'.")
+    sys.exit(1)
+
 def gerar_lote_groq(api_key, tema_titulo, tema_desc):
-    prompt_sistema = """Você é um sintetizador de dados de alta precisão para treinamento de assistentes inteligentes em português brasileiro.
-Sua função é gerar diálogos realistas e úteis contendo o processo de raciocínio prévio dentro da tag <think>...</think>.
-Retorne ESTRITAMENTE um array JSON válido contendo objetos."""
+    prompt_sistema = """Você é um sintetizador de dados para treinamento de inteligência artificial em português do Brasil.
+Retorne SEMPRE e ESTRITAMENTE um objeto JSON com a chave "dialogos" contendo uma lista de 6 objetos.
+Cada objeto DEVE ter os campos:
+- "tema": título do tema
+- "pergunta": pergunta realista e natural do usuário em português
+- "pensamento": reflexão no modo pensar (<think>) planejando a resposta de forma clara, técnica e empática
+- "resposta": resposta final completa e bem estruturada."""
 
-    prompt_usuario = f"""Gere exatamente 8 diálogos COMPLETOS e ÚTEIS sobre o tema: {tema_titulo} ({tema_desc}).
-
-Para cada diálogo forneça:
-1. "tema": Nome do tema
-2. "pergunta": Pergunta ou dúvida realista em português do Brasil (natural, como pessoas reais perguntam na internet).
-3. "pensamento": Raciocínio prévio passo a passo planejando a explicação de forma clara, precisa e empática.
-4. "resposta": Resposta final completa, bem formatada com listas ou blocos de código pequenos quando necessário.
-
-Retorne SOMENTE o JSON no formato:
-[
-  {{"tema": "{tema_titulo}", "pergunta": "...", "pensamento": "...", "resposta": "..."}},
-  ...
-]"""
+    prompt_usuario = f"""Gere 6 diálogos variados sobre: {tema_titulo} ({tema_desc}).
+Retorne o JSON no formato:
+{{
+  "dialogos": [
+    {{"tema": "{tema_titulo}", "pergunta": "...", "pensamento": "...", "resposta": "..."}},
+    ...
+  ]
+}}"""
 
     payload = {
         "model": MODEL_NAME,
@@ -56,13 +69,9 @@ Retorne SOMENTE o JSON no formato:
             {"role": "system", "content": prompt_sistema},
             {"role": "user", "content": prompt_usuario}
         ],
-        "temperature": 0.8,
-        "response_format": {"type": "json_object"} if "70b" in MODEL_NAME else None
+        "temperature": 0.75,
+        "response_format": {"type": "json_object"}
     }
-
-    # Se não suportar json_object nativo no 8b, o prompt já força o retorno
-    if not payload["response_format"]:
-        del payload["response_format"]
 
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
@@ -71,48 +80,33 @@ Retorne SOMENTE o JSON no formato:
         headers={
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}",
-            "User-Agent": "SynapseMiner/1.0"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
         }
     )
 
     with urllib.request.urlopen(req, timeout=30) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         raw_text = res["choices"][0]["message"]["content"]
+        parsed = json.loads(raw_text)
         
-        # Limpar markdown ```json se o modelo colocar
-        clean_text = raw_text.strip()
-        if clean_text.startswith("```json"):
-            clean_text = clean_text[7:]
-        if clean_text.startswith("```"):
-            clean_text = clean_text[3:]
-        if clean_text.endswith("```"):
-            clean_text = clean_text[:-3]
-        clean_text = clean_text.strip()
-        
-        parsed = json.loads(clean_text)
         if isinstance(parsed, dict):
-            # Se vier {"dialogos": [...]} ou similar
-            for k in parsed:
-                if isinstance(parsed[k], list):
-                    return parsed[k]
-            return [parsed]
-        return parsed
+            if "dialogos" in parsed and isinstance(parsed["dialogos"], list):
+                return parsed["dialogos"]
+            for v in parsed.values():
+                if isinstance(v, list):
+                    return v
+        if isinstance(parsed, list):
+            return parsed
+        return []
 
 def main():
     print("=" * 70)
-    print("⚡ MINERADOR GROQ — ALTA VAZÃO DE DADOS (SYNAPSE SFT)")
+    print("⚡ MINERADOR GROQ TURBO — ATIVO (ALTA VELOCIDADE)")
     print(f"📁 Arquivo de Saída: {OUTPUT_FILE}")
-    print(f"🤖 Modelo Base: {MODEL_NAME}")
+    print(f"🤖 Modelo Base: {MODEL_NAME} (~700 tokens/s)")
     print("=" * 70)
 
-    api_key = GROQ_API_KEY
-    if not api_key:
-        api_key = input("Cole sua Chave da API Groq (gsk_...): ").strip()
-
-    if not api_key.startswith("gsk_"):
-        print("⚠️ Chave da Groq inválida! Deve começar com 'gsk_'.")
-        sys.exit(1)
-
+    api_key = obter_chave()
     total = 0
     if os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
@@ -121,17 +115,17 @@ def main():
     print(f"📦 Amostras já existentes no arquivo: {total}\n")
 
     rodada = 1
-    erros_consecutivos = 0
+    erros = 0
 
     while True:
         tema_titulo, tema_desc = random.choice(TEMAS)
         hora = time.strftime("%H:%M:%S")
-        print(f"[{hora}] [Rodada {rodada}] Solicitando 8 amostras de '{tema_titulo}' à Groq...")
+        print(f"[{hora}] [Rodada {rodada}] Minerando 6 amostras de '{tema_titulo}'...")
 
         try:
-            inicio = time.time()
+            t0 = time.time()
             lote = gerar_lote_groq(api_key, tema_titulo, tema_desc)
-            tempo_req = time.time() - inicio
+            dt = time.time() - t0
             novos = 0
 
             with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
@@ -154,29 +148,29 @@ def main():
                         novos += 1
                         total += 1
 
-            erros_consecutivos = 0
-            print(f"   ✅ +{novos} amostras salvas em {tempo_req:.2f}s! Total acumulado: {total}")
+            erros = 0
+            print(f"   ✅ +{novos} amostras salvas em {dt:.2f}s! Total acumulado: {total}")
             rodada += 1
 
-            # Cadência de 2.5 segundos: taxa de ~24 RPM (Groq suporta até 30 RPM na conta free)
-            time.sleep(2.5)
+            # Intervalo suave de 2.0s
+            time.sleep(2.0)
 
         except urllib.error.HTTPError as http_err:
             print(f"   ❌ Erro HTTP {http_err.code}: {http_err.reason}")
             if http_err.code == 429:
-                print("   ⏳ Rate limit temporário atingido. Aguardando 20 segundos...")
-                time.sleep(20)
+                print("   ⏳ Rate limit atingido. Aguardando 25s...")
+                time.sleep(25)
             else:
                 time.sleep(10)
-            erros_consecutivos += 1
+            erros += 1
 
         except Exception as e:
-            print(f"   ⚠️ Erro ao processar lote: {e}. Aguardando 5s...")
-            time.sleep(5)
-            erros_consecutivos += 1
+            print(f"   ⚠️ Erro ao processar lote: {e}. Aguardando 3s...")
+            time.sleep(3)
+            erros += 1
 
-        if erros_consecutivos >= 10:
-            print("❌ Mais de 10 erros consecutivos. Pausando minerador para checagem.")
+        if erros >= 10:
+            print("❌ Mais de 10 erros consecutivos. Pausando minerador.")
             break
 
 if __name__ == "__main__":

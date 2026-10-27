@@ -8,3 +8,5 @@ arquivos-release/
 *.bin
 *.partial
 *.parquet
+
+.groq_key
