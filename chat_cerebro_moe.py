@@ -87,9 +87,11 @@ for tp in TOK_CANDIDATES:
         break
 
 if not TOK_FILE:
-    tok_cand = list(WORKSPACE.rglob("tokenizer.json"))
-    if tok_cand:
-        TOK_FILE = str(tok_cand[0])
+    cand = list(Path(".").rglob("tokenizer.json"))
+    if not cand and WORKSPACE.exists():
+        cand = list(WORKSPACE.rglob("tokenizer.json"))
+    if cand:
+        TOK_FILE = str(cand[0])
     else:
         print(f"{YELLOW}❌ Tokenizador não encontrado!{RESET}")
         sys.exit(1)
