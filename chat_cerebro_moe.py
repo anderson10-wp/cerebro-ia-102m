@@ -50,6 +50,9 @@ WORKSPACE = Path(r"C:\Users\Fernando\.gemini\antigravity\scratch\cerebro-ia-102m
 DOWNLOADS = Path(os.path.expanduser(r"~\Downloads"))
 
 CHECKPOINT_CANDIDATES = [
+    Path("/content/drive/MyDrive/cerebro-moe-500m-synapse.pt"),
+    Path("/content/cerebro-ia-102m/cerebro-moe-500m-synapse.pt"),
+    Path("cerebro-moe-500m-synapse.pt"),
     WORKSPACE / "cerebro-moe-500m-synapse.pt",
     DOWNLOADS / "cerebro-moe-500m-synapse.pt",
     WORKSPACE / "cerebro-moe-500m-modo-pensar.pt",
@@ -71,6 +74,8 @@ if not CKPT_FILE:
     sys.exit(1)
 
 TOK_CANDIDATES = [
+    Path("tokenizer.json"),
+    Path("/content/cerebro-ia-102m/tokenizer.json"),
     WORKSPACE / "tokenizer.json",
     WORKSPACE / "outputs" / "h100-pretrain" / "result" / "tokenizer.json",
 ]
