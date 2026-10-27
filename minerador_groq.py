@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MINERADOR GROQ TURBO — CADÊNCIA CALIBRADA (ANTI-429)
+MINERADOR GROQ TURBO — CADÊNCIA CALIBRADA (ANTI-400 / ANTI-429)
 Controla a taxa de Tokens Por Minuto (TPM) para operar 100% contínuo
 abaixo do teto de 8.000 TPM da conta gratuita da Groq.
 Compatível com Windows (UTF-8/cp1252), Linux e Termux.
@@ -57,14 +57,14 @@ def obter_chave():
 
 def gerar_lote_groq(api_key, tema_titulo, tema_desc):
     prompt_sistema = """Você é um sintetizador de dados para treinamento de inteligência artificial em português do Brasil.
-Retorne SEMPRE e ESTRITAMENTE um objeto JSON com a chave "dialogos" contendo uma lista de 3 objetos.
+Retorne SEMPRE e ESTRITAMENTE um objeto JSON com a chave "dialogos" contendo uma lista de 2 objetos.
 Cada objeto DEVE ter os campos:
 - "tema": título do tema
 - "pergunta": pergunta realista e natural do usuário em português
 - "pensamento": reflexão no modo pensar (<think>) planejando a resposta de forma clara, técnica e empática
 - "resposta": resposta final completa e bem estruturada."""
 
-    prompt_usuario = f"""Gere 3 diálogos variados sobre: {tema_titulo} ({tema_desc}).
+    prompt_usuario = f"""Gere 2 diálogos concisos sobre: {tema_titulo} ({tema_desc}).
 Retorne o JSON no formato:
 {{
   "dialogos": [
@@ -79,8 +79,9 @@ Retorne o JSON no formato:
             {"role": "system", "content": prompt_sistema},
             {"role": "user", "content": prompt_usuario}
         ],
-        "temperature": 0.75,
-        "response_format": {"type": "json_object"}
+        "temperature": 0.7,
+        "response_format": {"type": "json_object"},
+        "max_tokens": 800  # Limite rígido para evitar estouro de TPM e truncamento do JSON
     }
 
     data = json.dumps(payload).encode("utf-8")
@@ -97,7 +98,7 @@ Retorne o JSON no formato:
     with urllib.request.urlopen(req, timeout=30) as resp:
         # Telemetria de Rate Limit oficial da Groq
         remaining_tokens = resp.headers.get("x-ratelimit-remaining-tokens")
-        reset_time_str = resp.headers.get("x-ratelimit-reset-tokens", "5s")
+        reset_time_str = resp.headers.get("x-ratelimit-reset-tokens", "6s")
         
         # 1. Extrair resposta da API OpenAI/Groq
         api_res = json.loads(resp.read().decode("utf-8"))
@@ -127,15 +128,15 @@ def parse_reset_seconds(s):
             return float(s.replace("ms", "")) / 1000.0
         if "s" in s:
             return float(s.replace("s", ""))
-        return 5.0
+        return 6.0
     except:
-        return 5.0
+        return 6.0
 
 def main():
     print("=" * 70)
-    print("MINERADOR GROQ TURBO — FLUXO CONTINUO (CALIBRADO)")
+    print("MINERADOR GROQ TURBO — FLUXO ESTAVEL (ANTI-400 / ANTI-429)")
     print(f"Arquivo de Saida: {OUTPUT_FILE}")
-    print(f"Modelo Base: {MODEL_NAME}")
+    print(f"Modelo Base: {MODEL_NAME} (Lote: 2 amostras | max_tokens: 800)")
     print("=" * 70)
 
     api_key = obter_chave()
@@ -152,7 +153,7 @@ def main():
     while True:
         tema_titulo, tema_desc = random.choice(TEMAS)
         hora = time.strftime("%H:%M:%S")
-        print(f"[{hora}] [Rodada {rodada}] Minerando 3 amostras de '{tema_titulo}'...")
+        print(f"[{hora}] [Rodada {rodada}] Minerando 2 amostras de '{tema_titulo}'...")
 
         try:
             t0 = time.time()
@@ -185,27 +186,30 @@ def main():
             print(f"   [OK] +{novos} amostras gravadas em {dt:.2f}s! Total acumulado: {total}{rem_info}")
             rodada += 1
 
-            # Gestão Adaptativa de Cota
+            # Gestão Adaptativa de Cota: se estiver com menos de 1.200 tokens livres, espera o reset
             if remaining_tokens:
                 try:
-                    if int(remaining_tokens) < 1500:
+                    if int(remaining_tokens) < 1200:
                         espera = parse_reset_seconds(reset_str) + 1.0
-                        print(f"   [PAUSA] Balde quase cheio. Aguardando {espera:.1f}s para reset...")
+                        print(f"   [PAUSA] Cota quase cheia. Aguardando {espera:.1f}s para reset...")
                         time.sleep(espera)
                         continue
                 except:
                     pass
 
-            # Intervalo padrão seguro de 5.0 segundos
-            time.sleep(5.0)
+            # Intervalo padrão seguro de 6.0 segundos
+            time.sleep(6.0)
 
         except urllib.error.HTTPError as http_err:
             if http_err.code == 429:
                 print("   [PAUSA 429] Rate limit atingido. Pausa de 15s para esvaziar balde...")
                 time.sleep(15)
+            elif http_err.code == 400:
+                print("   [AVISO 400] Resposta truncada. Ajustando lote e aguardando 5s...")
+                time.sleep(5)
             else:
-                print(f"   [ERRO HTTP {http_err.code}] {http_err.reason}. Aguardando 10s...")
-                time.sleep(10)
+                print(f"   [ERRO HTTP {http_err.code}] {http_err.reason}. Aguardando 8s...")
+                time.sleep(8)
             erros += 1
 
         except Exception as e:
@@ -213,8 +217,8 @@ def main():
             time.sleep(4)
             erros += 1
 
-        if erros >= 10:
-            print("[ERRO] Mais de 10 erros consecutivos. Pausando minerador.")
+        if erros >= 15:
+            print("[ERRO] Mais de 15 erros consecutivos. Pausando minerador.")
             break
 
 if __name__ == "__main__":
