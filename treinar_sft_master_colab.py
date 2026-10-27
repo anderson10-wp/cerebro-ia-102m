@@ -3,6 +3,7 @@
 TREINAMENTO SFT MASTER DO SYNAPSE (COM MÁSCARA -100)
 Carrega a base contínua do Drive (/content/drive/MyDrive/cerebro-moe-500m-continuo.pt)
 e calibra em 1.668 amostras balanceadas de conversação, fatos, matemática e identidade.
+Arquitetura 100% compatível com RoPE, QKV fundido e Experts (gate, up, down).
 """
 
 import os, sys, math, time, json
@@ -36,7 +37,6 @@ DATASET_FILE = Path("dataset_sft_master.jsonl")
 TOKENIZER_FILE = Path("tokenizer.json")
 
 if not TOKENIZER_FILE.exists():
-    # Procura no repo
     cand = list(Path(".").rglob("tokenizer.json"))
     if cand:
         TOKENIZER_FILE = cand[0]
@@ -45,106 +45,134 @@ tokenizer = Tokenizer.from_file(str(TOKENIZER_FILE))
 pad_token_id = tokenizer.token_to_id("<pad>") or 0
 
 # -----------------------------------------------------------------------------
-# ARQUITETURA MoE (Idêntica ao pre-treino)
+# ARQUITETURA MoE 500M OFICIAL (ROPE + QKV FUNDIDO + EXPERTS GATE/UP/DOWN)
 # -----------------------------------------------------------------------------
 @dataclass
 class Config:
-    dim: int = 640
-    n_layers: int = 16
-    n_heads: int = 10
     vocab_size: int = 32768
-    context: int = 512
+    dim: int = 640
+    layers: int = 16
+    heads: int = 10
     hidden_dim: int = 1792
+    context: int = 1024
+    rope_base: float = 10000.0
     num_experts: int = 8
-    num_experts_per_tok: int = 2
+    top_k: int = 2
 
 class RMSNorm(nn.Module):
-    def __init__(self, dim, eps=1e-5):
+    def __init__(self, dim):
         super().__init__()
-        self.eps = eps
         self.weight = nn.Parameter(torch.ones(dim))
+
     def forward(self, x):
-        return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight
+        z = x.float()
+        return (z * torch.rsqrt(z.square().mean(-1, keepdim=True) + 1e-6)).to(x.dtype) * self.weight
 
 class Attention(nn.Module):
     def __init__(self, cfg):
         super().__init__()
-        self.cfg = cfg
-        self.q = nn.Linear(cfg.dim, cfg.dim, bias=False)
-        self.k = nn.Linear(cfg.dim, cfg.dim, bias=False)
-        self.v = nn.Linear(cfg.dim, cfg.dim, bias=False)
-        self.o = nn.Linear(cfg.dim, cfg.dim, bias=False)
-        self.head_dim = cfg.dim // cfg.n_heads
-    def forward(self, x, mask=None):
-        B, T, C = x.shape
-        q = self.q(x).view(B, T, self.cfg.n_heads, self.head_dim).transpose(1, 2)
-        k = self.k(x).view(B, T, self.cfg.n_heads, self.head_dim).transpose(1, 2)
-        v = self.v(x).view(B, T, self.cfg.n_heads, self.head_dim).transpose(1, 2)
-        out = F.scaled_dot_product_attention(q, k, v, is_causal=True)
-        out = out.transpose(1, 2).contiguous().view(B, T, C)
-        return self.o(out)
+        self.heads = cfg.heads
+        self.head_dim = cfg.dim // cfg.heads
+        self.qkv = nn.Linear(cfg.dim, 3 * cfg.dim, bias=False)
+        self.out = nn.Linear(cfg.dim, cfg.dim, bias=False)
+        inv = cfg.rope_base ** (-torch.arange(0, self.head_dim, 2).float() / self.head_dim)
+        angles = torch.outer(torch.arange(cfg.context).float(), inv)
+        self.register_buffer('cos', angles.cos(), persistent=False)
+        self.register_buffer('sin', angles.sin(), persistent=False)
+
+    def rotate(self, x):
+        length = x.size(-2)
+        cos = self.cos[:length].to(x.dtype)[None, None]
+        sin = self.sin[:length].to(x.dtype)[None, None]
+        even, odd = x[..., 0::2], x[..., 1::2]
+        return torch.stack((even * cos - odd * sin, even * sin + odd * cos), dim=-1).flatten(-2)
+
+    def forward(self, x):
+        b, t, d = x.shape
+        q, k, v = self.qkv(x).reshape(b, t, 3, self.heads, self.head_dim).permute(2, 0, 3, 1, 4).unbind(0)
+        z = F.scaled_dot_product_attention(self.rotate(q), self.rotate(k), v, is_causal=True)
+        return self.out(z.transpose(1, 2).contiguous().view(b, t, d))
 
 class MoESwiGLUExpert(nn.Module):
-    def __init__(self, cfg):
+    def __init__(self, dim, hidden_dim):
         super().__init__()
-        self.w1 = nn.Linear(cfg.dim, cfg.hidden_dim, bias=False)
-        self.w2 = nn.Linear(cfg.hidden_dim, cfg.dim, bias=False)
-        self.w3 = nn.Linear(cfg.dim, cfg.hidden_dim, bias=False)
+        self.gate = nn.Linear(dim, hidden_dim, bias=False)
+        self.up = nn.Linear(dim, hidden_dim, bias=False)
+        self.down = nn.Linear(hidden_dim, dim, bias=False)
+
     def forward(self, x):
-        return self.w2(F.silu(self.w1(x)) * self.w3(x))
+        return self.down(F.silu(self.gate(x)) * self.up(x))
 
 class MoELayer(nn.Module):
     def __init__(self, cfg):
         super().__init__()
-        self.cfg = cfg
+        self.num_experts = cfg.num_experts
+        self.top_k = cfg.top_k
         self.router = nn.Linear(cfg.dim, cfg.num_experts, bias=False)
-        self.experts = nn.ModuleList([MoESwiGLUExpert(cfg) for _ in range(cfg.num_experts)])
+        self.experts = nn.ModuleList([
+            MoESwiGLUExpert(cfg.dim, cfg.hidden_dim) for _ in range(cfg.num_experts)
+        ])
+
     def forward(self, x):
-        B, T, C = x.shape
-        x_flat = x.view(-1, C)
+        b, t, d = x.shape
+        x_flat = x.view(-1, d)
         logits = self.router(x_flat)
-        weights, indices = torch.topk(F.softmax(logits, dim=-1), self.cfg.num_experts_per_tok, dim=-1)
-        weights = weights / weights.sum(dim=-1, keepdim=True)
+        probs = F.softmax(logits, dim=-1)
+        top_k_weights, top_k_indices = torch.topk(probs, self.top_k, dim=-1)
+        top_k_weights = top_k_weights / top_k_weights.sum(dim=-1, keepdim=True)
         
-        out_flat = torch.zeros_like(x_flat)
+        out = torch.zeros_like(x_flat)
         for i, expert in enumerate(self.experts):
-            mask = (indices == i).any(dim=-1)
+            mask = (top_k_indices == i)
             if mask.any():
-                idx = mask.nonzero().squeeze(-1)
-                tok_x = x_flat[idx]
-                tok_w = weights[idx, (indices[idx] == i).nonzero(as_tuple=True)[1]].unsqueeze(-1)
-                out_flat[idx] += tok_w * expert(tok_x)
-        return out_flat.view(B, T, C), 0.0
+                token_indices, k_pos = torch.where(mask)
+                tokens_in = x_flat[token_indices]
+                expert_out = expert(tokens_in)
+                weights = top_k_weights[token_indices, k_pos].unsqueeze(-1)
+                out.index_add_(0, token_indices, (expert_out * weights).to(out.dtype))
+        
+        # Load balancing loss
+        f = (top_k_indices.unsqueeze(-1) == torch.arange(self.num_experts, device=x.device)).float().sum(dim=[0, 1]) / (b * t * self.top_k)
+        P = probs.mean(dim=0)
+        aux_loss = self.num_experts * torch.sum(f * P)
+        return out.view(b, t, d), aux_loss
 
 class MoEBlock(nn.Module):
     def __init__(self, cfg):
         super().__init__()
         self.norm1 = RMSNorm(cfg.dim)
-        self.attn = Attention(cfg)
         self.norm2 = RMSNorm(cfg.dim)
+        self.attn = Attention(cfg)
         self.moe = MoELayer(cfg)
+
     def forward(self, x):
         x = x + self.attn(self.norm1(x))
-        moe_out, _ = self.moe(self.norm2(x))
-        return x + moe_out
+        moe_out, aux_loss = self.moe(self.norm2(x))
+        return x + moe_out, aux_loss
 
 class BrainMoE(nn.Module):
-    def __init__(self, cfg):
+    def __init__(self, cfg=None):
         super().__init__()
-        self.cfg = cfg
-        self.tok_emb = nn.Embedding(cfg.vocab_size, cfg.dim)
-        self.pos_emb = nn.Embedding(cfg.context, cfg.dim)
-        self.blocks = nn.ModuleList([MoEBlock(cfg) for _ in range(cfg.n_layers)])
-        self.norm = RMSNorm(cfg.dim)
-        self.head = nn.Linear(cfg.dim, cfg.vocab_size, bias=False)
-        self.head.weight = self.tok_emb.weight
-    def forward(self, idx):
-        B, T = idx.shape
-        pos = torch.arange(0, T, device=idx.device).unsqueeze(0)
-        x = self.tok_emb(idx) + self.pos_emb(pos)
+        self.cfg = cfg or Config()
+        self.embedding = nn.Embedding(self.cfg.vocab_size, self.cfg.dim)
+        self.blocks = nn.ModuleList([MoEBlock(self.cfg) for _ in range(self.cfg.layers)])
+        self.norm = RMSNorm(self.cfg.dim)
+        self.head = nn.Linear(self.cfg.dim, self.cfg.vocab_size, bias=False)
+        self.head.weight = self.embedding.weight
+
+    def forward(self, tokens, targets=None):
+        if tokens.shape[1] > self.cfg.context:
+            raise ValueError('Sequence exceeds configured context')
+        x = self.embedding(tokens)
+        total_aux_loss = 0.0
         for block in self.blocks:
-            x = block(x)
-        return self.head(self.norm(x))
+            x, aux = block(x)
+            total_aux_loss = total_aux_loss + aux
+        logits = self.head(self.norm(x))
+        if targets is None:
+            return logits, total_aux_loss
+        loss = F.cross_entropy(logits.reshape(-1, self.cfg.vocab_size).float(), targets.reshape(-1), ignore_index=-100)
+        return logits, loss, total_aux_loss
 
 # -----------------------------------------------------------------------------
 # DATASET SFT COM MÁSCARA -100
@@ -194,7 +222,7 @@ def main():
     # Carregar modelo
     print(f"📦 Carregando modelo base: {MODEL_INPUT}...")
     if not MODEL_INPUT.exists():
-        print(f"⚠️ {MODEL_INPUT} não encontrado! Usando modelo local...")
+        print(f"⚠️ {MODEL_INPUT} não encontrado! Procurando localmente...")
         local_cand = list(Path(".").rglob("cerebro-moe-500m-continuo.pt"))
         if local_cand:
             model_path = local_cand[0]
@@ -205,12 +233,14 @@ def main():
 
     checkpoint = torch.load(model_path, map_location="cpu", weights_only=False)
     
-    # Extrair state_dict independentemente da convenção usada no salvamento
+    # Extrair state_dict
     if isinstance(checkpoint, dict):
         if "model_state_dict" in checkpoint:
             raw_state = checkpoint["model_state_dict"]
         elif "model_state" in checkpoint:
             raw_state = checkpoint["model_state"]
+        elif "model" in checkpoint:
+            raw_state = checkpoint["model"]
         else:
             raw_state = checkpoint
     else:
@@ -234,7 +264,6 @@ def main():
     loader = DataLoader(dataset, batch_size=8, shuffle=True)
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=1e-5, weight_decay=0.01)
-    criterion = nn.CrossEntropyLoss(ignore_index=-100)
 
     epochs = 4
     print("\n" + "=" * 70)
@@ -250,11 +279,11 @@ def main():
             input_ids, labels = input_ids.to(device), labels.to(device)
             optimizer.zero_grad()
             
-            # Forward
-            logits = model(input_ids[:, :-1])
-            loss = criterion(logits.reshape(-1, cfg.vocab_size), labels[:, 1:].reshape(-1))
+            # Forward com cálculo interno de loss com máscara -100 e aux_loss
+            logits, loss, aux_loss = model(input_ids[:, :-1], targets=labels[:, 1:])
+            total_batch_loss = loss + 0.01 * aux_loss
             
-            loss.backward()
+            total_batch_loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()
             
@@ -270,11 +299,12 @@ def main():
     torch.save({
         "model_state_dict": model.state_dict(),
         "model_state": model.state_dict(),
-        "cfg": cfg
+        "config": cfg,
+        "type": "Sparse-MoE-8x-Top2"
     }, MODEL_OUTPUT)
     print("✅ Checkpoint salvo com sucesso no Google Drive!")
 
-    # Chat Interativo
+    # Chat Interativo de Verificação
     print("\n" + "=" * 70)
     print("💬 SYNAPSE ONLINE — CHAT INTERATIVO ATIVADO")
     print("=" * 70)
@@ -287,12 +317,12 @@ def main():
         
         with torch.no_grad():
             for _ in range(160):
-                curr = torch.tensor([generated[-512:]], device=device)
-                logits = model(curr)[0, -1, :]
-                logits[pad_token_id] = -float('inf')
+                curr = torch.tensor([generated[-cfg.context:]], device=device)
+                logits, _ = model(curr)
+                next_token_logits = logits[0, -1, :]
+                next_token_logits[pad_token_id] = -float('inf')
                 
-                # Temperatura moderada
-                probs = F.softmax(logits / 0.7, dim=-1)
+                probs = F.softmax(next_token_logits / 0.7, dim=-1)
                 nxt = torch.multinomial(probs, 1).item()
                 if nxt == (tokenizer.token_to_id("<eos>") or 2):
                     break
