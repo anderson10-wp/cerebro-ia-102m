@@ -50,13 +50,14 @@ WORKSPACE = Path(r"C:\Users\Fernando\.gemini\antigravity\scratch\cerebro-ia-102m
 DOWNLOADS = Path(os.path.expanduser(r"~\Downloads"))
 
 CHECKPOINT_CANDIDATES = [
-    Path("/content/drive/MyDrive/cerebro-moe-500m-synapse.pt"),
-    Path("/content/cerebro-ia-102m/cerebro-moe-500m-synapse.pt"),
-    Path("cerebro-moe-500m-synapse.pt"),
+    WORKSPACE / "synapse-1b-r1-final.pt",
+    DOWNLOADS / "synapse-1b-r1-final.pt",
+    WORKSPACE / "synapse-1b-latest.pt",
+    DOWNLOADS / "synapse-1b-latest.pt",
     WORKSPACE / "cerebro-moe-500m-synapse.pt",
     DOWNLOADS / "cerebro-moe-500m-synapse.pt",
-    WORKSPACE / "cerebro-moe-500m-modo-pensar.pt",
-    DOWNLOADS / "cerebro-moe-500m-modo-pensar.pt",
+    Path("synapse-1b-r1-final.pt"),
+    Path("cerebro-moe-500m-synapse.pt"),
 ]
 
 CKPT_FILE = None
@@ -66,11 +67,11 @@ for cp in CHECKPOINT_CANDIDATES:
         break
 
 if not CKPT_FILE:
-    print(f"\n{YELLOW}❌ Checkpoint 'cerebro-moe-500m-synapse.pt' não encontrado!{RESET}")
-    print(f"Baixe o arquivo do seu Google Drive e coloque em:")
-    print(f" -> {WORKSPACE / 'cerebro-moe-500m-synapse.pt'}")
+    print(f"\n{YELLOW}❌ Nenhum checkpoint suportado encontrado!{RESET}")
+    print(f"Baixe o arquivo do seu Google Drive (ex: synapse-1b-r1-final.pt) e coloque em:")
+    print(f" -> {DOWNLOADS / 'synapse-1b-r1-final.pt'}")
     print(f" ou em:")
-    print(f" -> {DOWNLOADS / 'cerebro-moe-500m-synapse.pt'}")
+    print(f" -> {WORKSPACE / 'synapse-1b-r1-final.pt'}")
     sys.exit(1)
 
 TOK_CANDIDATES = [
@@ -234,9 +235,8 @@ class BrainMoE(nn.Module):
         logits = self.head(self.norm(x))
         return logits, new_caches
 
-# 4. Carregamento dos Pesos
+# 4. Carregamento dos Pesos e Detecção de Arquitetura
 print(f"📦 Carregando modelo ({Path(CKPT_FILE).name})...")
-model = BrainMoE(cfg)
 t0 = time.time()
 raw = torch.load(CKPT_FILE, map_location='cpu', weights_only=False)
 
@@ -253,10 +253,21 @@ for k, v in state.items():
     else:
         cleaned_state[k] = v
 
+dim = cleaned_state["embedding.weight"].shape[1]
+if dim == 768:
+    from modelo_synapse_1b import BrainMoE1B, Config1B
+    cfg = Config1B()
+    model = BrainMoE1B(cfg)
+    nome_modelo = "Synapse 1.2B MoE (Top-2 R1)"
+else:
+    cfg = Config()
+    model = BrainMoE(cfg)
+    nome_modelo = "Synapse MoE 500M"
+
 model.load_state_dict(cleaned_state)
 model = model.to(device)
 model.eval()
-print(f"{GREEN}✅ Synapse MoE 500M pronto na memória ({device_name}) em {time.time()-t0:.2f}s!{RESET}")
+print(f"{GREEN}✅ {nome_modelo} pronto na memória ({device_name}) em {time.time()-t0:.2f}s!{RESET}")
 
 from tokenizers import Tokenizer
 tok = Tokenizer.from_file(TOK_FILE)
