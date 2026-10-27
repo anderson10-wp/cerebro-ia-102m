@@ -356,11 +356,13 @@ while True:
             elif "</think>" in accum_str:
                 in_think = False
             
-            # Formatação visual fluida no terminal
+            # Formatação visual fluida no terminal (suprime fragmentos de tags)
             if "<think>" in token_str:
                 sys.stdout.write(f"\n{DIM}{YELLOW}<think>{RESET}\n")
             elif was_in_think and not in_think:
                 sys.stdout.write(f"\n{DIM}{YELLOW}</think>{RESET}\n\n")
+            elif "</" in token_str or "think>" in token_str or "<think" in token_str:
+                pass
             else:
                 if in_think:
                     sys.stdout.write(f"{YELLOW}{token_str}{RESET}")

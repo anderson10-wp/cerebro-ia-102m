@@ -33,9 +33,9 @@ else:
 DRIVE_BASE = Path("/content/drive/MyDrive")
 MODEL_INPUT = DRIVE_BASE / "cerebro-moe-500m-continuo.pt"
 MODEL_OUTPUT = DRIVE_BASE / "cerebro-moe-500m-synapse.pt"
-DATASET_FILE = Path("dataset_sft_master_v2.jsonl")
+DATASET_FILE = Path("dataset_sft_master_v3.jsonl")
 if not DATASET_FILE.exists():
-    DATASET_FILE = Path("dataset_sft_master.jsonl")
+    DATASET_FILE = Path("dataset_sft_master_v2.jsonl")
 TOKENIZER_FILE = Path("tokenizer.json")
 
 if not TOKENIZER_FILE.exists():
@@ -265,12 +265,12 @@ def main():
     dataset = MaskedChatDataset(DATASET_FILE, tokenizer, max_len=512)
     loader = DataLoader(dataset, batch_size=8, shuffle=True)
 
-    epochs = 8
-    optimizer = torch.optim.AdamW(model.parameters(), lr=6e-5, weight_decay=0.01)
+    epochs = 3
+    optimizer = torch.optim.AdamW(model.parameters(), lr=4e-5, weight_decay=0.01)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs * len(loader), eta_min=1e-5)
 
     print("\n" + "=" * 70)
-    print(f"⚡ INICIANDO CALIBRAÇÃO COM MÁSCARA -100 ({epochs} Épocas | LR: 6e-5 -> 1e-5)...")
+    print(f"⚡ INICIANDO CALIBRAÇÃO GOLD COM MÁSCARA -100 ({epochs} Épocas | LR: 4e-5 -> 1e-5)...")
     print("=" * 70)
 
     model.train()
@@ -309,9 +309,9 @@ def main():
     }, MODEL_OUTPUT)
     print("✅ Checkpoint salvo com sucesso no Google Drive!")
 
-    # Chat Interativo de Verificação
+    # Chat de Verificação dos Testes de Ouro
     print("\n" + "=" * 70)
-    print("💬 SYNAPSE ONLINE — CHAT INTERATIVO ATIVADO")
+    print("📋 EXECUTANDO BATERIA DE HOMOLOGAÇÃO (TESTES DE OURO)")
     print("=" * 70)
     model.eval()
 
@@ -321,7 +321,7 @@ def main():
         generated = input_ids[0].tolist()
         
         with torch.no_grad():
-            for _ in range(160):
+            for _ in range(256):
                 curr = torch.tensor([generated[-cfg.context:]], device=device)
                 logits, _ = model(curr)
                 next_token_logits = logits[0, -1, :].clone()
@@ -350,15 +350,38 @@ def main():
 
     testes = [
         "oi",
-        "quem é você?",
+        "quem é você e qual é o seu objetivo em uma frase simples?",
         "preciso de sua ajuda",
         "quanto é 29 + 20?",
-        "vale a pena aprender Python hoje em dia?"
+        "Se eu tenho 3 maçãs e como 1, depois ganho mais 5, com quantas maçãs eu fico? Mostre apenas a conta.",
+        "Como fazer um loop for em Python?",
+        "Escreva uma função em Python que soma dois números",
+        "Qual a diferença entre uma lista e uma tupla em Python?",
+        "Explique em duas frases o que é a gravidade.",
+        "Me dê uma lista de 3 frutas amarelas.",
+        "como eu faço novas amizades?",
+        "eu preciso de uma dica sua"
     ]
     for q in testes:
         print(f"\nVocê: {q}")
         resp = responder(q)
         print(f"🤖 Synapse:\n{resp}\n{'-'*50}")
+
+    print("\n" + "=" * 70)
+    print("💬 SYNAPSE ONLINE — CHAT LIVRE (Digite 'sair' para encerrar)")
+    print("=" * 70)
+    while True:
+        try:
+            q = input("\nVocê: ")
+            if q.strip().lower() in ["sair", "exit", "quit", "q"]:
+                print("Encerrando sessão interativa.")
+                break
+            if not q.strip():
+                continue
+            resp = responder(q)
+            print(f"\n🤖 Synapse:\n{resp}\n{'-'*50}")
+        except (EOFError, KeyboardInterrupt):
+            break
 
 if __name__ == "__main__":
     main()
