@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-🚀 MINERADOR REDDIT BRASIL PARA O CELULAR (GALAXY A14 / TERMUX)
-Gera conversas autênticas do Reddit Brasil usando a API do Gemini direto no celular.
+MINERADOR REDDIT BRASIL COM CONTROLE DE RATE LIMIT E BACKOFF
+Projetado para Termux / Celular / PC.
+Blindado contra erro 429 (RESOURCE_EXHAUSTED).
 """
 
 import urllib.request
@@ -11,13 +12,12 @@ import time
 import random
 import os
 import sys
-
 import base64
 
 # Chave da API Gemini
 DEFAULT_B64 = "QVEuQWI4Uk42SnBZVmtWN1BOSWJmcTZRRnBtNElQaDVuc1lvdG1DNjhWdzlKVnV2NVBkR1E="
 API_KEY = os.environ.get("GEMINI_API_KEY") or base64.b64decode(DEFAULT_B64).decode()
-GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key={API_KEY}"
+GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
 
 OUTPUT_FILE = "dataset_minerado_celular.jsonl"
 
@@ -36,16 +36,16 @@ def gerar_lote_reddit(sub, tema):
     prompt = f"""Você é um minerador de conversas autênticas das comunidades brasileiras do Reddit ({sub}).
 Tema do lote: {tema}
 
-Gere 4 diálogos completos e variados no estilo real do Reddit brasileiro.
+Gere exatamente 8 diálogos completos e variados no estilo real do Reddit brasileiro.
 As perguntas dos usuários devem soar naturais, com linguagem do cotidiano da internet brasileira (gírias leves, sem formalismo engessado).
 
-Para cada diálogo:
+Para cada diálogo retorne:
 - "subreddit": "{sub}"
 - "pergunta": a dúvida ou reflexão do usuário (como um post no Reddit)
 - "pensamento": uma reflexão estratégica dentro do modo pensar (<think>) planejando como responder com empatia, inteligência e tom caloroso
 - "resposta": a resposta final do assistente, sendo amigável, informativa e humana
 
-Retorne SOMENTE um JSON válido com a lista de 4 objetos:
+Retorne SOMENTE um JSON válido com a lista de 8 objetos:
 [
   {{"subreddit": "...", "pergunta": "...", "pensamento": "...", "resposta": "..."}},
   ...
@@ -54,7 +54,7 @@ Retorne SOMENTE um JSON válido com a lista de 4 objetos:
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.88,
+            "temperature": 0.85,
             "responseMimeType": "application/json"
         }
     }
@@ -65,16 +65,15 @@ Retorne SOMENTE um JSON válido com a lista de 4 objetos:
         headers={"Content-Type": "application/json"}
     )
     
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    with urllib.request.urlopen(req, timeout=45) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         raw = res["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(raw)
 
 def main():
     print("=" * 65)
-    print("📱 MINERADOR REDDIT BRASIL — ATIVO NO CELULAR!")
-    print(f"📁 Arquivo de saída: {OUTPUT_FILE}")
-    print("🔋 Dica: Mantenha o celular na tomada e a tela desligada.")
+    print("MINERADOR REDDIT BRASIL — TAXA CONTROLADA (ANTI-429)")
+    print(f"Arquivo de saída: {OUTPUT_FILE}")
     print("=" * 65)
     
     total = 0
@@ -82,13 +81,15 @@ def main():
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             total = sum(1 for line in f if line.strip())
             
-    print(f"📦 Amostras já existentes no arquivo: {total}\n")
+    print(f"Amostras já salvas no arquivo: {total}\n")
     
     rodada = 1
+    backoff_tempo = 60
+    
     while True:
         sub, tema = random.choice(TEMAS)
         hora = time.strftime("%H:%M:%S")
-        print(f"[{hora}] [Rodada {rodada}] 🔍 Minerando 4 conversas de {sub}...")
+        print(f"[{hora}] [Rodada {rodada}] Minerando lote de 8 conversas ({sub})...")
         
         try:
             lote = gerar_lote_reddit(sub, tema)
@@ -111,12 +112,25 @@ def main():
                         novos += 1
                         total += 1
                         
-            print(f"   ✅ +{novos} conversas salvas! Total acumulado no celular: {total}")
+            print(f"   + {novos} conversas gravadas. Total acumulado: {total}")
             rodada += 1
-            time.sleep(3) # Intervalo respeitoso entre chamadas
+            backoff_tempo = 60  # Reseta o tempo de espera após sucesso
+            
+            # 6 segundos garante no máximo 10 requisições/minuto (limite da API gratuita é 15 RPM)
+            time.sleep(6)
+            
+        except urllib.error.HTTPError as http_err:
+            if http_err.code == 429:
+                print(f"   [AVISO 429] Limite de requisições atingido. Aguardando {backoff_tempo}s para reset de cota...")
+                time.sleep(backoff_tempo)
+                backoff_tempo = min(backoff_tempo * 2, 300) # Dobra até o teto de 5 minutos
+            else:
+                print(f"   [ERRO HTTP {http_err.code}] {http_err.reason}. Aguardando 30s...")
+                time.sleep(30)
+                
         except Exception as e:
-            print(f"   ⚠️ Erro temporário: {e}. Aguardando 10s...")
-            time.sleep(10)
+            print(f"   [ERRO] {e}. Aguardando 15s...")
+            time.sleep(15)
 
 if __name__ == "__main__":
     main()
