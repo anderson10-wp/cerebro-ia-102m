@@ -121,6 +121,11 @@ def main():
     # Localizar Checkpoint Pré-Treinado Base
     ckpt_candidates = [
         PASTA_CHECKPOINTS / "synapse-1b-latest.pt",
+        PASTA_CHECKPOINTS / "synapse-1b-step-10000.pt",
+        PASTA_CHECKPOINTS / "synapse-1b-step-9000.pt",
+        PASTA_CHECKPOINTS / "synapse-1b-step-8000.pt",
+        PASTA_CHECKPOINTS / "synapse-1b-step-7000.pt",
+        PASTA_CHECKPOINTS / "synapse-1b-step-6000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-2000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-1000.pt",
         Path("synapse-1b-latest.pt")
