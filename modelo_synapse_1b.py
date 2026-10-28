@@ -95,18 +95,10 @@ class Attention(nn.Module):
             prev_k, prev_v = kv_cache
             k = torch.cat([prev_k, k], dim=2)
             v = torch.cat([prev_v, v], dim=2)
-        new_kv_cache = (k.detach(), v.detach())
+        new_kv_cache = (k, v)
         
-        scale = 1.0 / math.sqrt(self.head_dim)
-        scores = torch.matmul(q, k.transpose(-2, -1)) * scale
-        
-        total_len = k.size(-2)
-        if t > 1:
-            mask = torch.triu(torch.full((t, total_len), float('-inf'), device=x.device), diagonal=1)
-            scores = scores + mask
-            
-        attn = F.softmax(scores, dim=-1)
-        out = torch.matmul(attn, v)
+        is_causal = (t > 1)
+        out = F.scaled_dot_product_attention(q, k, v, is_causal=is_causal)
         out = out.transpose(1, 2).contiguous().view(b, t, d)
         return self.out(out), new_kv_cache
 
@@ -148,7 +140,7 @@ class MoELayer(nn.Module):
                 tokens_in = x_flat[token_indices]
                 expert_out = expert(tokens_in)
                 weights = top_k_weights[token_indices, k_pos].unsqueeze(-1)
-                out.index_add_(0, token_indices, (expert_out * weights).to(out.dtype))
+                out[token_indices] = out[token_indices] + (expert_out * weights).to(out.dtype)
         
         # Load balancing auxiliary loss
         f = (top_k_indices.unsqueeze(-1) == torch.arange(self.num_experts, device=x.device)).float().sum(dim=[0, 1]) / (b * t * self.top_k)

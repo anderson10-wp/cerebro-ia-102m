@@ -49,6 +49,16 @@ import torch.nn.functional as F
 WORKSPACE = Path(r"C:\Users\Fernando\.gemini\antigravity\scratch\cerebro-ia-102m")
 DOWNLOADS = Path(os.path.expanduser(r"~\Downloads"))
 
+if str(WORKSPACE) not in sys.path:
+    sys.path.insert(0, str(WORKSPACE))
+
+try:
+    from modelo_synapse_1b import BrainMoE1B, Config1B
+    if hasattr(torch.serialization, "add_safe_globals"):
+        torch.serialization.add_safe_globals([Config1B])
+except Exception:
+    pass
+
 CHECKPOINT_CANDIDATES = [
     WORKSPACE / "synapse-1b-r1-final.pt",
     DOWNLOADS / "synapse-1b-r1-final.pt",
@@ -330,7 +340,7 @@ while True:
         curr_token_tensor = next_token.unsqueeze(0)
         curr_pos = len(prompt_ids)
         
-        for step in range(256):
+        for step in range(512):
             logits, kv_caches = model(curr_token_tensor, kv_caches=kv_caches, start_pos=curr_pos)
             next_token_logits = logits[0, -1, :].clone()
             next_token_logits[pad_id] = -float('inf')
