@@ -107,12 +107,29 @@ def main():
     else:
         print("⚠️ Rodando em CPU!")
 
-    # 1. Caminhos no Drive de 5 TB
-    COLAB_DRIVE = Path("/content/drive/MyDrive/Synapse-1B")
-    if COLAB_DRIVE.exists():
-        DRIVE_ROOT = COLAB_DRIVE
-    else:
-        DRIVE_ROOT = Path("dados_synapse_1b")
+    # 1. Montagem Automática e Localização no Google Drive
+    try:
+        from google.colab import drive
+        if not Path("/content/drive/MyDrive").exists():
+            print("📂 Conectando ao Google Drive...")
+            drive.mount("/content/drive")
+    except Exception:
+        pass
+
+    COLAB_DRIVE_CANDIDATES = [
+        Path("/content/drive/MyDrive/Synapse-1B"),
+        Path("/content/drive/MyDrive"),
+        Path("dados_synapse_1b")
+    ]
+    
+    DRIVE_ROOT = None
+    for cand in COLAB_DRIVE_CANDIDATES:
+        if cand.exists():
+            if (cand / "checkpoints").exists() or (cand / "synapse-1b-step-10000.pt").exists():
+                DRIVE_ROOT = cand
+                break
+    if not DRIVE_ROOT:
+        DRIVE_ROOT = Path("/content/drive/MyDrive/Synapse-1B") if Path("/content/drive/MyDrive").exists() else Path("dados_synapse_1b")
 
     PASTA_CHECKPOINTS = DRIVE_ROOT / "checkpoints"
     MODEL_OUTPUT = DRIVE_ROOT / "synapse-1b-r1-final.pt"
@@ -120,14 +137,19 @@ def main():
 
     # Localizar Checkpoint Pré-Treinado Base
     ckpt_candidates = [
-        PASTA_CHECKPOINTS / "synapse-1b-latest.pt",
+        Path("/content/drive/MyDrive/Synapse-1B/checkpoints/synapse-1b-step-10000.pt"),
+        Path("/content/drive/MyDrive/Synapse-1B/checkpoints/synapse-1b-latest.pt"),
+        Path("/content/drive/MyDrive/checkpoints/synapse-1b-step-10000.pt"),
+        Path("/content/drive/MyDrive/checkpoints/synapse-1b-latest.pt"),
         PASTA_CHECKPOINTS / "synapse-1b-step-10000.pt",
+        PASTA_CHECKPOINTS / "synapse-1b-latest.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-9000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-8000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-7000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-6000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-2000.pt",
         PASTA_CHECKPOINTS / "synapse-1b-step-1000.pt",
+        Path("synapse-1b-step-10000.pt"),
         Path("synapse-1b-latest.pt")
     ]
     ckpt_base = None
@@ -136,12 +158,22 @@ def main():
             ckpt_base = cp
             break
 
+    # Busca recursiva se ainda não encontrou
+    if not ckpt_base and Path("/content/drive/MyDrive").exists():
+        print("🔍 Localizando checkpoint de 10.000 passos no Google Drive...")
+        achados = list(Path("/content/drive/MyDrive").rglob("synapse-1b-step-10000.pt"))
+        if not achados:
+            achados = list(Path("/content/drive/MyDrive").rglob("synapse-1b-latest.pt"))
+        if achados:
+            ckpt_base = achados[0]
+
     if not ckpt_base:
-        print(f"❌ Nenhum checkpoint de pré-treino encontrado em: {PASTA_CHECKPOINTS}")
-        print("   Certifique-se de que o pré-treinamento gerou o checkpoint synapse-1b-latest.pt.")
+        print(f"❌ Nenhum checkpoint de pré-treino encontrado!")
+        print(f"   Pastas verificadas: {PASTA_CHECKPOINTS}")
+        print("   Certifique-se de que o Google Drive está conectado.")
         sys.exit(1)
 
-    print(f"📂 Checkpoint Base Pré-Treinado: {ckpt_base}")
+    print(f"📂 Checkpoint Base Localizado: {ckpt_base}")
 
     # 2. Tokenizador
     tok_candidates = [
