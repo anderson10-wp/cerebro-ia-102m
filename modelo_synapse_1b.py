@@ -132,6 +132,15 @@ class MoELayer(nn.Module):
         top_k_weights, top_k_indices = torch.topk(probs, self.top_k, dim=-1)
         top_k_weights = top_k_weights / top_k_weights.sum(dim=-1, keepdim=True)
         
+        # Caminho Ultrarrápido de Inferência para 1 Token (Elimina 12 loops e syncs de GPU)
+        if x_flat.shape[0] == 1:
+            e1 = top_k_indices[0, 0].item()
+            e2 = top_k_indices[0, 1].item()
+            w1 = top_k_weights[0, 0].unsqueeze(-1)
+            w2 = top_k_weights[0, 1].unsqueeze(-1)
+            out = self.experts[e1](x_flat) * w1 + self.experts[e2](x_flat) * w2
+            return out.view(b, t, d), 0.0
+
         out = torch.zeros_like(x_flat)
         for i, expert in enumerate(self.experts):
             mask = (top_k_indices == i)
