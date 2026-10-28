@@ -195,7 +195,16 @@ def main():
     model = BrainMoE1B(cfg)
     
     print(f"📥 Carregando pesos pré-treinados...")
-    raw = torch.load(ckpt_base, map_location="cpu")
+    try:
+        if hasattr(torch.serialization, "add_safe_globals"):
+            torch.serialization.add_safe_globals([Config1B])
+    except Exception:
+        pass
+
+    try:
+        raw = torch.load(ckpt_base, map_location="cpu", weights_only=False)
+    except TypeError:
+        raw = torch.load(ckpt_base, map_location="cpu")
     state_dict = raw.get("model_state_dict", raw.get("model_state", raw))
     
     clean_state = {}
