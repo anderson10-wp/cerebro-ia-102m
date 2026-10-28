@@ -138,9 +138,12 @@ def main():
     eos_token_id = tok.token_to_id("<|eos|>") or 2
     pad_token_id = tok.token_to_id("<|pad|>") or 0
 
-    # 2. Localização do Checkpoint Base (synapse-1b-step-10000.pt)
-    print("\n🔍 Buscando checkpoint pré-treinado de 10.000 passos...")
+    # 2. Localização do Checkpoint Base (prioriza modelo limpo de 4.8 GB)
+    print("\n🔍 Buscando checkpoint base para treinamento...")
     ckpt_candidates = [
+        "/content/drive/MyDrive/Synapse-1B/checkpoints/synapse-1b-r1-final.pt",
+        "/content/drive/MyDrive/checkpoints/synapse-1b-r1-final.pt",
+        "synapse-1b-r1-final.pt",
         "/content/drive/MyDrive/Synapse-1B/checkpoints/synapse-1b-step-10000.pt",
         "/content/drive/MyDrive/dados_synapse_1b/checkpoints/synapse-1b-step-10000.pt",
         "synapse-1b-step-10000.pt",
@@ -153,22 +156,19 @@ def main():
     
     # Se não achou na lista direta, faz busca recursiva no Drive
     if not ckpt_base and Path("/content/drive/MyDrive").exists():
-        found = glob.glob("/content/drive/MyDrive/**/synapse-1b-step-10000.pt", recursive=True)
-        if found:
-            ckpt_base = found[0]
-
-    if not ckpt_base:
-        print("⚠️ Checkpoint de 10.000 passos não encontrado diretamente. Verificando fallbacks...")
-        # fallback para o r1 existente
         found_r1 = glob.glob("/content/drive/MyDrive/**/synapse-1b-r1-final.pt", recursive=True)
         if found_r1:
             ckpt_base = found_r1[0]
-            
+        else:
+            found_10k = glob.glob("/content/drive/MyDrive/**/synapse-1b-step-10000.pt", recursive=True)
+            if found_10k:
+                ckpt_base = found_10k[0]
+
     if not ckpt_base:
         print("❌ Nenhum checkpoint de 1B encontrado! Conecte o Google Drive com o arquivo .pt.")
         sys.exit(1)
 
-    print(f"📂 Checkpoint Base Localizado: {ckpt_base}")
+    print(f"📂 Checkpoint Base Localizado: {ckpt_base} ({Path(ckpt_base).stat().st_size / (1024**3):.2f} GB)")
 
     # 3. Instanciação e Carregamento do Modelo MoE
     cfg = Config1B(
@@ -184,11 +184,22 @@ def main():
     )
     model = BrainMoE1B(cfg).to(device)
 
-    print("📥 Carregando pesos pré-treinados...")
-    raw = torch.load(ckpt_base, map_location="cpu", weights_only=False)
+    print("📥 Carregando pesos pré-treinados com mapeamento de memória seguro (mmap)...")
+    try:
+        raw = torch.load(ckpt_base, map_location="cpu", weights_only=False, mmap=True)
+    except Exception:
+        raw = torch.load(ckpt_base, map_location="cpu", weights_only=False)
+        
     state = raw.get("model_state_dict", raw.get("model_state", raw))
     clean_state = {k[len("_orig_mod."):] if k.startswith("_orig_mod.") else k: v for k, v in state.items()}
     model.load_state_dict(clean_state, strict=False)
+    
+    # Libera imediatamente a RAM do sistema operacional
+    del raw, state, clean_state
+    import gc
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
     
     total_params = sum(p.numel() for p in model.parameters()) / 1e6
     active_params = (cfg.dim * cfg.vocab_size * 2 + cfg.layers * (4 * cfg.dim**2 + cfg.top_k * 3 * cfg.dim * cfg.hidden_dim)) / 1e6
