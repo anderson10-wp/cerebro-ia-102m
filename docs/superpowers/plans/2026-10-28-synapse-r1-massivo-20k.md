@@ -40,19 +40,19 @@
 - Consumes: `tokenizer.json`, `dataset_synapse_r1_reasoning.jsonl`, bases abertas de raciocínio (Bespoke-Stratos, NuminaMath, GSM8K, Python code-feedback, OAB/Direito).
 - Produces: `dataset_synapse_r1_20k.jsonl` contendo entre 20.000 e 25.000 linhas JSON formatadas com chaves `pergunta`, `pensamento`, `resposta`.
 
-- [ ] **Step 1: Escrever teste de integridade do pipeline ETL**
+- [x] **Step 1: Escrever teste de integridade do pipeline ETL**
 
 Criar `test_compilar_dataset.py` validando que cada amostra gerada:
 1. Possui chaves `pergunta`, `pensamento`, `resposta` não vazias.
 2. Contém as tags de pensamento `[Entendimento]` e `[Auto-Verificação]` no campo `pensamento` (ou pensamento vazio para saudações diretas).
 3. Ao ser tokenizada com `tokenizer.json`, o tamanho total `prompt + think + resp + eos` é menor ou igual a 1024 tokens.
 
-- [ ] **Step 2: Executar o teste e verificar falha**
+- [x] **Step 2: Executar o teste e verificar falha**
 
 Run: `python -m unittest test_compilar_dataset.py`
 Expected: FAIL (módulo ou dataset não existente).
 
-- [ ] **Step 3: Implementar `compilar_dataset_r1_20k.py`**
+- [x] **Step 3: Implementar `compilar_dataset_r1_20k.py`**
 
 Implementar script de compilação que:
 1. Carrega o tokenizador BPE do projeto (`tokenizer.json`).
@@ -64,12 +64,12 @@ Implementar script de compilação que:
 7. Filtra rigorosamente por contagem de tokens: descarta qualquer registro cujo total ultrapasse 1024 tokens.
 8. Salva em streaming no arquivo `dataset_synapse_r1_20k.jsonl`.
 
-- [ ] **Step 4: Executar a compilação e verificar teste**
+- [x] **Step 4: Executar a compilação e verificar teste**
 
 Run: `python compilar_dataset_r1_20k.py; python -m unittest test_compilar_dataset.py`
 Expected: PASS com arquivo `dataset_synapse_r1_20k.jsonl` gerado contendo >= 20.000 amostras.
 
-- [ ] **Step 5: Git Commit**
+- [x] **Step 5: Git Commit**
 
 ```bash
 git add compilar_dataset_r1_20k.py test_compilar_dataset.py
@@ -88,16 +88,16 @@ git commit -m "feat: adicionar compilador e validador ETL de 20k amostras R1"
 - Consumes: `dataset_synapse_r1_20k.jsonl`, `tokenizer.json`
 - Produces: Relatório estatístico em markdown e console detalhando volume total, distribuição percentual por domínio, tamanho médio de tokens e integridade das máscaras.
 
-- [ ] **Step 1: Escrever teste de auditoria**
+- [x] **Step 1: Escrever teste de auditoria**
 
 Criar `test_auditoria_20k.py` que testa se a função de auditoria rejeita datasets com menos de 20.000 amostras ou com tokens maiores que 1024.
 
-- [ ] **Step 2: Executar teste e verificar falha**
+- [x] **Step 2: Executar teste e verificar falha**
 
 Run: `python -m unittest test_auditoria_20k.py`
 Expected: FAIL.
 
-- [ ] **Step 3: Implementar `auditar_dataset_20k.py`**
+- [x] **Step 3: Implementar `auditar_dataset_20k.py`**
 
 Implementar rotina de auditoria que:
 1. Conta o total exato de amostras.
@@ -105,12 +105,12 @@ Implementar rotina de auditoria que:
 3. Classifica as amostras por domínio (Matemática, Código, Lógica, Direito/Brasil, Identidade, Direta).
 4. Verifica ausência de caracteres nulos, duplicatas ou strings truncadas.
 
-- [ ] **Step 4: Executar auditoria sobre o dataset gerado**
+- [x] **Step 4: Executar auditoria sobre o dataset gerado**
 
 Run: `python auditar_dataset_20k.py`
 Expected: PASS exibindo tabela estatística completa atendendo aos requisitos da spec.
 
-- [ ] **Step 5: Git Commit**
+- [x] **Step 5: Git Commit**
 
 ```bash
 git add auditar_dataset_20k.py test_auditoria_20k.py
@@ -129,16 +129,16 @@ git commit -m "feat: adicionar script de auditoria estatística do dataset 20k"
 - Consumes: `dataset_synapse_r1_20k.jsonl`, `modelo_synapse_1b.py`, checkpoint `synapse-1b-step-10000.pt`.
 - Produces: Checkpoint `synapse-1b-r1-v2-final.pt` (~4.8 GB) no Google Drive.
 
-- [ ] **Step 1: Escrever teste de dry-run de treinamento**
+- [x] **Step 1: Escrever teste de dry-run de treinamento**
 
 Criar `test_treino_dry_run.py` que instancia um modelo reduzido (2 blocos, batch 2), roda 1 passo de forward, cálculo de loss mascarada `-100`, backward e optimizer step, verificando que o scaler AMP e a loss reduzem sem NaN.
 
-- [ ] **Step 2: Executar teste de dry-run e verificar falha**
+- [x] **Step 2: Executar teste de dry-run e verificar falha**
 
 Run: `python -m unittest test_treino_dry_run.py`
 Expected: FAIL (módulo de treinamento massivo não implementado).
 
-- [ ] **Step 3: Implementar `alinhar_synapse_1b_r1_massivo.py`**
+- [x] **Step 3: Implementar `alinhar_synapse_1b_r1_massivo.py`**
 
 Implementar script de treinamento com:
 1. Detecção automática de ambiente Colab e montagem do Google Drive (`/content/drive/MyDrive/`).
@@ -151,12 +151,12 @@ Implementar script de treinamento com:
 8. Loop de teste interativo pós-treinamento avaliando as 7 perguntas de controle.
 9. Salvamento automático com verificação de integridade no Google Drive.
 
-- [ ] **Step 4: Executar dry-run local**
+- [x] **Step 4: Executar dry-run local**
 
 Run: `python -m unittest test_treino_dry_run.py`
 Expected: PASS.
 
-- [ ] **Step 5: Git Commit**
+- [x] **Step 5: Git Commit**
 
 ```bash
 git add alinhar_synapse_1b_r1_massivo.py test_treino_dry_run.py
@@ -174,19 +174,19 @@ git commit -m "feat: adicionar script de treinamento massivo de 20k na A100"
 - Consumes: Repositório GitHub, Google Drive montado com `synapse-1b-step-10000.pt`.
 - Produces: Treinamento completo na GPU A100 com barra de progresso, logs em tempo real e geração de `synapse-1b-r1-v2-final.pt`.
 
-- [ ] **Step 1: Criar notebook Jupyter estruturado com 4 células essenciais**
+- [x] **Step 1: Criar notebook Jupyter estruturado com 4 células essenciais**
 
 1. Célula 1: Montagem do Google Drive e clonagem/atualização do repositório (`git pull origin main`).
 2. Célula 2: Verificação da GPU (`!nvidia-smi`) confirmando A100 com 80GB de VRAM.
 3. Célula 3: Instalação rápida de dependências (`pip install tokenizers torch`).
 4. Célula 4: Execução do treinamento massivo com log visual de épocas e salvamento do modelo final.
 
-- [ ] **Step 2: Verificar sintaxe JSON do arquivo `.ipynb`**
+- [x] **Step 2: Verificar sintaxe JSON do arquivo `.ipynb`**
 
 Run: `python -c "import json; json.load(open('treinar_synapse_1b_r1_massivo.ipynb', encoding='utf-8')); print('Notebook válido!')"`
 Expected: "Notebook válido!".
 
-- [ ] **Step 3: Git Commit & Push para o GitHub**
+- [x] **Step 3: Git Commit & Push para o GitHub**
 
 ```bash
 git add treinar_synapse_1b_r1_massivo.ipynb
